@@ -1,20 +1,9 @@
 Docker:
 sudo service docker start
 /etc/default/docker ( file for repository)
-sudo docker build -t ambari-server . (This will create ambari-server image on local from dockerfile in current folder)
 
 docker run -d -p 8080 -h amb0.mycorp.kom --name ambari-singlenode sequenceiq/ambari:1.6.0 --tag ambari-server=true
 docker run -e BLUEPRINT=single-node-hdfs-yarn --link ambari-singlenode:ambariserver -t --rm --entrypoint /bin/sh sequenceiq/ambari:1.6.0 -c /tmp/install-cluster.sh
-1. sequenceiq/ambari:latest
-
-docker-machine create --driver virtualbox --engine-insecure-registry repo.docker.dev.ias us
-
-docker-machine 
-
-docker-machine ssh us
-
-docker-machine env us --shell cmd
-
 
 sudo vi /etc/hosts
 
