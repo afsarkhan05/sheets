@@ -24,6 +24,14 @@ different design patterns - example of singleton pattern
 
 circuit breaker pattern - saga pattern
 
+String s1 = "Myself";
+StringBuilder sb1 = new StringBuilder();
+sb1.append("My").append("self");
+
+System.out.println(sb1.toString() == s1);
+System.out.println(sb1.toString().equals(s1));
+
+
 what different design patterns you have used. How to create a bean with  single ton design pattern in spring boot
 What spring boot features you have used so far
 On what server spring boot application works - can we select our choice of server how (untow, apache tomcat, jetty)
