@@ -43,7 +43,7 @@ Kafka
  bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic testAttribute
 
 
- kubectl create secret docker-registry k8smpf-docker --docker-server='https://index.docker.io/v1/' --docker-username=xaxisjenkins --docker-password='jenkins.xaxis' --namespace=sparkle
+ kubectl create secret docker-registry my_secret_name --docker-server='https://index.docker.io/v1/' --docker-username=my_username --docker-password='my_pass' --namespace=my_ns
 
 
 shell
@@ -56,30 +56,13 @@ shell
 
  aws s3 cp --recursive source destination
 
+./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group my_group_name
 
+./bin/kafka-topics.sh --zookeeper zookeeper_hostname --describe --topic my_group_name
 
- avg = total money / total share
+./bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic my_topic  --from-beginning
 
-
-
- avg = total money /(previous share count + new share count)
-
-
- avg *  (previous share count + new share count) = total money 
-
-new share count = (total money / avg) - previous share count
-
-
-{"AttributeFileLocation":"gs://mp-data-ingestion-v1/Ford/Oracle/cookie/attribute.csv/ingestion_date=2019-12-19_03-29/", "vendor": "Oracle","owner": "Ford","idType": "mobile"}
-
-
-./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group sparkle-attributor-service
-
-./bin/kafka-topics.sh --zookeeper kafka-zookeeper-1-na-prod.use1.mplatform.net --describe --topic sparkleAttributeFile
-
-./bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic testAttribute  --from-beginning
-
-./bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic testAttribute
+./bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic my_topic
 
 
 

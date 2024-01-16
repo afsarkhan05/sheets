@@ -21,22 +21,6 @@ sudo vi /etc/hosts
 docker@us:~$ cat /etc/hosts
 127.0.0.1 us localhost localhost.local
 #add repo
-10.90.100.134 repo.docker.dev.ias
-
-
-ping repo.docker.dev.ias
-
-docker search repo.docker.dev.ias/base
-
-docker pull repo.docker.dev.ias/turbine-couchbase:4.1.0
-
-
-set DOCKER_TLS_VERIFY=1
-set DOCKER_HOST=tcp://192.168.99.100:2376
-set DOCKER_CERT_PATH=C:\Users\nitin.raul\.docker\machine\machines\us
-set DOCKER_MACHINE_NAME=us
-
-
 
 Dockers:
 sudo docker ps -a (all running and non running containers)
@@ -84,45 +68,45 @@ docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 --network wp-mysql-
 docker rm docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 
-docker run -it -v /Users/afsar.khan/fhe3_keys/:/Users/afsar.khan/fhe3_keys/ -e GOOGLE_APPLICATION_CREDENTIALS=/Users/afsar.khan/fhe3_keys/al_service_account_key.json  registry.gitlab.com/2sixty/package-registry/choreograph-artifacts/search-api:feature-AL-233-v1-1.0.0-SNAPSHOT-b076b3f2
+docker run -it -v /my_folder/ -e GOOGLE_APPLICATION_CREDENTIALS=/my_folder/my_key.json  my_repo/my_image:tag
 
 
 docker exec -it bba005ceeaa4 /bin/bash
 
-docker run -it --entrypoint /bin/sh xaxiseng/cs-vendor-mgmt:1.0.0 -s
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
-docker run -it --entrypoint /bin/sh xaxiseng/cs-vendor-mgmt:1.0.0 -s
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
-docker run -it -e "LOG_DIR=/home/appmgr/vendor-service/logs/" xaxiseng/cs-vendor-mgmt:1.0.1
+docker run -it -e "LOG_DIR=/home/logs/" my_repo/my_image:my_tag
 
  ============================== pass file and environment variables to docker containers ==============================
-docker run -it --entrypoint /bin/sh -v /Users/afsar.khan/fhe3_keys:/Users/afsar.khan/fhe3_keys  --env GOOGLE_APPLICATION_CREDENTIALS=/Users/afsar.khan/fhe3_keys/al_service_account_key.json {image_name}
+docker run -it --entrypoint /bin/sh -v /my_folder:/my_folder  --env GOOGLE_APPLICATION_CREDENTIALS=/my_folder/my_key.json {image_name}
 
  ============================== ============================== ==============================
 
-docker image build -t xaxiseng/sparkle-attributor-service:1.0.0-0-SNAPSHOT  ./
+docker image build -t my_repo/my_image:my_tag  ./
 
-docker run -it -p 9092:9092 --entrypoint /bin/sh registry.gitlab.com/2sixty/mplatform-images/report-service-mgmt:report-service-develop-1.0.0-SNAPSHOT-0fc1331d -s
+docker run -it -p 9092:9092 --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
-docker run -it --entrypoint /bin/sh registry.gitlab.com/2sixty/mplatform-images/report-service-mgmt:report-service-develop-1.0.0-SNAPSHOT-0fc1331d -s
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/hierarchy' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/hierarchy' -DSPRING.CLOUD.CONFIG.URI='http://tbdocker1.int.iad2.xaxis.net/configuration' hierarchy-service-1.0.2.jar
-
-
-
-docker run -it -p 9090:9090 --entrypoint /bin/sh xaxiseng/cs-vendor-mgmt:1.0.2 -s
-
-docker run -it -p 9090:9090 --entrypoint /bin/sh xaxiseng/sparkle-attributor-service:1.9.9-9-SNAPSHOT -s
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
 
 
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/vendor' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/vendor' -DSPRING.CLOUD.CONFIG.URI='http://tbdocker1.int.iad2.xaxis.net/configuration' vendor-service-1.0.2.jar
+
+docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
 
-docker run -it -p 9093:9093 --entrypoint /bin/sh xaxiseng/option-list-mgmt:1.0.2 -s
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
 
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/option-list-mgmt' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/option-list-mgmt' -DSPRING.CLOUD.CONFIG.URI='http://tbdocker1.int.iad2.xaxis.net/configuration' optionlist-service-1.0.2.jar
 
-kubectl -n name_space -it xaxiseng/cs-vendor-mgmt:1.0.0 -- /bin/sh
+docker run -it -p 9093:9093 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
+
+kubectl -n name_space -it my_repo/my_image:my_tag -- /bin/sh
 
 docker rm docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)

@@ -1,4 +1,0 @@
-create table emp(ename string,esal int) row format delimited fields terminated by ',' stored as textfile;
-
-load data local inpath '/home/afsar/empdetails' into table emp; (local to hive)
-load data inpath '/empdetails' into table emp; (hdfs to hive)
