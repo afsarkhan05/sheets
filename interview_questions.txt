@@ -1,0 +1,55 @@
+Interview Questions:::
+
+What are advantages of using ActiveMQ
+
+Describe rabbitMQ
+how will you see messages available in rabbitMQ
+
+what's difference between rabbitMQ and camel
+what are difference component in couchbase - how do you connect to cb
+
+
+How to use lamda function in java
+
+code compact, reusable, how java 8 is helping developer
+java stream - map, filter
+What is use of Optional class
+What is use of functional interface, can we use it as normal interface , marker interface (examples how it is used, any realtime example)
+- do i need to use annotation or not needed for functional interface
+String builder vs String Buffer
+what different types of collections you have used, what were use cases , how you decided to use one over another
+linked list vs array list (comparision)
+
+different design patterns - example of singleton pattern
+
+circuit breaker pattern - saga pattern
+
+what different design patterns you have used. How to create a bean with  single ton design pattern in spring boot
+What spring boot features you have used so far
+On what server spring boot application works - can we select our choice of server how (untow, apache tomcat, jetty)
+what is use of @Component, service (difference) - RestController, ControllerAdvice, Repository
+How to you manage exception handling in spring boot application
+How did the request flow goes in spring boot application. in your application
+how to do trasactions in case consuming multiple apis
+How to use profile in spring boot
+have u used spring actuator or how to health check about spring app
+how does dependency injection works
+what is diff between @Inject and @Autowired
+spring eureka and spring batch - how did you use in your project
+how did you integrate kafka in spring boot app
+how to audit data in table by hibernate
+
+What do you use for api documentation
+How do you use jenkins for CI/CD purpose
+how to use SOAP API , consume, definition using wsdl
+How do you deploy build on QA/ PROD
+What feature from AWS you have used so far
+how to create empty file using bash
+I export one parameter using export command, but when i used another terminal, export echo not showing, what could be the reason
+Web services (AWS) like EC2, S3, Cloud watch and Elastic Bean Stalk for code deployment. - how did you manage different env (qa, prod)
+what sort of data you were storing in mongodb, what format, how did you manage it's retrieval in code
+elastic search -
+•	Launched Kubernetes to provide a platform for automating deployment, scaling, and operations of application containers across clusters of nodes.
+migration challenges while doing micro services
+
+what migration you did on AZURE and what challenges you faced and how did you resolve them

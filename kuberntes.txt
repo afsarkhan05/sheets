@@ -1,0 +1,37 @@
+kubectl get pods -n mi-ui-api-int
+
+kubectl describe -n mi-ui-api-int pod  minsights-scheduler-report-deployment-5c7f67d47d-mh75c
+
+
+kubectl -n mi-ui-api-int exec --stdin --tty  minsights-scheduler-report-deployment-5c7f67d47d-mh75c -- /bin/sh
+
+kubectl create secret docker-registry k8smpf-docker --docker-server='https://index.docker.io/v1/' --docker-username=xaxisjenkins --docker-password='jenkins.xaxis' --namespace=crosstab
+
+
+curl -X POST "http://ao-cpp-service-na-service.audience-origin:8196/cpp/info/reprocess_run" -H  "accept: /" -H  "Content-Type: application/json" -d "{  \"run_ids\": [    1  ]}"
+
+
+kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
+
+kubectl -n choreo-ao-int exec --stdin --tty  ao-portal-service-int-deployment-5bd478d77f-lvdrx  -- /bin/s
+
+kubectl 
+kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+
+kubectl apply -f deployment.yml
+
+
+kubectl create -f namespace.json
+
+{
+  "apiVersion": "v1",
+  "kind": "Namespace",
+  "metadata": {
+    "name": "sparkle",
+    "labels": {
+      "name": "sparkle"
+    }
+  }
+}
+
+

@@ -1,0 +1,82 @@
+Hadoop:
+Links:
+https://sites.google.com/site/hadoopandhive/home/how-to-create-temporary-tables-in-hive
+
+Hadoop Commands:
+$ hadoop/etc/hadoop/core-site.xml (change localhost to ambari.host1.com (output of "hostname --fqdn"))
+$ hadoop namenode -format (format namenode first time) 
+sbin/start-dfs.sh
+sbin/stop-dfs.sh
+sbin/start-yarn.sh
+sbin/stop-yarn.sh
+bin/start-all.sh (depreciated used in Hadoop 1 only)
+	NameNode - http://localhost:50070/
+	Resource Manager: http://localhost:8088/cluster
+	JobTracker - http://localhost:50030/
+	Yarn - 
+	
+hadoop fs -put /home/ec2-user/Samplefile.txt ./ambari.repo /user/hadoop/dir3/ (copy from local sys to hdfs file system)
+hadoop fs -get /user/hadoop/dir3/Samplefile.txt /home/ (copy from hdfs file system to local)
+hadoop fs -mkdir /user/new_folder
+hadoop fs -chmod g+w /user/new_folder (/user, /user/hive/warehouse, /user/hadoop, /user/hue)
+
+
+Hive: https://cwiki.apache.org/confluence/display/Hive/GettingStarted
+Build hive against hadoop-2 (version 2.x)
+mvn clean package -Phadoop-2,dist
+bin/hive 
+OR
+bin/hiverserver2 start &
+
+create table emp(ename string,esal int) row format delimited fields terminated by ',' stored as textfile;
+load data LOCAL inpath '/home/afsar/empdetails' into table emp; (local to hive, if local remove from command it will look at hdfs file sys.)
+load data inpath '/empdetails' into table emp; (hdfs to hive)
+
+create external table tweet_mood(tweet_id int, tweet string, positive string, negative string, result string) row format delimited fields terminated by ',' lines terminated by '\n' stored as textfile;
+
+load data inpath '/user/storm/twitter.tweet' into table tweet_mood; 
+
+create external table tweet_mood(tweet_id int, tweet string, positive string, negative string, result string) row format delimited fields terminated by ',' lines terminated by '\n' LOCATION '/user/storm/twitter.tweet';
+
+create table emp(ename string,esal int) row format delimited fields terminated by ',' stored as textfile;
+
+
+ALTER TABLE invites ADD COLUMNS (new_col2 INT COMMENT 'a comment');
+
+
+HUE: (bigdata hue) - http://gethue.com/how-to-build-hue-on-ubuntu-14-04-trusty/
+./build/env/bin/hue runserver
+
+
+
+
+core-site.xml ( for hue to connect to hdfs)
+<property>
+     <name>hadoop.proxyuser.hue.hosts</name>
+     <value>*</value>
+</property>
+<property>
+     <name>hadoop.proxyuser.hue.groups</name>
+     <value>*</value>
+</property>
+
+hdfs-site.xml
+<property>
+     <name>hadoop.proxyuser.hue.groups</name>
+     <value>*</value>
+</property>
+
+
+Hbase:
+hbase-site.xml (hbase folder location and distributed proper to overcome zk start problem)
+set path for hbase bin dir.
+$ hbase shell
+$ start-hbase.sh 
+use http://localhost:16010/master-status or http://localhost:16301/rs-status to check the status from UI
+create 'test', 'data' (create table with name as 'test' and column prefix as 'data')
+list (list down all tables)
+scan 'test' (show all data of table 'test')
+get 'test', 'row1' (get specific row detail from table 'test')
+enable 'test' (enable table 'test', operation can be performed on enable table only)
+disable 'test' (disable table, once disabled can not perform any operation on table but can drop table)
+put 'test', 'row1', 'data:1', 'value1' (insert data in row 1 of table 'test' with sufix to column data 'data:1' and value with 'value1'
