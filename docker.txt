@@ -63,17 +63,13 @@ docker run --name alpine-2 --network none alpine
 docker network create -d bridge --gateway 182.18.0.1 --subnet 182.18.0.1/24 wp-mysql-network
 
 docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 --network wp-mysql-network -d mysql:5.6
-
-
-docker rm docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
-
 docker run -it -v /my_folder/ -e GOOGLE_APPLICATION_CREDENTIALS=/my_folder/my_key.json  my_repo/my_image:tag
 
-
-docker exec -it bba005ceeaa4 /bin/bash
+docker run -it -p 9092:9092 --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
 docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker exec -it bba005ceeaa4 /bin/bash
 
 docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
 
@@ -85,28 +81,6 @@ docker run -it --entrypoint /bin/sh -v /my_folder:/my_folder  --env GOOGLE_APPLI
  ============================== ============================== ==============================
 
 docker image build -t my_repo/my_image:my_tag  ./
-
-docker run -it -p 9092:9092 --entrypoint /bin/sh my_repo/my_image:my_tag -s
-
-docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
-
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
-
-
-
-docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
-
-docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
-
-
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
-
-
-docker run -it -p 9093:9093 --entrypoint /bin/sh my_repo/my_image:my_tag -s
-
-java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
-
-kubectl -n name_space -it my_repo/my_image:my_tag -- /bin/sh
 
 docker rm docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
