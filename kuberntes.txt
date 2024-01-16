@@ -17,6 +17,10 @@ kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
 
 kubectl apply -f deployment.yml
 
+kubectl get pods -n ns_name
+kubectl -n ns_name get pods,svc,deployments
+kubectl -n ns_name describe deployment_name
+
 
 kubectl create -f namespace.json
 
