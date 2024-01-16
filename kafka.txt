@@ -1,0 +1,9 @@
+Topics creates:  kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic truckevent  kafka-topics.sh --list --zookeeper localhost:2181
+
+bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic my_topic  --from-beginning
+bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic my_topic   bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic
+
+kubectl create secret docker-registry my_secret --docker-server='https://index.docker.io/v1/' --docker-username=my_username --docker-password='my_pas' --namespace=my_ns
+
+
+
