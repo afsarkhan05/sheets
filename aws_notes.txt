@@ -1,0 +1,382 @@
+AWS Notes:::
+
+1. Most data is region specific
+2. AZ per region can be between 3 or 2 , max 6
+3. AZ's are connected to each other with 
+   a. High bandwitdth 
+   b. Ultra low latency networking
+
+4. IAM is global and does not have region
+5. Some services are region specific
+6. IAM groups can't contain another group
+IAM (Identy and Access Management)
+ Users
+ Groups
+ Roles
+
+ 1 IAM user per PHYSICAL PERSON
+ 1 IAM Role per Application
+
+ Security Group:
+ 1. Outbound is default ALL
+ 2. InBound rule default is NONE
+ 3. Connection refused (means EC2 system or application is not ready)
+
+
+ Private / Public / Elastic IP
+ If you need a fix IP in AWS called Elastic IP (max 5 Elastic possible in AWS account)
+
+ Stop to Start (Will loose Public IP)
+ Terminate to start (Not Possible)
+ Restart (will keep the Public IP)   
+
+ EC2 Instance::
+ 1. On Demand - short workload, pridictable price
+ 2. Reserved (1 yr minimum)
+ 3. Spot Instance - short workload, cheap, can lose instance
+ 4. Dedicated Instance - no hardware sharing with other customer
+ 5. Dedicated Hosts - Book entire physical server
+
+ Instance Type:
+ R: Lot of RAM
+ C: good CPU
+ M: balance (Medium)
+ I: Good local i/o
+ G: GPU
+
+ MIG-RC
+
+ T2/T3: burstable instance/unlimited
+ http://ec2instances.info
+
+ AMI:
+ specific to region.
+ you can copy to other region
+
+ Copy AMI from billingProduct
+ - first start the instance then create ur own AMI from it, direct copy not possible
+ - if u share AMI ur still owner of AMI
+ - if u copy a shared AMI you become owner of AMI
+ - to copy AMI that was shared with you. owner must give u read permission for storage that backs the AMI
+   either associated EBS snapshot or S3 bucket
+ - u can't copy encrypted AMI shared with u. if underlying snapshot n encrhption key shared with ou j can copy snapshot while re-encrypting it with key of ur own. now you own the copied snapshot, u can register it as new AMI  
+
+EC2 Placement Groups
+
+Cluster: cluster instance same AZ
+Spread: Spread instances across underlying hardware - critical applications
+Partition: spread instance, same rack within same AZ
+
+Cluster:
+1. Great network (10 Gbps bandwidth)
+cons: if rack fails, all instances fails - high risk
+Use case:
+a. big data jobs - complete fast
+b. application low latency n high network throughput
+
+SPread:
+ec2/hardware instances are low risk failure and spread in diff. AZ 
+max 7 instances per spread group
+- option available only for high cpu, not for all type of ec2 instance
+Usecase: critical apps , high availability app.
+
+
+Partition:
+- upto 7 parititions per AZ
+- instances in partition do not share racks with instances in another partitions
+- so if instances in partition fails still other partition instances are on (low risk)
+Usecase:
+HDFS, Hbase, Cassandra, Kafka
+
+
+Elastic Network Interfaces (ENI)
+
+logical component in VPC that represents virtual network card
+ENI has following attributes:
+a. Primary private IPv4, one or many secondary IPv4
+b. One Elastic IP (IPv4) per private IPv4
+c. One public Ipv4
+d. one or more security groups
+e. MAC address
+
+we can add ENI and attach to ec2 instance
+**** ENI is specific to AZ
+
+ENI is helpful when we want EC2 to be available to public using eth0 and security group 80 port
+and eth1 to 22 port for other access privately (using new secondary public IP)
+it's like same ec2 will behave differently when accessing using diff. public IPs
+
+EC2 Hibernate:
+in memory (RAM) is preserved
+faster boot time (as OS does not need restart)
+Usecase:
+a. long running process
+b. save RAM state
+c. services which takes time to initialize
+
+Hibernate is not supported by all type of ec2 instance
+only supported by c3, c4,c5, m3,m4,m5,r3,r4 and r5
+
+restriction: 
+1. RAM must be less than 150GB
+2. AMI Linux, Ubuntu n windows
+3. ebs must be encrypted, and large
+4. only available for on demand and reserve instances
+5. hibernate can't be more than 60 days
+
+
+EBS Volume: (Elastic Block Store)
+EBS is attached to AZ (if need on another AZ snapshot is option)
+If snapshot is taken as encrypted then copy or volume created would also be encrypted
+If snapshot is not encrypted we can copy the snapshot to create new one and choose encrypted option
+
+Delete EBS on termination option is possible.
+By default root EBS is enable to delete on termination. Other EBS volumn not.
+
+EBS won't be able to bind to EC2 in different AZ.
+Snapshot: EBS retension 1 to 365 days
+Snapshot: archive (low prices) - restore takes few hours
+Instance Volume - high IOPs but if hardware fails we loose data.
+
+RAID 0 (2 or more EBS volume attached writing either at a time - Increase Performance Enhance)
+RAID 1 (2 or more EBS volume attached writing to all of them at a time - Increase Fault tolerance )
+
+EC2 Instance Store - local network drive for fast i/o but risk of lossing if hardware fails (ec2 fails)
+- if ec2 stop or terminates instance store will be lost
+
+EFS - Elastic File System
+Managed NFS (Network file system) that can be mounted on many EC2 (Network hard drive)
+
+EFS can't be mounted on Windows
+
+Tiers (Lifecyle management feature - move file after n number of days)
+1. Standard - For frequently accesses files
+2. Infrequent access (EFS - IA) cost to retrieve file - lower price to store - files used not every day
+
+EBS vs EFS
+
+EBS belongs to one instance and same AZ
+where as EFS can bind to many ec2 and multi AZ
+EBS volume get termianted when EC2 gets terminated (Lossing data)
+if EBS needs to be in another AZ  - Take snapshot and restore in another AZ
+EFS only works with Linux and Has higher cost than EBS
+
+Snowball:
+1. snowball edge - 40 to 80 TB (big device)
+2. snowball cone - 8 TB (small device)
+3. snowball mobile - PB or ZB data (truck)
+
+GENEVE protocol 6081 - Gateway Load balancer
+
+ALB reserved name: AWSALB, AWSALBAPP, AWSALBTG
+ALB and CLB gives static hostname only can have instances, alb, lamda etc as target group
+ALB default distribution is cross zone az (equally to instances) , CLB no such feature, NLB default is not enable, need to enable and pay
+NLB: gives static hostname as well as static IP - very fast millions req / sec - works on TCP / UDP
+
+SNI(Server name indication): gives feature to add multiple ssl-certs on ALB/NLB
+
+
+CloudFront:
+A static CDN provider from edge location, Great for static content that must be available everywhere, has a ttl
+
+S3 Cross region replication: Great for dynamic content that needs to be available in few region with low latency
+
+
+Why AWS
+1. Iaas (Infrastructure as service)
+2. Paas (Platform)
+3. Saas (Software)
+
+==========================================================
+
+Databases::
+RDS (Managed DB service by AWS)
+Aurora is propriety db of aws
+aurora supports both mysql and postgres
+aurora claims 5x performace than mysql and 3x better to postgres
+
+RDS: read replica - data transfer fee is free within same region but u will pay if read replica is in different region
+Multi AZ RDS - sync replicas to slave from master and if master fails slave become master. Still read replica which is Async possible with multi-AZ RDS
+Multi AZ will have disaster recovery (DR) and create Slave or Stand by instance (You can read or write from stand by - it will only be use as master once original master fails)
+
+Multi AZ is synchronous where as read replica is Asynchrous
+RDS upto 5 read replicas
+Aurora upto 15 read replicas + global db + global region read replicas
+
+Just like RDS for cache managed service we have ElasticCache (for redis, memcache etc)
+
+DynamoDB - replication 3 AZ , nosql, serverless, fast, low latency (single digit mili seconds), key-value db
+DynamoDB Accesslator (DAX) - memory cached for dynamoDB
+Dax is in memory cache for DynamoDB where as elasticCache for other cache tech like redis, memcache etc
+
+Redshift: data warehouse or analyzing Databases (Not a Multi_AZ - enable auto snapshots for disaster recovery)
+
+EMR: Elastic Map Reduce - Hadoop cluster
+Athena: Server less search query in s3 object (Anaylyze s3 object)
+Amazon QuickSight: to create dashboard, charts, graph, visualization etc
+
+DocumentDB (On the top of MongoDB) - noSQL db
+Amazon Neptune: Graph DB
+
+QLDB (Quantum Ledger DB) - book recording financial transactions (centralized ledger)
+Amazon Manged Blockchain (de centralized blockchain)
+Glue (ETL service - Extract Transform and load)
+DMS (Database Migration Service) - used to db migration
+
+==========================================================
+
+ECS( Elastic Container Service - Docker)
+Fargate (Also ECS service - serverless dockarion) with no infrastructure to provision (no ec2)
+ECR (Elastic Container Registry)  to store docker images on private amazon repo.
+
+API gateway another serverless tech managed service for API CRUD
+
+Serverless technlogies:::
+
+lambda charge per function call or duration (max duration 15 mins)
+
+DynamoDB, Lambda, API Gateway, Fargate, SQS, IoT core
+
+Global Services:
+S3, Route 53, IAM
+
+Region based:
+ELB, Security Group, Key-value
+
+AZ based:
+ENI, EBS
+
+check for below
+
+CloudWatch
+AWS cost explorer
+AWS health dashboard
+consolidated billing
+cost allocation tags
+Aws artifact: Artifact provides on-demand access to AWS security and compliance reports, Gain access to AWS security and compliance documents
+aws cloudfront
+aws direct connect: Direct Connect is a private network connection between an on-premises data center and AWS.
+aws global accelerator
+aws transit gateway
+
+
+aws wavelength: 5g network
+aws data sync: DataSync is used for replication and migrating data between storage systems and AWS.
+
+
+aws management console
+aws data pipeline - 
+aws concierge: The Concierge Support Team is available for customer who have an Enterprise level support plan. 
+aws outposts: AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. 
+
+amazon workspaces
+
+
+Amazon Trusted Advisor: This service is used to assist with guidance on provisioning resources according to best practice.
+CloudTrail: CloudTrail is used for auditing, not performance monitoring.
+Amazon Inspector: Inspector is an automated security service.
+
+amazon connect: This is a contact center service.
+aws snowcone: small device to transfer data in physical upto 8TB
+
+Amazon AppStream 2.0: Amazon AppStream 2.0 is a fully managed non-persistent application and desktop streaming service.
+
+aws cloud formation: CloudFormation is used to deploy infrastructure from templates, the Quick Starts use CloudFormation. (infrastructure as code)
+aws beanstalk: It's a Paas service, just deploy code no infra, elastic beanstalk internally uses cloudFormation to create infra. , it's  a managed service
+aws CDK: you can create cloudFormation template using any langugage using CDK (SDK)
+
+aws system manager: Systems Manager is used for managing EC2 instances such as installing patches and software.
+
+aws codeguru: CodeGuru is used to review code and provide intelligent recommendations for improvement. profiler like code review similar to one we have in gitlab 
+aws config: AWS Config is used for configuration compliance management.
+
+amazon Macie: Amazon Macie automates the discovery of sensitive data at scale and lowers the cost of protecting your data.
+Amazon GuardDuty: is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data stored in Amazon S3.
+Amazon Detective:: automatically processes terabytes of event data records about IP traffic, AWS management operations, and malicious or unauthorized activity.
+GuardDuty: Intelligent threat discovery, unauthorized behaviour, unusual activity, malicious attacks
+Inspector: Automated security assessments, vulnerabilities (like gyre)
+Config: AUdit of actions, to check complaince of resources (audit to check if s3 bucket is public etc)
+Security Hub: consolidated dashboard for security - like guard duty, macie, inspector, firewall manager, system manager, iam access analyser etc. easy way to see all security 
+Detective: detective on the top of security hub issues & finds root cause of issue
+Abuse: inform about abuse of aws anywhere to abuse team
+Worspaces: DaaS (desktop as service), remote service for use to see aws - complete desktop
+AppStream 2.0: Desktop app streaming service (Web based) - like cisco web browser
+Worspaces vs AppStream 2.0
+Sumerian: VR and AR, 3D apps
+IoT core: communate with devices like car etc (car music)
+Elastic Transcoder: convert file format (video files)
+Device Farm is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices
+
+cloud9: web editor (intellij)
+codeStar: UI to perform code related stuff like codeBuild, codePipeline, Beanstalk etc
+codeArtifact: artifactory service in aws (github or maven repo)
+codeBuild: build code like gitlab/jenkins etc
+codeDeploy: Deployment service, CodeDeploy is used for deploying code from a code repository and actually installing the application.
+codePipeline: CICD pipeline for above just like jenkins/gitlab etc, CodePipeline is used for automating the code release lifecycle.
+codeCommit: is svn repo like svn,cvs, github, fully-managed source control service.
+
+
+COS RPS (6 Pillars of well architechture)
+cost optimization
+Operation Excellance
+Security
+Reliability
+Performance Efficiency
+Sustainablity
+
+Notification services::::
+"decouple your applications” principle
+SQS (messages kept upto 14 days)
+SNS - one pub and many sub
+Kinesis - Real time big data streaming (like Sparkle)
+MQ - ActiveMQ If you want to keep using existing queue (like kafka, etc)
+
+Monitoring::::
+Aws CloudWatch -dashboard to see EC2 , S3, billing details in graph
+& Alarms - to trigger notification based on threshold, trigger sns notification etc, billing alarm etc
+Cloudwatch logs - create log agent that will send log files into cloud watch logs
+CLoudwatch event = EventBridger ==> - cronjobs ,scheduled scripts
+CloudTrails - all api /console/data event logs goes here and stays for 90 days 
+            - if need for longer period or audit,move them to s3 (use athena to analyze) or cloudwatch
+
+
+KMS encryption done by AWS (manages the key also)
+CLoudHSM - Keys manage by customer (I-140 compliance)
+audience export api 
+
+
+CloudSql - Aurora
+MemoryStore - ElasticCache
+BigTable - DynamoDB
+BigQuery - Redshift, Athena
+Cloud Spanner - Aurora
+Composer (Bucket) - Pipeline, Glue
+Cloud Function - Lambda
+App Engine - Elastic Beanstalk
+Artifact Registry - ECR
+Cloud Run - Fargate/Lambda
+Looker - QuickInsights
+Cloud Fusion - AWS data pipeline, Glue
+DataProc - EMR, Batch, Glue
+Pub/Sub - SNS, SQS, Kinesis (Spark)
+DataFlow - Kinesis
+FireStore - DocumentDB, DynamoDB
+Vision - ReKognision
+Translation - aws transalation
+natural Language - Comprehend
+Vertex AI - SageMaker
+Speech To Text - Transcribe
+Text to Speech - Polly
+Cloud GPU / Compute Engine - EC2
+Compute Engine AutoScaler - Auto Scaling
+OS Login / SSH from browser - Instant Connect (EC2)
+Persistent Disk - EBS
+Cloud SDK - AWS SDK
+DataDog - 
+
+  shell
+   aws configure
+   aws s3 ls s3://
+ aws s3 cp --recursive source destination
+
+https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison (Check service comparision)
