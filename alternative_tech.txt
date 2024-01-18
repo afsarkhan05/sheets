@@ -1,0 +1,40 @@
+Unit Test:
+
+Junit, TestNG, Selenium, Cucumber
+
+both works with Mockito
+
+JPA API:
+
+Hibernate , Eclipse
+
+SLF4J API:
+
+Log4j, LogBack, Java Logging Framework
+
+Docker like tools
+Podman
+
+Orchestration Framework:
+
+Kubernetes, Docker Swarm, OpenShift, Azure Kubernetes, EKS
+
+local- docker-desktp or minikube (for local kubernetes cluster)
+
+Kubernetes (Container Runtime)
+- Docker, containerd, CRO-I etc
+
+Spring Cloud - Circuit Breaker
+
+API: Spring Cloud Circuit Breaker
+Impl: Resilience4J, Hystrix, Sentinal, and Spring Retry
+
+Spring Cloud - Service Discovery
+
+API: Spring cloud Service Discovery
+Impl: ZooKeeper, HashiCorp Consul, Docker, and Traefik
+
+
+
+
+
