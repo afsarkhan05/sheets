@@ -74,3 +74,9 @@ docker image build -t my_repo/my_image:my_tag  ./
 docker rm docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 
+podman machine init -v $home:$home
+podman machine start
+podman machine ssh
+podman machine stop
+
+
