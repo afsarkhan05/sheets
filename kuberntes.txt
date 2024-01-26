@@ -36,5 +36,7 @@ kubectl create -f namespace.json
 }
 
 https://github.com/dgkanatsios/CKAD-exercises/blob/main/a.core_concepts.md
+https://killer.sh/course/preview/052229bd-1062-44a4-8aae-f50d0770165a
+
 
 
