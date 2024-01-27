@@ -1,0 +1,10 @@
+alias k=kubectl
+export do="--dry-run=client -o yaml"
+
+k -n pluto get all -o wide
+
+vim ~/.vimrc
+  
+set expandtab
+set tabstop=2
+set shiftwidth=2
