@@ -1,0 +1,15 @@
+Java 8
+lambda expression
+stream
+function interface
+  -predicate (boolean return)
+  -function (take 1 argumen and return some value)
+  -consumer (take one argument and NO Result)
+  -supplier (no argument but return result)
+  
+static (Called by interface and not available directly to impl classes)
+and default methods (available for impl classes directly) in interface
+date and time api
+
+Java 11
+local variable for lambda
