@@ -39,6 +39,10 @@ Impl: ZooKeeper, HashiCorp Consul, Docker, and Traefik
 Jax-RS vs Spring boot
 Jax-RS has multiple impl Jersey Or RestEasy
 
+- Jax RS need wildfly or jboss
+- each controller need to be register as resource
+- lot of configuration 
+- war/ear - extra overhead
 
 
 
