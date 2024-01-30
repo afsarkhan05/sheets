@@ -26,6 +26,9 @@ local- docker-desktp or minikube (for local kubernetes cluster)
 Kubernetes (Container Runtime)
 - Docker, containerd, CRO-I etc
 
+DB script:
+Flyway or Liquibase
+
 Spring Cloud - Circuit Breaker
 
 API: Spring Cloud Circuit Breaker
