@@ -1,7 +1,7 @@
 Kafka vs RabbitMQ
 
 Kafka - Broker & ZooKeeper with topic & partition & replications
-RabbitMQ - Exchanges has binding to queue 
+RabbitMQ - Exchanges has binding to queue (based on routingkey exchange will send message to queue)
 A RabbitMQ broker allows for low latency and complex message distributions with the following components:
 An exchange receives messages from the producer and determines where they should be routed to
 A queue is storage that receives messages from an exchange and sends them to consumers
@@ -33,3 +33,8 @@ When to prefer one over another:
 2. Real time processing (kafka)
 3. Complex routing (rabbitMQ is better)
 4. Confirmed once delivery only (rabbitMQ)
+
+https://jack-vanlightly.com/blog/2018/9/2/rabbitmq-vs-kafka-part-6-fault-tolerance-and-high-availability-with-kafka
+https://jack-vanlightly.com/blog/2018/8/31/rabbitmq-vs-kafka-part-5-fault-tolerance-and-high-availability-with-rabbitmq
+
+
