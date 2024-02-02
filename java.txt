@@ -11,5 +11,12 @@ static (Called by interface and not available directly to impl classes)
 and default methods (available for impl classes directly) in interface
 date and time api
 
+Java 8 features:
+1. Lambda Expression: anonymous function with no name, no return and no modifier
+2. Functional interface: SAM one 1 abstract method only can have many default and static function
+3. default method: available to impl classes
+4. static method: only available by Interface not implicitly available to impl classes
+5. Optional
+
 Java 11
 local variable for lambda
