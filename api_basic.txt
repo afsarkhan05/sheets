@@ -45,5 +45,7 @@ SMTP: for sending email from client
 IP: To identify a resource, unique resource
 Telnet: remote connection 
 
+https://superuser.com/questions/1411701/http-vs-tcp-vs-udp-with-this-example
+
 
 
