@@ -1,0 +1,49 @@
+API: It's communication between 2 software based on predefined rules, protocol
+gRPC: Client server communication, one component (the client) calls or invokes specific functions in another software component (the server)
+It calls the funtion on server by passing parameter. Using TCP/UDP/HTTP protocol
+
+Rest API:  RESTful APIs manage communications between a client and a server through HTTP verbs, like POST, GET, PUT, 
+and DELETE for create, read, update, and delete operations. The server-side resource is identified by a URL known as an endpoint. 
+
+Monolithic vs Microservices:
+1. Problem with scalability as it needs scaling all the component, microser: we can independntly scala specific component based on traffic/needs
+2. Huge code base, makes complexicity
+3. Due to above, hard to try alternatives/new ideas
+4. small team, easy, fast deployment, rollout
+Agility, easy deployment, scaling, flexibility, Code reuse, resilience
+
+UDP (User Datagram Protocol): No connection needed before send/receive data. best where data loss is ok, video call/ game data etc
+User Datagram Protocol(UDP) is a connectionless, fast and simple protocol for sending data packets over the internet. 
+UDP packets may be lost or received out of order, which can result in some loss of data quality or completeness, 
+making it suitable for real-time applications like voice and video streaming or online gaming.
+
+TCP (Transmission Control Protocol):
+This helps in connection between client/server for communication.
+TCP, on the other hand, is a reliable, connection-oriented protocol responsible for ensuring data delivery. 
+When data is sent via TCP, it creates a virtual connection to ensure that packets arrive in the correct order and completeness. 
+TCP sets up a connection via a three-way handshake and uses sequencing to make sure that all data arrives accurately and in the correct order.
+
+TCP and UDP are transport layer protocols responsible for data delivery between applications. 
+TCP offers connection-oriented, reliable data delivery, ensuring packets are delivered in a certain order. 
+UDP is fast and simple for data transfer and includes no such reliability measures.
+Unlike TCP, UDP doesn't wait for all packets to arrive or organize the packets. 
+Instead, UDP transmits all packets even if some haven't arrived.
+UDP solely transmits packets, while TCP transmits, 
+organizes and ensures the packets arrive. While UDP works more quickly than TCP, it's also less reliable.
+
+HTTP only defines common "language" for client and server, but not how to send data
+
+HTTP(Insecure) and HTTPS (Secured TSL/SSL + HTTP = HTTPS)
+HTTP/HTTPS uses TCP or UDP for communication between server-client
+
+Http / Https (http+ssl/tsl)call:
+
+Client <------Connection with TCP/SSL------> Server
+
+FTP: Client server protocol to transfer files, FTP runs over TCP/IP
+SMTP: for sending email from client
+IP: To identify a resource, unique resource
+Telnet: remote connection 
+
+
+
