@@ -37,7 +37,7 @@ Impl: Resilience4J, Hystrix, Sentinal, and Spring Retry
 Spring Cloud - Service Discovery
 
 API: Spring cloud Service Discovery
-Impl: ZooKeeper, HashiCorp Consul, Docker, and Traefik
+Impl: eureka (netflix) ZooKeeper, HashiCorp Consul, Docker, and Traefik
 
 Jax-RS vs Spring boot
 Jax-RS has multiple impl Jersey Or RestEasy
