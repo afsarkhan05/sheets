@@ -63,3 +63,7 @@ Mobile Testing:
 API Testing:
     Description: Verifying the functionality of APIs.
     Tools: Postman, RestAssured, SoapUI, Insomnia.
+
+Black box vs White Box
+Black box: Only testing input and output
+White Box: Testing internal component of system not just input/output
