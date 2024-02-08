@@ -13,7 +13,7 @@ SLF4J API:
 Log4j, LogBack, Java Logging Framework
 
 Docker like tools
-Podman, MiniKube
+Podman, MiniKube, rancher desktop
 
 Orchestration Framework:
 Kubernetes, Docker Swarm, OpenShift, Azure Kubernetes, EKS
