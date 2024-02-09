@@ -15,6 +15,8 @@ Once results are available sonar scanner communicates with sonar server to publi
 
 Blackduck: Finds potential vulnerability and security threat in 3rd party or open source code/jars
 
+Docker images scanning: grype or trivy
+
 Gitlab:
 It will run on gitlab runner onon-prem, gitlab or vm or kubernetes
 once completed it will return the result back to gitlab (like logs etc)
