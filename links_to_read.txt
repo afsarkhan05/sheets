@@ -30,3 +30,6 @@ https://www.codekatha.com/2023/03/data-structures-and-algorithms.html
 
 Common Problems: (Pitfalls)
 https://dev.to/jackynote/avoiding-pitfalls-common-challenges-in-backend-development-with-spring-boot-3ink
+
+Common Pattern:
+https://refactoring.guru/design-patterns/builder
