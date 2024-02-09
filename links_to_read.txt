@@ -7,6 +7,7 @@ https://www.codekatha.com/2023/03/spring-data-jpa.html
 Java:
 https://www.codekatha.com/2023/09/java-interview-questions-for-5-years-experience.html (important)
 https://www.codekatha.com/2023/04/Java-interview-questions-for-10-years-experience.html (important)
+https://www.simplilearn.com/java-8-interview-questions-and-answers-article (java 8 important)
 https://www.codekatha.com/2023/08/java-interview-questions-for-freshers.html
 https://www.codekatha.com/2023/08/basics-of-string.html
 
