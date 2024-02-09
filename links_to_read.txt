@@ -1,0 +1,5 @@
+https://www.janbasktraining.com/blog/kubernetes-interview-questions/
+
+https://github.com/dgkanatsios/CKAD-exercises
+
+https://github.com/chadmcrowell/CKA-Exercises 
