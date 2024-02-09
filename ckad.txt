@@ -8,3 +8,7 @@ vim ~/.vimrc
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+https://github.com/chadmcrowell/CKA-Exercises/blob/main/networking.md
+
+https://github.com/dgkanatsios/CKAD-exercises
