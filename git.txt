@@ -1,0 +1,1 @@
+ssh-agent $(ssh-add ~/.ssh/private_key; git clone git_url_to_clone .)
