@@ -1,0 +1,29 @@
+SonarQube: is an open-source platform for continuous inspection of code quality. It is designed to analyze and measure the technical quality of source code throughout the development process. 
+The primary use of SonarQube is to help development teams identify and fix issues related to code quality, security, and maintainability.
+1. Code Quality Analysis
+2. Code Smells and Best Practices
+3. Security Vulnerability Detection
+4. Integration with Build Tools
+5. Historical Metrics and Trend Analysis
+6. Quality Gates
+
+We configure gitlab repo as a project in sonar.
+Code analysis is triggered in sonar by sonarscanner from command line tools like mvn
+Sonar, clone the repo locally and run it's scanner on it and produce result about code quality, code smell, vulneraility, test coverage, security detection etc.
+and compute metrics for taking action by developers.
+Once results are available sonar scanner communicates with sonar server to publish the report of analysis and display on sonar UI.
+
+Blackduck: Finds potential vulnerability and security threat in 3rd party or open source code/jars
+
+Docker images scanning: grype or trivy
+
+Gitlab:
+It will run on gitlab runner onon-prem, gitlab or vm or kubernetes
+once completed it will return the result back to gitlab (like logs etc)
+images will be pushed from gitlab runner on k8s to gitlab repo hub
+gitlab ci file has stages (sequence of exeuction)
+same stage with different job will execute in parallel
+all stages will run in sequence on success of previous one
+stage can run shell or images
+we can have global variables or local stage variable
+we can have global "before" and "after" script and local stage "before"and "after" can override it

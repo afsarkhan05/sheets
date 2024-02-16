@@ -1,0 +1,40 @@
+Kafka vs RabbitMQ
+
+Kafka - Broker & ZooKeeper with topic & partition & replications
+RabbitMQ - Exchanges has binding to queue (based on routingkey exchange will send message to queue)
+A RabbitMQ broker allows for low latency and complex message distributions with the following components:
+An exchange receives messages from the producer and determines where they should be routed to
+A queue is storage that receives messages from an exchange and sends them to consumers
+A binding is a path that connects an exchange and a broker
+In RabbitMQ, a routing key is a message attribute that is used to route messages from an exchange to a specific queue. When a producer sends a message to an exchange, it includes a routing key as part of the message. The exchange then uses this routing key to determine which queue the message should be delivered to.
+
+Differences:
+1. Message Consumption:
+   Kafka-once message produce - no idea if message is consumed
+   RabbitMQ- End to end message produce to consume is tracked
+2. Message Priority:
+  Kafka: all messages have same priority
+  RabbitMQ: you can mark some imp message to deliver before other queued messages
+3. Order of consumption:
+  Kafka: No guarantee of message consumption in same order of production (different partition of topic may be consume at different order)
+  RabbitMQ: guarantee of message consumption in same order except in case of priority queue
+4. Message Deletion:
+   Kafka: Even if consuming the message, stays in partition and will be deleted as per retention policy. Message can be read/consume as many times
+   RabbitMQ: Once messasge queued and consume by consumer, it sends ack to broker and broker delete the message
+
+Common:
+1. both replicate messages on broker for fault tolerance
+2. scalability by adding more broker (rabbitMQ) or more partition to topic (Kafka)
+3. High performance
+4. Easy to use in major frameworks
+
+When to prefer one over another:
+1. multiple process like logs or analytical data (kafka better)
+2. Real time processing (kafka)
+3. Complex routing (rabbitMQ is better)
+4. Confirmed once delivery only (rabbitMQ)
+
+https://jack-vanlightly.com/blog/2018/9/2/rabbitmq-vs-kafka-part-6-fault-tolerance-and-high-availability-with-kafka
+https://jack-vanlightly.com/blog/2018/8/31/rabbitmq-vs-kafka-part-5-fault-tolerance-and-high-availability-with-rabbitmq
+
+

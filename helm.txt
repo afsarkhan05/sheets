@@ -1,0 +1,9 @@
+helm -n ns_name ls -a
+helm -n ns_name delete {release_name or resource name}
+
+helm template chart_name -f folder/values-dev.yml
+e.g. helm template api_service -f api_service/values-dev.yaml
+
+helm install my_release_name -f folder/values-dev.yml ./service_name
+
+e.g. helm install release_1.0 -f api_service/values-dev.yml ./api_service

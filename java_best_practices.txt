@@ -1,0 +1,22 @@
+Best Practices:
+1. Code Readability: easier/concise code
+2. Consistent Formatting: ide formatting and code formating
+3. Modularization: code refactor based on need
+4. Use of Constants: enum/finals
+5. Avoid Magic Numbers or hardcoded values
+6. Exception Handling: handle as much
+7. Logging: slf4j instead of sopa
+8. Immutable Objects: use final
+9. Null Checks: use optional
+10. Collections: Use interface (e.g., List, Set, Map) rather than concrete impl easier switching between impl
+11. Enums: Use enums for representing fixed sets of constants. Enums provide a type-safe way to represent a fixed set of values.
+12. Concurrency: Be mindful of thread safety in concurrent applications
+13. Java Naming Conventions: Follow Java naming conventions (e.g., CamelCase for classes and methods, lowercase with underscores for variables).
+14. Memory Management: Be conscious of memory usage. Avoid memory leaks by releasing resources appropriately (e.g., closing files or network connections).
+15. Use Interfaces Wisely: Use interfaces for abstraction when appropriate. Favor composition over inheritance, and prefer interfaces for defining contracts.
+16. Testing: Write unit tests for your code using testing frameworks like JUnit. Automated testing helps catch bugs early and ensures code reliability.
+17. Documentation: Write clear and concise documentation for your code, including Javadoc comments for public APIs. Good documentation makes it easier for others to understand and use your code.
+18. Version Control: Use version control systems (e.g., Git) for managing your codebase. Follow branching and merging best practices.
+19. Keep Dependencies Updated: Regularly update dependencies to benefit from bug fixes, new features, and security patches.
+20. Continuous Integration: with CI/CD pipeline
+

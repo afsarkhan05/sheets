@@ -1,0 +1,38 @@
+Spring boot framework:
+- Autoconfiguration
+- in-built server (tomcat, jetty, undertow etc)
+- actuator health point
+- external config support
+- loose coupling
+- modular
+
+IoC is a software design where application control flow is inverted and framework handles the application control and create & manage objects
+
+In Spring IoC is achieved using DI, it inject the required object in the class.
+
+Other options of IoC are
+- Factory pattern (A class is responsible of creating instances and client delegate object creation to a factory)
+- Template Pattern (
+- Service Locator Pattern (Objects are retreive from central locator repository)
+
+DI using Autowired or contructor injector or setter injector or @Inject (from Java dependency injection api)
+
+Bean can be created by either sterotype annotations like
+Component (generic annotation for spring managed bean)
+- Service (business logic)
+- Repository (jpa/db)
+- Controller (General for http request/response)
+  - Rest Controller (Specialized for api request)
+
+- ComponentScan
+- SpringBootApplication
+- Configuration (class contain bean definition and method to create spring managed beans)
+- Value
+
+
+@Bean is way of defining bean for regular java class (Bean is a managed bean by spring application context)
+@Qualifier in case multiple bean with same name, Easy to refer using qualifier
+@Primary - Multiple bean - we can make someone as primary
+Scope default is singleton but can be defined as "Prototype" (new instance for every request) 
+or request/session for web
+

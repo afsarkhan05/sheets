@@ -1,0 +1,69 @@
+Testing Types:
+
+Unit Testing (Junit, Mockito, TestNG, Selenium, Cucumber)
+Functional Testing (Selenium, Cucumber, JBehave)
+Integration Testing (Postman, SoapUI, Jmeter)
+Regression Testing (Selenium, Junit, TestNG, TestComplete)
+Smoke Testing (Manual)
+Load/Performance Testing (Jmeter, LoadRunner, Apache Benchmark)
+
+
+Unit Testing:
+    Description: Testing individual units or components of a software independently.
+    Tools: JUnit, NUnit, TestNG, PyTest.
+
+Integration Testing:
+    Description: Verifying interactions between integrated components or systems.
+    Tools: Postman, RestAssured, SoapUI, Apache JMeter.
+
+Functional Testing:
+    Description: Testing the software's functionality against the specified requirements.
+    Tools: Selenium, Appium, TestComplete, Cucumber, JBehave.
+
+Regression Testing:
+    Description: Ensuring that new code changes don't adversely affect existing functionality.
+    Tools: Selenium, JUnit, TestNG, Appium, TestComplete.
+
+Performance Testing:
+    Description: Evaluating the software's responsiveness, scalability, and speed.
+    Tools: Apache JMeter, LoadRunner, Gatling, Apache Benchmark.
+
+Security Testing:
+    Description: Identifying vulnerabilities and weaknesses in the software's security.
+    Tools: OWASP Zap, Burp Suite, Nessus, Acunetix.
+
+Usability Testing:
+    Description: Evaluating the software's user interface and overall user experience.
+    Tools: UserTesting, UsabilityHub, Lookback, Optimal Workshop.
+
+Compatibility Testing:
+    Description: Ensuring the software works correctly across different environments and configurations.
+    Tools: BrowserStack, Sauce Labs, CrossBrowserTesting.
+
+Acceptance Testing:
+    Description: Verifying if the software meets the user's acceptance criteria.
+    Tools: Cucumber, Behave, FitNesse, Robot Framework.
+
+Load Testing:
+    Description: Evaluating the software's performance under a specific load.
+    Tools: Apache JMeter, LoadRunner, Gatling, k6.
+
+Automated Testing:
+    Description: Using scripts or tools to automate the testing process.
+    Tools: Selenium, Appium, TestComplete, JUnit, TestNG.
+
+Non-functional Testing:
+    Description: Testing non-functional aspects like performance, reliability, and usability.
+    Tools: Apache JMeter, LoadRunner, Gatling, OWASP Zap.
+
+Mobile Testing:
+    Description: Testing mobile applications on various devices and platforms.
+    Tools: Appium, Selenium with Appium, XCUITest, Espresso.
+
+API Testing:
+    Description: Verifying the functionality of APIs.
+    Tools: Postman, RestAssured, SoapUI, Insomnia.
+
+Black box vs White Box
+Black box: Only testing input and output
+White Box: Testing internal component of system not just input/output

@@ -1,0 +1,35 @@
+Spring boot:
+https://www.codekatha.com/2023/03/spring-boot-interview-questions-for-10-years-experience.html (important)
+https://talentedge.com/articles/spring-boot-interview-questions-10-years-experience/
+https://www.simplilearn.com/spring-boot-interview-questions-article
+https://www.codekatha.com/2023/03/spring-data-jpa.html
+
+Java:
+https://www.codekatha.com/2023/09/java-interview-questions-for-5-years-experience.html (important)
+https://www.codekatha.com/2023/04/Java-interview-questions-for-10-years-experience.html (important)
+https://www.simplilearn.com/java-8-interview-questions-and-answers-article (java 8 important)
+https://www.codekatha.com/2023/08/java-interview-questions-for-freshers.html
+https://www.codekatha.com/2023/08/basics-of-string.html
+
+Kubernetes:
+https://www.janbasktraining.com/blog/kubernetes-interview-questions/ (important)
+https://www.simplilearn.com/tutorials/kubernetes-tutorial/kubernetes-interview-questions
+
+CKAD:
+https://github.com/dgkanatsios/CKAD-exercises
+https://github.com/chadmcrowell/CKA-Exercises 
+
+SQL:
+https://www.codekatha.com/2023/06/sql-interview-questions-for-10-years-experience.html
+
+Kafka:
+https://www.codekatha.com/2023/03/kafka-java-spring-boot.html
+
+Data Structure:
+https://www.codekatha.com/2023/03/data-structures-and-algorithms.html
+
+Common Problems: (Pitfalls)
+https://dev.to/jackynote/avoiding-pitfalls-common-challenges-in-backend-development-with-spring-boot-3ink
+
+Common Pattern:
+https://refactoring.guru/design-patterns/builder

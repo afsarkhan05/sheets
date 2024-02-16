@@ -1,0 +1,52 @@
+Unit Test:
+
+Junit, TestNG, Selenium, Cucumber
+
+both works with Mockito
+
+JPA API:
+
+Hibernate , Eclipse
+
+SLF4J API:
+
+Log4j, LogBack, Java Logging Framework
+
+Docker like tools
+Podman, MiniKube, rancher desktop
+
+Orchestration Framework:
+Kubernetes, Docker Swarm, OpenShift, Azure Kubernetes, EKS
+
+Load Balancer for Swarm/Kubernetes
+ELB, NGINX, Traefik
+
+local- docker-desktp or minikube (for local kubernetes cluster)
+
+Kubernetes (Container Runtime)
+- Docker, containerd, CRO-I etc
+
+DB script:
+Flyway or Liquibase
+
+Spring Cloud - Circuit Breaker
+
+API: Spring Cloud Circuit Breaker
+Impl: Resilience4J, Hystrix, Sentinal, and Spring Retry
+
+Spring Cloud - Service Discovery
+
+API: Spring cloud Service Discovery
+Impl: eureka (netflix) ZooKeeper, HashiCorp Consul, Docker, and Traefik
+
+Jax-RS vs Spring boot
+Jax-RS has multiple impl Jersey Or RestEasy
+
+- Jax RS need wildfly or jboss
+- each controller need to be register as resource
+- lot of configuration 
+- war/ear - extra overhead
+
+
+
+

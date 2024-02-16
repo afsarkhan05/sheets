@@ -1,0 +1,14 @@
+alias k=kubectl
+export do="--dry-run=client -o yaml"
+
+k -n pluto get all -o wide
+
+vim ~/.vimrc
+  
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+https://github.com/chadmcrowell/CKA-Exercises/blob/main/networking.md
+
+https://github.com/dgkanatsios/CKAD-exercises
