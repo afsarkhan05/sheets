@@ -111,3 +111,12 @@ kubectl -n name_space -it my_repo/my_image:my_tag -- /bin/sh
 docker rm docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 
+
+
+======================== DOCKER DESKTOP =========================================
+
+systemctl --user start docker-desktop  (Start docker desktop)
+
+systemctl --user stop docker-desktop (stop service)
+
+
