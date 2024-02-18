@@ -1,0 +1,29 @@
+1. 4 services
+   a. User Service
+   b. Order Service
+   c. Payment Service
+   d. Product Service
+
+ 3. Slf4j and log4j and logback
+ 4. Create docker image
+ 2. Add Eureka Server service
+ 3. Make other services as client
+ 4. Calling each other using eureka and RestTemplate
+ 5. Call each other with Feign Client
+ 6. Add Actuator health point (change port)
+ 7. Add Resilient4j in sync-calls (Circuit Breaker)
+ 8. Add Factory and Builder pattern
+ 9. Add Redis as cache
+ 10. Jackson vs Gson
+ 11. Add JPA and Spring Data
+ 12. Add Flyway db
+ 13. Add Liquibase db
+ 14. Add AOP logging example
+ 15. Hateoas
+ 16. Add Swagger
+ 17. Change tomcat to undertow or Jetty
+ 18. Run using docker image
+ 19 Prepare helm charts
+ 20. Talk about podman and minikube
+ 21. Deploy on minikube using helm
+ 22. discuse kubectl commands
