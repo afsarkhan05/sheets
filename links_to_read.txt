@@ -6,6 +6,7 @@ https://www.codekatha.com/2023/03/spring-data-jpa.html
 
 Java:
 https://www.interviewcake.com/concept/java/hash-map (VERY IMPORTANT)
+https://javaconceptoftheday.com/java-interview-programs-with-solutions/ (important java c)
 leecode.com
 https://www.codekatha.com/2023/09/java-interview-questions-for-5-years-experience.html (important)
 https://www.codekatha.com/2023/04/Java-interview-questions-for-10-years-experience.html (important)
