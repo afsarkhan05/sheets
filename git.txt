@@ -1,1 +1,11 @@
 ssh-agent $(ssh-add ~/.ssh/private_key; git clone git_url_to_clone .)
+
+New Repo Push
+
+1. git init -b main
+2. Create repo in github without .gitignore and readme file
+3. git remote add origin git@github.com:user_name/repo_name.git
+4. git add .
+5. git commit -m 'commit message'
+6. if needed create main branch as it will be master
+7. git push origin main
