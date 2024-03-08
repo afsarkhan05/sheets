@@ -12,3 +12,21 @@
 11. migrate from s3 to gcs buckets
 12. migrate from cb to big table
 13. create wrapper to work on both cb and big table
+
+
+1. Logkey galera
+2. ⁠*own caching mechanism for widgets then CB then redis*
+3. ⁠surf framework (eureka type server)
+4. ⁠rpm, ear/war files
+5. ⁠*couchbase wrapper to easily switch to big table*
+6. ⁠snowflake jpa issues dialect vertica
+7. ⁠monolithic to micro service
+8. ⁠*working with security team - image vulnerable using grype or trivy*
+9. ⁠iap issue with services
+10. ⁠liveness/readiness creates issues 
+11. ⁠migration of couchbase data to db
+12. ⁠kafka lag issue with storm topology
+13. ⁠airflow composer
+14. ⁠gcp bucket or s3 bucket working
+15. ⁠working closely with techops/netops help understand system 
+16. ⁠akamai, catch point, datadog, splunk
