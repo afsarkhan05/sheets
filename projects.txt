@@ -1,0 +1,14 @@
+1. Monolithic app in jax-rs
+2. migration to log key to key
+3. migration to G
+4. smart file - kafka message to app
+5. app read file load data in g
+6. microservices
+7. docker swarm (jenkins) - own repo
+8. migrate from smart file to s3
+9. migrate to k8s from swarm 
+10. migrate to gitlab from private repo
+11. gitlab CI/CD instead of jenkins
+11. migrate from s3 to gcs buckets
+12. migrate from cb to big table
+13. create wrapper to work on both cb and big table
