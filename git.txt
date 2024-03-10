@@ -9,3 +9,35 @@ New Repo Push
 5. git commit -m 'commit message'
 6. if needed create main branch as it will be master
 7. git push origin main
+
+
+Working with multiple user
+
+.ssh/config
+
+# Personal GitHub account
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/pvt_1
+
+# Work GitHub account
+Host github.com-client
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/pvt_2
+
+1st User::
+1. git clone git@github.com:{user}}/{repo}.git
+
+2nd User
+2. git clone git@github.com-client:{user}}/{repo}.git
+
+Make sure to set user.name and user.email before pushing to avoid wrong git user in commit
+
+git config --global user.name "1st_user"
+git config --global user.email "1st_email"
+
+git init
+git commit -m "test commit"
+git push
