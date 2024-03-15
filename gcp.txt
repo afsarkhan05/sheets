@@ -1,0 +1,25 @@
+1. Cloud Function (Lambda)
+This is specfic code as trigger on specific action like cloud storage or http call
+v1 gen - upto 60 mins of http trigger, upto 16GB RAM 4 vCPU - runs on the top of cloud run
+
+2. Cloud Run
+Run a container or docker image without kubernetes cluster (Works on the top of Knative)
+
+3. Cloud Storage (S3)
+Storage , buckets on gcp
+
+4. Gcloud 
+A Cli to interact with most services (Gcloud group sub-group action ==> Gcloud compute instances list)
+Other cli for specific services like kubectl, bg, gsutil etc
+gcloud run deploy {service_name} --image {image_name} --revision-suffix v1 (Deploy an image in cloud run using gcloud cli)
+
+5. Anthos - To deploy workload on kubernetes available in different cloud (azure, aws) or on-premise
+
+6. Cloud Code
+
+7. Cloud Build
+
+8. Cloud Monitoring
+
+9.Cloud Logging
+
