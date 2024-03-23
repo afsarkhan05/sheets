@@ -1,3 +1,52 @@
+Project was monolithic complex service dealing with multiple entities
+- Created as restful service in Jax-RS (RestEasy) with in-house build discovery service
+- Deployment on Wildfly (Jboss) with mysql, netezza and couchbase as backend
+- Use design patterns like Singleton, CQRS (save in table & use couchbase)
+- Couchbase data then used by backend services as a part of CQRS pattern
+- Hourly job to replicate deltas from mysql to vertica
+- Backend services like kafka/strom topology(bolt & spout) use couchbase and vertica for further processing
+- Monolithic app connecting to multiple db (mysql, vertica) for reporting purposes
+- template will be created by UI/Backend and Scheduler cron job will pickup and execute template (dynamic queries based on template)
+- This was on-prem datacenter
+- Artifacts deployed as war to jboss
+- Jenkins used as CI/CD pipeline and SVN was version system
+- on-premise private repository for artifacts (NO Images yet)
+Move to Galera
+- Decided to use galera for all instances
+- Application is migrated and adjusted for log key
+- Through & careful changes and testing
+Move to Docker
+- Started moving to docker image base
+- Decided to move to spring boot micro services based
+- Spring cloud config use to read config from gitlab service
+- introduced kafka for circuit breaker and saga pattern and outbox pattern
+- created multiple microservices and moved to spring from jax-rs world
+- Creation of image and push to private repo
+- deployment started on Portainer (Docker Swarm)
+Migration to Cloud
+- Creation of wrapper for couchbase and move to BigTable decided
+- Started using helm
+- Moved to gitlab and all CI/CD pipeline from jenkins
+- Migration and through testing of the deployment files for kubernetes
+- Deployment of services on kubernetes instead of portainer
+- Stopped using gitlab config service instead started using Kubernetes ConfigMap and Secret
+- Airflow DAGs creation
+- Learn Spring boot, kafka, git, docker, kubernetes, ci/cd jenkins/gitlab, portainer, airflow, GCP
+
+Saga Pattern:
+1. Post Request to data asset for creation
+   a. Data asset 
+   b. synchrouch call using circuit breaker, eureka server to delivery platform, advertiser to check valid partner, if not error
+   c. id created --> return success with data asset id and status (WIP)
+   d. saga id (started) outbox started
+   e. Scheduler Job pick up outbox table --> Started status --> send kafka message to create campaign service
+   f. Create campaign add campaign and insert into it's own outbox with status (campaign_created) and saga id (campaign_created)
+   g. if failed outbox status will be (campaign_failure) and saga (campaign_failure)
+   h. campaign service scheduler picks (campaign_creating & failure) and send one by one - and update status (failure_sent)
+   
+Circuit Breaker:
+
+
 1. Monolithic app in jax-rs
 2. migration to log key to key
 3. migration to G
