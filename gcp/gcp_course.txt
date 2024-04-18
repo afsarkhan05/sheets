@@ -1,0 +1,33 @@
+Question Week 2
+
+https://docs.google.com/forms/d/e/1FAIpQLSeNfR9IcFNOJNP9ew6IaRLWXoXfpRi5D9VfJTG5X3I4fxCDEw/viewform
+
+Question Week 3
+
+https://docs.google.com/forms/d/e/1FAIpQLSc3YBSNhYsjYwzHoOJ94F8QiMv3FxvxqPLN_BcNYOoy31mBSA/viewform
+
+Drive Link:
+
+https://drive.google.com/drive/u/2/folders/1WvW3g5IwQ1ESPYawoc6pcYqdR64Xjfm_?resourcekey=0-FjwUMZykTqxksWoQ5k1-Rg
+
+Cheat Sheet
+https://tutorialsdojo.com/google-cloud-platform-gcp-cheat-sheets/
+
+Google Cloud in a minute
+https://www.youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip
+
+https://cloud.google.com/blog/products/gcp/5-google-cloud-product-cheat-sheets-2021
+
+Terraform Examples:
+
+https://registry.terraform.io/modules/terraform-google-modules/network/google/3.3.0
+
+gsutil acl ch -u AllUsers:R  gs://qwiklabs-gcp-01-d0d44714a9e8/ada.jpg
+
+gcloud compute ssh instance-name --zone=zone_name
+gcloud compute instances list
+
+gcloud pubsub topics create myTopic
+gcloud  pubsub subscriptions create --topic myTopic mySubscription
+gcloud pubsub topics publish myTopic --message "Publisher's name is <YOUR NAME>"
+gcloud pubsub subscriptions pull mySubscription --auto-ack
