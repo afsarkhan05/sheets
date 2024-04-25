@@ -18,6 +18,10 @@ https://www.youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip
 
 https://cloud.google.com/blog/products/gcp/5-google-cloud-product-cheat-sheets-2021
 
+
+Graphical
+https://github.com/priyankavergadia/GCPSketchnote?tab=readme-ov-file
+
 Terraform Examples:
 
 https://registry.terraform.io/modules/terraform-google-modules/network/google/3.3.0
