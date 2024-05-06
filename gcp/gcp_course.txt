@@ -18,6 +18,9 @@ https://www.youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip
 
 https://cloud.google.com/blog/products/gcp/5-google-cloud-product-cheat-sheets-2021
 
+Cloud Skill Labs Solution:
+https://www.youtube.com/playlist?list=PL2QxKmNdTMQ4crcu7zqXH85NXLGtx0DgV
+
 
 Graphical
 https://github.com/priyankavergadia/GCPSketchnote?tab=readme-ov-file
