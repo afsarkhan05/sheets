@@ -21,6 +21,9 @@ https://cloud.google.com/blog/products/gcp/5-google-cloud-product-cheat-sheets-2
 Cloud Skill Labs Solution:
 https://www.youtube.com/playlist?list=PL2QxKmNdTMQ4crcu7zqXH85NXLGtx0DgV
 
+Solution Git
+https://github.com/quiccklabs/Labs_solutions
+
 
 Graphical
 https://github.com/priyankavergadia/GCPSketchnote?tab=readme-ov-file
