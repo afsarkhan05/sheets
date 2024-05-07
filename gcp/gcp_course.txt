@@ -24,6 +24,9 @@ https://www.youtube.com/playlist?list=PL2QxKmNdTMQ4crcu7zqXH85NXLGtx0DgV
 Solution Git
 https://github.com/quiccklabs/Labs_solutions
 
+Beyond your bills (K8s)
+https://www.youtube.com/watch?v=NOOhDq1JyIM&list=PLIivdWyY5sqKJx6FwJMRcsnFIkkNFtsX9&ab_channel=GoogleCloudTech
+
 
 Graphical
 https://github.com/priyankavergadia/GCPSketchnote?tab=readme-ov-file
