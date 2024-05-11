@@ -10,6 +10,9 @@ Drive Link:
 
 https://drive.google.com/drive/u/2/folders/1WvW3g5IwQ1ESPYawoc6pcYqdR64Xjfm_?resourcekey=0-FjwUMZykTqxksWoQ5k1-Rg
 
+Important
+https://www.sebhook.com/2023/04/01/google-cloud-professional-cloud-architect-pca-exam-notes-part-i/
+
 Cheat Sheet
 https://tutorialsdojo.com/google-cloud-platform-gcp-cheat-sheets/
 
