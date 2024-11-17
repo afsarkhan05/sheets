@@ -1,0 +1,5 @@
+
+Docker image: Build with docker build -t <name> . and save as a tarball with docker save -o <filename>.tar <name>.
+Deprecated API: Use kubectl explain <resource> --api-version=<version> to inspect API details.
+Pod communication: Label the pods to match the network policy selectors with kubectl label pod <pod-name> <key>=<value>, so they can communicate without changing the policy itself.
+
