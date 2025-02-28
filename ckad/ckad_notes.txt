@@ -1,0 +1,14 @@
+docs >> Tasks >> Configure a Pod to Use a ConfigMap >> 
+docs >> Tutorial >> Configuration
+- config map as key
+- config map as env
+- config map as volume
+- config map key as volume
+
+docs >> Tasks >> Inject data into applications (Secrets, Envs)
+- secrets as env
+- secrets as volume
+- all secrets
+
+docs >> Tasks >> Managing Secrets 
+- secret creates etc
