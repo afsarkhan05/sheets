@@ -1,0 +1,33 @@
+1. as environment variable key-value
+env:
+  - name: SPECIAL_LEVEL_KEY
+    valueFrom:
+      configMapKeyRef:
+        name: special-config
+        key: SPECIAL_LEVEL
+2. As all cm 
+envFrom:
+- configMapRef:
+    name: special-config
+3. As Volume
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+volumes:
+  - name: config-volume
+    configMap:
+      name: special-config
+4. As specific value using volume
+      volumeMounts:
+      - name: config-volume
+        mountPath: /etc/config
+  volumes:
+    - name: config-volume
+      configMap:
+        name: special-config
+        items:
+        - key: SPECIAL_LEVEL
+          path: keys
+
+        
+  
