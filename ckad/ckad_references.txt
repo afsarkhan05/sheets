@@ -75,3 +75,11 @@ Mock Test - 1, CKAD Prep Exam
 Mock Test - 2, CKAD Prep Exam (Solution)
 
 https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
+
+https://lime5005.medium.com/how-i-passed-the-ckad-exam-in-september-2024-3612827b7711
+
+GitHub Practices
+
+https://github.com/dgkanatsios/CKAD-exercises https://github.com/bbachi/CKAD-Practice-Questions (IMPORTANT)
+
+4, 150 questions and solutions https://www.cnblogs.com/peteremperor/p/12785335.html (IMPORTANT)
