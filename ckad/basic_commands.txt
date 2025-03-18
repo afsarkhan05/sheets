@@ -1,0 +1,20 @@
+get by selector:
+
+1. k get pods --selector env=dev
+
+multiple label:
+2. k get pods --selector env=prod,bu=finance,tier=frontend
+
+get all namespaces
+3. k get pods --all-namespaces
+
+get run yaml
+4. k run nginx --image=nginx --dry-run=client -o yaml
+5. kubectl describe pod nginx
+get metadata of pod
+6. kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}" 
+delete pod with no grace and forceful
+7. kubectl delete po nginx --grace-period=0 --force
+create and expose on port
+8. k run nginx1 --image=nginx:1.17.4 --port=8080 --restart=Never
+9 k  get pod nginx1 -o jsonpath="{.spec}" or  get pod nginx1 -o jsonpath="{.metadata}"
