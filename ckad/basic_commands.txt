@@ -1,3 +1,5 @@
+PODS:
+
 get by selector:
 
 1. k get pods --selector env=dev
@@ -18,3 +20,13 @@ delete pod with no grace and forceful
 create and expose on port
 8. k run nginx1 --image=nginx:1.17.4 --port=8080 --restart=Never
 9 k  get pod nginx1 -o jsonpath="{.spec}" or  get pod nginx1 -o jsonpath="{.metadata}"
+
+Deployments:
+
+1. kubectl create deployment nginx --image=nginx:1.16
+2. kubectl rollout status deployment nginx
+3. k set image deployment dep_name pod_name=new_image (kubectl set image deployment nginx nginx=nginx:1.17)
+4. kubectl rollout undo deployment nginx
+5. k rollout status deployment name
+6. k rollout history deployment name
+7. k rollout undo deployment name
