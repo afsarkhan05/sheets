@@ -1,0 +1,21 @@
+["sh", "-c", "while [ ! -f /data/ready.txt ]; do sleep 1; done && echo
+started"]
+
+Retry Until ENV Variable is Set
+while [ -z "$MY_ENV" ]; do sleep 1; done
+
+Wait for Directory to Exist
+while [ ! -d /data/config ]; do sleep 1; done
+
+
+FROM docker.io/httpd:2.4
+RUN echo "Hello, World!" > /usr/local/apache2/htdocs/index.html
+
+podman run -d --name test -p 8080:80 localhost/simpleapp
+
+curl 0.0.0.0:8080
+
+podman tag localhost/simpleapp $registry_ip:5000/simpleapp
+
+podman push $registry_ip:5000/simpleapp
+
