@@ -14,7 +14,7 @@ get run yaml
 4. k run nginx --image=nginx --dry-run=client -o yaml
 5. kubectl describe pod nginx
 get metadata of pod
-6. kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}" 
+6. kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}" OR k get pod name -o=jsonpath="{.spec.image}"
 delete pod with no grace and forceful
 7. kubectl delete po nginx --grace-period=0 --force
 create and expose on port
@@ -23,10 +23,27 @@ create and expose on port
 
 Deployments:
 
-1. kubectl create deployment nginx --image=nginx:1.16
+1. kubectl create deployment nginx --image=nginx:1.16 (command: ["/bin/sh", "-c", "sleep 100"] )
 2. kubectl rollout status deployment nginx
 3. k set image deployment dep_name pod_name=new_image (kubectl set image deployment nginx nginx=nginx:1.17)
 4. kubectl rollout undo deployment nginx
 5. k rollout status deployment name
-6. k rollout history deployment name
-7. k rollout undo deployment name
+6. k rollout history deployment name (--revision=3)
+7. k rollout undo deployment name (--to-revision=3)
+8. k scale deploy name --min=1 --max=2 --cpu-percent=80
+9. k get hpa
+10. k scale deploy name --replicas=3
+11. k label pod name abc=xyz (k label pod -l app=v1 key=v2)
+12. k annotate pod name -l app my=annotate (k annotate pod nginx1 --list)
+13. k get po --show-labels (k get pod -l app or app=v1)
+14. k logs pod_name
+15. k config use-context (get-contexts or current-context or set-context (for update) )
+16. k taint nodes node1 key1=value1:NoSchedule (k label node node1 key1=lab1)
+17. nodeAffinity or nodeSelector for toleration on containers level
+tolerations:
+- key: "key1"
+  operator: "Equal" or "Exists"
+  value: "value1"
+  effect: "NoSchedule"
+18. k exec -it container_name -- /bin/sh 
+19. k run busybox1 --image=busybox --rm -it --restart=Never -- wget -o- google.com
