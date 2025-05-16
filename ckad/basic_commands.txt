@@ -47,3 +47,4 @@ tolerations:
   effect: "NoSchedule"
 18. k exec -it container_name -- /bin/sh 
 19. k run busybox1 --image=busybox --rm -it --restart=Never -- wget -o- google.com
+20. k get <name> -A --no-headers (| wc -l)
