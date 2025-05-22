@@ -49,3 +49,4 @@ tolerations:
 19. k run busybox1 --image=busybox --rm -it --restart=Never -- wget -o- google.com
 20. k get <name> -A --no-headers (| wc -l)
 21. nodeAffinity: operator: In (label value given) or Exists
+22. Admission controller (/etc/kubernetes/manifests/kube-apiserver.yaml) - NamespaceLifeCycle (enable/disable)
