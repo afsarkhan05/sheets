@@ -50,3 +50,8 @@ tolerations:
 20. k get <name> -A --no-headers (| wc -l)
 21. nodeAffinity: operator: In (label value given) or Exists
 22. Admission controller (/etc/kubernetes/manifests/kube-apiserver.yaml) - NamespaceLifeCycle (enable/disable)
+23. echo -n 'bXktdmFsdWU=' | base64 decode (echo -n 'text' | base64)
+24. k describe pods nginx | grep -i -C3 'mount'
+25. vim ---> v then jk (arrow) ---> shift + < or >
+26. docker save my_image > my_image.tar
+27.
