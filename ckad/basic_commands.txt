@@ -54,4 +54,5 @@ tolerations:
 24. k describe pods nginx | grep -i -C3 'mount'
 25. vim ---> v then jk (arrow) ---> shift + < or >
 26. docker save my_image > my_image.tar
-27.
+27. clusterIP --> access as service ip (k get svc -o wide) and port (svc_ip:svc_port)
+28. nodePort --> node ip and nodePort (k get pods -o wide) node_ip:node_port
