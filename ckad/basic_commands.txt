@@ -58,3 +58,4 @@ tolerations:
 28. nodePort --> node ip and nodePort (k get pods -o wide) node_ip:node_port
 29. kubectl convert --> install --> download plugin then --> chmod +x kubectl-convert -> mv kubectl-convert /usr/local/bin
 30. kubectl-convert (kubectl convert) -f old_file.yaml --output new_file.yaml
+31. kubectl convert -f old.yamal --output-version v1 > new.yaml
