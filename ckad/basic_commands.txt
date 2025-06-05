@@ -56,3 +56,5 @@ tolerations:
 26. docker save my_image > my_image.tar
 27. clusterIP --> access as service ip (k get svc -o wide) and port (svc_ip:svc_port)
 28. nodePort --> node ip and nodePort (k get pods -o wide) node_ip:node_port
+29. kubectl convert --> install --> download plugin then --> chmod +x kubectl-convert -> mv kubectl-convert /usr/local/bin
+30. kubectl-convert (kubectl convert) -f old_file.yaml --output new_file.yaml
