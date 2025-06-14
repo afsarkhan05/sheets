@@ -59,3 +59,21 @@ tolerations:
 29. kubectl convert --> install --> download plugin then --> chmod +x kubectl-convert -> mv kubectl-convert /usr/local/bin
 30. kubectl-convert (kubectl convert) -f old_file.yaml --output new_file.yaml
 31. kubectl convert -f old.yamal --output-version v1 > new.yaml
+
+helm::
+helm repo list (helm -n mercury ls -a) (to list all of them)
+helm repo update
+helm search repo nginx --versions
+helm -n mercury ls (list all installed release)
+
+helm show values bitnami/apache # will show a long list of all possible value-settings
+helm show values bitnami/apache | yq e # parse yaml and show with colors
+
+install::
+helm -n mercury install internal-issue-report-apache bitnami/apache --set replicaCount=2 --set image.debug=true
+
+upgrade:
+helm -n mercury upgrade internal-issue-report-apiv2 bitnami/nginx
+
+uninstall:
+helm -n mercury uninstall internal-issue-report-apiv1
