@@ -77,3 +77,31 @@ helm -n mercury upgrade internal-issue-report-apiv2 bitnami/nginx
 
 uninstall:
 helm -n mercury uninstall internal-issue-report-apiv1
+
+
+shortcuts::
+
+echo -n 'test' | base64 
+echo -n 'dGVzdA==' | base64 --decode
+
+echo -n 'test\n' > a.txt
+
+k -n dev get pods -l app
+
+k -n dev get pods -l app | grep -i 'mydev'
+k -n dev get pods -l app | grep -i -E 'mydev|pod'
+k -n dev get pods -l app | grep -i -E -C5 'mydev|pod'
+
+k  run tmp --restart=Never --image=nginx:alpine --rm -it -- curl -m 5 mydev
+(if tmp in ns use pod:port if another ns use pod.ns:port)
+
+docker -d --name
+
+k -n dev exec -it 
+
+docker save my-image --output af.tar
+
+vi --> v then shift+ {< or >}
+
+while [ ! -f /abc.txt ]; do sleep 1; done; echo 'test';
+while [ ! -d /root/a ]; do sleep 1; done; echo 'aa';
