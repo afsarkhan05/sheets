@@ -101,6 +101,10 @@ k -n dev exec -it
 
 docker save my-image --output af.tar
 
+
+
+Job	==> completions, parallelism, backoffLimit, activeDeadlineSeconds, ttlSecondsAfterFinished	Useful for batch tasks
+CronJob	==> schedule, concurrencyPolicy, startingDeadlineSeconds, suspend, successfulJobsHistoryLimit, jobTemplate.spec.template.spec	Good for recurring jobs
 vi --> v then shift+ {< or >}
 
 while [ ! -f /abc.txt ]; do sleep 1; done; echo 'test';
