@@ -113,3 +113,7 @@ while [ ! -d /root/a ]; do sleep 1; done; echo 'aa';
 
 kubectl get pods -l 'team in (shiny, legacy)'
 kubectl run frontend --image=nginx --restart=Never --labels=env=prod,team=shiny
+
+kubectl config view
+
+kubectl --as dev-user create deploy abc
