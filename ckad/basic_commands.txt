@@ -117,3 +117,11 @@ kubectl run frontend --image=nginx --restart=Never --labels=env=prod,team=shiny
 kubectl config view
 
 kubectl --as dev-user create deploy abc
+
+
+kustomize build k8s/ (this will create final yaml for all the resources without applying anything)
+
+kubectl apply -k ./k8s(this will apply the kustomization)
+
+sidecar is init containers with retartPolicy=Always
+
