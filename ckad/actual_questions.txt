@@ -1,0 +1,17 @@
+1. RBAC - create role with SA and use SA in deployment
+2. Create cron job with history, failed history and ttl run every 30 mins
+3. ingress not working because of wrong container port of pod in service
+4. create secret and use keys in existing deployment where it's hardcoded
+5. canary deployment - existin deployment has 5 pods create another replica deployment as canary and make sure max 10 pods with 20% on canary deploy and 80 on existing deployment
+6. update deployment scale to 5 from 1 replica and change image name and rollback
+7. update deployment - change container name and then change image, check rollout 
+8. 3 pods with label app=db app=frontend app=newrun there are 4 netpo 1. allow-all 2. deny-all 3. for app=db where ingress/egress allow from db-acces:true 4. for app=frontend ingress/egree allow policy from front-access:true
+don't create or update existing policy but app=newrun pod should be allowed for ingress/egress from app=db and app=frontend
+9. update existing deploymnet maxSurge and maxRollover to 5%
+10. default sa in pod making it to fail, update the correct sa from namespace and update the pod
+11. convert existing deployment using k convert -- install and then convert yaml and deploy
+12. create docker image and save as tar
+13. ingress creation for service at url given with port - verify working
+14. Add readiness to existing pod
+15. Expose service for a deployment and test
+16. 
