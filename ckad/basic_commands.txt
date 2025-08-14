@@ -125,3 +125,11 @@ kubectl apply -k ./k8s(this will apply the kustomization)
 
 sidecar is init containers with retartPolicy=Always
 
+grep with 
+- "-i" mean case insensitive
+- "-E" means multi search like "cat|dog"
+- "-C" provide context like "-C 5" means 5 line before and after
+- "-l" just list the files
+- "-c" just count the search
+- "-n" display the line number too
+
