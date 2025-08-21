@@ -322,16 +322,52 @@ function updateChart() {
     const labels = testResults.map(r => new Date(r.date).toLocaleDateString());
     const data = testResults.map(r => r.result);
     const colors = testResults.map(r => r.status === 'high' ? '#ff6b6b' : r.status === 'low' ? '#ffa726' : '#51cf66');
+    const reference_range = testResults[0].reference_range;
+
+    let backgroundColors;
+
+    // Check if reference_range looks valid ("x-y")
+    if (reference_range && reference_range.includes("-")) {
+        const [min, max] = reference_range.split("-").map(Number);
+
+        // Make sure parsed values are valid numbers
+        if (!isNaN(min) && !isNaN(max)) {
+            backgroundColors = data.map(v =>
+                (v >= min && v <= max) ? "green" : "red"
+            );
+        } else {
+            // Fallback to default colors
+            backgroundColors = data.map(() => "rgba(54, 162, 235, 0.6)");
+        }
+    }else if (reference_range.startsWith(">")) {
+        const min = parseFloat(reference_range.slice(1));
+        if (!isNaN(min)) {
+            backgroundColors = data.map(v => (v > min ? "green" : "red"));
+        } else {
+            backgroundColors = data.map(() => "rgba(54, 162, 235, 0.6)");
+        }
+    } else if (reference_range.startsWith("<")) {
+        const max = parseFloat(reference_range.slice(1));
+        if (!isNaN(max)) {
+            backgroundColors = data.map(v => (v < max ? "green" : "red"));
+        } else {
+            backgroundColors = data.map(() => "rgba(54, 162, 235, 0.6)");
+        }
+    } else {
+        // Fallback to default colors
+        backgroundColors = data.map(() => "rgba(54, 162, 235, 0.6)");
+    }
     
     currentChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
+        // (e.g., 'bar', 'line', 'pie').
         data: {
             labels: labels,
             datasets: [{
                 label: selectedTest,
                 data: data,
                 borderColor: '#667eea',
-                backgroundColor: colors,
+                backgroundColor: backgroundColors,
                 borderWidth: 3,
                 pointRadius: 6,
                 tension: 0.4
@@ -340,7 +376,9 @@ function updateChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: { title: { display: true, text: `${selectedTest} - Historical Trend` } },
+            plugins: { title: { display: true, text: `${selectedTest} - Historical Trend` }
+                        ,subtitle: { display: true, text: 'Reference Range: ' + reference_range, position: 'bottom',   // can be 'top', 'left', 'right', 'bottom'
+            padding: { top: 10, bottom: 10 },font: { size: 12, style: 'italic' }} },
             scales: { y: { beginAtZero: false }, x: { title: { display: true, text: 'Date' } } }
         }
     });
