@@ -146,6 +146,12 @@
                     <select id="chartTestSelect" onchange="updateChart()">
                         <option value="">Select a test...</option>
                     </select>
+                    <select id="chartType" onchange="updateChart()">
+                      <option value="bar">Bar</option>
+                      <option value="line">Line</option>
+                      <option value="pie">Pie</option>
+                      <option value="radar">Radar</option>
+                    </select>
                     <div class="chart-wrapper">
                         <canvas id="bloodTestChart"></canvas>
                     </div>
@@ -309,6 +315,7 @@ function updateTestSelector() {
 
 function updateChart() {
     const selectedTest = document.getElementById('chartTestSelect').value;
+    const selectedType = document.getElementById('chartType').value;
     if (!selectedTest) {
         if (currentChart) { currentChart.destroy(); currentChart = null; }
         return;
@@ -359,7 +366,7 @@ function updateChart() {
     }
     
     currentChart = new Chart(ctx, {
-        type: 'bar',
+        type: selectedType, //'bar',
         // (e.g., 'bar', 'line', 'pie').
         data: {
             labels: labels,
