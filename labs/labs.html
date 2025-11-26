@@ -156,10 +156,17 @@
                       <option value="pie">Pie</option>
                       <option value="radar">Radar</option>
                     </select>
+                    <label>
+                      <input type="radio" name="normal_result" value="normal" onclick="handleRadioClick(this.value)"> Normal Results
+                    </label>
+                    <label>
+                      <input type="radio" name="normal_result" value="abnormal" onclick="handleRadioClick(this.value)"> Abnormal Results
+                    </label>
+
+                </div>
                     <div class="chart-wrapper">
                         <canvas id="bloodTestChart"></canvas>
                     </div>
-                </div>
                 <div class="chart-container">
                     <h3>Recent Test Results</h3>
                     <div id="recentResults"></div>
@@ -359,6 +366,37 @@ function updateDashboard() {
     displayRecentResults();
 }
 
+function handleRadioClick(optionValue){
+    const selector = document.getElementById('chartTestSelect');
+    const chartName = document.getElementById('chartNameSelect');
+    const selectedPerson = document.getElementById('chartNameSelect').value;
+    filterByNormalOnly = false
+    if(optionValue === 'normal'){
+        filterByNormalOnly = true
+    }
+    const uniqueTests = [...new Set( testData
+      //.filter(t => t.status === status1 || )
+     .filter(t => {
+      if (filterByNormalOnly) {
+        // Condition A: Only allow 'normal'
+        return t.status === 'normal' && t.person_name === selectedPerson;
+      } else {
+        // Condition B: Allow 'normal', 'low', or 'high'
+        return (t.status === 'low' || t.status === 'high') && t.person_name === selectedPerson;
+      }
+    })
+     )];
+
+    uniqueTests.forEach(testName => {
+        const option = document.createElement('option');
+        option.value = testName;
+        option.textContent = testName;
+    });
+
+    displayRecentResults(uniqueTests)
+    if (currentChart) { currentChart.destroy(); currentChart = null; }
+    
+}
 function updateTestSelector() {
     const selector = document.getElementById('chartTestSelect');
     const chartName = document.getElementById('chartNameSelect');
