@@ -270,21 +270,61 @@ function addTest(e) {
 
 function getTestStatus(result, range) {
     try {
-        if (!range || range === '') return 'normal';
         if (range.includes('-')) {
             const [min, max] = range.split('-').map(v => parseFloat(v.trim()));
-            if (!isNaN(min) && !isNaN(max)) {
-                if (result < min) return 'low';
-                if (result > max) return 'high';
-                return 'normal';
-            }
-        } else if (range.startsWith('>')) {
-            const min = parseFloat(range.slice(1));
-            if (!isNaN(min)) return result > min ? 'normal' : 'low';
-        } else if (range.startsWith('<')) {
-            const max = parseFloat(range.slice(1));
-            if (!isNaN(max)) return result < max ? 'normal' : 'high';
+            if (result < min) return 'low';
+            if (result > max) return 'high';
+            return 'normal';
         }
+
+        // 2. Handle comparison operators (e.g., '> 50', '<= 10', '= 25')
+        const operators = ['>=', '<=', '>', '<', '='];
+        let operator = null;
+        let valueString = '';
+
+        // Find which operator is used in the string
+        for (const op of operators) {
+            if (range.includes(op)) {
+                operator = op;
+                // Split the string by the operator and take the value part
+                valueString = range.split(op)[1];
+                break; // Stop loop once an operator is found
+            }
+        }
+
+        if (operator && valueString) {
+            const value = parseFloat(valueString.trim());
+            switch (operator) {
+                case '>':
+                    if (result > value) return 'normal';
+                    if (result < value) return 'low';
+                    break;
+                case '<':
+                    if (result < value) return 'normal';
+                    if (result > value) return 'high';
+                    break;
+                case '>=':
+                    if (result >= value) return 'normal'; // Or 'high/normal', depending on logic
+                    break;
+                case '<=':
+                    if (result <= value) return 'normal'; // Or 'low/normal', depending on logic
+                    break;
+                case '=':
+                    if (result === value) return 'normal';
+                    break;
+            }
+            // If the condition wasn't met for the specific operator case
+            return 'out of range'; 
+        }
+        
+        // 3. Handle simple value match (e.g., '50')
+        const numericValue = parseFloat(rangeString.trim());
+        if (!isNaN(numericValue) && isFinite(numericValue)) {
+            if (result === numericValue) return 'normal';
+            if (result < numericValue) return 'low';
+            if (result > numericValue) return 'high';
+        }
+
         return 'normal';
     } catch {
         return 'normal';
