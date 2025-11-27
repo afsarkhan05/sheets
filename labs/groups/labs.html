@@ -283,7 +283,7 @@ function addTest(e) {
         reference_range: document.getElementById('referenceRange').value,
         unit: document.getElementById('testUnit').value || '',
         notes: document.getElementById('testNotes').value || '',
-        status: getTestStatus(parseFloat(document.getElementById('testResult').value), document.getElementById('referenceRange').value)
+        status: getTestStatus(document.getElementById('testResult').value, document.getElementById('referenceRange').value)
     };
     testData.push(newTest);
     localStorage.setItem('bloodTestData', JSON.stringify(testData));
@@ -294,6 +294,33 @@ function addTest(e) {
     updateTestSelector();
 }
 
+function lessGreaterStatus(operator, result, valueString){
+    // 2. Handle comparison operators (e.g., '> 50', '<= 10', '= 25')
+
+    const value = parseFloat(valueString.trim());
+    switch (operator) {
+        case '>':
+            if (result > value) return 'normal';
+            if (result < value) return 'low';
+            break;
+        case '<':
+            if (result < value) return 'normal';
+            if (result > value) return 'high';
+            break;
+        case '>=':
+            if (result >= value) return 'normal'; // Or 'high/normal', depending on logic
+            break;
+        case '<=':
+            if (result <= value) return 'normal'; // Or 'low/normal', depending on logic
+            break;
+        case '=':
+            if (result === value) return 'normal';
+            break;
+    }
+    // If the condition wasn't met for the specific operator case
+    return 'out of range'; 
+
+}
 function getTestStatus(result, range) {
     try {
         if (range.includes('-')) {
@@ -319,28 +346,19 @@ function getTestStatus(result, range) {
         }
 
         if (operator && valueString) {
-            const value = parseFloat(valueString.trim());
-            switch (operator) {
-                case '>':
-                    if (result > value) return 'normal';
-                    if (result < value) return 'low';
-                    break;
-                case '<':
-                    if (result < value) return 'normal';
-                    if (result > value) return 'high';
-                    break;
-                case '>=':
-                    if (result >= value) return 'normal'; // Or 'high/normal', depending on logic
-                    break;
-                case '<=':
-                    if (result <= value) return 'normal'; // Or 'low/normal', depending on logic
-                    break;
-                case '=':
-                    if (result === value) return 'normal';
-                    break;
+            // Handles > < cases
+            lessGreaterStatus(operator, result, valueString)
+        }
+        
+        // Check for alphabetic results like Negative, None, Yellow etc
+        isAlphabetic = /^[A-Za-z]+$/.test(range)
+        console.log('Alphabetic: '+ isAlphabetic)
+        if(isAlphabetic){
+            if(result === range){
+                return 'normal'
+            }else{
+                return "abnormal"
             }
-            // If the condition wasn't met for the specific operator case
-            return 'out of range'; 
         }
         
         // 3. Handle simple value match (e.g., '50')
@@ -561,7 +579,7 @@ function confirmImport() {
     csvPreviewData.forEach(row => {
         if (row.date && row.test_name && row.result && row.reference_range) {
             const result = parseFloat(row.result);
-            if (!isNaN(result)) {
+            //if (!isNaN(result)) {
                 testData.push({
                     id: Date.now() + count,
                     person_name: row.person_name,
@@ -574,7 +592,7 @@ function confirmImport() {
                     status: getTestStatus(result, row.reference_range)
                 });
                 count++;
-            }
+           // }
         }
     });
     localStorage.setItem('bloodTestData', JSON.stringify(testData));
