@@ -1,1201 +1,1214 @@
-person_name,date,test_name,result,reference_range,unit,notes,status
-Patient1,2025-09-15,White Blood Cell Count (WBC Count),5.8,3.66-10.60,,
-Patient1,2025-05-30,White Blood Cell Count (WBC Count),6.53,3.66-10.60,,
-Patient1,2024-12-31,White Blood Cell Count (WBC Count),6.14,3.66-10.60,,
-Patient1,2024-09-05,White Blood Cell Count (WBC Count),5.46,3.66-10.60,,
-Patient1,2024-04-19,White Blood Cell Count (WBC Count),-,3.66-10.60,,
-Patient1,2023-11-20,White Blood Cell Count (WBC Count),6.82,3.66-10.60,,
-Patient1,2022-11-16,White Blood Cell Count (WBC Count),5.58,3.66-10.60,,
-Patient1,2021-04-06,White Blood Cell Count (WBC Count),-,3.66-10.60,,
-Patient1,2020-11-02,White Blood Cell Count (WBC Count),5.91,3.66-10.60,,
-Patient1,2019-10-05,White Blood Cell Count (WBC Count),6.55,3.66-10.60,,
-Patient1,2018-11-03,White Blood Cell Count (WBC Count),5.59,3.66-10.60,,
-Patient1,2017-12-27,White Blood Cell Count (WBC Count),5.58,3.66-10.60,,
-Patient1,2025-09-15,Red Blood Cell Count (RBC Count),5.61,3.94-5.76,,
-Patient1,2025-05-30,Red Blood Cell Count (RBC Count),5.79,3.94-5.76,,
-Patient1,2024-12-31,Red Blood Cell Count (RBC Count),5.61,3.94-5.76,,
-Patient1,2024-09-05,Red Blood Cell Count (RBC Count),5.92,3.94-5.76,,
-Patient1,2024-04-19,Red Blood Cell Count (RBC Count),-,3.94-5.76,,
-Patient1,2023-11-20,Red Blood Cell Count (RBC Count),6.09,3.94-5.76,,
-Patient1,2022-11-16,Red Blood Cell Count (RBC Count),5.86,3.94-5.76,,
-Patient1,2021-04-06,Red Blood Cell Count (RBC Count),-,3.94-5.76,,
-Patient1,2020-11-02,Red Blood Cell Count (RBC Count),5.74,3.94-5.76,,
-Patient1,2019-10-05,Red Blood Cell Count (RBC Count),5.99,3.94-5.76,,
-Patient1,2018-11-03,Red Blood Cell Count (RBC Count),5.91,3.94-5.76,,
-Patient1,2017-12-27,Red Blood Cell Count (RBC Count),5.83,3.94-5.76,,
-Patient1,2025-09-15,Hemoglobin (Hgb),15.0,12.0-16.9,,
-Patient1,2025-05-30,Hemoglobin (Hgb),15.1,12.0-16.9,,
-Patient1,2024-12-31,Hemoglobin (Hgb),14.6,12.0-16.9,,
-Patient1,2024-09-05,Hemoglobin (Hgb),15.1,12.0-16.9,,
-Patient1,2024-04-19,Hemoglobin (Hgb),-,12.0-16.9,,
-Patient1,2023-11-20,Hemoglobin (Hgb),16.4,12.0-16.9,,
-Patient1,2022-11-16,Hemoglobin (Hgb),15.8,12.0-16.9,,
-Patient1,2021-04-06,Hemoglobin (Hgb),-,12.0-16.9,,
-Patient1,2020-11-02,Hemoglobin (Hgb),15.2,12.0-16.9,,
-Patient1,2019-10-05,Hemoglobin (Hgb),15.5,12.0-16.9,,
-Patient1,2018-11-03,Hemoglobin (Hgb),16.1,12.0-16.9,,
-Patient1,2017-12-27,Hemoglobin (Hgb),15.5,12.0-16.9,,
-Patient1,2025-09-15,Hematocrit (Hct),46.8,34.6-49.6,,
-Patient1,2025-05-30,Hematocrit (Hct),46.9,34.6-49.6,,
-Patient1,2024-12-31,Hematocrit (Hct),45.5,34.6-49.6,,
-Patient1,2024-09-05,Hematocrit (Hct),47.5,34.6-49.6,,
-Patient1,2024-04-19,Hematocrit (Hct),-,34.6-49.6,,
-Patient1,2023-11-20,Hematocrit (Hct),49.2,34.6-49.6,,
-Patient1,2022-11-16,Hematocrit (Hct),47.5,34.6-49.6,,
-Patient1,2021-04-06,Hematocrit (Hct),-,34.6-49.6,,
-Patient1,2020-11-02,Hematocrit (Hct),45.7,34.6-49.6,,
-Patient1,2019-10-05,Hematocrit (Hct),47.7,34.6-49.6,,
-Patient1,2018-11-03,Hematocrit (Hct),46.6,34.6-49.6,,
-Patient1,2017-12-27,Hematocrit (Hct),46.1,34.6-49.6,,
-Patient1,2025-05-30,Mean Corpuscular Volume (MCV),81,78.0-98.0,,
-Patient1,2024-12-31,Mean Corpuscular Volume (MCV),81.1,78.0-98.0,,
-Patient1,2024-09-05,Mean Corpuscular Volume (MCV),80.2,78.0-98.0,,
-Patient1,2024-04-19,Mean Corpuscular Volume (MCV),-,78.0-98.0,,
-Patient1,2023-11-20,Mean Corpuscular Volume (MCV),80.8,78.0-98.0,,
-Patient1,2022-11-16,Mean Corpuscular Volume (MCV),81.1,78.0-98.0,,
-Patient1,2021-04-06,Mean Corpuscular Volume (MCV),-,78.0-98.0,,
-Patient1,2020-11-02,Mean Corpuscular Volume (MCV),79.6,78.0-98.0,,
-Patient1,2019-10-05,Mean Corpuscular Volume (MCV),79.6,78.0-98.0,,
-Patient1,2018-11-03,Mean Corpuscular Volume (MCV),78.8,78.0-98.0,,
-Patient1,2017-12-27,Mean Corpuscular Volume (MCV),79.1,78.0-98.0,,
-Patient1, 2025-09-15,Mean Corpuscular Volume (MCV),83,78.0-98.0,,
-Patient1,2025-05-30,Mean Corpuscular Hemoglobin (MCH),26.1,25.8-33.1,,
-Patient1,2024-12-31,Mean Corpuscular Hemoglobin (MCH),26,25.8-33.1,,
-Patient1,2024-09-05,Mean Corpuscular Hemoglobin (MCH),25.5,25.8-33.1,,
-Patient1,2024-04-19,Mean Corpuscular Hemoglobin (MCH),-,25.8-33.1,,
-Patient1,2023-11-20,Mean Corpuscular Hemoglobin (MCH),26.9,25.8-33.1,,
-Patient1,2022-11-16,Mean Corpuscular Hemoglobin (MCH),27,25.8-33.1,,
-Patient1,2021-04-06,Mean Corpuscular Hemoglobin (MCH),-,25.8-33.1,,
-Patient1,2020-11-02,Mean Corpuscular Hemoglobin (MCH),26.5,25.8-33.1,,
-Patient1,2019-10-05,Mean Corpuscular Hemoglobin (MCH),25.9,25.8-33.1,,
-Patient1,2018-11-03,Mean Corpuscular Hemoglobin (MCH),27.2,25.8-33.1,,
-Patient1,2017-12-27,Mean Corpuscular Hemoglobin (MCH),26.6,25.8-33.1,,
-Patient1, 2025-09-15,Mean Corpuscular Hemoglobin (MCH),26.7,25.8-33.1,,
-Patient1,2025-05-30,Mean Corpuscular Hemoglobin Concentration (MCHC),32.2,31.7-35.3,,
-Patient1,2024-12-31,Mean Corpuscular Hemoglobin Concentration (MCHC),32.1,31.7-35.3,,
-Patient1,2024-09-05,Mean Corpuscular Hemoglobin Concentration (MCHC),31.8,31.7-35.3,,
-Patient1,2024-04-19,Mean Corpuscular Hemoglobin Concentration (MCHC),-,31.7-35.3,,
-Patient1,2023-11-20,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,
-Patient1,2022-11-16,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,
-Patient1,2021-04-06,Mean Corpuscular Hemoglobin Concentration (MCHC),-,31.7-35.3,,
-Patient1,2020-11-02,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,
-Patient1,2019-10-05,Mean Corpuscular Hemoglobin Concentration (MCHC),32.5,31.7-35.3,,
-Patient1,2018-11-03,Mean Corpuscular Hemoglobin Concentration (MCHC),34.5,31.7-35.3,,
-Patient1,2017-12-27,Mean Corpuscular Hemoglobin Concentration (MCHC),33.6,31.7-35.3,,
-Patient1, 2025-09-15,Mean Corpuscular Hemoglobin Concentration (MCHC),32.1,31.7-35.3,,
-Patient1,2025-05-30,Red Blood Cell Distribution Width (RDW),13.5,12.2-15.3,,
-Patient1,2024-12-31,Red Blood Cell Distribution Width (RDW),13,12.2-15.3,,
-Patient1,2024-09-05,Red Blood Cell Distribution Width (RDW),13,12.2-15.3,,
-Patient1,2024-04-19,Red Blood Cell Distribution Width (RDW),-,12.2-15.3,,
-Patient1,2023-11-20,Red Blood Cell Distribution Width (RDW),13.4,12.2-15.3,,
-Patient1,2022-11-16,Red Blood Cell Distribution Width (RDW),13.4,12.2-15.3,,
-Patient1,2021-04-06,Red Blood Cell Distribution Width (RDW),-,12.2-15.3,,
-Patient1,2020-11-02,Red Blood Cell Distribution Width (RDW),12.9,12.2-15.3,,
-Patient1,2019-10-05,Red Blood Cell Distribution Width (RDW),13.6,12.2-15.3,,
-Patient1,2018-11-03,Red Blood Cell Distribution Width (RDW),13.8,12.2-15.3,,
-Patient1,2017-12-27,Red Blood Cell Distribution Width (RDW),14.1,12.2-15.3,,
-Patient1, 2025-09-15,Red Blood Cell Distribution Width (RDW),13.5,12.2-15.3,,
-Patient1,2025-05-30,POLYS,51.4,34.9-75.3,,
-Patient1,2024-12-31,POLYS,52.1,34.9-75.3,,
-Patient1,2024-09-05,POLYS,52.4,34.9-75.3,,
-Patient1,2024-04-19,POLYS,-,34.9-75.3,,
-Patient1,2023-11-20,POLYS,57.4,34.9-75.3,,
-Patient1,2022-11-16,POLYS,52.1,34.9-75.3,,
-Patient1,2021-04-06,POLYS,-,34.9-75.3,,
-Patient1,2020-11-02,POLYS,55.3,34.9-75.3,,
-Patient1,2019-10-05,POLYS,56.9,34.9-75.3,,
-Patient1,2018-11-03,POLYS,53.6,34.9-75.3,,
-Patient1,2017-12-27,POLYS,54,34.9-75.3,,
-Patient1,2025-05-30,POLYS, ABS. COUNT,3.35,1.30-7.00,,
-Patient1,2024-12-31,POLYS, ABS. COUNT,3.2,1.30-7.00,,
-Patient1,2024-09-05,POLYS, ABS. COUNT,2.86,1.30-7.00,,
-Patient1,2024-04-19,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2023-11-20,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2022-11-16,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2021-04-06,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2020-11-02,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2019-10-05,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2018-11-03,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2017-12-27,POLYS, ABS. COUNT,-,1.30-7.00,,
-Patient1,2025-05-30,Lymphocytes,34,14.0-51.8,,
-Patient1,2024-12-31,Lymphocytes,31.9,14.0-51.8,,
-Patient1,2024-09-05,Lymphocytes,32.6,14.0-51.8,,
-Patient1,2024-04-19,Lymphocytes,-,14.0-51.8,,
-Patient1,2023-11-20,Lymphocytes,32.8,14.0-51.8,,
-Patient1,2022-11-16,Lymphocytes,33,14.0-51.8,,
-Patient1,2021-04-06,Lymphocytes,-,14.0-51.8,,
-Patient1,2020-11-02,Lymphocytes,33.2,14.0-51.8,,
-Patient1,2019-10-05,Lymphocytes,29.6,14.0-51.8,,
-Patient1,2018-11-03,Lymphocytes,36,14.0-51.8,,
-Patient1,2017-12-27,Lymphocytes,33.7,14.0-51.8,,
-Patient1, 2025-09-15,Lymphocytes,33.0,14.0-51.8,,
-Patient1,2025-05-30,Absolute Lymphocytes,2.22,0.80-3.00,,
-Patient1,2024-12-31,Absolute Lymphocytes,1.96,0.80-3.00,,
-Patient1,2024-09-05,Absolute Lymphocytes,1.78,0.80-3.00,,
-Patient1,2024-04-19,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2023-11-20,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2022-11-16,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2021-04-06,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2020-11-02,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2019-10-05,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2018-11-03,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1,2017-12-27,Absolute Lymphocytes,-,0.80-3.00,,
-Patient1, 2025-09-15,Absolute Lymphocytes,1.9,0.70-3.10,,
-Patient1,2025-05-30,MONOS,6.0.5-13.2,,
-Patient1,2025-05-30,MONOS,7,3.5-13.2,,
-Patient1,2024-12-31,MONOS,7.5,3.5-13.2,,
-Patient1,2024-09-05,MONOS,6.2,3.5-13.2,,
-Patient1,2024-04-19,MONOS,-,3.5-13.2,,
-Patient1,2023-11-20,MONOS,5.6,3.5-13.2,,
-Patient1,2022-11-16,MONOS,6.1,3.5-13.2,,
-Patient1,2021-04-06,MONOS,-,3.5-13.2,,
-Patient1,2020-11-02,MONOS,5.9,3.5-13.2,,
-Patient1,2019-10-05,MONOS,7.2,3.5-13.2,,
-Patient1,2018-11-03,MONOS,5.4,3.5-13.2,,
-Patient1,2017-12-27,MONOS,4.7,3.5-13.2,,
-Patient1, 2025-09-15,Monocytes,6,3.50-13.20,,
-Patient1,2025-05-30,Absolute Monocytes,0.46,0.00-1.00,,
-Patient1,2024-12-31,Absolute Monocytes,0.46,0.00-1.00,,
-Patient1,2024-09-05,Absolute Monocytes,0.34,0.00-1.00,,
-Patient1,2024-04-19,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2023-11-20,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2022-11-16,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2021-04-06,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2020-11-02,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2019-10-05,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2018-11-03,Absolute Monocytes,-,0.00-1.00,,
-Patient1,2017-12-27,Absolute Monocytes,-,0.00-1.00,,
-Patient1, 2025-09-15,Absolute Monocytes,0.4,0.01-0.90,,
-Patient1,2025-09-15,Neutrophils,53,40.0-60.0,,
-Patient1,2025-09-15,Absolute Neutrophils,3.1,1.4-7.0,,
-Patient1,2025-05-30,Eosinophils,6.1,0.0-6.2,,
-Patient1,2024-12-31,Eosinophils,6.8,0.0-6.2,,
-Patient1,2024-09-05,Eosinophils,6.8,0.0-6.2,,
-Patient1,2024-04-19,Eosinophils,-,0.0-6.2,,
-Patient1,2023-11-20,Eosinophils,2.6,0.0-6.2,,
-Patient1,2022-11-16,Eosinophils,6.8,0.0-6.2,,
-Patient1,2021-04-06,Eosinophils,-,0.0-6.2,,
-Patient1,2020-11-02,Eosinophils,3.9,0.0-6.2,,
-Patient1,2019-10-05,Eosinophils,4.9,0.0-6.2,,
-Patient1,2018-11-03,Eosinophils,3.4,0.0-6.2,,
-Patient1,2017-12-27,Eosinophils,5.2,0.0-6.2,,
-Patient1, 2025-09-15,Eosinophils,6,0.0-6.2,,
-Patient1,2025-05-30,Absolute Eosinophils,0.4,0.00-0.40,,
-Patient1,2024-12-31,Absolute Eosinophils,0.42,0.00-0.40,,
-Patient1,2024-09-05,Absolute Eosinophils,0.37,0.00-0.40,,
-Patient1,2024-04-19,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2023-11-20,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2022-11-16,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2021-04-06,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2020-11-02,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2019-10-05,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2018-11-03,Absolute Eosinophils,-,0.00-0.40,,
-Patient1,2017-12-27,Absolute Eosinophils,-,0.00-0.40,,
-Patient1, 2025-09-15,Absolute Eosinophils,0.3,0.00-0.40,,
-Patient1,2025-05-30,Basophils,1.2,0.0-1.0,,
-Patient1,2024-12-31,Basophils,1.5,0.0-1.0,,
-Patient1,2024-09-05,Basophils,1.6,0.0-1.0,,
-Patient1,2024-04-19,Basophils,-,0.0-1.0,,
-Patient1,2023-11-20,Basophils,1.5,0.0-1.0,,
-Patient1,2022-11-16,Basophils,1.8,0.0-1.0,,
-Patient1,2021-04-06,Basophils,-,0.0-1.0,,
-Patient1,2020-11-02,Basophils,1.5,0.0-1.0,,
-Patient1,2019-10-05,Basophils,1.1,0.0-1.0,,
-Patient1,2018-11-03,Basophils,1.6,0.0-1.0,,
-Patient1,2017-12-27,Basophils,2,0.0-1.0,,
-Patient1, 2025-09-15,Basophils,2,0.0-1.0,,
-Patient1,2025-05-30,Absolute Basophils,0.08,0.00-0.10,,
-Patient1,2024-12-31,Absolute Basophils,0.09,0.00-0.10,,
-Patient1,2024-09-05,Absolute Basophils,0.09,0.00-0.10,,
-Patient1,2024-04-19,Absolute Basophils,-,0.00-0.10,,
-Patient1,2023-11-20,Absolute Basophils,-,0.00-0.10,,
-Patient1,2022-11-16,Absolute Basophils,-,0.00-0.10,,
-Patient1,2021-04-06,Absolute Basophils,-,0.00-0.10,,
-Patient1,2020-11-02,Absolute Basophils,-,0.00-0.10,,
-Patient1,2019-10-05,Absolute Basophils,-,0.00-0.10,,
-Patient1,2018-11-03,Absolute Basophils,-,0.00-0.10,,
-Patient1,2017-12-27,Absolute Basophils,-,0.00-0.10,,
-Patient1, 2025-09-15,Absolute Basophils,0.1,0.00-0.20,,
-Patient1,2025-05-30,Immature Granulocyte Automated,0.3,0.0-1.0,,
-Patient1,2024-12-31,Immature Granulocyte Automated,0.2,0.0-1.0,,
-Patient1,2024-09-05,Immature Granulocyte Automated,0.4,0.0-1.0,,
-Patient1,2024-04-19,Immature Granulocyte Automated,-,0.0-1.0,,
-Patient1,2023-11-20,Immature Granulocyte Automated,0.1,0.0-1.0,,
-Patient1,2022-11-16,Immature Granulocyte Automated,0.2,0.0-1.0,,
-Patient1,2021-04-06,Immature Granulocyte Automated,-,0.0-1.0,,
-Patient1,2020-11-02,Immature Granulocyte Automated,0.2,0.0-1.0,,
-Patient1,2019-10-05,Immature Granulocyte Automated,0.3,0.0-1.0,,
-Patient1,2018-11-03,Immature Granulocyte Automated,0,0.0-1.0,,
-Patient1,2017-12-27,Immature Granulocyte Automated,0.4,0.0-1.0,,
-Patient1, 2025-09-15,Immature Granulocyte Automated,0.0,0.0-1.0,,
-Patient1,2025-05-30,Platelet Count,314,140-425,,
-Patient1,2024-12-31,Platelet Count,285,140-425,,
-Patient1,2024-09-05,Platelet Count,276,140-425,,
-Patient1,2024-04-19,Platelet Count,-,140-425,,
-Patient1,2023-11-20,Platelet Count,337,140-425,,
-Patient1,2022-11-16,Platelet Count,323,140-425,,
-Patient1,2021-04-06,Platelet Count,-,140-425,,
-Patient1,2020-11-02,Platelet Count,322,140-425,,
-Patient1,2019-10-05,Platelet Count,326,140-425,,
-Patient1,2018-11-03,Platelet Count,273,140-425,,
-Patient1,2017-12-27,Platelet Count,284,140-425,,
-Patient1, 2025-09-15,Platelet Count,278,140-425,,
-Patient1,2025-05-30,Mean Platelet Volume,9.8,8.6-12.1,,
-Patient1,2024-12-31,Mean Platelet Volume,10.1,8.6-12.1,,
-Patient1,2024-09-05,Mean Platelet Volume,10.2,8.6-12.1,,
-Patient1,2024-04-19,Mean Platelet Volume,-,8.6-12.1,,
-Patient1,2023-11-20,Mean Platelet Volume,9.7,8.6-12.1,,
-Patient1,2022-11-16,Mean Platelet Volume,9.8,8.6-12.1,,
-Patient1,2021-04-06,Mean Platelet Volume,-,8.6-12.1,,
-Patient1,2020-11-02,Mean Platelet Volume,9.8,8.6-12.1,,
-Patient1,2019-10-05,Mean Platelet Volume,9.1,8.6-12.1,,
-Patient1,2018-11-03,Mean Platelet Volume,9.7,8.6-12.1,,
-Patient1,2017-12-27,Mean Platelet Volume,9.1,8.6-12.1,,
-Patient1,2025-05-30,IG, ABS. COUNT,0.02,,,
-Patient1,2024-12-31,IG, ABS. COUNT,0.01,,,
-Patient1,2024-09-05,IG, ABS. COUNT,0.02,,,
-Patient1,2024-04-19,IG, ABS. COUNT,-,,,
-Patient1,2023-11-20,IG, ABS. COUNT,-,,,
-Patient1,2022-11-16,IG, ABS. COUNT,-,,,
-Patient1,2021-04-06,IG, ABS. COUNT,-,,,
-Patient1,2020-11-02,IG, ABS. COUNT,-,,,
-Patient1,2019-10-05,IG, ABS. COUNT,-,,,
-Patient1,2018-11-03,IG, ABS. COUNT,-,,,
-Patient1,2017-12-27,IG, ABS. COUNT,-,,,
-Patient1,2025-05-30,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2024-12-31,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2024-09-05,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2024-04-19,Creatine Kinase (CK), Total,73,39-308,,
-Patient1,2023-11-20,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2022-11-16,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2021-04-06,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2020-11-02,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2019-10-05,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2018-11-03,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2017-12-27,Creatine Kinase (CK), Total,-,39-308,,
-Patient1,2025-05-30,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2024-12-31,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2024-09-05,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2024-04-19,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2023-11-20,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2022-11-16,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2021-04-06,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2020-11-02,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2019-10-05,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2018-11-03,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2017-12-27,Comprehensive Metabolic Panel (AMA),-,,,
-Patient1,2025-05-30,Total Protein (Blood),7.5,5.9-8.4,,
-Patient1,2024-12-31,Total Protein (Blood),7.1,5.9-8.4,,
-Patient1,2024-09-05,Total Protein (Blood),7,5.9-8.4,,
-Patient1,2024-04-19,Total Protein (Blood),7.8,5.9-8.4,,
-Patient1,2023-11-20,Total Protein (Blood),8.2,5.9-8.4,,
-Patient1,2022-11-16,Total Protein (Blood),7.8,5.9-8.4,,
-Patient1,2021-04-06,Total Protein (Blood),-,5.9-8.4,,
-Patient1,2020-11-02,Total Protein (Blood),7.8,5.9-8.4,,
-Patient1,2019-10-05,Total Protein (Blood),8.3,5.9-8.4,,
-Patient1,2018-11-03,Total Protein (Blood),8.1,5.9-8.4,,
-Patient1,2017-12-27,Total Protein (Blood),7.9,5.9-8.4,,
-Patient1, 2025-09-15,Total Protein (Blood),7.3,5.9-8.4,,
-Patient1,2025-05-30,Albumin,4.6,3.5-5.2,,
-Patient1,2024-12-31,Albumin,4.5,3.5-5.2,,
-Patient1,2024-09-05,Albumin,4.6,3.5-5.2,,
-Patient1,2024-04-19,Albumin,4.7,3.5-5.2,,
-Patient1,2023-11-20,Albumin,5.2,3.5-5.2,,
-Patient1,2022-11-16,Albumin,4.8,3.5-5.2,,
-Patient1,2021-04-06,Albumin,-,3.5-5.2,,
-Patient1,2020-11-02,Albumin,5,3.5-5.2,,
-Patient1,2019-10-05,Albumin,5.1,3.5-5.2,,
-Patient1,2018-11-03,Albumin,5.1,3.5-5.2,,
-Patient1,2017-12-27,Albumin,4.8,3.5-5.2,,
-Patient1, 2025-09-15,Albumin,4.6,3.5-5.2,,
-Patient1,2025-05-30,Globulin,2.9,1.7-3.7,,
-Patient1,2024-12-31,Globulin,2.6,1.7-3.7,,
-Patient1,2024-09-05,Globulin,2.4,1.7-3.7,,
-Patient1,2024-04-19,Globulin,3.1,1.7-3.7,,
-Patient1,2023-11-20,Globulin,3,1.7-3.7,,
-Patient1,2022-11-16,Globulin,3,1.7-3.7,,
-Patient1,2021-04-06,Globulin,-,1.7-3.7,,
-Patient1,2020-11-02,Globulin,2.8,1.7-3.7,,
-Patient1,2019-10-05,Globulin,3.2,1.7-3.7,,
-Patient1,2018-11-03,Globulin,3,1.7-3.7,,
-Patient1,2017-12-27,Globulin,3.1,1.7-3.7,,
-Patient1, 2025-09-15,Globulin,2.7,1.7-3.7,,
-Patient1,2025-05-30,Albumin/Globulin Ratio,1.6,1.1-2.9,,
-Patient1,2024-12-31,Albumin/Globulin Ratio,1.7,1.1-2.9,,
-Patient1,2024-09-05,Albumin/Globulin Ratio,1.9,1.1-2.9,,
-Patient1,2024-04-19,Albumin/Globulin Ratio,1.5,1.1-2.9,,
-Patient1,2023-11-20,Albumin/Globulin Ratio,1.7,1.1-2.9,,
-Patient1,2022-11-16,Albumin/Globulin Ratio,1.6,1.1-2.9,,
-Patient1,2021-04-06,Albumin/Globulin Ratio,-,1.1-2.9,,
-Patient1,2020-11-02,Albumin/Globulin Ratio,1.8,1.1-2.9,,
-Patient1,2019-10-05,Albumin/Globulin Ratio,1.6,1.1-2.9,,
-Patient1,2018-11-03,Albumin/Globulin Ratio,1.7,1.1-2.9,,
-Patient1,2017-12-27,Albumin/Globulin Ratio,1.5,1.1-2.9,,
-Patient1,2025-05-30,Sodium,143,135-147,,
-Patient1,2024-12-31,Sodium,142,135-147,,
-Patient1,2024-09-05,Sodium,139,135-147,,
-Patient1,2024-04-19,Sodium,-,135-147,,
-Patient1,2023-11-20,Sodium,142,135-147,,
-Patient1,2022-11-16,Sodium,139,135-147,,
-Patient1,2021-04-06,Sodium,-,135-147,,
-Patient1,2020-11-02,Sodium,135,135-147,,
-Patient1,2019-10-05,Sodium,143,135-147,,
-Patient1,2018-11-03,Sodium,140,135-147,,
-Patient1,2017-12-27,Sodium,141,135-147,,
-Patient1, 2025-09-15,Sodium,143,135-147,,
-Patient1,2025-05-30,Potassium,4.4,3.5-5.5,,
-Patient1,2024-12-31,Potassium,4.3,3.5-5.5,,
-Patient1,2024-09-05,Potassium,3.8,3.5-5.5,,
-Patient1,2024-04-19,Potassium,-,3.5-5.5,,
-Patient1,2023-11-20,Potassium,4.2,3.5-5.5,,
-Patient1,2022-11-16,Potassium,4.1,3.5-5.5,,
-Patient1,2021-04-06,Potassium,-,3.5-5.5,,
-Patient1,2020-11-02,Potassium,4.1,3.5-5.5,,
-Patient1,2019-10-05,Potassium,4.4,3.5-5.5,,
-Patient1,2018-11-03,Potassium,4.4,3.5-5.5,,
-Patient1,2017-12-27,Potassium,4.1,3.5-5.5,,
-Patient1, 2025-09-15,Potassium,4.8,3.5-5.5,,
-Patient1,2025-05-30,Chloride,102,96-108,,
-Patient1,2024-12-31,Chloride,103,96-108,,
-Patient1,2024-09-05,Chloride,102,96-108,,
-Patient1,2024-04-19,Chloride,-,96-108,,
-Patient1,2023-11-20,Chloride,100,96-108,,
-Patient1,2022-11-16,Chloride,100,96-108,,
-Patient1,2021-04-06,Chloride,-,96-108,,
-Patient1,2020-11-02,Chloride,97,96-108,,
-Patient1,2019-10-05,Chloride,99,96-108,,
-Patient1,2018-11-03,Chloride,99,96-108,,
-Patient1,2017-12-27,Chloride,97,96-108,,
-Patient1, 2025-09-15,Chloride,105,96-108,,
-Patient1,2025-05-30,Carbon Dioxide,23,19-29,,
-Patient1,2024-12-31,Carbon Dioxide,24,19-29,,
-Patient1,2024-09-05,Carbon Dioxide,20,19-29,,
-Patient1,2024-04-19,Carbon Dioxide,-,19-29,,
-Patient1,2023-11-20,Carbon Dioxide,24,19-29,,
-Patient1,2022-11-16,Carbon Dioxide,22,19-29,,
-Patient1,2021-04-06,Carbon Dioxide,-,19-29,,
-Patient1,2020-11-02,Carbon Dioxide,23,19-29,,
-Patient1,2019-10-05,Carbon Dioxide,28,19-29,,
-Patient1,2018-11-03,Carbon Dioxide,27,19-29,,
-Patient1,2017-12-27,Carbon Dioxide,28,19-29,,
-Patient1, 2025-09-15,Carbon Dioxide,24,19-29,,
-Patient1,2025-05-30,Blood Urea Nitrogen (BUN),13,6-20,,
-Patient1,2024-12-31,Blood Urea Nitrogen (BUN),15,6-20,,
-Patient1,2024-09-05,Blood Urea Nitrogen (BUN),12,6-20,,
-Patient1,2024-04-19,Blood Urea Nitrogen (BUN),-,6-20,,
-Patient1,2023-11-20,Blood Urea Nitrogen (BUN),12,6-20,,
-Patient1,2022-11-16,Blood Urea Nitrogen (BUN),13,6-20,,
-Patient1,2021-04-06,Blood Urea Nitrogen (BUN),-,6-20,,
-Patient1,2020-11-02,Blood Urea Nitrogen (BUN),10,6-20,,
-Patient1,2019-10-05,Blood Urea Nitrogen (BUN),12,6-20,,
-Patient1,2018-11-03,Blood Urea Nitrogen (BUN),15,6-20,,
-Patient1,2017-12-27,Blood Urea Nitrogen (BUN),11,6-20,,
-Patient1,2025-09-15,Blood Urea Nitrogen (BUN),17,6-20,,
-Patient1,2025-05-30,Creatinine,0.89,0.67-1.31,,
-Patient1,2024-12-31,Creatinine,0.79,0.67-1.31,,
-Patient1,2024-09-05,Creatinine,0.84,0.67-1.31,,
-Patient1,2024-04-19,Creatinine,-,0.67-1.31,,
-Patient1,2023-11-20,Creatinine,1.02,0.67-1.31,,
-Patient1,2022-11-16,Creatinine,0.96,0.67-1.31,,
-Patient1,2021-04-06,Creatinine,-,0.67-1.31,,
-Patient1,2020-11-02,Creatinine,0.88,0.67-1.31,,
-Patient1,2019-10-05,Creatinine,0.96,0.67-1.31,,
-Patient1,2018-11-03,Creatinine,0.92,0.67-1.31,,
-Patient1,2017-12-27,Creatinine,0.93,0.67-1.31,,
-Patient1,2025-05-30,Estimated Glomerular Filtration Rate,110,,,
-Patient1,2024-12-31,Estimated Glomerular Filtration Rate,114,,,
-Patient1,2024-09-05,Estimated Glomerular Filtration Rate,112,,,
-Patient1,2024-04-19,Estimated Glomerular Filtration Rate,-,,,
-Patient1,2023-11-20,Estimated Glomerular Filtration Rate,95,,,
-Patient1,2022-11-16,Estimated Glomerular Filtration Rate,98,,,
-Patient1,2021-04-06,Estimated Glomerular Filtration Rate,-,,,
-Patient1,2020-11-02,Estimated Glomerular Filtration Rate,109,,,
-Patient1,2019-10-05,Estimated Glomerular Filtration Rate,101,,,
-Patient1,2018-11-03,Estimated Glomerular Filtration Rate,107,,,
-Patient1,2017-12-27,Estimated Glomerular Filtration Rate,106,,,
-Patient1,2025-05-30,BUN/Creatinine Ratio,14.6,10.0-28.0,,
-Patient1,2024-12-31,BUN/Creatinine Ratio,19,10.0-28.0,,
-Patient1,2024-09-05,BUN/Creatinine Ratio,14.3,10.0-28.0,,
-Patient1,2024-04-19,BUN/Creatinine Ratio,-,10.0-28.0,,
-Patient1,2023-11-20,BUN/Creatinine Ratio,11.8,10.0-28.0,,
-Patient1,2022-11-16,BUN/Creatinine Ratio,13.5,10.0-28.0,,
-Patient1,2021-04-06,BUN/Creatinine Ratio,-,10.0-28.0,,
-Patient1,2020-11-02,BUN/Creatinine Ratio,11.4,10.0-28.0,,
-Patient1,2019-10-05,BUN/Creatinine Ratio,12.5,10.0-28.0,,
-Patient1,2018-11-03,BUN/Creatinine Ratio,16.3,10.0-28.0,,
-Patient1,2017-12-27,BUN/Creatinine Ratio,11.8,10.0-28.0,,
-Patient1, 2025-09-15,BUN/Creatinine Ratio,16,10.0-28.0,,
-Patient1,2025-05-30,Calcium,9.7,8.6-10.4,,
-Patient1,2024-12-31,Calcium,9,8.6-10.4,,
-Patient1,2024-09-05,Calcium,9.2,8.6-10.4,,
-Patient1,2024-04-19,Calcium,-,8.6-10.4,,
-Patient1,2023-11-20,Calcium,10.3,8.6-10.4,,
-Patient1,2022-11-16,Calcium,9.9,8.6-10.4,,
-Patient1,2021-04-06,Calcium,-,8.6-10.4,,
-Patient1,2020-11-02,Calcium,10,8.6-10.4,,
-Patient1,2019-10-05,Calcium,10.4,8.6-10.4,,
-Patient1,2018-11-03,Calcium,10.1,8.6-10.4,,
-Patient1,2017-12-27,Calcium,9.6,8.6-10.4,,
-Patient1, 2025-09-15,Calcium,9.6,8.6-10.4,,
-Patient1,2025-05-30,Bilirubin,0.4,<1,2,,
-Patient1,2024-12-31,Bilirubin,0.4,<1,2,,
-Patient1,2024-09-05,Bilirubin,0.3,<1,2,,
-Patient1,2024-04-19,Bilirubin,0.3,<1,2,,
-Patient1,2023-11-20,Bilirubin,0.5,<1,2,,
-Patient1,2022-11-16,Bilirubin,0.4,<1,2,,
-Patient1,2021-04-06,Bilirubin,-,<1,2,,
-Patient1,2020-11-02,Bilirubin,0.3,<1,2,,
-Patient1,2019-10-05,Bilirubin,0.4,<1,2,,
-Patient1,2018-11-03,Bilirubin,0.4,<1,2,,
-Patient1,2017-12-27,Bilirubin,0.3,<1,2,,
-Patient1, 2025-09-15,Bilirubin,0.3,<1,2,,
-Patient1,2025-05-30,Alkaline Phosphatase (ALP),139,40-156,,
-Patient1,2024-12-31,Alkaline Phosphatase (ALP),146,40-156,,
-Patient1,2024-09-05,Alkaline Phosphatase (ALP),130,40-156,,
-Patient1,2024-04-19,Alkaline Phosphatase (ALP),131,40-156,,
-Patient1,2023-11-20,Alkaline Phosphatase (ALP),149,40-156,,
-Patient1,2022-11-16,Alkaline Phosphatase (ALP),140,40-156,,
-Patient1,2021-04-06,Alkaline Phosphatase (ALP),-,40-156,,
-Patient1,2020-11-02,Alkaline Phosphatase (ALP),132,40-156,,
-Patient1,2019-10-05,Alkaline Phosphatase (ALP),124,40-156,,
-Patient1,2018-11-03,Alkaline Phosphatase (ALP),114,40-156,,
-Patient1,2017-12-27,Alkaline Phosphatase (ALP),131,40-156,,
-Patient1, 2025-09-15,Alkaline Phosphatase (ALP),113,40-156,,
-Patient1,2025-05-30,AST,24,<40,,
-Patient1,2024-12-31,AST,48,<40,,
-Patient1,2024-09-05,AST,28,<40,,
-Patient1,2024-04-19,AST,19,<40,,
-Patient1,2023-11-20,AST,25,<40,,
-Patient1,2022-11-16,AST,23,<40,,
-Patient1,2021-04-06,AST,-,<40,,
-Patient1,2020-11-02,AST,27,<40,,
-Patient1,2019-10-05,AST,26,<40,,
-Patient1,2018-11-03,AST,21,<40,,
-Patient1,2017-12-27,AST,24,<40,,
-Patient1, 2025-09-15,AST,20,<40,,
-Patient1,2025-05-30,ALT,30,<41,,
-Patient1,2024-12-31,ALT,72,<41,,
-Patient1,2024-09-05,ALT,39,<41,,
-Patient1,2024-04-19,ALT,18,<41,,
-Patient1,2023-11-20,ALT,24,<41,,
-Patient1,2022-11-16,ALT,28,<41,,
-Patient1,2021-04-06,ALT,-,<41,,
-Patient1,2020-11-02,ALT,38,<41,,
-Patient1,2019-10-05,ALT,26,<41,,
-Patient1,2018-11-03,ALT,23,<41,,
-Patient1,2017-12-27,ALT,28,<41,,
-Patient1, 2025-09-15,ALT,25,<41,,
-Patient1,2025-05-30,Glucose (Blood),76,70-99,,
-Patient1,2024-12-31,Glucose (Blood),80,70-99,,
-Patient1,2024-09-05,Glucose (Blood),109,70-99,,
-Patient1,2024-04-19,Glucose (Blood),-,70-99,,
-Patient1,2023-11-20,Glucose (Blood),88,70-99,,
-Patient1,2022-11-16,Glucose (Blood),80,70-99,,
-Patient1,2021-04-06,Glucose (Blood),-,70-99,,
-Patient1,2020-11-02,Glucose (Blood),82,70-99,,
-Patient1,2019-10-05,Glucose (Blood),81,70-99,,
-Patient1,2018-11-03,Glucose (Blood),80,70-99,,
-Patient1,2017-12-27,Glucose (Blood),76,70-99,,
-Patient1,2025-09-15,Glucose (Blood),86,70-99,,
-Patient1,2025-05-30,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2024-12-31,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2024-09-05,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2024-04-19,Bilirubin Direct (Bilirubin Conjugated),<0.2,<0.4,,
-Patient1,2023-11-20,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2022-11-16,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2021-04-06,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2020-11-02,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2019-10-05,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2018-11-03,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2017-12-27,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,
-Patient1,2025-05-30,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2024-12-31,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2024-09-05,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2024-04-19,Bilirubin, Indirect,Can't Calc *,0.1-1.0,,
-Patient1,2023-11-20,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2022-11-16,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2021-04-06,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2020-11-02,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2019-10-05,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2018-11-03,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2017-12-27,Bilirubin, Indirect,-,0.1-1.0,,
-Patient1,2025-05-30,Gamma GT (GGT),29,10-71,,
-Patient1,2024-12-31,Gamma GT (GGT),-,10-71,,
-Patient1,2024-09-05,Gamma GT (GGT),-,10-71,,
-Patient1,2024-04-19,Gamma GT (GGT),-,10-71,,
-Patient1,2023-11-20,Gamma GT (GGT),-,10-71,,
-Patient1,2022-11-16,Gamma GT (GGT),-,10-71,,
-Patient1,2021-04-06,Gamma GT (GGT),-,10-71,,
-Patient1,2020-11-02,Gamma GT (GGT),-,10-71,,
-Patient1,2019-10-05,Gamma GT (GGT),-,10-71,,
-Patient1,2018-11-03,Gamma GT (GGT),-,10-71,,
-Patient1,2017-12-27,Gamma GT (GGT),-,10-71,,
-Patient1,2025-05-30,Apolipoprotein A1,115,104-202,,
-Patient1,2024-12-31,Apolipoprotein A1,-,104-202,,
-Patient1,2024-09-05,Apolipoprotein A1,-,104-202,,
-Patient1,2024-04-19,Apolipoprotein A1,-,104-202,,
-Patient1,2023-11-20,Apolipoprotein A1,-,104-202,,
-Patient1,2022-11-16,Apolipoprotein A1,-,104-202,,
-Patient1,2021-04-06,Apolipoprotein A1,-,104-202,,
-Patient1,2020-11-02,Apolipoprotein A1,-,104-202,,
-Patient1,2019-10-05,Apolipoprotein A1,-,104-202,,
-Patient1,2018-11-03,Apolipoprotein A1,-,104-202,,
-Patient1,2017-12-27,Apolipoprotein A1,-,104-202,,
-Patient1,2025-05-30,eGFR,,>60,,
-Patient1,2024-12-31,eGFR,,>60,,
-Patient1,2024-09-05,eGFR,-,>60,,
-Patient1,2024-04-19,eGFR,-,>60,,
-Patient1,2023-11-20,eGFR,-,>60,,
-Patient1,2022-11-16,eGFR,-,>60,,
-Patient1,2021-04-06,eGFR,-,>60,,
-Patient1,2020-11-02,eGFR,126,>60,,
-Patient1,2019-10-05,eGFR,117,>60,,
-Patient1,2018-11-03,eGFR,124,>60,,
-Patient1,2017-12-27,eGFR,123,>60,,
-Patient1,2025-09-15,eGFR,91,>60,,
-Patient1,2025-09-15,Hemoglobin A1C,5.4,<5.7,,
-Patient1,2025-05-30,Hemoglobin A1C,5.4,<5.7,,
-Patient1,2024-12-31,Hemoglobin A1C,5.8,<5.7,,
-Patient1,2024-09-05,Hemoglobin A1C,-,<5.7,,
-Patient1,2024-04-19,Hemoglobin A1C,-,<5.7,,
-Patient1,2023-11-20,Hemoglobin A1C,5.5,<5.7,,
-Patient1,2022-11-16,Hemoglobin A1C,5.6,<5.7,,
-Patient1,2021-04-06,Hemoglobin A1C,-,<5.7,,
-Patient1,2020-11-02,Hemoglobin A1C,5.6,<5.7,,
-Patient1,2019-10-05,Hemoglobin A1C,5.3,<5.7,,
-Patient1,2018-11-03,Hemoglobin A1C,5.6,<5.7,,
-Patient1,2017-12-27,Hemoglobin A1C,5.4,<5.7,,
-Patient1,2025-09-15,Total Cholesterol,127,<200,,
-Patient1,2025-05-30,Total Cholesterol,236,<200,,
-Patient1,2024-12-31,Total Cholesterol,153,<200,,
-Patient1,2024-09-05,Total Cholesterol,184,<200,,
-Patient1,2024-04-19,Total Cholesterol,163,<200,,
-Patient1,2023-11-20,Total Cholesterol,264,<200,,
-Patient1,2022-11-16,Total Cholesterol,250,<200,,
-Patient1,2021-04-06,Total Cholesterol,-,<200,,
-Patient1,2020-11-02,Total Cholesterol,238,<200,,
-Patient1,2019-10-05,Total Cholesterol,225,<200,,
-Patient1,2018-11-03,Total Cholesterol,221,<200,,
-Patient1,2017-12-27,Total Cholesterol,221,<200,,
-Patient1,2025-09-15,High Density Lipoprotein (HDL),34,>40,,
-Patient1,2025-05-30,High Density Lipoprotein (HDL),32,>40,,
-Patient1,2024-12-31,High Density Lipoprotein (HDL),33,>40,,
-Patient1,2024-09-05,High Density Lipoprotein (HDL),37,>40,,
-Patient1,2024-04-19,High Density Lipoprotein (HDL),35,>40,,
-Patient1,2023-11-20,High Density Lipoprotein (HDL),38,>40,,
-Patient1,2022-11-16,High Density Lipoprotein (HDL),37,>40,,
-Patient1,2021-04-06,High Density Lipoprotein (HDL),-,>40,,
-Patient1,2020-11-02,High Density Lipoprotein (HDL),31,>40,,
-Patient1,2019-10-05,High Density Lipoprotein (HDL),37,>40,,
-Patient1,2018-11-03,High Density Lipoprotein (HDL),36,>40,,
-Patient1,2017-12-27,High Density Lipoprotein (HDL),40,>40,,
-Patient1,2025-09-15,Triglyceride,117,<150,,
-Patient1,2025-05-30,Triglyceride,300,<150,,
-Patient1,2024-12-31,Triglyceride,218,<150,,
-Patient1,2024-09-05,Triglyceride,205,<150,,
-Patient1,2024-04-19,Triglyceride,165,<150,,
-Patient1,2023-11-20,Triglyceride,235,<150,,
-Patient1,2022-11-16,Triglyceride,240,<150,,
-Patient1,2021-04-06,Triglyceride,-,<150,,
-Patient1,2020-11-02,Triglyceride,364,<150,,
-Patient1,2019-10-05,Triglyceride,363,<150,,
-Patient1,2018-11-03,Triglyceride,255,<150,,
-Patient1,2017-12-27,Triglyceride,207,<150,,
-Patient1,2025-05-30,HDL as % of Cholesterol,14,>14,,
-Patient1,2024-12-31,HDL as % of Cholesterol,22,>14,,
-Patient1,2024-09-05,HDL as % of Cholesterol,20,>14,,
-Patient1,2024-04-19,HDL as % of Cholesterol,21,>14,,
-Patient1,2023-11-20,HDL as % of Cholesterol,14,>14,,
-Patient1,2022-11-16,HDL as % of Cholesterol,15,>14,,
-Patient1,2021-04-06,HDL as % of Cholesterol,-,>14,,
-Patient1,2020-11-02,HDL as % of Cholesterol,13,>14,,
-Patient1,2019-10-05,HDL as % of Cholesterol,16,>14,,
-Patient1,2018-11-03,HDL as % of Cholesterol,16,>14,,
-Patient1,2017-12-27,HDL as % of Cholesterol,18,>14,,
-Patient1,2025-05-30,Cholesterol/HDL Ratio,7.4,<7.4,,
-Patient1,2024-12-31,Cholesterol/HDL Ratio,4.6,<7.4,,
-Patient1,2024-09-05,Cholesterol/HDL Ratio,5,<7.4,,
-Patient1,2024-04-19,Cholesterol/HDL Ratio,4.7,<7.4,,
-Patient1,2023-11-20,Cholesterol/HDL Ratio,6.9,<7.4,,
-Patient1,2022-11-16,Cholesterol/HDL Ratio,6.8,<7.4,,
-Patient1,2021-04-06,Cholesterol/HDL Ratio,-,<7.4,,
-Patient1,2020-11-02,Cholesterol/HDL Ratio,7.7,<7.4,,
-Patient1,2019-10-05,Cholesterol/HDL Ratio,6.1,<7.4,,
-Patient1,2018-11-03,Cholesterol/HDL Ratio,6.1,<7.4,,
-Patient1,2017-12-27,Cholesterol/HDL Ratio,5.5,<7.4,,
-Patient1,2025-05-30,LDL/HDL Ratio,4.5,<3.56,,
-Patient1,2024-12-31,LDL/HDL Ratio,2.3,<3.56,,
-Patient1,2024-09-05,LDL/HDL Ratio,2.86,<3.56,,
-Patient1,2024-04-19,LDL/HDL Ratio,2.71,<3.56,,
-Patient1,2023-11-20,LDL/HDL Ratio,4.71,<3.56,,
-Patient1,2022-11-16,LDL/HDL Ratio,4.46,<3.56,,
-Patient1,2021-04-06,LDL/HDL Ratio,-,<3.56,,
-Patient1,2020-11-02,LDL/HDL Ratio,4.32,<3.56,,
-Patient1,2019-10-05,LDL/HDL Ratio,3.11,<3.56,,
-Patient1,2018-11-03,LDL/HDL Ratio,3.72,<3.56,,
-Patient1,2017-12-27,LDL/HDL Ratio,3.5,<3.56,,
-Patient1,2025-09-15,Low Density Lipoprotein (LDL),72,<100,,
-Patient1,2025-05-30,Low Density Lipoprotein (LDL),144,<100,,
-Patient1,2024-12-31,Low Density Lipoprotein (LDL),76,<100,,
-Patient1,2024-09-05,Low Density Lipoprotein (LDL),106,<100,,
-Patient1,2024-04-19,Low Density Lipoprotein (LDL),95,<100,,
-Patient1,2023-11-20,Low Density Lipoprotein (LDL),179,<100,,
-Patient1,2022-11-16,Low Density Lipoprotein (LDL),165,<100,,
-Patient1,2021-04-06,Low Density Lipoprotein (LDL),-,<100,,
-Patient1,2020-11-02,Low Density Lipoprotein (LDL),134,<100,,
-Patient1,2019-10-05,Low Density Lipoprotein (LDL),115,<100,,
-Patient1,2018-11-03,Low Density Lipoprotein (LDL),134,<100,,
-Patient1,2017-12-27,Low Density Lipoprotein (LDL),140,<100,,
-Patient1,2025-09-15,Very Low Density Lipoprotein (VLDL),21,07-32,,
-Patient1,2025-05-30,Very Low Density Lipoprotein (VLDL),60,07-32,,
-Patient1,2024-12-31,Very Low Density Lipoprotein (VLDL),44,07-32,,
-Patient1,2024-09-05,Very Low Density Lipoprotein (VLDL),41,07-32,,
-Patient1,2024-04-19,Very Low Density Lipoprotein (VLDL),33,07-32,,
-Patient1,2023-11-20,Very Low Density Lipoprotein (VLDL),47,07-32,,
-Patient1,2022-11-16,Very Low Density Lipoprotein (VLDL),48,07-32,,
-Patient1,2021-04-06,Very Low Density Lipoprotein (VLDL),-,07-32,,
-Patient1,2020-11-02,Very Low Density Lipoprotein (VLDL),73,07-32,,
-Patient1,2019-10-05,Very Low Density Lipoprotein (VLDL),73,07-32,,
-Patient1,2018-11-03,Very Low Density Lipoprotein (VLDL),51,07-32,,
-Patient1,2017-12-27,Very Low Density Lipoprotein (VLDL),41,07-32,,
-Patient1,2025-05-30,Non-HDL Cholesterol,204,<130,,
-Patient1,2024-12-31,Non-HDL Cholesterol,120,<130,,
-Patient1,2024-09-05,Non-HDL Cholesterol,147,<130,,
-Patient1,2024-04-19,Non-HDL Cholesterol,128,<130,,
-Patient1,2023-11-20,Non-HDL Cholesterol,226,<130,,
-Patient1,2022-11-16,Non-HDL Cholesterol,213,<130,,
-Patient1,2021-04-06,Non-HDL Cholesterol,-,<130,,
-Patient1,2020-11-02,Non-HDL Cholesterol,207,<130,,
-Patient1,2019-10-05,Non-HDL Cholesterol,188,<130,,
-Patient1,2018-11-03,Non-HDL Cholesterol,185,<130,,
-Patient1,2017-12-27,Non-HDL Cholesterol,181,<130,,
-Patient1,2025-05-30,Trig/HDL Ratio,9.38,<2.76,,
-Patient1,2024-12-31,Trig/HDL Ratio,6.61,<2.76,,
-Patient1,2024-09-05,Trig/HDL Ratio,-,<2.76,,
-Patient1,2024-04-19,Trig/HDL Ratio,-,<2.76,,
-Patient1,2023-11-20,Trig/HDL Ratio,-,<2.76,,
-Patient1,2022-11-16,Trig/HDL Ratio,-,<2.76,,
-Patient1,2021-04-06,Trig/HDL Ratio,-,<2.76,,
-Patient1,2020-11-02,Trig/HDL Ratio,-,<2.76,,
-Patient1,2019-10-05,Trig/HDL Ratio,-,<2.76,,
-Patient1,2018-11-03,Trig/HDL Ratio,-,<2.76,,
-Patient1,2017-12-27,Trig/HDL Ratio,-,<2.76,,
-Patient1,2025-05-30,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2024-12-31,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2024-09-05,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2024-04-19,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2023-11-20,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2022-11-16,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2021-04-06,Thyroid-stimulating Hormone (TSH),-,,,
-Patient1,2020-11-02,Thyroid-stimulating Hormone (TSH),1.51,,,
-Patient1,2019-10-05,Thyroid-stimulating Hormone (TSH),1.66,,,
-Patient1,2018-11-03,Thyroid-stimulating Hormone (TSH),1.67,,,
-Patient1,2017-12-27,Thyroid-stimulating Hormone (TSH),2.01,,,
-Patient1,2025-05-30,Vitamin B12,-,232-1245,,
-Patient1,2024-12-31,Vitamin B12,829,232-1245,,
-Patient1,2024-09-05,Vitamin B12,,232-1245,,
-Patient1,2024-04-19,Vitamin B12,-,232-1245,,
-Patient1,2023-11-20,Vitamin B12,241,232-1245,,
-Patient1,2022-11-16,Vitamin B12,350,232-1245,,
-Patient1,2021-04-06,Vitamin B12,-,232-1245,,
-Patient1,2020-11-02,Vitamin B12,719,232-1245,,
-Patient1,2019-10-05,Vitamin B12,-,232-1245,,
-Patient1,2018-11-03,Vitamin B12,-,232-1245,,
-Patient1,2017-12-27,Vitamin B12,-,232-1245,,
-Patient1,2025-05-30,Vitamin D 25-Hydroxy,-,32.0-100.0,,
-Patient1,2024-12-31,Vitamin D 25-Hydroxy,25.1,32.0-100.0,,
-Patient1,2024-09-05,Vitamin D 25-Hydroxy,-,32.0-100.0,,
-Patient1,2024-04-19,Vitamin D 25-Hydroxy,-,32.0-100.0,,
-Patient1,2023-11-20,Vitamin D 25-Hydroxy,17.1,32.0-100.0,,
-Patient1,2022-11-16,Vitamin D 25-Hydroxy,16.1,32.0-100.0,,
-Patient1,2021-04-06,Vitamin D 25-Hydroxy,-,32.0-100.0,,
-Patient1,2020-11-02,Vitamin D 25-Hydroxy,16.5,32.0-100.0,,
-Patient1,2019-10-05,Vitamin D 25-Hydroxy,14,32.0-100.0,,
-Patient1,2018-11-03,Vitamin D 25-Hydroxy,9.8,32.0-100.0,,
-Patient1,2017-12-27,Vitamin D 25-Hydroxy,11.2,32.0-100.0,,
-Patient1,2025-05-30,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2024-12-31,Thyroid-stimulating Hormone (TSH),1.88,0.270-4.200,,
-Patient1,2024-09-05,Thyroid-stimulating Hormone (TSH),1.68,0.270-4.200,,
-Patient1,2024-04-19,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2023-11-20,Thyroid-stimulating Hormone (TSH),1.32,0.270-4.200,,
-Patient1,2022-11-16,Thyroid-stimulating Hormone (TSH),2.39,0.270-4.200,,
-Patient1,2021-04-06,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2020-11-02,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2019-10-05,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2018-11-03,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2017-12-27,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,
-Patient1,2025-05-30,HAPTOGLOBIN,180,30-200,,
-Patient1,2024-12-31,HAPTOGLOBIN,-,30-200,,
-Patient1,2024-09-05,HAPTOGLOBIN,-,30-200,,
-Patient1,2024-04-19,HAPTOGLOBIN,-,30-200,,
-Patient1,2023-11-20,HAPTOGLOBIN,-,30-200,,
-Patient1,2022-11-16,HAPTOGLOBIN,-,30-200,,
-Patient1,2021-04-06,HAPTOGLOBIN,-,30-200,,
-Patient1,2020-11-02,HAPTOGLOBIN,-,30-200,,
-Patient1,2019-10-05,HAPTOGLOBIN,-,30-200,,
-Patient1,2018-11-03,HAPTOGLOBIN,-,30-200,,
-Patient1,2017-12-27,HAPTOGLOBIN,-,30-200,,
-Patient1,2025-05-30,ALPHA-2-MACROGLOBULIN,201,130-300,,
-Patient1,2024-12-31,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2024-09-05,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2024-04-19,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2023-11-20,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2022-11-16,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2021-04-06,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2020-11-02,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2019-10-05,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2018-11-03,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2017-12-27,ALPHA-2-MACROGLOBULIN,-,130-300,,
-Patient1,2025-05-30,FIBROSIS SCORE,0.19,,,
-Patient1,2024-12-31,FIBROSIS SCORE,-,,,
-Patient1,2024-09-05,FIBROSIS SCORE,-,,,
-Patient1,2024-04-19,FIBROSIS SCORE,-,,,
-Patient1,2023-11-20,FIBROSIS SCORE,-,,,
-Patient1,2022-11-16,FIBROSIS SCORE,-,,,
-Patient1,2021-04-06,FIBROSIS SCORE,-,,,
-Patient1,2020-11-02,FIBROSIS SCORE,-,,,
-Patient1,2019-10-05,FIBROSIS SCORE,-,,,
-Patient1,2018-11-03,FIBROSIS SCORE,-,,,
-Patient1,2017-12-27,FIBROSIS SCORE,-,,,
-Patient1,2025-05-30,FIBROSIS STAGE,F0,,,
-Patient1,2024-12-31,FIBROSIS STAGE,-,,,
-Patient1,2024-09-05,FIBROSIS STAGE,-,,,
-Patient1,2024-04-19,FIBROSIS STAGE,-,,,
-Patient1,2023-11-20,FIBROSIS STAGE,-,,,
-Patient1,2022-11-16,FIBROSIS STAGE,-,,,
-Patient1,2021-04-06,FIBROSIS STAGE,-,,,
-Patient1,2020-11-02,FIBROSIS STAGE,-,,,
-Patient1,2019-10-05,FIBROSIS STAGE,-,,,
-Patient1,2018-11-03,FIBROSIS STAGE,-,,,
-Patient1,2017-12-27,FIBROSIS STAGE,-,,,
-Patient1,2025-05-30,FIBROSIS INTERP,no fibrosis,,,
-Patient1,2024-12-31,FIBROSIS INTERP,-,,,
-Patient1,2024-09-05,FIBROSIS INTERP,-,,,
-Patient1,2024-04-19,FIBROSIS INTERP,-,,,
-Patient1,2023-11-20,FIBROSIS INTERP,-,,,
-Patient1,2022-11-16,FIBROSIS INTERP,-,,,
-Patient1,2021-04-06,FIBROSIS INTERP,-,,,
-Patient1,2020-11-02,FIBROSIS INTERP,-,,,
-Patient1,2019-10-05,FIBROSIS INTERP,-,,,
-Patient1,2018-11-03,FIBROSIS INTERP,-,,,
-Patient1,2017-12-27,FIBROSIS INTERP,-,,,
-Patient1,2025-05-30,INFLAMMATION SCORE,0.13,,,
-Patient1,2024-12-31,INFLAMMATION SCORE,-,,,
-Patient1,2024-09-05,INFLAMMATION SCORE,-,,,
-Patient1,2024-04-19,INFLAMMATION SCORE,-,,,
-Patient1,2023-11-20,INFLAMMATION SCORE,-,,,
-Patient1,2022-11-16,INFLAMMATION SCORE,-,,,
-Patient1,2021-04-06,INFLAMMATION SCORE,-,,,
-Patient1,2020-11-02,INFLAMMATION SCORE,-,,,
-Patient1,2019-10-05,INFLAMMATION SCORE,-,,,
-Patient1,2018-11-03,INFLAMMATION SCORE,-,,,
-Patient1,2017-12-27,INFLAMMATION SCORE,-,,,
-Patient1,2025-05-30,INFLAMMATION STAGE,A0,,,
-Patient1,2024-12-31,INFLAMMATION STAGE,-,,,
-Patient1,2024-09-05,INFLAMMATION STAGE,-,,,
-Patient1,2024-04-19,INFLAMMATION STAGE,-,,,
-Patient1,2023-11-20,INFLAMMATION STAGE,-,,,
-Patient1,2022-11-16,INFLAMMATION STAGE,-,,,
-Patient1,2021-04-06,INFLAMMATION STAGE,-,,,
-Patient1,2020-11-02,INFLAMMATION STAGE,-,,,
-Patient1,2019-10-05,INFLAMMATION STAGE,-,,,
-Patient1,2018-11-03,INFLAMMATION STAGE,-,,,
-Patient1,2017-12-27,INFLAMMATION STAGE,-,,,
-Patient1,2025-05-30,INFLAMMATION INTERP,no activity *,,,
-Patient1,2024-12-31,INFLAMMATION INTERP,-,,,
-Patient1,2024-09-05,INFLAMMATION INTERP,-,,,
-Patient1,2024-04-19,INFLAMMATION INTERP,-,,,
-Patient1,2023-11-20,INFLAMMATION INTERP,-,,,
-Patient1,2022-11-16,INFLAMMATION INTERP,-,,,
-Patient1,2021-04-06,INFLAMMATION INTERP,-,,,
-Patient1,2020-11-02,INFLAMMATION INTERP,-,,,
-Patient1,2019-10-05,INFLAMMATION INTERP,-,,,
-Patient1,2018-11-03,INFLAMMATION INTERP,-,,,
-Patient1,2017-12-27,INFLAMMATION INTERP,-,,,
-Patient1,2025-05-30,COVID-19 (Coronavirus),-,,,
-Patient1,2024-12-31,COVID-19 (Coronavirus),-,,,
-Patient1,2024-09-05,COVID-19 (Coronavirus),-,,,
-Patient1,2024-04-19,COVID-19 (Coronavirus),-,,,
-Patient1,2023-11-20,COVID-19 (Coronavirus),-,,,
-Patient1,2022-11-16,COVID-19 (Coronavirus),-,,,
-Patient1,2021-04-06,COVID-19 (Coronavirus),Not Detected,,,
-Patient1,2020-11-02,COVID-19 (Coronavirus),-,,,
-Patient1,2019-10-05,COVID-19 (Coronavirus),-,,,
-Patient1,2018-11-03,COVID-19 (Coronavirus),-,,,
-Patient1,2017-12-27,COVID-19 (Coronavirus),-,,,
-Patient1,2025-05-30,Specific Gravity,-,1.003-1.030,,
-Patient1,2024-12-31,Specific Gravity,-,1.003-1.030,,
-Patient1,2024-09-05,Specific Gravity,-,1.003-1.030,,
-Patient1,2024-04-19,Specific Gravity,-,1.003-1.030,,
-Patient1,2023-11-20,Specific Gravity,1.014,1.003-1.030,,
-Patient1,2022-11-16,Specific Gravity,-,1.003-1.030,,
-Patient1,2021-04-06,Specific Gravity,-,1.003-1.030,,
-Patient1,2020-11-02,Specific Gravity,-,1.003-1.030,,
-Patient1,2019-10-05,Specific Gravity,-,1.003-1.030,,
-Patient1,2018-11-03,Specific Gravity,-,1.003-1.030,,
-Patient1,2017-12-27,Specific Gravity,-,1.003-1.030,,
-Patient1,2025-05-30,pH (Urine),-,5.0-8.0,,
-Patient1,2024-12-31,pH (Urine),-,5.0-8.0,,
-Patient1,2024-09-05,pH (Urine),-,5.0-8.0,,
-Patient1,2024-04-19,pH (Urine),-,5.0-8.0,,
-Patient1,2023-11-20,pH (Urine),5,5.0-8.0,,
-Patient1,2022-11-16,pH (Urine),-,5.0-8.0,,
-Patient1,2021-04-06,pH (Urine),-,5.0-8.0,,
-Patient1,2020-11-02,pH (Urine),-,5.0-8.0,,
-Patient1,2019-10-05,pH (Urine),-,5.0-8.0,,
-Patient1,2018-11-03,pH (Urine),-,5.0-8.0,,
-Patient1,2017-12-27,pH (Urine),-,5.0-8.0,,
-Patient1,2025-05-30,Protein (Urine),-,Negative,,
-Patient1,2024-12-31,Protein (Urine),-,Negative,,
-Patient1,2024-09-05,Protein (Urine),-,Negative,,
-Patient1,2024-04-19,Protein (Urine),-,Negative,,
-Patient1,2023-11-20,Protein (Urine),NEGATIVE,Negative,,
-Patient1,2022-11-16,Protein (Urine),-,Negative,,
-Patient1,2021-04-06,Protein (Urine),-,Negative,,
-Patient1,2020-11-02,Protein (Urine),-,Negative,,
-Patient1,2019-10-05,Protein (Urine),-,Negative,,
-Patient1,2018-11-03,Protein (Urine),-,Negative,,
-Patient1,2017-12-27,Protein (Urine),-,Negative,,
-Patient1,2025-05-30,Glucose (Urine),-,Negative,,
-Patient1,2024-12-31,Glucose (Urine),-,Negative,,
-Patient1,2024-09-05,Glucose (Urine),-,Negative,,
-Patient1,2024-04-19,Glucose (Urine),-,Negative,,
-Patient1,2023-11-20,Glucose (Urine),NEGATIVE,Negative,,
-Patient1,2022-11-16,Glucose (Urine),-,Negative,,
-Patient1,2021-04-06,Glucose (Urine),-,Negative,,
-Patient1,2020-11-02,Glucose (Urine),-,Negative,,
-Patient1,2019-10-05,Glucose (Urine),-,Negative,,
-Patient1,2018-11-03,Glucose (Urine),-,Negative,,
-Patient1,2017-12-27,Glucose (Urine),-,Negative,,
-Patient1,2025-05-30,Ketone,-,Negative,,
-Patient1,2024-12-31,Ketone,-,Negative,,
-Patient1,2024-09-05,Ketone,-,Negative,,
-Patient1,2024-04-19,Ketone,-,Negative,,
-Patient1,2023-11-20,Ketone,NEGATIVE,Negative,,
-Patient1,2022-11-16,Ketone,-,Negative,,
-Patient1,2021-04-06,Ketone,-,Negative,,
-Patient1,2020-11-02,Ketone,-,Negative,,
-Patient1,2019-10-05,Ketone,-,Negative,,
-Patient1,2018-11-03,Ketone,-,Negative,,
-Patient1,2017-12-27,Ketone,-,Negative,,
-Patient1,2025-05-30,Urobilinogen,-,0.2-1.0,,
-Patient1,2024-12-31,Urobilinogen,-,0.2-1.0,,
-Patient1,2024-09-05,Urobilinogen,-,0.2-1.0,,
-Patient1,2024-04-19,Urobilinogen,-,0.2-1.0,,
-Patient1,2023-11-20,Urobilinogen,0.2,0.2-1.0,,
-Patient1,2022-11-16,Urobilinogen,-,0.2-1.0,,
-Patient1,2021-04-06,Urobilinogen,-,0.2-1.0,,
-Patient1,2020-11-02,Urobilinogen,-,0.2-1.0,,
-Patient1,2019-10-05,Urobilinogen,-,0.2-1.0,,
-Patient1,2018-11-03,Urobilinogen,-,0.2-1.0,,
-Patient1,2017-12-27,Urobilinogen,-,0.2-1.0,,
-Patient1,2025-05-30,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2024-12-31,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2024-09-05,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2024-04-19,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2023-11-20,Bilirubin Indirect (Urine),NEGATIVE,Negative,,
-Patient1,2022-11-16,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2021-04-06,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2020-11-02,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2019-10-05,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2018-11-03,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2017-12-27,Bilirubin Indirect (Urine),-,Negative,,
-Patient1,2025-05-30,Blood (Urine),-,Negative,,
-Patient1,2024-12-31,Blood (Urine),-,Negative,,
-Patient1,2024-09-05,Blood (Urine),-,Negative,,
-Patient1,2024-04-19,Blood (Urine),-,Negative,,
-Patient1,2023-11-20,Blood (Urine),NEGATIVE,Negative,,
-Patient1,2022-11-16,Blood (Urine),-,Negative,,
-Patient1,2021-04-06,Blood (Urine),-,Negative,,
-Patient1,2020-11-02,Blood (Urine),-,Negative,,
-Patient1,2019-10-05,Blood (Urine),-,Negative,,
-Patient1,2018-11-03,Blood (Urine),-,Negative,,
-Patient1,2017-12-27,Blood (Urine),-,Negative,,
-Patient1,2025-05-30,Nitrite,-,,,
-Patient1,2024-12-31,Nitrite,-,,,
-Patient1,2024-09-05,Nitrite,-,,,
-Patient1,2024-04-19,Nitrite,-,,,
-Patient1,2023-11-20,Nitrite,NEGATIVE,,,
-Patient1,2022-11-16,Nitrite,-,,,
-Patient1,2021-04-06,Nitrite,-,,,
-Patient1,2020-11-02,Nitrite,-,,,
-Patient1,2019-10-05,Nitrite,-,,,
-Patient1,2018-11-03,Nitrite,-,,,
-Patient1,2017-12-27,Nitrite,-,,,
-Patient1,2025-05-30,Crystals,-,None,,
-Patient1,2024-12-31,Crystals,-,None,,
-Patient1,2024-09-05,Crystals,-,None,,
-Patient1,2024-04-19,Crystals,-,None,,
-Patient1,2023-11-20,Crystals,NONE,None,,
-Patient1,2022-11-16,Crystals,-,None,,
-Patient1,2021-04-06,Crystals,-,None,,
-Patient1,2020-11-02,Crystals,-,None,,
-Patient1,2019-10-05,Crystals,-,None,,
-Patient1,2018-11-03,Crystals,-,None,,
-Patient1,2017-12-27,Crystals,-,None,,
-Patient1,2025-05-30,White Blood Cells (Urine),-,0-4,,
-Patient1,2024-12-31,White Blood Cells (Urine),-,0-4,,
-Patient1,2024-09-05,White Blood Cells (Urine),-,0-4,,
-Patient1,2024-04-19,White Blood Cells (Urine),-,0-4,,
-Patient1,2023-11-20,White Blood Cells (Urine),0-4,0-4,,
-Patient1,2022-11-16,White Blood Cells (Urine),-,0-4,,
-Patient1,2021-04-06,White Blood Cells (Urine),-,0-4,,
-Patient1,2020-11-02,White Blood Cells (Urine),-,0-4,,
-Patient1,2019-10-05,White Blood Cells (Urine),-,0-4,,
-Patient1,2018-11-03,White Blood Cells (Urine),-,0-4,,
-Patient1,2017-12-27,White Blood Cells (Urine),-,0-4,,
-Patient1,2025-05-30,Red Blood Cells (Urine),-,,,
-Patient1,2024-12-31,Red Blood Cells (Urine),-,,,
-Patient1,2024-09-05,Red Blood Cells (Urine),-,,,
-Patient1,2024-04-19,Red Blood Cells (Urine),-,,,
-Patient1,2023-11-20,Red Blood Cells (Urine),NONE SEEN,,,
-Patient1,2022-11-16,Red Blood Cells (Urine),-,,,
-Patient1,2021-04-06,Red Blood Cells (Urine),-,,,
-Patient1,2020-11-02,Red Blood Cells (Urine),-,,,
-Patient1,2019-10-05,Red Blood Cells (Urine),-,,,
-Patient1,2018-11-03,Red Blood Cells (Urine),-,,,
-Patient1,2017-12-27,Red Blood Cells (Urine),-,,,
-Patient1,2025-05-30,CAST, RBC, URINE,-,0-1,,
-Patient1,2024-12-31,CAST, RBC, URINE,-,0-1,,
-Patient1,2024-09-05,CAST, RBC, URINE,-,0-1,,
-Patient1,2024-04-19,CAST, RBC, URINE,-,0-1,,
-Patient1,2023-11-20,CAST, RBC, URINE,NONE SEEN,0-1,,
-Patient1,2022-11-16,CAST, RBC, URINE,-,0-1,,
-Patient1,2021-04-06,CAST, RBC, URINE,-,0-1,,
-Patient1,2020-11-02,CAST, RBC, URINE,-,0-1,,
-Patient1,2019-10-05,CAST, RBC, URINE,-,0-1,,
-Patient1,2018-11-03,CAST, RBC, URINE,-,0-1,,
-Patient1,2017-12-27,CAST, RBC, URINE,-,0-1,,
-Patient1,2025-05-30,Hyaline Casts,-,0-4,,
-Patient1,2024-12-31,Hyaline Casts,-,0-4,,
-Patient1,2024-09-05,Hyaline Casts,-,0-4,,
-Patient1,2024-04-19,Hyaline Casts,-,0-4,,
-Patient1,2023-11-20,Hyaline Casts,0-4,0-4,,
-Patient1,2022-11-16,Hyaline Casts,-,0-4,,
-Patient1,2021-04-06,Hyaline Casts,-,0-4,,
-Patient1,2020-11-02,Hyaline Casts,-,0-4,,
-Patient1,2019-10-05,Hyaline Casts,-,0-4,,
-Patient1,2018-11-03,Hyaline Casts,-,0-4,,
-Patient1,2017-12-27,Hyaline Casts,-,0-4,,
-Patient1,2025-05-30,Epithelial Cells,-,None,,
-Patient1,2024-12-31,Epithelial Cells,-,None,,
-Patient1,2024-09-05,Epithelial Cells,-,None,,
-Patient1,2024-04-19,Epithelial Cells,-,None,,
-Patient1,2023-11-20,Epithelial Cells,NONE,None,,
-Patient1,2022-11-16,Epithelial Cells,-,None,,
-Patient1,2021-04-06,Epithelial Cells,-,None,,
-Patient1,2020-11-02,Epithelial Cells,-,None,,
-Patient1,2019-10-05,Epithelial Cells,-,None,,
-Patient1,2018-11-03,Epithelial Cells,-,None,,
-Patient1,2017-12-27,Epithelial Cells,-,None,,
-Patient1,2025-05-30,Granular Casts,-,0-1,,
-Patient1,2024-12-31,Granular Casts,-,0-1,,
-Patient1,2024-09-05,Granular Casts,-,0-1,,
-Patient1,2024-04-19,Granular Casts,-,0-1,,
-Patient1,2023-11-20,Granular Casts,NONE SEEN,0-1,,
-Patient1,2022-11-16,Granular Casts,-,0-1,,
-Patient1,2021-04-06,Granular Casts,-,0-1,,
-Patient1,2020-11-02,Granular Casts,-,0-1,,
-Patient1,2019-10-05,Granular Casts,-,0-1,,
-Patient1,2018-11-03,Granular Casts,-,0-1,,
-Patient1,2017-12-27,Granular Casts,-,0-1,,
-Patient1,2025-05-30,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2024-12-31,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2024-09-05,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2024-04-19,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2023-11-20,Bacteria (Urine),NONE,NONE-FEW,,
-Patient1,2022-11-16,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2021-04-06,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2020-11-02,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2019-10-05,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2018-11-03,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2017-12-27,Bacteria (Urine),-,NONE-FEW,,
-Patient1,2025-05-30,CRYSTAL, AMOUNT,-,None,,
-Patient1,2024-12-31,CRYSTAL, AMOUNT,-,None,,
-Patient1,2024-09-05,CRYSTAL, AMOUNT,-,None,,
-Patient1,2024-04-19,CRYSTAL, AMOUNT,-,None,,
-Patient1,2023-11-20,CRYSTAL, AMOUNT,NONE,None,,
-Patient1,2022-11-16,CRYSTAL, AMOUNT,-,None,,
-Patient1,2021-04-06,CRYSTAL, AMOUNT,-,None,,
-Patient1,2020-11-02,CRYSTAL, AMOUNT,-,None,,
-Patient1,2019-10-05,CRYSTAL, AMOUNT,-,None,,
-Patient1,2018-11-03,CRYSTAL, AMOUNT,-,None,,
-Patient1,2017-12-27,CRYSTAL, AMOUNT,-,None,,
-Patient1,2025-05-30,Leukocyte Esterase,-,Negative,,
-Patient1,2024-12-31,Leukocyte Esterase,-,Negative,,
-Patient1,2024-09-05,Leukocyte Esterase,-,Negative,,
-Patient1,2024-04-19,Leukocyte Esterase,-,Negative,,
-Patient1,2023-11-20,Leukocyte Esterase,NEGATIVE,Negative,,
-Patient1,2022-11-16,Leukocyte Esterase,-,Negative,,
-Patient1,2021-04-06,Leukocyte Esterase,-,Negative,,
-Patient1,2020-11-02,Leukocyte Esterase,-,Negative,,
-Patient1,2019-10-05,Leukocyte Esterase,-,Negative,,
-Patient1,2018-11-03,Leukocyte Esterase,-,Negative,,
-Patient1,2017-12-27,Leukocyte Esterase,-,Negative,,
-Patient1,2025-05-30,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2024-12-31,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2024-09-05,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2024-04-19,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2023-11-20,Color,YELLOW,[Yellow,Strawm,Amber],,
-Patient1,2022-11-16,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2021-04-06,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2020-11-02,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2019-10-05,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2018-11-03,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2017-12-27,Color,-,[Yellow,Strawm,Amber],,
-Patient1,2025-05-30,CHARACTER, URINE,-,Clear,,
-Patient1,2024-12-31,CHARACTER, URINE,-,Clear,,
-Patient1,2024-09-05,CHARACTER, URINE,-,Clear,,
-Patient1,2024-04-19,CHARACTER, URINE,-,Clear,,
-Patient1,2023-11-20,CHARACTER, URINE,CLEAR,Clear,,
-Patient1,2022-11-16,CHARACTER, URINE,-,Clear,,
-Patient1,2021-04-06,CHARACTER, URINE,-,Clear,,
-Patient1,2020-11-02,CHARACTER, URINE,-,Clear,,
-Patient1,2019-10-05,CHARACTER, URINE,-,Clear,,
-Patient1,2018-11-03,CHARACTER, URINE,-,Clear,,
-Patient1,2017-12-27,CHARACTER, URINE,-,Clear,,
-Patient1,2025-09-15,Creatinine,1.04,0.76-1.27,,
-Patient1,2025-11-21,Total Protein (Blood),7.6,5.9-8.4,,
-Patient1,2025-11-21,Albumin,4.9,3.5-5.2,,
-Patient1,2025-11-21,Globulin,2.7,1.7-3.7,,
-Patient1,2025-11-21,Albumin/Globulin Ratio,2.7,1.1-2.9,,
-Patient1,2025-11-21,Glucose (Blood),83,70-99,,
-Patient1,2025-11-21,Sodium,142,135-147,,
-Patient1, 2025-11-21,Potassium,4.1,3.5-5.5,,
-Patient1,2025-11-21,Chloride,101,96-108,,
-Patient1,2025-11-21,Carbon Dioxide,23,19-29,,
-Patient1,2025-11-21,Blood Urea Nitrogen (BUN),16,6-20,,
-Patient1,2025-11-21,Creatinine,0.84,0.67-1.31,,
-Patient1,2025-11-21,eGFR,111,>60,,
-Patient1,2025-11-21,BUN/Creatinine Ratio,19.0,10.0-28.0,,
-Patient1,2025-11-21,Calcium,9.2,8.6-10.4,,
-Patient1,2025-11-21,Bilirubin,0.4,<1,2,,
-Patient1,2025-11-21,Bilirubin Direct (Bilirubin Conjugated),0.4,<0.4,,
-Patient1,2025-11-21,Alkaline Phosphatase (ALP),135,40-156,,
-Patient1,2025-11-21,AST,24,<40,,
-Patient1,2025-11-21,ALT,29,<41,,
-Patient1,2025-11-21,Total Cholesterol,169,<200,,
-Patient1,2025-11-21,Triglyceride,178,<150,,
-Patient1,2025-11-21,High Density Lipoprotein (HDL),39,>40,,
-Patient1,2025-11-21,HDL as % of Cholesterol,23,>14,,
-Patient1,2025-11-21,Trig/HDL Ratio,4.56,<2.76,,
-Patient1,2025-11-21,LDL/HDL Ratio,2.41,<3.56,,
-Patient1,2025-11-21,Non-HDL Cholesterol,130,<130,,
-Patient1,2025-11-21,Low Density Lipoprotein (LDL),94,<100,,
-Patient1,2025-11-21,Very Low Density Lipoprotein (VLDL),36,07-32,,
-Patient1,2025-11-21,Cholesterol/HDL Ratio,4.3,<7.4,,
-Patient1,2025-11-21,White Blood Cell Count (WBC Count),5.82,3.66-10.60,,
-Patient1,2025-11-21,Red Blood Cell Count (RBC Count),5.85,3.94-5.76,,
-Patient1,2025-11-21,Hemoglobin (Hgb),15.2,12.0-16.9,,
-Patient1,2025-11-21,Hematocrit (Hct),47.2,34.6-49.6,,
-Patient1,2025-11-21,Mean Corpuscular Volume (MCV),80.7,78.0-98.0,,
-Patient1,2025-11-21,Mean Corpuscular Hemoglobin (MCH),26.0,25.8-33.1,,
-Patient1,2025-11-21,Mean Corpuscular Hemoglobin Concentration (MCHC),32.2,31.7-35.3,,
-Patient1,2025-11-21,Red Blood Cell Distribution Width (RDW),13.2,12.2-15.3,,
-Patient1,2025-11-21,POLYS,51.0,34.9-75.3,,
-Patient1,2025-11-21,POLYS, ABS. COUNT,2.97,1.30-7.00,,
-Patient1,2025-11-21,Lymphocytes,34.9,14.0-51.8,,
-Patient1,2025-11-21,Absolute Lymphocytes,2.03,0.80-3.00,,
-Patient1,2025-11-21,MONOS,6.0,3.5-13.2,,
-Patient1, 2025-11-21,Monocytes,6,0.50-13.20,,
-Patient1,2025-11-21,Absolute Monocytes,0.35,0.00-1.00,,
-Patient1,2025-11-21,Eosinophils,6.4,0.0-6.2,,
-Patient1,2025-11-21,Absolute Eosinophils,0.37,0.00-0.40,,
-Patient1,2025-11-21,Basophils,1.5,0.0-1.0,,
-Patient1,2025-11-21,Absolute Basophils,0.09,0.00-0.10,,
-Patient1,2025-11-21,Immature Granulocyte Automated,0.2,0.0-1.0,,
-Patient1,2025-11-21,IG, ABS. COUNT,0.01,,,
-Patient1,2025-11-21,Platelet Count,282,140-425,,
-Patient1,2025-11-21,Mean Platelet Volume,10.2,8.6-12.1,,
-Patient1,2025-11-21,Color,Yellow,[Yellow,Strawm,Amber],,
-Patient1,2025-11-21,CHARACTER,Clear,-,Clear,,
-Patient1,2025-11-21,Specific Gravity,-,1.026-1.030,,
-Patient1,2025-11-21,pH (Urine),5.5,5.0-8.0,,
-Patient1,2025-11-21,Protein (Urine),Trace,Negative,,
-Patient1,2025-11-21,Glucose (Urine),Negative,Negative,,
-Patient1,2025-11-21,Ketone,Negative,Negative,,
-Patient1,2025-11-21,Urobilinogen,0.2,0.2-1.0,,
-Patient1,2025-11-21,Blood (Urine),Negative,Negative,,
-Patient1,2025-11-21,Bilirubin Indirect (Urine),Negative,Negative,,
-Patient1,2025-11-21,Nitrite,Negative,Negative,,
-Patient1,2025-11-21,Crystals,None,None,,
-Patient1,2025-11-21,Leukocyte Esterase,Negative,Negative,,
-Patient1,2025-11-21,CRYSTAL, AMOUNT,None,None,,
-Patient1,2025-11-21,White Blood Cells (Urine),0-5,0-5,,
-Patient1,2025-11-21,Red Blood Cells (Urine),0-2,0-2,,
-Patient1,2025-11-21,Epithelial Cells,None,None,,
-Patient1,2025-11-21,Hyaline Casts,0,0-4,,
-Patient1,2025-11-21,CAST, RBC, URINE,0,0-1,,
-Patient1,2025-11-21,Granular Casts,0,0-1,,
-Patient1,2025-11-21,Bacteria (Urine),0,NONE-FEW,,
-Patient1,2025-11-21,Hemoglobin A1C,5.6,<5.7,,
-Patient1,2025-11-21,Thyroid-stimulating Hormone (TSH),0.956,0.270-4.2,,
-Patient1,2025-11-21,Vitamin B12,503,232-1245,,
-Patient1,2025-11-21,Vitamin D 25-Hydroxy,44.6,32.0-100.0,,
-Patient1,2025-11-21,Estimated Glomerular Filtration Rate,111,,,
-
-Patient2,2025-11-21,Total Protein (Blood),7.2,5.9-8.4,,
-Patient2,2025-11-21,Albumin,4.5,3.5-5.2,,
-Patient2,2025-11-21,Globulin,2.7,1.7-3.7,,
-Patient2,2025-11-21,Albumin/Globulin Ratio,1.7,1.1-2.9,,
-Patient2,2025-11-21,Glucose (Blood),80,70-99,,
-Patient2,2025-11-21,Sodium,141,135-147,,
-Patient2, 2025-11-21,Potassium,4.3,3.5-5.5,,
-Patient2,2025-11-21,Chloride,104,96-108,,
-Patient2,2025-11-21,Carbon Dioxide,23,19-29,,
-Patient2,2025-11-21,Blood Urea Nitrogen (BUN),12,6-20,,
-Patient2,2025-11-21,Creatinine,0.66,0.67-1.31,,
-Patient2,2025-11-21,eGFR,112,>60,,
-Patient2,2025-11-21,BUN/Creatinine Ratio,18.2,10.0-28.0,,
-Patient2,2025-11-21,Calcium,9.1,8.6-10.4,,
-Patient2,2025-11-21,Iron,20,37-145,,
-Patient2,2025-11-21,Bilirubin,0.2,<1,2,,
-Patient2,2025-11-21,Bilirubin Direct (Bilirubin Conjugated),0.2,<0.4,,
-Patient2,2025-11-21,Alkaline Phosphatase (ALP),90,40-156,,
-Patient2,2025-11-21,AST,26,<40,,
-Patient2,2025-11-21,ALT,40,<41,,
-Patient2,2025-11-21,Total Cholesterol,120,<200,,
-Patient2,2025-11-21,Triglyceride,102,<150,,
-Patient2,2025-11-21,High Density Lipoprotein (HDL),39,>50,,
-Patient2,2025-11-21,HDL as % of Cholesterol,33,>14,,
-Patient2,2025-11-21,Cholesterol/HDL Ratio,3.1,<5.8,,
-Patient2,2025-11-21,LDL/HDL Ratio,1.56,<3.56,,
-Patient2,2025-11-21,Non-HDL Cholesterol,81,<130,,
-Patient2,2025-11-21,Low Density Lipoprotein (LDL),61,<100,,
-Patient2,2025-11-21,Very Low Density Lipoprotein (VLDL),20,07-32,,
-Patient2,2025-11-21,Trig/HDL Ratio,2.62,<1.66,,
-Patient2,2025-11-21,White Blood Cell Count (WBC Count),7.33,4.00-10.10,,
-Patient2,2025-11-21,Red Blood Cell Count (RBC Count),4.34,3.58-5.19,,
-Patient2,2025-11-21,Hemoglobin (Hgb),8.9,11.0-15.5,,
-Patient2,2025-11-21,Hematocrit (Hct),31.1,31.5-44.8,,
-Patient2,2025-11-21,Mean Corpuscular Volume (MCV),71.7,78.0-98.0,,
-Patient2,2025-11-21,Mean Corpuscular Hemoglobin (MCH),20.5,25.2-32.6,,
-Patient2,2025-11-21,Mean Corpuscular Hemoglobin Concentration (MCHC),28.6,31.0-34.7,,
-Patient2,2025-11-21,Red Blood Cell Distribution Width (RDW),15.5,12.2-15.3,,
-Patient2,2025-11-21,POLYS,61.4,34.9-75.3,,
-Patient2,2025-11-21,POLYS, ABS. COUNT,4.50,1.30-7.00,,
-Patient2,2025-11-21,Lymphocytes,25.9,14.0-51.8,,
-Patient2,2025-11-21,Absolute Lymphocytes,1.9,0.80-3.00,,
-Patient2,2025-11-21,MONOS,8.6,3.5-13.2,,
-Patient2, 2025-11-21,Monocytes,8.6,0.50-13.20,,
-Patient2,2025-11-21,Absolute Monocytes,0.63,0.00-1.00,,
-Patient2,2025-11-21,Eosinophils,3.0,0.0-6.2,,
-Patient2,2025-11-21,Absolute Eosinophils,0.22,0.00-0.40,,
-Patient2,2025-11-21,Basophils,1.0,0.0-1.0,,
-Patient2,2025-11-21,Absolute Basophils,0.07,0.00-0.10,,
-Patient2,2025-11-21,Immature Granulocyte Automated,0.1,0.0-1.0,,
-Patient2,2025-11-21,IG, ABS. COUNT,0.01,,,
-Patient2,2025-11-21,Platelet Count,273,140-425,,
-Patient2,2025-11-21,Mean Platelet Volume,12.5,8.6-12.1,,
-Patient2,2025-11-21,Hemoglobin A1C,5.5,<5.7,,
-Patient2,2025-11-21,Thyroid-stimulating Hormone (TSH),4.160,0.270-4.2,,
-Patient2,2025-11-21,Ferritin,5,13-150,,
-Patient2,2025-11-21,CRP,<0.3,<0.5,,
-Patient2,2025-11-21,ESR (SED-RATE),53,<31,,
-Patient2,2025-11-21,Vitamin B12,505,232-1245,,
-Patient2,2025-11-21,Vitamin D 25-Hydroxy,43.9,32.0-100.0,,
-Patient2,2025-11-21,Iron % Sat,Cant Calc,20-55,,
-Patient2,2025-11-21,TIBC,Cant Cal,228-428,,
+person_name,date,test_name,result,reference_range,unit,notes,group
+Patient1,9/15/25,White Blood Cell Count (WBC Count),5.8,3.66-10.60,,,wbc
+Patient1,5/30/25,White Blood Cell Count (WBC Count),6.53,3.66-10.60,,,wbc
+Patient1,12/31/24,White Blood Cell Count (WBC Count),6.14,3.66-10.60,,,wbc
+Patient1,9/5/24,White Blood Cell Count (WBC Count),5.46,3.66-10.60,,,wbc
+Patient1,4/19/24,White Blood Cell Count (WBC Count),-,3.66-10.60,,,wbc
+Patient1,11/20/23,White Blood Cell Count (WBC Count),6.82,3.66-10.60,,,wbc
+Patient1,11/16/22,White Blood Cell Count (WBC Count),5.58,3.66-10.60,,,wbc
+Patient1,4/6/21,White Blood Cell Count (WBC Count),-,3.66-10.60,,,wbc
+Patient1,11/2/20,White Blood Cell Count (WBC Count),5.91,3.66-10.60,,,wbc
+Patient1,10/5/19,White Blood Cell Count (WBC Count),6.55,3.66-10.60,,,wbc
+Patient1,11/3/18,White Blood Cell Count (WBC Count),5.59,3.66-10.60,,,wbc
+Patient1,12/27/17,White Blood Cell Count (WBC Count),5.58,3.66-10.60,,,wbc
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Patient1,9/15/25,Red Blood Cell Count (RBC Count),5.61,3.94-5.76,,,rbc
+Patient1,5/30/25,Red Blood Cell Count (RBC Count),5.79,3.94-5.76,,,rbc
+Patient1,12/31/24,Red Blood Cell Count (RBC Count),5.61,3.94-5.76,,,rbc
+Patient1,9/5/24,Red Blood Cell Count (RBC Count),5.92,3.94-5.76,,,rbc
+Patient1,4/19/24,Red Blood Cell Count (RBC Count),-,3.94-5.76,,,rbc
+Patient1,11/20/23,Red Blood Cell Count (RBC Count),6.09,3.94-5.76,,,rbc
+Patient1,11/16/22,Red Blood Cell Count (RBC Count),5.86,3.94-5.76,,,rbc
+Patient1,4/6/21,Red Blood Cell Count (RBC Count),-,3.94-5.76,,,rbc
+Patient1,11/2/20,Red Blood Cell Count (RBC Count),5.74,3.94-5.76,,,rbc
+Patient1,10/5/19,Red Blood Cell Count (RBC Count),5.99,3.94-5.76,,,rbc
+Patient1,11/3/18,Red Blood Cell Count (RBC Count),5.91,3.94-5.76,,,rbc
+Patient1,12/27/17,Red Blood Cell Count (RBC Count),5.83,3.94-5.76,,,rbc
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Patient1,9/15/25,Hemoglobin (Hgb),15,12.0-16.9,,,gb
+Patient1,5/30/25,Hemoglobin (Hgb),15.1,12.0-16.9,,,gb
+Patient1,12/31/24,Hemoglobin (Hgb),14.6,12.0-16.9,,,gb
+Patient1,9/5/24,Hemoglobin (Hgb),15.1,12.0-16.9,,,gb
+Patient1,4/19/24,Hemoglobin (Hgb),-,12.0-16.9,,,gb
+Patient1,11/20/23,Hemoglobin (Hgb),16.4,12.0-16.9,,,gb
+Patient1,11/16/22,Hemoglobin (Hgb),15.8,12.0-16.9,,,gb
+Patient1,4/6/21,Hemoglobin (Hgb),-,12.0-16.9,,,gb
+Patient1,11/2/20,Hemoglobin (Hgb),15.2,12.0-16.9,,,gb
+Patient1,10/5/19,Hemoglobin (Hgb),15.5,12.0-16.9,,,gb
+Patient1,11/3/18,Hemoglobin (Hgb),16.1,12.0-16.9,,,gb
+Patient1,12/27/17,Hemoglobin (Hgb),15.5,12.0-16.9,,,gb
+Patient1,9/15/25,Hematocrit (Hct),46.8,34.6-49.6,,,gb
+Patient1,5/30/25,Hematocrit (Hct),46.9,34.6-49.6,,,gb
+Patient1,12/31/24,Hematocrit (Hct),45.5,34.6-49.6,,,gb
+Patient1,9/5/24,Hematocrit (Hct),47.5,34.6-49.6,,,gb
+Patient1,4/19/24,Hematocrit (Hct),-,34.6-49.6,,,gb
+Patient1,11/20/23,Hematocrit (Hct),49.2,34.6-49.6,,,gb
+Patient1,11/16/22,Hematocrit (Hct),47.5,34.6-49.6,,,gb
+Patient1,4/6/21,Hematocrit (Hct),-,34.6-49.6,,,gb
+Patient1,11/2/20,Hematocrit (Hct),45.7,34.6-49.6,,,gb
+Patient1,10/5/19,Hematocrit (Hct),47.7,34.6-49.6,,,gb
+Patient1,11/3/18,Hematocrit (Hct),46.6,34.6-49.6,,,gb
+Patient1,12/27/17,Hematocrit (Hct),46.1,34.6-49.6,,,gb
+,,,,,,,
+,,,,,,,
+Patient1,5/30/25,MCV,81,78.0-98.0,,,mean volume
+Patient1,12/31/24,MCV,81.1,78.0-98.0,,,mean volume
+Patient1,9/5/24,MCV,80.2,78.0-98.0,,,mean volume
+Patient1,4/19/24,MCV,-,78.0-98.0,,,mean volume
+Patient1,11/20/23,MCV,80.8,78.0-98.0,,,mean volume
+Patient1,11/16/22,MCV,81.1,78.0-98.0,,,mean volume
+Patient1,4/6/21,MCV,-,78.0-98.0,,,mean volume
+Patient1,11/2/20,MCV,79.6,78.0-98.0,,,mean volume
+Patient1,10/5/19,MCV,79.6,78.0-98.0,,,mean volume
+Patient1,11/3/18,MCV,78.8,78.0-98.0,,,mean volume
+Patient1,12/27/17,MCV,79.1,78.0-98.0,,,mean volume
+Patient1, 2025-09-15,MCV,83,78.0-98.0,,,mean volume
+Patient1,5/30/25,MCH,26.1,25.8-33.1,,,mean volume
+Patient1,12/31/24,MCH,26,25.8-33.1,,,mean volume
+Patient1,9/5/24,MCH,25.5,25.8-33.1,,,mean volume
+Patient1,4/19/24,MCH,-,25.8-33.1,,,mean volume
+Patient1,11/20/23,MCH,26.9,25.8-33.1,,,mean volume
+Patient1,11/16/22,MCH,27,25.8-33.1,,,mean volume
+Patient1,4/6/21,MCH,-,25.8-33.1,,,mean volume
+Patient1,11/2/20,MCH,26.5,25.8-33.1,,,mean volume
+Patient1,10/5/19,MCH,25.9,25.8-33.1,,,mean volume
+Patient1,11/3/18,MCH,27.2,25.8-33.1,,,mean volume
+Patient1,12/27/17,MCH,26.6,25.8-33.1,,,mean volume
+Patient1, 2025-09-15,MCH,26.7,25.8-33.1,,,mean volume
+Patient1,5/30/25,MCHC,32.2,31.7-35.3,,,mean volume
+Patient1,12/31/24,MCHC,32.1,31.7-35.3,,,mean volume
+Patient1,9/5/24,MCHC,31.8,31.7-35.3,,,mean volume
+Patient1,4/19/24,MCHC,-,31.7-35.3,,,mean volume
+Patient1,11/20/23,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,11/16/22,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,4/6/21,MCHC,-,31.7-35.3,,,mean volume
+Patient1,11/2/20,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,10/5/19,MCHC,32.5,31.7-35.3,,,mean volume
+Patient1,11/3/18,MCHC,34.5,31.7-35.3,,,mean volume
+Patient1,12/27/17,MCHC,33.6,31.7-35.3,,,mean volume
+Patient1, 2025-09-15,MCHC,32.1,31.7-35.3,,,mean volume
+Patient1,5/30/25,RDW,13.5,12.2-15.3,,,rbc
+Patient1,12/31/24,RDW,13,12.2-15.3,,,rbc
+Patient1,9/5/24,RDW,13,12.2-15.3,,,rbc
+Patient1,4/19/24,RDW,-,12.2-15.3,,,rbc
+Patient1,11/20/23,RDW,13.4,12.2-15.3,,,rbc
+Patient1,11/16/22,RDW,13.4,12.2-15.3,,,rbc
+Patient1,4/6/21,RDW,-,12.2-15.3,,,rbc
+Patient1,11/2/20,RDW,12.9,12.2-15.3,,,rbc
+Patient1,10/5/19,RDW,13.6,12.2-15.3,,,rbc
+Patient1,11/3/18,RDW,13.8,12.2-15.3,,,rbc
+Patient1,12/27/17,RDW,14.1,12.2-15.3,,,rbc
+Patient1, 2025-09-15,RDW,13.5,12.2-15.3,,,rbc
+Patient1,5/30/25,POLYS,51.4,34.9-75.3,,,bone marrow
+Patient1,12/31/24,POLYS,52.1,34.9-75.3,,,bone marrow
+Patient1,9/5/24,POLYS,52.4,34.9-75.3,,,bone marrow
+Patient1,4/19/24,POLYS,-,34.9-75.3,,,bone marrow
+Patient1,11/20/23,POLYS,57.4,34.9-75.3,,,bone marrow
+Patient1,11/16/22,POLYS,52.1,34.9-75.3,,,bone marrow
+Patient1,4/6/21,POLYS,-,34.9-75.3,,,bone marrow
+Patient1,11/2/20,POLYS,55.3,34.9-75.3,,,bone marrow
+Patient1,10/5/19,POLYS,56.9,34.9-75.3,,,bone marrow
+Patient1,11/3/18,POLYS,53.6,34.9-75.3,,,bone marrow
+Patient1,12/27/17,POLYS,54,34.9-75.3,,,bone marrow
+Patient1,5/30/25,POLYS ABS,3.35,1.30-7.00,,,bone marrow
+Patient1,12/31/24,POLYS ABS,3.2,1.30-7.00,,,bone marrow
+Patient1,9/5/24,POLYS ABS,2.86,1.30-7.00,,,bone marrow
+Patient1,4/19/24,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/20/23,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/16/22,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,4/6/21,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/2/20,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,10/5/19,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/3/18,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,12/27/17,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,5/30/25,Lymphocytes,34,14.0-51.8,,,particles
+Patient1,12/31/24,Lymphocytes,31.9,14.0-51.8,,,particles
+Patient1,9/5/24,Lymphocytes,32.6,14.0-51.8,,,particles
+Patient1,4/19/24,Lymphocytes,-,14.0-51.8,,,particles
+Patient1,11/20/23,Lymphocytes,32.8,14.0-51.8,,,particles
+Patient1,11/16/22,Lymphocytes,33,14.0-51.8,,,particles
+Patient1,4/6/21,Lymphocytes,-,14.0-51.8,,,particles
+Patient1,11/2/20,Lymphocytes,33.2,14.0-51.8,,,particles
+Patient1,10/5/19,Lymphocytes,29.6,14.0-51.8,,,particles
+Patient1,11/3/18,Lymphocytes,36,14.0-51.8,,,particles
+Patient1,12/27/17,Lymphocytes,33.7,14.0-51.8,,,particles
+Patient1, 2025-09-15,Lymphocytes,33,14.0-51.8,,,particles
+Patient1,5/30/25,Absolute Lymphocytes,2.22,0.80-3.00,,,particles
+Patient1,12/31/24,Absolute Lymphocytes,1.96,0.80-3.00,,,particles
+Patient1,9/5/24,Absolute Lymphocytes,1.78,0.80-3.00,,,particles
+Patient1,4/19/24,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,11/20/23,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,11/16/22,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,4/6/21,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,11/2/20,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,10/5/19,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,11/3/18,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1,12/27/17,Absolute Lymphocytes,-,0.80-3.00,,,particles
+Patient1, 2025-09-15,Absolute Lymphocytes,1.9,0.70-3.10,,,particles
+Patient1,5/30/25,MONOS,6,5-13.2,,,particles
+Patient1,5/30/25,MONOS,7,3.5-13.2,,,particles
+Patient1,12/31/24,MONOS,7.5,3.5-13.2,,,particles
+Patient1,9/5/24,MONOS,6.2,3.5-13.2,,,particles
+Patient1,4/19/24,MONOS,-,3.5-13.2,,,particles
+Patient1,11/20/23,MONOS,5.6,3.5-13.2,,,particles
+Patient1,11/16/22,MONOS,6.1,3.5-13.2,,,particles
+Patient1,4/6/21,MONOS,-,3.5-13.2,,,particles
+Patient1,11/2/20,MONOS,5.9,3.5-13.2,,,particles
+Patient1,10/5/19,MONOS,7.2,3.5-13.2,,,particles
+Patient1,11/3/18,MONOS,5.4,3.5-13.2,,,particles
+Patient1,12/27/17,MONOS,4.7,3.5-13.2,,,particles
+Patient1, 2025-09-15,Monocytes,6,3.50-13.20,,,particles
+Patient1,5/30/25,Absolute Monocytes,0.46,0.00-1.00,,,particles
+Patient1,12/31/24,Absolute Monocytes,0.46,0.00-1.00,,,particles
+Patient1,9/5/24,Absolute Monocytes,0.34,0.00-1.00,,,particles
+Patient1,4/19/24,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,11/20/23,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,11/16/22,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,4/6/21,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,11/2/20,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,10/5/19,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,11/3/18,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1,12/27/17,Absolute Monocytes,-,0.00-1.00,,,particles
+Patient1, 2025-09-15,Absolute Monocytes,0.4,0.01-0.90,,,particles
+Patient1,9/15/25,Neutrophils,53,40.0-60.0,,,particles
+Patient1,9/15/25,Absolute Neutrophils,3.1,1.4-7.0,,,particles
+Patient1,5/30/25,Eosinophils,6.1,0.0-6.2,,,particles
+Patient1,12/31/24,Eosinophils,6.8,0.0-6.2,,,particles
+Patient1,9/5/24,Eosinophils,6.8,0.0-6.2,,,particles
+Patient1,4/19/24,Eosinophils,-,0.0-6.2,,,particles
+Patient1,11/20/23,Eosinophils,2.6,0.0-6.2,,,particles
+Patient1,11/16/22,Eosinophils,6.8,0.0-6.2,,,particles
+Patient1,4/6/21,Eosinophils,-,0.0-6.2,,,particles
+Patient1,11/2/20,Eosinophils,3.9,0.0-6.2,,,particles
+Patient1,10/5/19,Eosinophils,4.9,0.0-6.2,,,particles
+Patient1,11/3/18,Eosinophils,3.4,0.0-6.2,,,particles
+Patient1,12/27/17,Eosinophils,5.2,0.0-6.2,,,particles
+Patient1, 2025-09-15,Eosinophils,6,0.0-6.2,,,particles
+Patient1,5/30/25,Absolute Eosinophils,0.4,0.00-0.40,,,particles
+Patient1,12/31/24,Absolute Eosinophils,0.42,0.00-0.40,,,particles
+Patient1,9/5/24,Absolute Eosinophils,0.37,0.00-0.40,,,particles
+Patient1,4/19/24,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,11/20/23,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,11/16/22,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,4/6/21,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,11/2/20,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,10/5/19,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,11/3/18,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1,12/27/17,Absolute Eosinophils,-,0.00-0.40,,,particles
+Patient1, 2025-09-15,Absolute Eosinophils,0.3,0.00-0.40,,,particles
+Patient1,5/30/25,Basophils,1.2,0.0-1.0,,,particles
+Patient1,12/31/24,Basophils,1.5,0.0-1.0,,,particles
+Patient1,9/5/24,Basophils,1.6,0.0-1.0,,,particles
+Patient1,4/19/24,Basophils,-,0.0-1.0,,,particles
+Patient1,11/20/23,Basophils,1.5,0.0-1.0,,,particles
+Patient1,11/16/22,Basophils,1.8,0.0-1.0,,,particles
+Patient1,4/6/21,Basophils,-,0.0-1.0,,,particles
+Patient1,11/2/20,Basophils,1.5,0.0-1.0,,,particles
+Patient1,10/5/19,Basophils,1.1,0.0-1.0,,,particles
+Patient1,11/3/18,Basophils,1.6,0.0-1.0,,,particles
+Patient1,12/27/17,Basophils,2,0.0-1.0,,,particles
+Patient1, 2025-09-15,Basophils,2,0.0-1.0,,,particles
+Patient1,5/30/25,Absolute Basophils,0.08,0.00-0.10,,,particles
+Patient1,12/31/24,Absolute Basophils,0.09,0.00-0.10,,,particles
+Patient1,9/5/24,Absolute Basophils,0.09,0.00-0.10,,,particles
+Patient1,4/19/24,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,11/20/23,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,11/16/22,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,4/6/21,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,11/2/20,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,10/5/19,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,11/3/18,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1,12/27/17,Absolute Basophils,-,0.00-0.10,,,particles
+Patient1, 2025-09-15,Absolute Basophils,0.1,0.00-0.20,,,particles
+Patient1,5/30/25,Immature Granulocyte Automated,0.3,0.0-1.0,,,others
+Patient1,12/31/24,Immature Granulocyte Automated,0.2,0.0-1.0,,,others
+Patient1,9/5/24,Immature Granulocyte Automated,0.4,0.0-1.0,,,others
+Patient1,4/19/24,Immature Granulocyte Automated,-,0.0-1.0,,,others
+Patient1,11/20/23,Immature Granulocyte Automated,0.1,0.0-1.0,,,others
+Patient1,11/16/22,Immature Granulocyte Automated,0.2,0.0-1.0,,,others
+Patient1,4/6/21,Immature Granulocyte Automated,-,0.0-1.0,,,others
+Patient1,11/2/20,Immature Granulocyte Automated,0.2,0.0-1.0,,,others
+Patient1,10/5/19,Immature Granulocyte Automated,0.3,0.0-1.0,,,others
+Patient1,11/3/18,Immature Granulocyte Automated,0,0.0-1.0,,,others
+Patient1,12/27/17,Immature Granulocyte Automated,0.4,0.0-1.0,,,others
+Patient1, 2025-09-15,Immature Granulocyte Automated,0,0.0-1.0,,,others
+Patient1,5/30/25,Platelet Count,314,140-425,,,platelets
+Patient1,12/31/24,Platelet Count,285,140-425,,,platelets
+Patient1,9/5/24,Platelet Count,276,140-425,,,platelets
+Patient1,4/19/24,Platelet Count,-,140-425,,,platelets
+Patient1,11/20/23,Platelet Count,337,140-425,,,platelets
+Patient1,11/16/22,Platelet Count,323,140-425,,,platelets
+Patient1,4/6/21,Platelet Count,-,140-425,,,platelets
+Patient1,11/2/20,Platelet Count,322,140-425,,,platelets
+Patient1,10/5/19,Platelet Count,326,140-425,,,platelets
+Patient1,11/3/18,Platelet Count,273,140-425,,,platelets
+Patient1,12/27/17,Platelet Count,284,140-425,,,platelets
+Patient1, 2025-09-15,Platelet Count,278,140-425,,,platelets
+Patient1,5/30/25,Mean Platelet Volume,9.8,8.6-12.1,,,platelets
+Patient1,12/31/24,Mean Platelet Volume,10.1,8.6-12.1,,,platelets
+Patient1,9/5/24,Mean Platelet Volume,10.2,8.6-12.1,,,platelets
+Patient1,4/19/24,Mean Platelet Volume,-,8.6-12.1,,,platelets
+Patient1,11/20/23,Mean Platelet Volume,9.7,8.6-12.1,,,platelets
+Patient1,11/16/22,Mean Platelet Volume,9.8,8.6-12.1,,,platelets
+Patient1,4/6/21,Mean Platelet Volume,-,8.6-12.1,,,platelets
+Patient1,11/2/20,Mean Platelet Volume,9.8,8.6-12.1,,,platelets
+Patient1,10/5/19,Mean Platelet Volume,9.1,8.6-12.1,,,platelets
+Patient1,11/3/18,Mean Platelet Volume,9.7,8.6-12.1,,,platelets
+Patient1,12/27/17,Mean Platelet Volume,9.1,8.6-12.1,,,platelets
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Patient1,5/30/25,IG (ABS. COUNT),0.02,,,,others
+Patient1,12/31/24,IG (ABS. COUNT),0.01,,,,others
+Patient1,9/5/24,IG (ABS. COUNT),0.02,,,,others
+Patient1,4/19/24,IG (ABS. COUNT),-,,,,others
+Patient1,11/20/23,IG (ABS. COUNT),-,,,,others
+Patient1,11/16/22,IG (ABS. COUNT),-,,,,others
+Patient1,4/6/21,IG (ABS. COUNT),-,,,,others
+Patient1,11/2/20,IG (ABS. COUNT),-,,,,others
+Patient1,10/5/19,IG (ABS. COUNT),-,,,,others
+Patient1,11/3/18,IG (ABS. COUNT),-,,,,others
+Patient1,12/27/17,IG (ABS. COUNT),-,,,,others
+Patient1,5/30/25,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,12/31/24,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,9/5/24,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,4/19/24,Creatine Kinase (CK)  Total,73,39-308,,,particles
+Patient1,11/20/23,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,11/16/22,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,4/6/21,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,11/2/20,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,10/5/19,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,11/3/18,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,12/27/17,Creatine Kinase (CK)  Total,-,39-308,,,particles
+Patient1,5/30/25,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,12/31/24,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,9/5/24,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,4/19/24,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,11/20/23,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,11/16/22,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,4/6/21,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,11/2/20,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,10/5/19,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,11/3/18,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,12/27/17,Comprehensive Metabolic Panel (AMA),-,,,,others
+Patient1,5/30/25,Total Protein (Blood),7.5,5.9-8.4,,,cbc
+Patient1,12/31/24,Total Protein (Blood),7.1,5.9-8.4,,,cbc
+Patient1,9/5/24,Total Protein (Blood),7,5.9-8.4,,,cbc
+Patient1,4/19/24,Total Protein (Blood),7.8,5.9-8.4,,,cbc
+Patient1,11/20/23,Total Protein (Blood),8.2,5.9-8.4,,,cbc
+Patient1,11/16/22,Total Protein (Blood),7.8,5.9-8.4,,,cbc
+Patient1,4/6/21,Total Protein (Blood),-,5.9-8.4,,,cbc
+Patient1,11/2/20,Total Protein (Blood),7.8,5.9-8.4,,,cbc
+Patient1,10/5/19,Total Protein (Blood),8.3,5.9-8.4,,,cbc
+Patient1,11/3/18,Total Protein (Blood),8.1,5.9-8.4,,,cbc
+Patient1,12/27/17,Total Protein (Blood),7.9,5.9-8.4,,,cbc
+Patient1, 2025-09-15,Total Protein (Blood),7.3,5.9-8.4,,,cbc
+Patient1,5/30/25,Albumin,4.6,3.5-5.2,,,lipoproteins
+Patient1,12/31/24,Albumin,4.5,3.5-5.2,,,lipoproteins
+Patient1,9/5/24,Albumin,4.6,3.5-5.2,,,lipoproteins
+Patient1,4/19/24,Albumin,4.7,3.5-5.2,,,lipoproteins
+Patient1,11/20/23,Albumin,5.2,3.5-5.2,,,lipoproteins
+Patient1,11/16/22,Albumin,4.8,3.5-5.2,,,lipoproteins
+Patient1,4/6/21,Albumin,-,3.5-5.2,,,lipoproteins
+Patient1,11/2/20,Albumin,5,3.5-5.2,,,lipoproteins
+Patient1,10/5/19,Albumin,5.1,3.5-5.2,,,lipoproteins
+Patient1,11/3/18,Albumin,5.1,3.5-5.2,,,lipoproteins
+Patient1,12/27/17,Albumin,4.8,3.5-5.2,,,lipoproteins
+Patient1, 2025-09-15,Albumin,4.6,3.5-5.2,,,lipoproteins
+Patient1,5/30/25,Globulin,2.9,1.7-3.7,,,lipoproteins
+Patient1,12/31/24,Globulin,2.6,1.7-3.7,,,lipoproteins
+Patient1,9/5/24,Globulin,2.4,1.7-3.7,,,lipoproteins
+Patient1,4/19/24,Globulin,3.1,1.7-3.7,,,lipoproteins
+Patient1,11/20/23,Globulin,3,1.7-3.7,,,lipoproteins
+Patient1,11/16/22,Globulin,3,1.7-3.7,,,lipoproteins
+Patient1,4/6/21,Globulin,-,1.7-3.7,,,lipoproteins
+Patient1,11/2/20,Globulin,2.8,1.7-3.7,,,lipoproteins
+Patient1,10/5/19,Globulin,3.2,1.7-3.7,,,lipoproteins
+Patient1,11/3/18,Globulin,3,1.7-3.7,,,lipoproteins
+Patient1,12/27/17,Globulin,3.1,1.7-3.7,,,lipoproteins
+Patient1, 2025-09-15,Globulin,2.7,1.7-3.7,,,lipoproteins
+Patient1,5/30/25,Albumin/Globulin Ratio,1.6,1.1-2.9,,,lipoproteins
+Patient1,12/31/24,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
+Patient1,9/5/24,Albumin/Globulin Ratio,1.9,1.1-2.9,,,lipoproteins
+Patient1,4/19/24,Albumin/Globulin Ratio,1.5,1.1-2.9,,,lipoproteins
+Patient1,11/20/23,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
+Patient1,11/16/22,Albumin/Globulin Ratio,1.6,1.1-2.9,,,lipoproteins
+Patient1,4/6/21,Albumin/Globulin Ratio,-,1.1-2.9,,,lipoproteins
+Patient1,11/2/20,Albumin/Globulin Ratio,1.8,1.1-2.9,,,lipoproteins
+Patient1,10/5/19,Albumin/Globulin Ratio,1.6,1.1-2.9,,,lipoproteins
+Patient1,11/3/18,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
+Patient1,12/27/17,Albumin/Globulin Ratio,1.5,1.1-2.9,,,lipoproteins
+Patient1,5/30/25,Sodium,143,135-147,,,vitamins
+Patient1,12/31/24,Sodium,142,135-147,,,vitamins
+Patient1,9/5/24,Sodium,139,135-147,,,vitamins
+Patient1,4/19/24,Sodium,-,135-147,,,vitamins
+Patient1,11/20/23,Sodium,142,135-147,,,vitamins
+Patient1,11/16/22,Sodium,139,135-147,,,vitamins
+Patient1,4/6/21,Sodium,-,135-147,,,vitamins
+Patient1,11/2/20,Sodium,135,135-147,,,vitamins
+Patient1,10/5/19,Sodium,143,135-147,,,vitamins
+Patient1,11/3/18,Sodium,140,135-147,,,vitamins
+Patient1,12/27/17,Sodium,141,135-147,,,vitamins
+Patient1, 2025-09-15,Sodium,143,135-147,,,vitamins
+Patient1,5/30/25,Potassium,4.4,3.5-5.5,,,vitamins
+Patient1,12/31/24,Potassium,4.3,3.5-5.5,,,vitamins
+Patient1,9/5/24,Potassium,3.8,3.5-5.5,,,vitamins
+Patient1,4/19/24,Potassium,-,3.5-5.5,,,vitamins
+Patient1,11/20/23,Potassium,4.2,3.5-5.5,,,vitamins
+Patient1,11/16/22,Potassium,4.1,3.5-5.5,,,vitamins
+Patient1,4/6/21,Potassium,-,3.5-5.5,,,vitamins
+Patient1,11/2/20,Potassium,4.1,3.5-5.5,,,vitamins
+Patient1,10/5/19,Potassium,4.4,3.5-5.5,,,vitamins
+Patient1,11/3/18,Potassium,4.4,3.5-5.5,,,vitamins
+Patient1,12/27/17,Potassium,4.1,3.5-5.5,,,vitamins
+Patient1, 2025-09-15,Potassium,4.8,3.5-5.5,,,vitamins
+Patient1,5/30/25,Chloride,102,96-108,,,vitamins
+Patient1,12/31/24,Chloride,103,96-108,,,vitamins
+Patient1,9/5/24,Chloride,102,96-108,,,vitamins
+Patient1,4/19/24,Chloride,-,96-108,,,vitamins
+Patient1,11/20/23,Chloride,100,96-108,,,vitamins
+Patient1,11/16/22,Chloride,100,96-108,,,vitamins
+Patient1,4/6/21,Chloride,-,96-108,,,vitamins
+Patient1,11/2/20,Chloride,97,96-108,,,vitamins
+Patient1,10/5/19,Chloride,99,96-108,,,vitamins
+Patient1,11/3/18,Chloride,99,96-108,,,vitamins
+Patient1,12/27/17,Chloride,97,96-108,,,vitamins
+Patient1, 2025-09-15,Chloride,105,96-108,,,vitamins
+Patient1,5/30/25,Carbon Dioxide,23,19-29,,,vitamins
+Patient1,12/31/24,Carbon Dioxide,24,19-29,,,vitamins
+Patient1,9/5/24,Carbon Dioxide,20,19-29,,,vitamins
+Patient1,4/19/24,Carbon Dioxide,-,19-29,,,vitamins
+Patient1,11/20/23,Carbon Dioxide,24,19-29,,,vitamins
+Patient1,11/16/22,Carbon Dioxide,22,19-29,,,vitamins
+Patient1,4/6/21,Carbon Dioxide,-,19-29,,,vitamins
+Patient1,11/2/20,Carbon Dioxide,23,19-29,,,vitamins
+Patient1,10/5/19,Carbon Dioxide,28,19-29,,,vitamins
+Patient1,11/3/18,Carbon Dioxide,27,19-29,,,vitamins
+Patient1,12/27/17,Carbon Dioxide,28,19-29,,,vitamins
+Patient1, 2025-09-15,Carbon Dioxide,24,19-29,,,vitamins
+Patient1,5/30/25,Blood Urea Nitrogen (BUN),13,20-Jun,,,urine
+Patient1,12/31/24,Blood Urea Nitrogen (BUN),15,20-Jun,,,urine
+Patient1,9/5/24,Blood Urea Nitrogen (BUN),12,20-Jun,,,urine
+Patient1,4/19/24,Blood Urea Nitrogen (BUN),-,20-Jun,,,urine
+Patient1,11/20/23,Blood Urea Nitrogen (BUN),12,20-Jun,,,urine
+Patient1,11/16/22,Blood Urea Nitrogen (BUN),13,20-Jun,,,urine
+Patient1,4/6/21,Blood Urea Nitrogen (BUN),-,20-Jun,,,urine
+Patient1,11/2/20,Blood Urea Nitrogen (BUN),10,20-Jun,,,urine
+Patient1,10/5/19,Blood Urea Nitrogen (BUN),12,20-Jun,,,urine
+Patient1,11/3/18,Blood Urea Nitrogen (BUN),15,20-Jun,,,urine
+Patient1,12/27/17,Blood Urea Nitrogen (BUN),11,20-Jun,,,urine
+Patient1,9/15/25,Blood Urea Nitrogen (BUN),17,20-Jun,,,urine
+Patient1,5/30/25,Creatinine,0.89,0.67-1.31,,,kidney
+Patient1,12/31/24,Creatinine,0.79,0.67-1.31,,,kidney
+Patient1,9/5/24,Creatinine,0.84,0.67-1.31,,,kidney
+Patient1,4/19/24,Creatinine,-,0.67-1.31,,,kidney
+Patient1,11/20/23,Creatinine,1.02,0.67-1.31,,,kidney
+Patient1,11/16/22,Creatinine,0.96,0.67-1.31,,,kidney
+Patient1,4/6/21,Creatinine,-,0.67-1.31,,,kidney
+Patient1,11/2/20,Creatinine,0.88,0.67-1.31,,,kidney
+Patient1,10/5/19,Creatinine,0.96,0.67-1.31,,,kidney
+Patient1,11/3/18,Creatinine,0.92,0.67-1.31,,,kidney
+Patient1,12/27/17,Creatinine,0.93,0.67-1.31,,,kidney
+Patient1,5/30/25,Estimated Glomerular Filtration Rate,110,,,,others
+Patient1,12/31/24,Estimated Glomerular Filtration Rate,114,,,,others
+Patient1,9/5/24,Estimated Glomerular Filtration Rate,112,,,,others
+Patient1,4/19/24,Estimated Glomerular Filtration Rate,-,,,,others
+Patient1,11/20/23,Estimated Glomerular Filtration Rate,95,,,,others
+Patient1,11/16/22,Estimated Glomerular Filtration Rate,98,,,,others
+Patient1,4/6/21,Estimated Glomerular Filtration Rate,-,,,,others
+Patient1,11/2/20,Estimated Glomerular Filtration Rate,109,,,,others
+Patient1,10/5/19,Estimated Glomerular Filtration Rate,101,,,,others
+Patient1,11/3/18,Estimated Glomerular Filtration Rate,107,,,,others
+Patient1,12/27/17,Estimated Glomerular Filtration Rate,106,,,,others
+Patient1,5/30/25,BUN/Creatinine Ratio,14.6,10.0-28.0,,,kidney
+Patient1,12/31/24,BUN/Creatinine Ratio,19,10.0-28.0,,,kidney
+Patient1,9/5/24,BUN/Creatinine Ratio,14.3,10.0-28.0,,,kidney
+Patient1,4/19/24,BUN/Creatinine Ratio,-,10.0-28.0,,,kidney
+Patient1,11/20/23,BUN/Creatinine Ratio,11.8,10.0-28.0,,,kidney
+Patient1,11/16/22,BUN/Creatinine Ratio,13.5,10.0-28.0,,,kidney
+Patient1,4/6/21,BUN/Creatinine Ratio,-,10.0-28.0,,,kidney
+Patient1,11/2/20,BUN/Creatinine Ratio,11.4,10.0-28.0,,,kidney
+Patient1,10/5/19,BUN/Creatinine Ratio,12.5,10.0-28.0,,,kidney
+Patient1,11/3/18,BUN/Creatinine Ratio,16.3,10.0-28.0,,,kidney
+Patient1,12/27/17,BUN/Creatinine Ratio,11.8,10.0-28.0,,,kidney
+Patient1, 2025-09-15,BUN/Creatinine Ratio,16,10.0-28.0,,,kidney
+Patient1,5/30/25,Calcium,9.7,8.6-10.4,,,vitamins
+Patient1,12/31/24,Calcium,9,8.6-10.4,,,vitamins
+Patient1,9/5/24,Calcium,9.2,8.6-10.4,,,vitamins
+Patient1,4/19/24,Calcium,-,8.6-10.4,,,vitamins
+Patient1,11/20/23,Calcium,10.3,8.6-10.4,,,vitamins
+Patient1,11/16/22,Calcium,9.9,8.6-10.4,,,vitamins
+Patient1,4/6/21,Calcium,-,8.6-10.4,,,vitamins
+Patient1,11/2/20,Calcium,10,8.6-10.4,,,vitamins
+Patient1,10/5/19,Calcium,10.4,8.6-10.4,,,vitamins
+Patient1,11/3/18,Calcium,10.1,8.6-10.4,,,vitamins
+Patient1,12/27/17,Calcium,9.6,8.6-10.4,,,vitamins
+Patient1, 2025-09-15,Calcium,9.6,8.6-10.4,,,vitamins
+Patient1,5/30/25,Bilirubin,0.4,<1,2,,kidney
+Patient1,12/31/24,Bilirubin,0.4,<1,2,,kidney
+Patient1,9/5/24,Bilirubin,0.3,<1,2,,kidney
+Patient1,4/19/24,Bilirubin,0.3,<1,2,,kidney
+Patient1,11/20/23,Bilirubin,0.5,<1,2,,kidney
+Patient1,11/16/22,Bilirubin,0.4,<1,2,,kidney
+Patient1,4/6/21,Bilirubin,-,<1,2,,kidney
+Patient1,11/2/20,Bilirubin,0.3,<1,2,,kidney
+Patient1,10/5/19,Bilirubin,0.4,<1,2,,kidney
+Patient1,11/3/18,Bilirubin,0.4,<1,2,,kidney
+Patient1,12/27/17,Bilirubin,0.3,<1,2,,kidney
+Patient1, 2025-09-15,Bilirubin,0.3,<1,2,,kidney
+Patient1,5/30/25,Alkaline Phosphatase (ALP),139,40-156,,,liver
+Patient1,12/31/24,Alkaline Phosphatase (ALP),146,40-156,,,liver
+Patient1,9/5/24,Alkaline Phosphatase (ALP),130,40-156,,,liver
+Patient1,4/19/24,Alkaline Phosphatase (ALP),131,40-156,,,liver
+Patient1,11/20/23,Alkaline Phosphatase (ALP),149,40-156,,,liver
+Patient1,11/16/22,Alkaline Phosphatase (ALP),140,40-156,,,liver
+Patient1,4/6/21,Alkaline Phosphatase (ALP),-,40-156,,,liver
+Patient1,11/2/20,Alkaline Phosphatase (ALP),132,40-156,,,liver
+Patient1,10/5/19,Alkaline Phosphatase (ALP),124,40-156,,,liver
+Patient1,11/3/18,Alkaline Phosphatase (ALP),114,40-156,,,liver
+Patient1,12/27/17,Alkaline Phosphatase (ALP),131,40-156,,,liver
+Patient1, 2025-09-15,Alkaline Phosphatase (ALP),113,40-156,,,liver
+Patient1,5/30/25,AST,24,<40,,,liver
+Patient1,12/31/24,AST,48,<40,,,liver
+Patient1,9/5/24,AST,28,<40,,,liver
+Patient1,4/19/24,AST,19,<40,,,liver
+Patient1,11/20/23,AST,25,<40,,,liver
+Patient1,11/16/22,AST,23,<40,,,liver
+Patient1,4/6/21,AST,-,<40,,,liver
+Patient1,11/2/20,AST,27,<40,,,liver
+Patient1,10/5/19,AST,26,<40,,,liver
+Patient1,11/3/18,AST,21,<40,,,liver
+Patient1,12/27/17,AST,24,<40,,,liver
+Patient1, 2025-09-15,AST,20,<40,,,liver
+Patient1,5/30/25,ALT,30,<41,,,liver
+Patient1,12/31/24,ALT,72,<41,,,liver
+Patient1,9/5/24,ALT,39,<41,,,liver
+Patient1,4/19/24,ALT,18,<41,,,liver
+Patient1,11/20/23,ALT,24,<41,,,liver
+Patient1,11/16/22,ALT,28,<41,,,liver
+Patient1,4/6/21,ALT,-,<41,,,liver
+Patient1,11/2/20,ALT,38,<41,,,liver
+Patient1,10/5/19,ALT,26,<41,,,liver
+Patient1,11/3/18,ALT,23,<41,,,liver
+Patient1,12/27/17,ALT,28,<41,,,liver
+Patient1, 2025-09-15,ALT,25,<41,,,liver
+Patient1,5/30/25,Glucose (Blood),76,70-99,,,sugar
+Patient1,12/31/24,Glucose (Blood),80,70-99,,,sugar
+Patient1,9/5/24,Glucose (Blood),109,70-99,,,sugar
+Patient1,4/19/24,Glucose (Blood),-,70-99,,,sugar
+Patient1,11/20/23,Glucose (Blood),88,70-99,,,sugar
+Patient1,11/16/22,Glucose (Blood),80,70-99,,,sugar
+Patient1,4/6/21,Glucose (Blood),-,70-99,,,sugar
+Patient1,11/2/20,Glucose (Blood),82,70-99,,,sugar
+Patient1,10/5/19,Glucose (Blood),81,70-99,,,sugar
+Patient1,11/3/18,Glucose (Blood),80,70-99,,,sugar
+Patient1,12/27/17,Glucose (Blood),76,70-99,,,sugar
+Patient1,9/15/25,Glucose (Blood),86,70-99,,,sugar
+Patient1,5/30/25,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,12/31/24,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,9/5/24,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,4/19/24,Bilirubin Direct (Bilirubin Conjugated),<0.2,<0.4,,,kidney
+Patient1,11/20/23,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,11/16/22,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,4/6/21,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,11/2/20,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,10/5/19,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,11/3/18,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,12/27/17,Bilirubin Direct (Bilirubin Conjugated),-,<0.4,,,kidney
+Patient1,5/30/25,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,12/31/24,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,9/5/24,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,4/19/24,Bilirubin ( Indirect),Can't Calc *,0.1-1.0,,,kidney
+Patient1,11/20/23,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,11/16/22,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,4/6/21,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,11/2/20,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,10/5/19,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,11/3/18,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,12/27/17,Bilirubin ( Indirect),-,0.1-1.0,,,kidney
+Patient1,5/30/25,Gamma GT (GGT),29,10-71,,,liver
+Patient1,12/31/24,Gamma GT (GGT),-,10-71,,,liver
+Patient1,9/5/24,Gamma GT (GGT),-,10-71,,,liver
+Patient1,4/19/24,Gamma GT (GGT),-,10-71,,,liver
+Patient1,11/20/23,Gamma GT (GGT),-,10-71,,,liver
+Patient1,11/16/22,Gamma GT (GGT),-,10-71,,,liver
+Patient1,4/6/21,Gamma GT (GGT),-,10-71,,,liver
+Patient1,11/2/20,Gamma GT (GGT),-,10-71,,,liver
+Patient1,10/5/19,Gamma GT (GGT),-,10-71,,,liver
+Patient1,11/3/18,Gamma GT (GGT),-,10-71,,,liver
+Patient1,12/27/17,Gamma GT (GGT),-,10-71,,,liver
+Patient1,5/30/25,Apolipoprotein A1,115,104-202,,,lipoproteins
+Patient1,12/31/24,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,9/5/24,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,4/19/24,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,11/20/23,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,11/16/22,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,4/6/21,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,11/2/20,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,10/5/19,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,11/3/18,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,12/27/17,Apolipoprotein A1,-,104-202,,,lipoproteins
+Patient1,5/30/25,eGFR,,>60,,,kidney
+Patient1,12/31/24,eGFR,,>60,,,kidney
+Patient1,9/5/24,eGFR,-,>60,,,kidney
+Patient1,4/19/24,eGFR,-,>60,,,kidney
+Patient1,11/20/23,eGFR,-,>60,,,kidney
+Patient1,11/16/22,eGFR,-,>60,,,kidney
+Patient1,4/6/21,eGFR,-,>60,,,kidney
+Patient1,11/2/20,eGFR,126,>60,,,kidney
+Patient1,10/5/19,eGFR,117,>60,,,kidney
+Patient1,11/3/18,eGFR,124,>60,,,kidney
+Patient1,12/27/17,eGFR,123,>60,,,kidney
+Patient1,9/15/25,eGFR,91,>60,,,kidney
+Patient1,9/15/25,Hemoglobin A1C,5.4,<5.7,,,sugar
+Patient1,5/30/25,Hemoglobin A1C,5.4,<5.7,,,sugar
+Patient1,12/31/24,Hemoglobin A1C,5.8,<5.7,,,sugar
+Patient1,9/5/24,Hemoglobin A1C,-,<5.7,,,sugar
+Patient1,4/19/24,Hemoglobin A1C,-,<5.7,,,sugar
+Patient1,11/20/23,Hemoglobin A1C,5.5,<5.7,,,sugar
+Patient1,11/16/22,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient1,4/6/21,Hemoglobin A1C,-,<5.7,,,sugar
+Patient1,11/2/20,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient1,10/5/19,Hemoglobin A1C,5.3,<5.7,,,sugar
+Patient1,11/3/18,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient1,12/27/17,Hemoglobin A1C,5.4,<5.7,,,sugar
+Patient1,9/15/25,Total Cholesterol,127,<200,,,Cholesterol
+Patient1,5/30/25,Total Cholesterol,236,<200,,,Cholesterol
+Patient1,12/31/24,Total Cholesterol,153,<200,,,Cholesterol
+Patient1,9/5/24,Total Cholesterol,184,<200,,,Cholesterol
+Patient1,4/19/24,Total Cholesterol,163,<200,,,Cholesterol
+Patient1,11/20/23,Total Cholesterol,264,<200,,,Cholesterol
+Patient1,11/16/22,Total Cholesterol,250,<200,,,Cholesterol
+Patient1,4/6/21,Total Cholesterol,-,<200,,,Cholesterol
+Patient1,11/2/20,Total Cholesterol,238,<200,,,Cholesterol
+Patient1,10/5/19,Total Cholesterol,225,<200,,,Cholesterol
+Patient1,11/3/18,Total Cholesterol,221,<200,,,Cholesterol
+Patient1,12/27/17,Total Cholesterol,221,<200,,,Cholesterol
+Patient1,9/15/25,High Density Lipoprotein (HDL),34,>40,,,Cholesterol
+Patient1,5/30/25,High Density Lipoprotein (HDL),32,>40,,,Cholesterol
+Patient1,12/31/24,High Density Lipoprotein (HDL),33,>40,,,Cholesterol
+Patient1,9/5/24,High Density Lipoprotein (HDL),37,>40,,,Cholesterol
+Patient1,4/19/24,High Density Lipoprotein (HDL),35,>40,,,Cholesterol
+Patient1,11/20/23,High Density Lipoprotein (HDL),38,>40,,,Cholesterol
+Patient1,11/16/22,High Density Lipoprotein (HDL),37,>40,,,Cholesterol
+Patient1,4/6/21,High Density Lipoprotein (HDL),-,>40,,,Cholesterol
+Patient1,11/2/20,High Density Lipoprotein (HDL),31,>40,,,Cholesterol
+Patient1,10/5/19,High Density Lipoprotein (HDL),37,>40,,,Cholesterol
+Patient1,11/3/18,High Density Lipoprotein (HDL),36,>40,,,Cholesterol
+Patient1,12/27/17,High Density Lipoprotein (HDL),40,>40,,,Cholesterol
+Patient1,9/15/25,Triglyceride,117,<150,,,Cholesterol
+Patient1,5/30/25,Triglyceride,300,<150,,,Cholesterol
+Patient1,12/31/24,Triglyceride,218,<150,,,Cholesterol
+Patient1,9/5/24,Triglyceride,205,<150,,,Cholesterol
+Patient1,4/19/24,Triglyceride,165,<150,,,Cholesterol
+Patient1,11/20/23,Triglyceride,235,<150,,,Cholesterol
+Patient1,11/16/22,Triglyceride,240,<150,,,Cholesterol
+Patient1,4/6/21,Triglyceride,-,<150,,,Cholesterol
+Patient1,11/2/20,Triglyceride,364,<150,,,Cholesterol
+Patient1,10/5/19,Triglyceride,363,<150,,,Cholesterol
+Patient1,11/3/18,Triglyceride,255,<150,,,Cholesterol
+Patient1,12/27/17,Triglyceride,207,<150,,,Cholesterol
+Patient1,5/30/25,HDL as % of Cholesterol,14,>14,,,Cholesterol
+Patient1,12/31/24,HDL as % of Cholesterol,22,>14,,,Cholesterol
+Patient1,9/5/24,HDL as % of Cholesterol,20,>14,,,Cholesterol
+Patient1,4/19/24,HDL as % of Cholesterol,21,>14,,,Cholesterol
+Patient1,11/20/23,HDL as % of Cholesterol,14,>14,,,Cholesterol
+Patient1,11/16/22,HDL as % of Cholesterol,15,>14,,,Cholesterol
+Patient1,4/6/21,HDL as % of Cholesterol,-,>14,,,Cholesterol
+Patient1,11/2/20,HDL as % of Cholesterol,13,>14,,,Cholesterol
+Patient1,10/5/19,HDL as % of Cholesterol,16,>14,,,Cholesterol
+Patient1,11/3/18,HDL as % of Cholesterol,16,>14,,,Cholesterol
+Patient1,12/27/17,HDL as % of Cholesterol,18,>14,,,Cholesterol
+Patient1,5/30/25,Cholesterol/HDL Ratio,7.4,<7.4,,,Cholesterol
+Patient1,12/31/24,Cholesterol/HDL Ratio,4.6,<7.4,,,Cholesterol
+Patient1,9/5/24,Cholesterol/HDL Ratio,5,<7.4,,,Cholesterol
+Patient1,4/19/24,Cholesterol/HDL Ratio,4.7,<7.4,,,Cholesterol
+Patient1,11/20/23,Cholesterol/HDL Ratio,6.9,<7.4,,,Cholesterol
+Patient1,11/16/22,Cholesterol/HDL Ratio,6.8,<7.4,,,Cholesterol
+Patient1,4/6/21,Cholesterol/HDL Ratio,-,<7.4,,,Cholesterol
+Patient1,11/2/20,Cholesterol/HDL Ratio,7.7,<7.4,,,Cholesterol
+Patient1,10/5/19,Cholesterol/HDL Ratio,6.1,<7.4,,,Cholesterol
+Patient1,11/3/18,Cholesterol/HDL Ratio,6.1,<7.4,,,Cholesterol
+Patient1,12/27/17,Cholesterol/HDL Ratio,5.5,<7.4,,,Cholesterol
+Patient1,5/30/25,LDL/HDL Ratio,4.5,<3.56,,,Cholesterol
+Patient1,12/31/24,LDL/HDL Ratio,2.3,<3.56,,,Cholesterol
+Patient1,9/5/24,LDL/HDL Ratio,2.86,<3.56,,,Cholesterol
+Patient1,4/19/24,LDL/HDL Ratio,2.71,<3.56,,,Cholesterol
+Patient1,11/20/23,LDL/HDL Ratio,4.71,<3.56,,,Cholesterol
+Patient1,11/16/22,LDL/HDL Ratio,4.46,<3.56,,,Cholesterol
+Patient1,4/6/21,LDL/HDL Ratio,-,<3.56,,,Cholesterol
+Patient1,11/2/20,LDL/HDL Ratio,4.32,<3.56,,,Cholesterol
+Patient1,10/5/19,LDL/HDL Ratio,3.11,<3.56,,,Cholesterol
+Patient1,11/3/18,LDL/HDL Ratio,3.72,<3.56,,,Cholesterol
+Patient1,12/27/17,LDL/HDL Ratio,3.5,<3.56,,,Cholesterol
+Patient1,9/15/25,Low Density Lipoprotein (LDL),72,<100,,,Cholesterol
+Patient1,5/30/25,Low Density Lipoprotein (LDL),144,<100,,,Cholesterol
+Patient1,12/31/24,Low Density Lipoprotein (LDL),76,<100,,,Cholesterol
+Patient1,9/5/24,Low Density Lipoprotein (LDL),106,<100,,,Cholesterol
+Patient1,4/19/24,Low Density Lipoprotein (LDL),95,<100,,,Cholesterol
+Patient1,11/20/23,Low Density Lipoprotein (LDL),179,<100,,,Cholesterol
+Patient1,11/16/22,Low Density Lipoprotein (LDL),165,<100,,,Cholesterol
+Patient1,4/6/21,Low Density Lipoprotein (LDL),-,<100,,,Cholesterol
+Patient1,11/2/20,Low Density Lipoprotein (LDL),134,<100,,,Cholesterol
+Patient1,10/5/19,Low Density Lipoprotein (LDL),115,<100,,,Cholesterol
+Patient1,11/3/18,Low Density Lipoprotein (LDL),134,<100,,,Cholesterol
+Patient1,12/27/17,Low Density Lipoprotein (LDL),140,<100,,,Cholesterol
+Patient1,9/15/25,Very Low Density Lipoprotein (VLDL),21,07-32,,,Cholesterol
+Patient1,5/30/25,Very Low Density Lipoprotein (VLDL),60,07-32,,,Cholesterol
+Patient1,12/31/24,Very Low Density Lipoprotein (VLDL),44,07-32,,,Cholesterol
+Patient1,9/5/24,Very Low Density Lipoprotein (VLDL),41,07-32,,,Cholesterol
+Patient1,4/19/24,Very Low Density Lipoprotein (VLDL),33,07-32,,,Cholesterol
+Patient1,11/20/23,Very Low Density Lipoprotein (VLDL),47,07-32,,,Cholesterol
+Patient1,11/16/22,Very Low Density Lipoprotein (VLDL),48,07-32,,,Cholesterol
+Patient1,4/6/21,Very Low Density Lipoprotein (VLDL),-,07-32,,,Cholesterol
+Patient1,11/2/20,Very Low Density Lipoprotein (VLDL),73,07-32,,,Cholesterol
+Patient1,10/5/19,Very Low Density Lipoprotein (VLDL),73,07-32,,,Cholesterol
+Patient1,11/3/18,Very Low Density Lipoprotein (VLDL),51,07-32,,,Cholesterol
+Patient1,12/27/17,Very Low Density Lipoprotein (VLDL),41,07-32,,,Cholesterol
+Patient1,5/30/25,Non-HDL Cholesterol,204,<130,,,Cholesterol
+Patient1,12/31/24,Non-HDL Cholesterol,120,<130,,,Cholesterol
+Patient1,9/5/24,Non-HDL Cholesterol,147,<130,,,Cholesterol
+Patient1,4/19/24,Non-HDL Cholesterol,128,<130,,,Cholesterol
+Patient1,11/20/23,Non-HDL Cholesterol,226,<130,,,Cholesterol
+Patient1,11/16/22,Non-HDL Cholesterol,213,<130,,,Cholesterol
+Patient1,4/6/21,Non-HDL Cholesterol,-,<130,,,Cholesterol
+Patient1,11/2/20,Non-HDL Cholesterol,207,<130,,,Cholesterol
+Patient1,10/5/19,Non-HDL Cholesterol,188,<130,,,Cholesterol
+Patient1,11/3/18,Non-HDL Cholesterol,185,<130,,,Cholesterol
+Patient1,12/27/17,Non-HDL Cholesterol,181,<130,,,Cholesterol
+Patient1,5/30/25,Trig/HDL Ratio,9.38,<2.76,,,Cholesterol
+Patient1,12/31/24,Trig/HDL Ratio,6.61,<2.76,,,Cholesterol
+Patient1,9/5/24,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,4/19/24,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,11/20/23,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,11/16/22,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,4/6/21,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,11/2/20,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,10/5/19,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,11/3/18,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,12/27/17,Trig/HDL Ratio,-,<2.76,,,Cholesterol
+Patient1,5/30/25,TSH,-,,,,thyroid
+Patient1,12/31/24,TSH,-,,,,thyroid
+Patient1,9/5/24,TSH,-,,,,thyroid
+Patient1,4/19/24,TSH,-,,,,thyroid
+Patient1,11/20/23,TSH,-,,,,thyroid
+Patient1,11/16/22,TSH,-,,,,thyroid
+Patient1,4/6/21,TSH,-,,,,thyroid
+Patient1,11/2/20,TSH,1.51,,,,thyroid
+Patient1,10/5/19,TSH,1.66,,,,thyroid
+Patient1,11/3/18,TSH,1.67,,,,thyroid
+Patient1,12/27/17,TSH,2.01,,,,thyroid
+Patient1,5/30/25,Vitamin B12,-,232-1245,,,vitamins
+Patient1,12/31/24,Vitamin B12,829,232-1245,,,vitamins
+Patient1,9/5/24,Vitamin B12,,232-1245,,,vitamins
+Patient1,4/19/24,Vitamin B12,-,232-1245,,,vitamins
+Patient1,11/20/23,Vitamin B12,241,232-1245,,,vitamins
+Patient1,11/16/22,Vitamin B12,350,232-1245,,,vitamins
+Patient1,4/6/21,Vitamin B12,-,232-1245,,,vitamins
+Patient1,11/2/20,Vitamin B12,719,232-1245,,,vitamins
+Patient1,10/5/19,Vitamin B12,-,232-1245,,,vitamins
+Patient1,11/3/18,Vitamin B12,-,232-1245,,,vitamins
+Patient1,12/27/17,Vitamin B12,-,232-1245,,,vitamins
+Patient1,5/30/25,Vitamin D 25-Hydroxy,-,32.0-100.0,,,vitamins
+Patient1,12/31/24,Vitamin D 25-Hydroxy,25.1,32.0-100.0,,,vitamins
+Patient1,9/5/24,Vitamin D 25-Hydroxy,-,32.0-100.0,,,vitamins
+Patient1,4/19/24,Vitamin D 25-Hydroxy,-,32.0-100.0,,,vitamins
+Patient1,11/20/23,Vitamin D 25-Hydroxy,17.1,32.0-100.0,,,vitamins
+Patient1,11/16/22,Vitamin D 25-Hydroxy,16.1,32.0-100.0,,,vitamins
+Patient1,4/6/21,Vitamin D 25-Hydroxy,-,32.0-100.0,,,vitamins
+Patient1,11/2/20,Vitamin D 25-Hydroxy,16.5,32.0-100.0,,,vitamins
+Patient1,10/5/19,Vitamin D 25-Hydroxy,14,32.0-100.0,,,vitamins
+Patient1,11/3/18,Vitamin D 25-Hydroxy,9.8,32.0-100.0,,,vitamins
+Patient1,12/27/17,Vitamin D 25-Hydroxy,11.2,32.0-100.0,,,vitamins
+Patient1,5/30/25,TSH,-,0.270-4.200,,,thyroid
+Patient1,12/31/24,TSH,1.88,0.270-4.200,,,thyroid
+Patient1,9/5/24,TSH,1.68,0.270-4.200,,,thyroid
+Patient1,4/19/24,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/20/23,TSH,1.32,0.270-4.200,,,thyroid
+Patient1,11/16/22,TSH,2.39,0.270-4.200,,,thyroid
+Patient1,4/6/21,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/2/20,TSH,-,0.270-4.200,,,thyroid
+Patient1,10/5/19,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/3/18,TSH,-,0.270-4.200,,,thyroid
+Patient1,12/27/17,TSH,-,0.270-4.200,,,thyroid
+Patient1,5/30/25,HAPTOGLOBIN,180,30-200,,,gb
+Patient1,12/31/24,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,9/5/24,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,4/19/24,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,11/20/23,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,11/16/22,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,4/6/21,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,11/2/20,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,10/5/19,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,11/3/18,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,12/27/17,HAPTOGLOBIN,-,30-200,,,gb
+Patient1,5/30/25,ALPHA-2-MACROGLOBULIN,201,130-300,,,gb
+Patient1,12/31/24,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,9/5/24,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,4/19/24,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,11/20/23,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,11/16/22,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,4/6/21,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,11/2/20,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,10/5/19,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,11/3/18,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,12/27/17,ALPHA-2-MACROGLOBULIN,-,130-300,,,gb
+Patient1,5/30/25,FIBROSIS SCORE,0.19,,,,others
+Patient1,12/31/24,FIBROSIS SCORE,-,,,,others
+Patient1,9/5/24,FIBROSIS SCORE,-,,,,others
+Patient1,4/19/24,FIBROSIS SCORE,-,,,,others
+Patient1,11/20/23,FIBROSIS SCORE,-,,,,others
+Patient1,11/16/22,FIBROSIS SCORE,-,,,,others
+Patient1,4/6/21,FIBROSIS SCORE,-,,,,others
+Patient1,11/2/20,FIBROSIS SCORE,-,,,,others
+Patient1,10/5/19,FIBROSIS SCORE,-,,,,others
+Patient1,11/3/18,FIBROSIS SCORE,-,,,,others
+Patient1,12/27/17,FIBROSIS SCORE,-,,,,others
+Patient1,5/30/25,FIBROSIS STAGE,F0,,,,others
+Patient1,12/31/24,FIBROSIS STAGE,-,,,,others
+Patient1,9/5/24,FIBROSIS STAGE,-,,,,others
+Patient1,4/19/24,FIBROSIS STAGE,-,,,,others
+Patient1,11/20/23,FIBROSIS STAGE,-,,,,others
+Patient1,11/16/22,FIBROSIS STAGE,-,,,,others
+Patient1,4/6/21,FIBROSIS STAGE,-,,,,others
+Patient1,11/2/20,FIBROSIS STAGE,-,,,,others
+Patient1,10/5/19,FIBROSIS STAGE,-,,,,others
+Patient1,11/3/18,FIBROSIS STAGE,-,,,,others
+Patient1,12/27/17,FIBROSIS STAGE,-,,,,others
+Patient1,5/30/25,FIBROSIS INTERP,no fibrosis,,,,others
+Patient1,12/31/24,FIBROSIS INTERP,-,,,,others
+Patient1,9/5/24,FIBROSIS INTERP,-,,,,others
+Patient1,4/19/24,FIBROSIS INTERP,-,,,,others
+Patient1,11/20/23,FIBROSIS INTERP,-,,,,others
+Patient1,11/16/22,FIBROSIS INTERP,-,,,,others
+Patient1,4/6/21,FIBROSIS INTERP,-,,,,others
+Patient1,11/2/20,FIBROSIS INTERP,-,,,,others
+Patient1,10/5/19,FIBROSIS INTERP,-,,,,others
+Patient1,11/3/18,FIBROSIS INTERP,-,,,,others
+Patient1,12/27/17,FIBROSIS INTERP,-,,,,others
+Patient1,5/30/25,INFLAMMATION SCORE,0.13,,,,others
+Patient1,12/31/24,INFLAMMATION SCORE,-,,,,others
+Patient1,9/5/24,INFLAMMATION SCORE,-,,,,others
+Patient1,4/19/24,INFLAMMATION SCORE,-,,,,others
+Patient1,11/20/23,INFLAMMATION SCORE,-,,,,others
+Patient1,11/16/22,INFLAMMATION SCORE,-,,,,others
+Patient1,4/6/21,INFLAMMATION SCORE,-,,,,others
+Patient1,11/2/20,INFLAMMATION SCORE,-,,,,others
+Patient1,10/5/19,INFLAMMATION SCORE,-,,,,others
+Patient1,11/3/18,INFLAMMATION SCORE,-,,,,others
+Patient1,12/27/17,INFLAMMATION SCORE,-,,,,others
+Patient1,5/30/25,INFLAMMATION STAGE,A0,,,,others
+Patient1,12/31/24,INFLAMMATION STAGE,-,,,,others
+Patient1,9/5/24,INFLAMMATION STAGE,-,,,,others
+Patient1,4/19/24,INFLAMMATION STAGE,-,,,,others
+Patient1,11/20/23,INFLAMMATION STAGE,-,,,,others
+Patient1,11/16/22,INFLAMMATION STAGE,-,,,,others
+Patient1,4/6/21,INFLAMMATION STAGE,-,,,,others
+Patient1,11/2/20,INFLAMMATION STAGE,-,,,,others
+Patient1,10/5/19,INFLAMMATION STAGE,-,,,,others
+Patient1,11/3/18,INFLAMMATION STAGE,-,,,,others
+Patient1,12/27/17,INFLAMMATION STAGE,-,,,,others
+Patient1,5/30/25,INFLAMMATION INTERP,no activity *,,,,others
+Patient1,12/31/24,INFLAMMATION INTERP,-,,,,others
+Patient1,9/5/24,INFLAMMATION INTERP,-,,,,others
+Patient1,4/19/24,INFLAMMATION INTERP,-,,,,others
+Patient1,11/20/23,INFLAMMATION INTERP,-,,,,others
+Patient1,11/16/22,INFLAMMATION INTERP,-,,,,others
+Patient1,4/6/21,INFLAMMATION INTERP,-,,,,others
+Patient1,11/2/20,INFLAMMATION INTERP,-,,,,others
+Patient1,10/5/19,INFLAMMATION INTERP,-,,,,others
+Patient1,11/3/18,INFLAMMATION INTERP,-,,,,others
+Patient1,12/27/17,INFLAMMATION INTERP,-,,,,others
+Patient1,5/30/25,COVID-19 (Coronavirus),-,,,,corona
+Patient1,12/31/24,COVID-19 (Coronavirus),-,,,,corona
+Patient1,9/5/24,COVID-19 (Coronavirus),-,,,,corona
+Patient1,4/19/24,COVID-19 (Coronavirus),-,,,,corona
+Patient1,11/20/23,COVID-19 (Coronavirus),-,,,,corona
+Patient1,11/16/22,COVID-19 (Coronavirus),-,,,,corona
+Patient1,4/6/21,COVID-19 (Coronavirus),Not Detected,,,,corona
+Patient1,11/2/20,COVID-19 (Coronavirus),-,,,,corona
+Patient1,10/5/19,COVID-19 (Coronavirus),-,,,,corona
+Patient1,11/3/18,COVID-19 (Coronavirus),-,,,,corona
+Patient1,12/27/17,COVID-19 (Coronavirus),-,,,,corona
+Patient1,5/30/25,Specific Gravity,-,1.003-1.030,,,others
+Patient1,12/31/24,Specific Gravity,-,1.003-1.030,,,others
+Patient1,9/5/24,Specific Gravity,-,1.003-1.030,,,others
+Patient1,4/19/24,Specific Gravity,-,1.003-1.030,,,others
+Patient1,11/20/23,Specific Gravity,1.014,1.003-1.030,,,others
+Patient1,11/16/22,Specific Gravity,-,1.003-1.030,,,others
+Patient1,4/6/21,Specific Gravity,-,1.003-1.030,,,others
+Patient1,11/2/20,Specific Gravity,-,1.003-1.030,,,others
+Patient1,10/5/19,Specific Gravity,-,1.003-1.030,,,others
+Patient1,11/3/18,Specific Gravity,-,1.003-1.030,,,others
+Patient1,12/27/17,Specific Gravity,-,1.003-1.030,,,others
+Patient1,5/30/25,pH (Urine),-,5.0-8.0,,,urine
+Patient1,12/31/24,pH (Urine),-,5.0-8.0,,,urine
+Patient1,9/5/24,pH (Urine),-,5.0-8.0,,,urine
+Patient1,4/19/24,pH (Urine),-,5.0-8.0,,,urine
+Patient1,11/20/23,pH (Urine),5,5.0-8.0,,,urine
+Patient1,11/16/22,pH (Urine),-,5.0-8.0,,,urine
+Patient1,4/6/21,pH (Urine),-,5.0-8.0,,,urine
+Patient1,11/2/20,pH (Urine),-,5.0-8.0,,,urine
+Patient1,10/5/19,pH (Urine),-,5.0-8.0,,,urine
+Patient1,11/3/18,pH (Urine),-,5.0-8.0,,,urine
+Patient1,12/27/17,pH (Urine),-,5.0-8.0,,,urine
+Patient1,5/30/25,Protein (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Protein (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Protein (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Protein (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Protein (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Glucose (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Glucose (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Glucose (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Glucose (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Glucose (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Ketone,Negative,Negative,,,urine
+Patient1,12/31/24,Ketone,Negative,Negative,,,urine
+Patient1,9/5/24,Ketone,Negative,Negative,,,urine
+Patient1,4/19/24,Ketone,Negative,Negative,,,urine
+Patient1,11/20/23,Ketone,Negative,Negative,,,urine
+Patient1,11/16/22,Ketone,Negative,Negative,,,urine
+Patient1,4/6/21,Ketone,Negative,Negative,,,urine
+Patient1,11/2/20,Ketone,Negative,Negative,,,urine
+Patient1,10/5/19,Ketone,Negative,Negative,,,urine
+Patient1,11/3/18,Ketone,Negative,Negative,,,urine
+Patient1,12/27/17,Ketone,Negative,Negative,,,urine
+Patient1,5/30/25,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,12/31/24,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,9/5/24,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,4/19/24,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,11/20/23,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient1,11/16/22,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,4/6/21,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,11/2/20,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,10/5/19,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,11/3/18,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,12/27/17,Urobilinogen,-,0.2-1.0,,,urine
+Patient1,5/30/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Blood (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Blood (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Blood (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Blood (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Blood (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Nitrite,-,,,,urine
+Patient1,12/31/24,Nitrite,-,,,,urine
+Patient1,9/5/24,Nitrite,-,,,,urine
+Patient1,4/19/24,Nitrite,-,,,,urine
+Patient1,11/20/23,Nitrite,Negative,,,,urine
+Patient1,11/16/22,Nitrite,-,,,,urine
+Patient1,4/6/21,Nitrite,-,,,,urine
+Patient1,11/2/20,Nitrite,-,,,,urine
+Patient1,10/5/19,Nitrite,-,,,,urine
+Patient1,11/3/18,Nitrite,-,,,,urine
+Patient1,12/27/17,Nitrite,-,,,,urine
+Patient1,5/30/25,Crystals,None,None,,,urine
+Patient1,12/31/24,Crystals,None,None,,,urine
+Patient1,9/5/24,Crystals,None,None,,,urine
+Patient1,4/19/24,Crystals,None,None,,,urine
+Patient1,11/20/23,Crystals,None,None,,,urine
+Patient1,11/16/22,Crystals,None,None,,,urine
+Patient1,4/6/21,Crystals,None,None,,,urine
+Patient1,11/2/20,Crystals,None,None,,,urine
+Patient1,10/5/19,Crystals,None,None,,,urine
+Patient1,11/3/18,Crystals,None,None,,,urine
+Patient1,12/27/17,Crystals,None,None,,,urine
+Patient1,5/30/25,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,12/31/24,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,9/5/24,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,4/19/24,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,11/20/23,White Blood Cells (Urine),0-4,0-4,,,urine
+Patient1,11/16/22,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,4/6/21,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,11/2/20,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,10/5/19,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,11/3/18,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,12/27/17,White Blood Cells (Urine),-,0-4,,,urine
+Patient1,5/30/25,Red Blood Cells (Urine),-,,,,urine
+Patient1,12/31/24,Red Blood Cells (Urine),-,,,,urine
+Patient1,9/5/24,Red Blood Cells (Urine),-,,,,urine
+Patient1,4/19/24,Red Blood Cells (Urine),-,,,,urine
+Patient1,11/20/23,Red Blood Cells (Urine),None,None,,,urine
+Patient1,11/16/22,Red Blood Cells (Urine),-,,,,urine
+Patient1,4/6/21,Red Blood Cells (Urine),-,,,,urine
+Patient1,11/2/20,Red Blood Cells (Urine),-,,,,urine
+Patient1,10/5/19,Red Blood Cells (Urine),-,,,,urine
+Patient1,11/3/18,Red Blood Cells (Urine),-,,,,urine
+Patient1,12/27/17,Red Blood Cells (Urine),-,,,,urine
+Patient1,5/30/25,CAST, RBC, URINE,-,0-1,urine
+Patient1,12/31/24,CAST, RBC, URINE,-,0-1,urine
+Patient1,9/5/24,CAST, RBC, URINE,-,0-1,urine
+Patient1,4/19/24,CAST, RBC, URINE,-,0-1,urine
+Patient1,11/20/23,CAST, RBC, URINE,0,0-1,urine
+Patient1,11/16/22,CAST, RBC, URINE,-,0-1,urine
+Patient1,4/6/21,CAST, RBC, URINE,-,0-1,urine
+Patient1,11/2/20,CAST, RBC, URINE,-,0-1,urine
+Patient1,10/5/19,CAST, RBC, URINE,-,0-1,urine
+Patient1,11/3/18,CAST, RBC, URINE,-,0-1,urine
+Patient1,12/27/17,CAST, RBC, URINE,-,0-1,urine
+Patient1,5/30/25,Hyaline Casts,-,0-4,,,urine
+Patient1,12/31/24,Hyaline Casts,-,0-4,,,urine
+Patient1,9/5/24,Hyaline Casts,-,0-4,,,urine
+Patient1,4/19/24,Hyaline Casts,-,0-4,,,urine
+Patient1,11/20/23,Hyaline Casts,0-4,0-4,,,urine
+Patient1,11/16/22,Hyaline Casts,-,0-4,,,urine
+Patient1,4/6/21,Hyaline Casts,-,0-4,,,urine
+Patient1,11/2/20,Hyaline Casts,-,0-4,,,urine
+Patient1,10/5/19,Hyaline Casts,-,0-4,,,urine
+Patient1,11/3/18,Hyaline Casts,-,0-4,,,urine
+Patient1,12/27/17,Hyaline Casts,-,0-4,,,urine
+Patient1,5/30/25,Epithelial Cells,None,None,,,urine
+Patient1,12/31/24,Epithelial Cells,None,None,,,urine
+Patient1,9/5/24,Epithelial Cells,None,None,,,urine
+Patient1,4/19/24,Epithelial Cells,None,None,,,urine
+Patient1,11/20/23,Epithelial Cells,None,None,,,urine
+Patient1,11/16/22,Epithelial Cells,None,None,,,urine
+Patient1,4/6/21,Epithelial Cells,None,None,,,urine
+Patient1,11/2/20,Epithelial Cells,None,None,,,urine
+Patient1,10/5/19,Epithelial Cells,None,None,,,urine
+Patient1,11/3/18,Epithelial Cells,None,None,,,urine
+Patient1,12/27/17,Epithelial Cells,None,None,,,urine
+Patient1,5/30/25,Granular Casts,-,0-1,,,urine
+Patient1,12/31/24,Granular Casts,-,0-1,,,urine
+Patient1,9/5/24,Granular Casts,-,0-1,,,urine
+Patient1,4/19/24,Granular Casts,-,0-1,,,urine
+Patient1,11/20/23,Granular Casts,0,0-1,,,urine
+Patient1,11/16/22,Granular Casts,-,0-1,,,urine
+Patient1,4/6/21,Granular Casts,-,0-1,,,urine
+Patient1,11/2/20,Granular Casts,-,0-1,,,urine
+Patient1,10/5/19,Granular Casts,-,0-1,,,urine
+Patient1,11/3/18,Granular Casts,-,0-1,,,urine
+Patient1,12/27/17,Granular Casts,-,0-1,,,urine
+Patient1,5/30/25,Bacteria (Urine),None,None,,,urine
+Patient1,12/31/24,Bacteria (Urine),None,None,,,urine
+Patient1,9/5/24,Bacteria (Urine),None,None,,,urine
+Patient1,4/19/24,Bacteria (Urine),None,None,,,urine
+Patient1,11/20/23,Bacteria (Urine),None,None,,,urine
+Patient1,11/16/22,Bacteria (Urine),None,None,,,urine
+Patient1,4/6/21,Bacteria (Urine),None,None,,,urine
+Patient1,11/2/20,Bacteria (Urine),None,None,,,urine
+Patient1,10/5/19,Bacteria (Urine),None,None,,,urine
+Patient1,11/3/18,Bacteria (Urine),None,None,,,urine
+Patient1,12/27/17,Bacteria (Urine),None,None,,,urine
+Patient1,5/30/25,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,12/31/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,9/5/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,4/19/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/20/23,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/16/22,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,4/6/21,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/2/20,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,10/5/19,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/3/18,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,12/27/17,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,5/30/25,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,12/31/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,9/5/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,4/19/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/20/23,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/16/22,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,4/6/21,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/2/20,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,10/5/19,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/3/18,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,12/27/17,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,5/30/25,Color,Yellow,"Yellow",,,urine
+Patient1,12/31/24,Color,Yellow,"Yellow",,,urine
+Patient1,9/5/24,Color,Yellow,"Yellow",,,urine
+Patient1,4/19/24,Color,Yellow,"Yellow",,,urine
+Patient1,11/20/23,Color,Yellow,"Yellow",,,urine
+Patient1,11/16/22,Color,Yellow,"Yellow",,,urine
+Patient1,4/6/21,Color,Yellow,"Yellow",,,urine
+Patient1,11/2/20,Color,Yellow,"Yellow",,,urine
+Patient1,10/5/19,Color,Yellow,"Yellow",,,urine
+Patient1,11/3/18,Color,Yellow,"Yellow",,,urine
+Patient1,12/27/17,Color,Yellow,"Yellow",,,urine
+Patient1,5/30/25,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,12/31/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,9/5/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,4/19/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/20/23,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/16/22,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,4/6/21,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/2/20,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,10/5/19,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/3/18,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,12/27/17,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,9/15/25,Creatinine,1.04,0.76-1.27,,,kidney
+Patient1,11/21/25,Total Protein (Blood),7.6,5.9-8.4,,,cbc
+Patient1,11/21/25,Albumin,4.9,3.5-5.2,,,lipoproteins
+Patient1,11/21/25,Globulin,2.7,1.7-3.7,,,lipoproteins
+Patient1,11/21/25,Albumin/Globulin Ratio,2.7,1.1-2.9,,,lipoproteins
+Patient1,11/21/25,Glucose (Blood),83,70-99,,,sugar
+Patient1,11/21/25,Sodium,142,135-147,,,vitamins
+Patient1, 11/21/25,Potassium,4.1,3.5-5.5,,,vitamins
+Patient1,11/21/25,Chloride,101,96-108,,,vitamins
+Patient1,11/21/25,Carbon Dioxide,23,19-29,,,vitamins
+Patient1,11/21/25,Blood Urea Nitrogen (BUN),16,6-20,,,urine
+Patient1,11/21/25,Creatinine,0.84,0.67-1.31,,,kidney
+Patient1,11/21/25,eGFR,111,>60,,,kidney
+Patient1,11/21/25,BUN/Creatinine Ratio,19,10.0-28.0,,,kidney
+Patient1,11/21/25,Calcium,9.2,8.6-10.4,,,vitamins
+Patient1,11/21/25,Bilirubin,0.4,<1,2,,kidney
+Patient1,11/21/25,Bilirubin Direct (Bilirubin Conjugated),0.4,<0.4,,,kidney
+Patient1,11/21/25,Alkaline Phosphatase (ALP),135,40-156,,,liver
+Patient1,11/21/25,AST,24,<40,,,liver
+Patient1,11/21/25,ALT,29,<41,,,liver
+Patient1,11/21/25,Total Cholesterol,169,<200,,,Cholesterol
+Patient1,11/21/25,Triglyceride,178,<150,,,Cholesterol
+Patient1,11/21/25,High Density Lipoprotein (HDL),39,>40,,,Cholesterol
+Patient1,11/21/25,HDL as % of Cholesterol,23,>14,,,Cholesterol
+Patient1,11/21/25,Trig/HDL Ratio,4.56,<2.76,,,Cholesterol
+Patient1,11/21/25,LDL/HDL Ratio,2.41,<3.56,,,Cholesterol
+Patient1,11/21/25,Non-HDL Cholesterol,130,<130,,,Cholesterol
+Patient1,11/21/25,Low Density Lipoprotein (LDL),94,<100,,,Cholesterol
+Patient1,11/21/25,Very Low Density Lipoprotein (VLDL),36,07-32,,,Cholesterol
+Patient1,11/21/25,Cholesterol/HDL Ratio,4.3,<7.4,,,Cholesterol
+Patient1,11/21/25,White Blood Cell Count (WBC Count),5.82,3.66-10.60,,,wbc
+Patient1,11/21/25,Red Blood Cell Count (RBC Count),5.85,3.94-5.76,,,rbc
+Patient1,11/21/25,Hemoglobin (Hgb),15.2,12.0-16.9,,,gb
+Patient1,11/21/25,Hematocrit (Hct),47.2,34.6-49.6,,,gb
+Patient1,11/21/25,MCV,80.7,78.0-98.0,,,mean volume
+Patient1,11/21/25,MCH,26,25.8-33.1,,,mean volume
+Patient1,11/21/25,MCHC,32.2,31.7-35.3,,,mean volume
+Patient1,11/21/25,RDW,13.2,12.2-15.3,,,rbc
+Patient1,11/21/25,POLYS,51,34.9-75.3,,,bone marrow
+Patient1,11/21/25,POLYS, ABS. COUNT,2.97,1.30-7.00,,bone marrow
+Patient1,11/21/25,Lymphocytes,34.9,14.0-51.8,,,particles
+Patient1,11/21/25,Absolute Lymphocytes,2.03,0.80-3.00,,,particles
+Patient1,11/21/25,MONOS,6,3.5-13.2,,,particles
+Patient1, 11/21/25,Monocytes,6,0.50-13.20,,,particles
+Patient1,11/21/25,Absolute Monocytes,0.35,0.00-1.00,,,particles
+Patient1,11/21/25,Eosinophils,6.4,0.0-6.2,,,particles
+Patient1,11/21/25,Absolute Eosinophils,0.37,0.00-0.40,,,particles
+Patient1,11/21/25,Basophils,1.5,0.0-1.0,,,particles
+Patient1,11/21/25,Absolute Basophils,0.09,0.00-0.10,,,particles
+Patient1,11/21/25,Immature Granulocyte Automated,0.2,0.0-1.0,,,others
+Patient1,11/21/25,IG, ABS. COUNT,0.01,,,others
+Patient1,11/21/25,Platelet Count,282,140-425,,,platelets
+Patient1,11/21/25,Mean Platelet Volume,10.2,8.6-12.1,,,platelets
+Patient1,11/21/25,Color,Yellow,Yellow,urine
+Patient1,11/21/25,CHARACTER,Clear,Clear,Clear,,urine
+Patient1,11/21/25,Specific Gravity,-,1.026-1.030,,,urine
+Patient1,11/21/25,pH (Urine),5.5,5.0-8.0,,,urine
+Patient1,11/21/25,Protein (Urine),Trace,Negative,,,urine
+Patient1,11/21/25,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/21/25,Ketone,Negative,Negative,,,urine
+Patient1,11/21/25,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient1,11/21/25,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/21/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/21/25,Nitrite,Negative,Negative,,,urine
+Patient1,11/21/25,Crystals,None,None,,,urine
+Patient1,11/21/25,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/21/25,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/21/25,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient1,11/21/25,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient1,11/21/25,Epithelial Cells,None,None,,,urine
+Patient1,11/21/25,Hyaline Casts,0,0-4,,,urine
+Patient1,11/21/25,CAST, RBC, URINE,0,0-1,urine
+Patient1,11/21/25,Granular Casts,0,0-1,,,urine
+Patient1,11/21/25,Bacteria (Urine),0,None,,,urine
+Patient1,11/21/25,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient1,11/21/25,TSH,0.956,0.270-4.2,,,thyroid
+Patient1,11/21/25,Vitamin B12,503,232-1245,,,vitamins
+Patient1,11/21/25,Vitamin D 25-Hydroxy,44.6,32.0-100.0,,,vitamins
+Patient1,11/21/25,Estimated Glomerular Filtration Rate,111,,,,cbc
+,,,,,,,
+Patient2,11/21/25,Total Protein (Blood),7.2,5.9-8.4,,,cbc
+Patient2,11/21/25,Albumin,4.5,3.5-5.2,,,lipoproteins
+Patient2,11/21/25,Globulin,2.7,1.7-3.7,,,lipoproteins
+Patient2,11/21/25,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
+Patient2,11/21/25,Glucose (Blood),80,70-99,,,sugar
+Patient2,11/21/25,Sodium,141,135-147,,,vitamins
+Patient2,11/21/25,Potassium,4.3,3.5-5.5,,,vitamins
+Patient2,11/21/25,Chloride,104,96-108,,,vitamins
+Patient2,11/21/25,Carbon Dioxide,23,19-29,,,urine
+Patient2,11/21/25,Blood Urea Nitrogen (BUN),12,6-20,,,urine
+Patient2,11/21/25,Creatinine,0.66,0.67-1.31,,,kidney
+Patient2,11/21/25,eGFR,112,>60,,,kidney
+Patient2,11/21/25,BUN/Creatinine Ratio,18.2,10.0-28.0,,,kidney
+Patient2,11/21/25,Calcium,9.1,8.6-10.4,,,vitamins
+Patient2,11/21/25,Iron,20,37-145,,,iron
+Patient2,11/21/25,Bilirubin,0.2,<1,2,,kidney
+Patient2,11/21/25,Bilirubin Direct (Bilirubin Conjugated),0.2,<0.4,,,kidney
+Patient2,11/21/25,Alkaline Phosphatase (ALP),90,40-156,,,liver
+Patient2,11/21/25,AST,26,<40,,,liver
+Patient2,11/21/25,ALT,40,<41,,,liver
+Patient2,11/21/25,Total Cholesterol,120,<200,,,Cholesterol
+Patient2,11/21/25,Triglyceride,102,<150,,,Cholesterol
+Patient2,11/21/25,High Density Lipoprotein (HDL),39,>50,,,Cholesterol
+Patient2,11/21/25,HDL as % of Cholesterol,33,>14,,,Cholesterol
+Patient2,11/21/25,Cholesterol/HDL Ratio,3.1,<5.8,,,Cholesterol
+Patient2,11/21/25,LDL/HDL Ratio,1.56,<3.56,,,Cholesterol
+Patient2,11/21/25,Non-HDL Cholesterol,81,<130,,,Cholesterol
+Patient2,11/21/25,Low Density Lipoprotein (LDL),61,<100,,,Cholesterol
+Patient2,11/21/25,Very Low Density Lipoprotein (VLDL),20,07-32,,,Cholesterol
+Patient2,11/21/25,Trig/HDL Ratio,2.62,<1.66,,,Cholesterol
+Patient2,11/21/25,White Blood Cell Count (WBC Count),7.33,4.00-10.10,,,wbc
+Patient2,11/21/25,Red Blood Cell Count (RBC Count),4.34,3.58-5.19,,,rbc
+Patient2,11/21/25,Hemoglobin (Hgb),8.9,11.0-15.5,,,gb
+Patient2,11/21/25,Hematocrit (Hct),31.1,31.5-44.8,,,gb
+Patient2,11/21/25,MCV,71.7,78.0-98.0,,,mean volume
+Patient2,11/21/25,MCH,20.5,25.2-32.6,,,mean volume
+Patient2,11/21/25,MCHC,28.6,31.0-34.7,,,mean volume
+Patient2,11/21/25,RDW,15.5,12.2-15.3,,,rbc
+Patient2,11/21/25,POLYS,61.4,34.9-75.3,,,bone marrow
+Patient2,11/21/25,POLYS, ABS. COUNT,4.5,1.30-7.00,,bone marrow
+Patient2,11/21/25,Lymphocytes,25.9,14.0-51.8,,,particles
+Patient2,11/21/25,Absolute Lymphocytes,1.9,0.80-3.00,,,particles
+Patient2,11/21/25,MONOS,8.6,3.5-13.2,,,particles
+Patient2,11/21/25,Monocytes,8.6,0.50-13.20,,,particles
+Patient2,11/21/25,Absolute Monocytes,0.63,0.00-1.00,,,particles
+Patient2,11/21/25,Eosinophils,3,0.0-6.2,,,particles
+Patient2,11/21/25,Absolute Eosinophils,0.22,0.00-0.40,,,particles
+Patient2,11/21/25,Basophils,1,0.0-1.0,,,particles
+Patient2,11/21/25,Absolute Basophils,0.07,0.00-0.10,,,particles
+Patient2,11/21/25,Immature Granulocyte Automated,0.1,0.0-1.0,,,others
+Patient2,11/21/25,IG ( ABS. COUNT),0.01,,,,others
+Patient2,11/21/25,Platelet Count,273,140-425,,,platelets
+Patient2,11/21/25,Mean Platelet Volume,12.5,8.6-12.1,,,platelets
+Patient2,11/21/25,Hemoglobin A1C,5.5,<5.7,,,sugar
+Patient2,11/21/25,TSH,4.16,0.270-4.2,,,thyroid
+Patient2,11/21/25,Ferritin,5,13-150,,,iron
+Patient2,11/21/25,CRP,<0.3,<0.5,,,others
+Patient2,11/21/25,ESR (SED-RATE),53,<31,,,others
+Patient2,11/21/25,Vitamin B12,505,232-1245,,,vitamins
+Patient2,11/21/25,Vitamin D 25-Hydroxy,43.9,32.0-100.0,,,vitamins
+Patient2,11/21/25,Iron % Sat,Cant Calc,20-55,,,iron
+Patient2,11/21/25,TIBC,Cant Cal,228-428,,,others
 
 
 ,,,,,,,
@@ -1232,10 +1245,10 @@ Patient3,11/26/25,White Blood Cell Count (WBC Count),5.57,3.88-11.66,,,wbc
 Patient3,11/26/25,Red Blood Cell Count (RBC Count),4.86,3.90-5.27,,,rbc
 Patient3,11/26/25,Hemoglobin (Hgb),11.4,10.6-14.6,,,gb
 Patient3,11/26/25,Hematocrit (Hct),38.3,32.8-43.5,,,gb
-Patient3,11/26/25,Mean Corpuscular Volume (MCV),78.8,73.1-93.2,,,mean volume
-Patient3,11/26/25,Mean Corpuscular Hemoglobin (MCH),23.5,23.8-31.3,,,mean volume
-Patient3,11/26/25,Mean Corpuscular Hemoglobin Concentration (MCHC),29.8,31.3-34.9,,,mean volume
-Patient3,11/26/25,Red Blood Cell Distribution Width (RDW),14.5,12.4-15.5,,,rbc
+Patient3,11/26/25,MCV,78.8,73.1-93.2,,,mean volume
+Patient3,11/26/25,MCH,23.5,23.8-31.3,,,mean volume
+Patient3,11/26/25,MCHC,29.8,31.3-34.9,,,mean volume
+Patient3,11/26/25,RDW,14.5,12.4-15.5,,,rbc
 Patient3,11/26/25,POLYS,35.0,33.0-74.0,,,bone marrow
 Patient3,11/26/25,POLYS, ABS. COUNT,1.95,1.44-8.66,,bone marrow
 Patient3,11/26/25,Lymphocytes,51.2,16.4-54.6,,,particles
@@ -1252,8 +1265,8 @@ Patient3,11/26/25,Platelet Count,317,182-415,,,platelets
 Patient3,11/26/25,Mean Platelet Volume,10.9,8.5-11.8,,,platelets
 Patient3,11/26/25,Hemoglobin A1C,5.2,<5.7,,,sugar
 Patient3,11/26/25,Vitamin D 25-Hydroxy,19,32.0-100.0,,,vitamins
-Patient3,11/26/25,Color,Yellow,[Yellow,Strawm,Amber],urine
-Patient3,11/26/25,CHARACTER,Clear,-,Clear,,urine
+Patient3,11/26/25,Color,Yellow,Yellow,urine
+Patient3,11/26/25,CHARACTER,Clear,Clear,Clear,,urine
 Patient3,11/26/25,Specific Gravity,1.022,1.003-1.030,,,urine
 Patient3,11/26/25,pH (Urine),5.5,5.0-8.0,,,urine
 Patient3,11/26/25,Protein (Urine),Negative,Negative,,,urine
@@ -1272,4 +1285,5 @@ Patient3,11/26/25,Epithelial Cells,None,None,,,urine
 Patient3,11/26/25,Hyaline Casts,0,0-4,,,urine
 Patient3,11/26/25,CAST, RBC, URINE,0,0-1,urine
 Patient3,11/26/25,Granular Casts,0,0-1,,,urine
-Patient3,11/26/25,Bacteria (Urine),0,NONE-FEW,,,urine
+Patient3,11/26/25,Bacteria (Urine),0,None,,,urine
+
