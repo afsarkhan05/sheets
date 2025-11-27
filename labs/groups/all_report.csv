@@ -659,18 +659,18 @@ Patient1,11/2/20,Low Density Lipoprotein (LDL),134,<100,,,Cholesterol
 Patient1,10/5/19,Low Density Lipoprotein (LDL),115,<100,,,Cholesterol
 Patient1,11/3/18,Low Density Lipoprotein (LDL),134,<100,,,Cholesterol
 Patient1,12/27/17,Low Density Lipoprotein (LDL),140,<100,,,Cholesterol
-Patient1,9/15/25,Very Low Density Lipoprotein (VLDL),21,Jul-32,,,Cholesterol
-Patient1,5/30/25,Very Low Density Lipoprotein (VLDL),60,Jul-32,,,Cholesterol
-Patient1,12/31/24,Very Low Density Lipoprotein (VLDL),44,Jul-32,,,Cholesterol
-Patient1,9/5/24,Very Low Density Lipoprotein (VLDL),41,Jul-32,,,Cholesterol
-Patient1,4/19/24,Very Low Density Lipoprotein (VLDL),33,Jul-32,,,Cholesterol
-Patient1,11/20/23,Very Low Density Lipoprotein (VLDL),47,Jul-32,,,Cholesterol
-Patient1,11/16/22,Very Low Density Lipoprotein (VLDL),48,Jul-32,,,Cholesterol
-Patient1,4/6/21,Very Low Density Lipoprotein (VLDL),-,Jul-32,,,Cholesterol
-Patient1,11/2/20,Very Low Density Lipoprotein (VLDL),73,Jul-32,,,Cholesterol
-Patient1,10/5/19,Very Low Density Lipoprotein (VLDL),73,Jul-32,,,Cholesterol
-Patient1,11/3/18,Very Low Density Lipoprotein (VLDL),51,Jul-32,,,Cholesterol
-Patient1,12/27/17,Very Low Density Lipoprotein (VLDL),41,Jul-32,,,Cholesterol
+Patient1,9/15/25,Very Low Density Lipoprotein (VLDL),21,07-32,,,Cholesterol
+Patient1,5/30/25,Very Low Density Lipoprotein (VLDL),60,07-32,,,Cholesterol
+Patient1,12/31/24,Very Low Density Lipoprotein (VLDL),44,07-32,,,Cholesterol
+Patient1,9/5/24,Very Low Density Lipoprotein (VLDL),41,07-32,,,Cholesterol
+Patient1,4/19/24,Very Low Density Lipoprotein (VLDL),33,07-32,,,Cholesterol
+Patient1,11/20/23,Very Low Density Lipoprotein (VLDL),47,07-32,,,Cholesterol
+Patient1,11/16/22,Very Low Density Lipoprotein (VLDL),48,07-32,,,Cholesterol
+Patient1,4/6/21,Very Low Density Lipoprotein (VLDL),-,07-32,,,Cholesterol
+Patient1,11/2/20,Very Low Density Lipoprotein (VLDL),73,07-32,,,Cholesterol
+Patient1,10/5/19,Very Low Density Lipoprotein (VLDL),73,07-32,,,Cholesterol
+Patient1,11/3/18,Very Low Density Lipoprotein (VLDL),51,07-32,,,Cholesterol
+Patient1,12/27/17,Very Low Density Lipoprotein (VLDL),41,07-32,,,Cholesterol
 Patient1,5/30/25,Non-HDL Cholesterol,204,<130,,,Cholesterol
 Patient1,12/31/24,Non-HDL Cholesterol,120,<130,,,Cholesterol
 Patient1,9/5/24,Non-HDL Cholesterol,147,<130,,,Cholesterol
@@ -1074,7 +1074,7 @@ Patient1,11/21/25,Globulin,2.7,1.7-3.7,,,lipoproteins
 Patient1,11/21/25,Albumin/Globulin Ratio,2.7,1.1-2.9,,,lipoproteins
 Patient1,11/21/25,Glucose (Blood),83,70-99,,,sugar
 Patient1,11/21/25,Sodium,142,135-147,,,vitamins
-Patient1, 2025-11-21,Potassium,4.1,3.5-5.5,,,vitamins
+Patient1, 11/21/25,Potassium,4.1,3.5-5.5,,,vitamins
 Patient1,11/21/25,Chloride,101,96-108,,,vitamins
 Patient1,11/21/25,Carbon Dioxide,23,19-29,,,vitamins
 Patient1,11/21/25,Blood Urea Nitrogen (BUN),16,6-20,,,urine
@@ -1095,7 +1095,7 @@ Patient1,11/21/25,Trig/HDL Ratio,4.56,<2.76,,,Cholesterol
 Patient1,11/21/25,LDL/HDL Ratio,2.41,<3.56,,,Cholesterol
 Patient1,11/21/25,Non-HDL Cholesterol,130,<130,,,Cholesterol
 Patient1,11/21/25,Low Density Lipoprotein (LDL),94,<100,,,Cholesterol
-Patient1,11/21/25,Very Low Density Lipoprotein (VLDL),36,Jul-32,,,Cholesterol
+Patient1,11/21/25,Very Low Density Lipoprotein (VLDL),36,07-32,,,Cholesterol
 Patient1,11/21/25,Cholesterol/HDL Ratio,4.3,<7.4,,,Cholesterol
 Patient1,11/21/25,White Blood Cell Count (WBC Count),5.82,3.66-10.60,,,wbc
 Patient1,11/21/25,Red Blood Cell Count (RBC Count),5.85,3.94-5.76,,,rbc
@@ -1110,7 +1110,7 @@ Patient1,11/21/25,POLYS, ABS. COUNT,2.97,1.30-7.00,,bone marrow
 Patient1,11/21/25,Lymphocytes,34.9,14.0-51.8,,,particles
 Patient1,11/21/25,Absolute Lymphocytes,2.03,0.80-3.00,,,particles
 Patient1,11/21/25,MONOS,6,3.5-13.2,,,particles
-Patient1, 2025-11-21,Monocytes,6,0.50-13.20,,,particles
+Patient1, 11/21/25,Monocytes,6,0.50-13.20,,,particles
 Patient1,11/21/25,Absolute Monocytes,0.35,0.00-1.00,,,particles
 Patient1,11/21/25,Eosinophils,6.4,0.0-6.2,,,particles
 Patient1,11/21/25,Absolute Eosinophils,0.37,0.00-0.40,,,particles
@@ -1153,7 +1153,7 @@ Patient2,11/21/25,Globulin,2.7,1.7-3.7,,,lipoproteins
 Patient2,11/21/25,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
 Patient2,11/21/25,Glucose (Blood),80,70-99,,,sugar
 Patient2,11/21/25,Sodium,141,135-147,,,vitamins
-Patient2, 2025-11-21,Potassium,4.3,3.5-5.5,,,vitamins
+Patient2,11/21/25,Potassium,4.3,3.5-5.5,,,vitamins
 Patient2,11/21/25,Chloride,104,96-108,,,vitamins
 Patient2,11/21/25,Carbon Dioxide,23,19-29,,,urine
 Patient2,11/21/25,Blood Urea Nitrogen (BUN),12,6-20,,,urine
@@ -1175,7 +1175,7 @@ Patient2,11/21/25,Cholesterol/HDL Ratio,3.1,<5.8,,,Cholesterol
 Patient2,11/21/25,LDL/HDL Ratio,1.56,<3.56,,,Cholesterol
 Patient2,11/21/25,Non-HDL Cholesterol,81,<130,,,Cholesterol
 Patient2,11/21/25,Low Density Lipoprotein (LDL),61,<100,,,Cholesterol
-Patient2,11/21/25,Very Low Density Lipoprotein (VLDL),20,Jul-32,,,Cholesterol
+Patient2,11/21/25,Very Low Density Lipoprotein (VLDL),20,07-32,,,Cholesterol
 Patient2,11/21/25,Trig/HDL Ratio,2.62,<1.66,,,Cholesterol
 Patient2,11/21/25,White Blood Cell Count (WBC Count),7.33,4.00-10.10,,,wbc
 Patient2,11/21/25,Red Blood Cell Count (RBC Count),4.34,3.58-5.19,,,rbc
