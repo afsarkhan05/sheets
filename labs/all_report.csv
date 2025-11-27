@@ -1023,17 +1023,17 @@ Patient1,11/2/20,Bacteria (Urine),None,None,,,urine
 Patient1,10/5/19,Bacteria (Urine),None,None,,,urine
 Patient1,11/3/18,Bacteria (Urine),None,None,,,urine
 Patient1,12/27/17,Bacteria (Urine),None,None,,,urine
-Patient1,5/30/25,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,12/31/24,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,9/5/24,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,4/19/24,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,11/20/23,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,11/16/22,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,4/6/21,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,11/2/20,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,10/5/19,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,11/3/18,CRYSTAL, AMOUNT,None,None,,urine
-Patient1,12/27/17,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,5/30/25,CRYSTAL AMOUNT,None,None,,urine
+Patient1,12/31/24,CRYSTAL AMOUNT,None,None,,urine
+Patient1,9/5/24,CRYSTAL AMOUNT,None,None,,urine
+Patient1,4/19/24,CRYSTAL AMOUNT,None,None,,urine
+Patient1,11/20/23,CRYSTAL AMOUNT,None,None,,urine
+Patient1,11/16/22,CRYSTAL AMOUNT,None,None,,urine
+Patient1,4/6/21,CRYSTAL AMOUNT,None,None,,urine
+Patient1,11/2/20,CRYSTAL AMOUNT,None,None,,urine
+Patient1,10/5/19,CRYSTAL AMOUNT,None,None,,urine
+Patient1,11/3/18,CRYSTAL AMOUNT,None,None,,urine
+Patient1,12/27/17,CRYSTAL AMOUNT,None,None,,urine
 Patient1,5/30/25,Leukocyte Esterase,Negative,Negative,,,urine
 Patient1,12/31/24,Leukocyte Esterase,Negative,Negative,,,urine
 Patient1,9/5/24,Leukocyte Esterase,Negative,Negative,,,urine
@@ -1133,7 +1133,7 @@ Patient1,11/21/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
 Patient1,11/21/25,Nitrite,Negative,Negative,,,urine
 Patient1,11/21/25,Crystals,None,None,,,urine
 Patient1,11/21/25,Leukocyte Esterase,Negative,Negative,,,urine
-Patient1,11/21/25,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/21/25,CRYSTAL AMOUNT,None,None,,urine
 Patient1,11/21/25,White Blood Cells (Urine),0-5,0-5,,,urine
 Patient1,11/21/25,Red Blood Cells (Urine),0-2,0-2,,,urine
 Patient1,11/21/25,Epithelial Cells,None,None,,,urine
@@ -1212,6 +1212,83 @@ Patient2,11/21/25,TIBC,Cant Cal,228-428,,,others
 
 
 ,,,,,,,
+Patient3,11/07/24,Total Protein (Blood),7.2,5.9-8.4,,,cbc
+Patient3,11/07/24,Albumin,4.5,2.8-5.4,,,lipoproteins
+Patient3,11/07/24,Globulin,2.7,1.7-3.7,,,lipoproteins
+Patient3,11/07/24,Albumin/Globulin Ratio,1.7,1.1-2.9,,,lipoproteins
+Patient3,11/07/24,Glucose (Blood),70,70-99,,,sugar
+Patient3,11/07/24,Sodium,141,135-147,,,vitamins
+Patient3,11/07/24,Potassium,4.3,3.5-5.5,,,vitamins
+Patient3,11/07/24,Chloride,102,96-108,,,vitamins
+Patient3,11/07/24,Carbon Dioxide,25,19-29,,,urine
+Patient3,11/07/24,Blood Urea Nitrogen (BUN),11,6-20,,,urine
+Patient3,11/07/24,Creatinine,0.44,0.44-0.87,,,kidney
+Patient3,11/07/24,BUN/Creatinine Ratio,25.0,10.0-28.0,,,kidney
+Patient3,11/07/24,Calcium,9.5,8.6-10.4,,,vitamins
+
+Patient3,11/07/24,Bilirubin,0.2,<1,2,,kidney
+Patient3,11/07/24,Bilirubin Direct (Bilirubin Conjugated),0.2,<0.4,,,kidney
+Patient3,11/07/24,Alkaline Phosphatase (ALP),354,<352,,,liver
+Patient3,11/07/24,AST,21,<32,,,liver
+Patient3,11/07/24,ALT,12,<33,,,liver
+Patient3,11/07/24,Total Cholesterol,109,<170,,,Cholesterol
+Patient3,11/07/24,Triglyceride,134,<90,,,Cholesterol
+Patient3,11/07/24,High Density Lipoprotein (HDL),44,>60,,,Cholesterol
+Patient3,11/07/24,HDL as % of Cholesterol,40,>14,,,Cholesterol
+Patient3,11/07/24,Cholesterol/HDL Ratio,2.5,<5.8,,,Cholesterol
+Patient3,11/07/24,LDL/HDL Ratio,0.86,<3.56,,,Cholesterol
+Patient3,11/07/24,Non-HDL Cholesterol,65,<130,,,Cholesterol
+Patient3,11/07/24,Low Density Lipoprotein (LDL),38,<110,,,Cholesterol
+Patient3,11/07/24,Very Low Density Lipoprotein (VLDL),27,07-32,,,Cholesterol
+Patient3,11/07/24,Trig/HDL Ratio,1.25,<1.66,,,Cholesterol
+Patient3,11/07/24,White Blood Cell Count (WBC Count),5.23,3.88-11.66,,,wbc
+Patient3,11/07/24,Red Blood Cell Count (RBC Count),5.27,3.90-5.27,,,rbc
+Patient3,11/07/24,Hemoglobin (Hgb),13.4,10.6-14.6,,,gb
+Patient3,11/07/24,Hematocrit (Hct),42.4,32.8-43.5,,,gb
+Patient3,11/07/24,MCV,80.5,73.1-93.2,,,mean volume
+Patient3,11/07/24,MCH,25.4,23.8-31.3,,,mean volume
+Patient3,11/07/24,MCHC,31.6,31.3-34.9,,,mean volume
+Patient3,11/07/24,RDW,13.9,12.4-15.5,,,rbc
+Patient3,11/07/24,POLYS,37.0,33.0-74.0,,,bone marrow
+Patient3,11/07/24,POLYS, ABS. COUNT,1.94,1.44-8.66,,bone marrow
+Patient3,11/07/24,Lymphocytes,51.1,16.4-54.6,,,particles
+Patient3,11/07/24,Absolute Lymphocytes,2.67,1.20-3.97,,,particles
+Patient3,11/07/24,Monocytes,7.3,4.2-11.6,,,particles
+Patient3,11/07/24,Absolute Monocytes,0.38,0.24-0.93,,,particles
+Patient3,11/07/24,Eosinophils,3.6,0.3-6.2,,,particles
+Patient3,11/07/24,Absolute Eosinophils,0.19,0.01-0.70,,,particles
+Patient3,11/07/24,Basophils,1.0,0.1-0.9,,,particles
+Patient3,11/07/24,Absolute Basophils,0.05,0.01-0.08,,,particles
+Patient3,11/07/24,Immature Granulocyte Automated,0.0,0.0-0.3,,,others
+Patient3,11/07/24,IG ( ABS. COUNT),0.00,0.00-0.03,,,others
+Patient3,11/07/24,Platelet Count,270,182-415,,,platelets
+Patient3,11/07/24,Mean Platelet Volume,10.8,8.5-11.8,,,platelets
+Patient3,11/07/24,Hemoglobin A1C,5.2,<5.7,,,sugar
+Patient3,11/07/24,Vitamin D 25-Hydroxy,19,32.0-100.0,,,vitamins
+Patient3,11/07/24,TSH,1.050,0.700-6.400,,,vitamins
+Patient3,11/07/24,Color,Yellow,Yellow,urine
+Patient3,11/07/24,CHARACTER,Clear,Clear,Clear,,urine
+Patient3,11/07/24,Specific Gravity,1.021,1.003-1.030,,,urine
+Patient3,11/07/24,pH (Urine),5.5,5.0-8.0,,,urine
+Patient3,11/07/24,Protein (Urine),Negative,Negative,,,urine
+Patient3,11/07/24,Glucose (Urine),Negative,Negative,,,urine
+Patient3,11/07/24,Ketone,Negative,Negative,,,urine
+Patient3,11/07/24,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient3,11/07/24,Blood (Urine),Negative,Negative,,,urine
+Patient3,11/07/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient3,11/07/24,Nitrite,Negative,Negative,,,urine
+Patient3,11/07/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient3,11/07/24,Crystals,None,None,,,urine
+Patient3,11/07/24,CRYSTAL AMOUNT,None,None,,urine
+Patient3,11/07/24,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient3,11/07/24,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient3,11/07/24,Epithelial Cells,None,None,,,urine
+Patient3,11/07/24,Hyaline Casts,0,0-4,,,urine
+Patient3,11/07/24,CAST, RBC, URINE,0,0-1,urine
+Patient3,11/07/24,Granular Casts,0,0-1,,,urine
+Patient3,11/07/24,Bacteria (Urine),0,None,,,urine
+
+,,,,,,,
 Patient3,11/26/25,Total Protein (Blood),7.1,5.9-8.4,,,cbc
 Patient3,11/26/25,Albumin,4.6,2.8-5.4,,,lipoproteins
 Patient3,11/26/25,Globulin,2.5,1.7-3.7,,,lipoproteins
@@ -1222,7 +1299,7 @@ Patient3,11/26/25,Potassium,4.8,3.5-5.5,,,vitamins
 Patient3,11/26/25,Chloride,106,96-108,,,vitamins
 Patient3,11/26/25,Carbon Dioxide,19,19-29,,,urine
 Patient3,11/26/25,Blood Urea Nitrogen (BUN),12,6-20,,,urine
-Patient3,11/26/25,Creatinine,0.61,0.67-1.31,,,kidney
+Patient3,11/26/25,Creatinine,0.61,0.44-0.87,,,kidney
 Patient3,11/26/25,BUN/Creatinine Ratio,19.7,10.0-28.0,,,kidney
 Patient3,11/26/25,Calcium,9.8,8.6-10.4,,,vitamins
 
@@ -1265,6 +1342,7 @@ Patient3,11/26/25,Platelet Count,317,182-415,,,platelets
 Patient3,11/26/25,Mean Platelet Volume,10.9,8.5-11.8,,,platelets
 Patient3,11/26/25,Hemoglobin A1C,5.2,<5.7,,,sugar
 Patient3,11/26/25,Vitamin D 25-Hydroxy,19,32.0-100.0,,,vitamins
+Patient3,11/26/25,TSH,0.529,0.700-6.400,,,vitamins
 Patient3,11/26/25,Color,Yellow,Yellow,urine
 Patient3,11/26/25,CHARACTER,Clear,Clear,Clear,,urine
 Patient3,11/26/25,Specific Gravity,1.022,1.003-1.030,,,urine
@@ -1278,7 +1356,7 @@ Patient3,11/26/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
 Patient3,11/26/25,Nitrite,Negative,Negative,,,urine
 Patient3,11/26/25,Crystals,None,None,,,urine
 Patient3,11/26/25,Leukocyte Esterase,Negative,Negative,,,urine
-Patient3,11/26/25,CRYSTAL, AMOUNT,None,None,,urine
+Patient3,11/26/25,CRYSTAL AMOUNT,None,None,,urine
 Patient3,11/26/25,White Blood Cells (Urine),0-5,0-5,,,urine
 Patient3,11/26/25,Red Blood Cells (Urine),0-2,0-2,,,urine
 Patient3,11/26/25,Epithelial Cells,None,None,,,urine
@@ -1287,3 +1365,309 @@ Patient3,11/26/25,CAST, RBC, URINE,0,0-1,urine
 Patient3,11/26/25,Granular Casts,0,0-1,,,urine
 Patient3,11/26/25,Bacteria (Urine),0,None,,,urine
 
+,,,,,,,
+Patient4,11/07/24,Total Protein (Blood),6.7,5.9-8.4,,,cbc
+Patient4,11/07/24,Albumin,4.3,2.8-5.4,,,lipoproteins
+Patient4,11/07/24,Globulin,2.4,1.7-3.7,,,lipoproteins
+Patient4,11/07/24,Albumin/Globulin Ratio,1.8,1.1-2.9,,,lipoproteins
+Patient4,11/07/24,Glucose (Blood),86,70-99,,,sugar
+Patient4,11/07/24,Sodium,138,135-147,,,vitamins
+Patient4,11/07/24,Potassium,3.9,3.5-5.5,,,vitamins
+Patient4,11/07/24,Chloride,101,96-108,,,vitamins
+Patient4,11/07/24,Carbon Dioxide,23,19-29,,,urine
+Patient4,11/07/24,Blood Urea Nitrogen (BUN),16,6-20,,,urine
+Patient4,11/07/24,Creatinine,0.45,0.44-0.87,,,kidney
+Patient4,11/07/24,BUN/Creatinine Ratio,35.6,10.0-28.0,,,kidney
+Patient4,11/07/24,Calcium,9.4,8.6-10.4,,,vitamins
+
+Patient4,11/07/24,Bilirubin,0.2,<1,2,,kidney
+Patient4,11/07/24,Bilirubin Direct (Bilirubin Conjugated),0.2,<0.4,,,kidney
+Patient4,11/07/24,Alkaline Phosphatase (ALP),372,<330,,,liver
+Patient4,11/07/24,AST,37,<40,,,liver
+Patient4,11/07/24,ALT,18,<41,,,liver
+Patient4,11/07/24,Total Cholesterol,92,<170,,,Cholesterol
+Patient4,11/07/24,Triglyceride,93,<90,,,Cholesterol
+Patient4,11/07/24,High Density Lipoprotein (HDL),37,>60,,,Cholesterol
+Patient4,11/07/24,HDL as % of Cholesterol,40,>14,,,Cholesterol
+Patient4,11/07/24,Cholesterol/HDL Ratio,2.5,<5.8,,,Cholesterol
+Patient4,11/07/24,LDL/HDL Ratio,0.97,<3.56,,,Cholesterol
+Patient4,11/07/24,Non-HDL Cholesterol,55,<130,,,Cholesterol
+Patient4,11/07/24,Low Density Lipoprotein (LDL),36,<110,,,Cholesterol
+Patient4,11/07/24,Very Low Density Lipoprotein (VLDL),19,07-32,,,Cholesterol
+Patient4,11/07/24,Trig/HDL Ratio,2.81,<1.66,,,Cholesterol
+Patient4,11/07/24,White Blood Cell Count (WBC Count),8.91,3.88-11.66,,,wbc
+Patient4,11/07/24,Red Blood Cell Count (RBC Count),4.60,3.90-5.27,,,rbc
+Patient4,11/07/24,Hemoglobin (Hgb),11.9,10.6-14.6,,,gb
+Patient4,11/07/24,Hematocrit (Hct),37.3,33.3-42.5,,,gb
+Patient4,11/07/24,MCV,81.1,73.1-93.2,,,mean volume
+Patient4,11/07/24,MCH,25.9,23.8-31.3,,,mean volume
+Patient4,11/07/24,MCHC,31.9,31.3-34.9,,,mean volume
+Patient4,11/07/24,RDW,12.9,12.4-15.5,,,rbc
+Patient4,11/07/24,POLYS,42.9.3,33.0-74.0,,,bone marrow
+Patient4,11/07/24,POLYS, ABS. COUNT,3.82,1.44-8.66,,bone marrow
+Patient4,11/07/24,Lymphocytes,47.0,16.4-54.6,,,particles
+Patient4,11/07/24,Absolute Lymphocytes,4.19,1.20-3.97,,,particles
+Patient4,11/07/24,Monocytes,6.4,4.2-11.6,,,particles
+Patient4,11/07/24,Absolute Monocytes,0.57,0.24-0.93,,,particles
+Patient4,11/07/24,Eosinophils,2.8,0.3-6.2,,,particles
+Patient4,11/07/24,Absolute Eosinophils,0.25,0.01-0.70,,,particles
+Patient4,11/07/24,Basophils,0.7,0.1-0.9,,,particles
+Patient4,11/07/24,Absolute Basophils,0.06,0.01-0.08,,,particles
+Patient4,11/07/24,Immature Granulocyte Automated,0.2,0.0-0.3,,,others
+Patient4,11/07/24,IG ( ABS. COUNT),0.02,0.00-0.03,,,others
+Patient4,11/07/24,Platelet Count,237,182-415,,,platelets
+Patient4,11/07/24,Mean Platelet Volume,9.2,8.5-11.8,,,platelets
+
+Patient4,11/07/24,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient4,11/07/24,Vitamin D 25-Hydroxy,35,32.0-100.0,,,vitamins
+Patient3,11/07/24,TSH,2.930,0.700-6.400,,,vitamins
+Patient4,11/07/24,Color,Yellow,Yellow,urine
+Patient4,11/07/24,CHARACTER,Clear,Clear,Clear,,urine
+Patient4,11/07/24,Specific Gravity,1.022,1.003-1.030,,,urine
+Patient4,11/07/24,pH (Urine),8.5,5.0-8.0,,,urine
+Patient4,11/07/24,Protein (Urine),Negative,Negative,,,urine
+Patient4,11/07/24,Glucose (Urine),Negative,Negative,,,urine
+Patient4,11/07/24,Ketone,Negative,Negative,,,urine
+Patient4,11/07/24,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient4,11/07/24,Blood (Urine),Negative,Negative,,,urine
+Patient4,11/07/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient4,11/07/24,Nitrite,Negative,Negative,,,urine
+Patient4,11/07/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient4,11/07/24,Crystals,None,None,,,urine
+Patient4,11/07/24,CRYSTAL AMOUNT,None,None,,urine
+Patient4,11/07/24,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient4,11/07/24,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient4,11/07/24,Epithelial Cells,None,None,,,urine
+Patient4,11/07/24,Hyaline Casts,0,0-4,,,urine
+Patient4,11/07/24,CAST, RBC, URINE,0,0-1,urine
+Patient4,11/07/24,Granular Casts,0,0-1,,,urine
+Patient4,11/07/24,Bacteria (Urine),None,None,,,urine
+,,,,,,,
+Patient4,11/23/25,Total Protein (Blood),6.5,5.9-8.4,,,cbc
+Patient4,11/23/25,Albumin,4.4,2.8-5.4,,,lipoproteins
+Patient4,11/23/25,Globulin,2.1,1.7-3.7,,,lipoproteins
+Patient4,11/23/25,Albumin/Globulin Ratio,2.1,1.1-2.9,,,lipoproteins
+Patient4,11/23/25,Glucose (Blood),86,70-99,,,sugar
+Patient4,11/23/25,Sodium,144,135-147,,,vitamins
+Patient4,11/23/25,Potassium,4.4,3.5-5.5,,,vitamins
+Patient4,11/23/25,Chloride,105,96-108,,,vitamins
+Patient4,11/23/25,Carbon Dioxide,20,19-29,,,urine
+Patient4,11/23/25,Blood Urea Nitrogen (BUN),17,6-20,,,urine
+Patient4,11/23/25,Creatinine,0.46,0.44-0.87,,,kidney
+Patient4,11/23/25,BUN/Creatinine Ratio,37.0,10.0-28.0,,,kidney
+Patient4,11/23/25,Calcium,9.9,8.6-10.4,,,vitamins
+
+Patient4,11/23/25,Bilirubin,0.2,<1,2,,kidney
+Patient4,11/23/25,Bilirubin Direct (Bilirubin Conjugated),0.2,<0.4,,,kidney
+Patient4,11/23/25,Alkaline Phosphatase (ALP),393,<330,,,liver
+Patient4,11/23/25,AST,31,<40,,,liver
+Patient4,11/23/25,ALT,13,<41,,,liver
+Patient4,11/23/25,Total Cholesterol,100,<170,,,Cholesterol
+Patient4,11/23/25,Triglyceride,101,<90,,,Cholesterol
+Patient4,11/23/25,High Density Lipoprotein (HDL),36,>60,,,Cholesterol
+Patient4,11/23/25,HDL as % of Cholesterol,36,>14,,,Cholesterol
+Patient4,11/23/25,Cholesterol/HDL Ratio,2.8,<5.8,,,Cholesterol
+Patient4,11/23/25,LDL/HDL Ratio,1.22,<3.56,,,Cholesterol
+Patient4,11/23/25,Non-HDL Cholesterol,64,<130,,,Cholesterol
+Patient4,11/23/25,Low Density Lipoprotein (LDL),44,<110,,,Cholesterol
+Patient4,11/23/25,Very Low Density Lipoprotein (VLDL),20,07-32,,,Cholesterol
+Patient4,11/23/25,Trig/HDL Ratio,2.81,<1.66,,,Cholesterol
+Patient4,11/23/25,White Blood Cell Count (WBC Count),8.00,3.88-11.66,,,wbc
+Patient4,11/23/25,Red Blood Cell Count (RBC Count),4.50,3.90-5.27,,,rbc
+Patient4,11/23/25,Hemoglobin (Hgb),11.9,10.6-14.6,,,gb
+Patient4,11/23/25,Hematocrit (Hct),37.0,33.3-42.5,,,gb
+Patient4,11/23/25,MCV,82.2,73.1-93.2,,,mean volume
+Patient4,11/23/25,MCH,26.4,23.8-31.3,,,mean volume
+Patient4,11/23/25,MCHC,32.2,31.3-34.9,,,mean volume
+Patient4,11/23/25,RDW,12.4,12.4-15.5,,,rbc
+Patient4,11/23/25,POLYS,49.5,33.0-74.0,,,bone marrow
+Patient4,11/23/25,POLYS, ABS. COUNT,3.97,1.44-8.66,,bone marrow
+Patient4,11/23/25,Lymphocytes,42.3,16.4-54.6,,,particles
+Patient4,11/23/25,Absolute Lymphocytes,3.38,1.20-3.97,,,particles
+Patient4,11/23/25,Monocytes,5.8,4.2-11.6,,,particles
+Patient4,11/23/25,Absolute Monocytes,0.46,0.24-0.93,,,particles
+Patient4,11/23/25,Eosinophils,1.5,0.3-6.2,,,particles
+Patient4,11/23/25,Absolute Eosinophils,0.12,0.01-0.70,,,particles
+Patient4,11/23/25,Basophils,0.8,0.1-0.9,,,particles
+Patient4,11/23/25,Absolute Basophils,0.06,0.01-0.08,,,particles
+Patient4,11/23/25,Immature Granulocyte Automated,0.1,0.0-0.3,,,others
+Patient4,11/23/25,IG ( ABS. COUNT),0.01,0.00-0.03,,,others
+Patient4,11/23/25,Platelet Count,204,182-415,,,platelets
+Patient4,11/23/25,Mean Platelet Volume,9.6,8.5-11.8,,,platelets
+Patient4,11/23/25,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient4,11/23/25,Vitamin D 25-Hydroxy,35,32.0-100.0,,,vitamins
+Patient3,11/07/24,TSH,1.770,0.700-6.400,,,vitamins
+Patient4,11/23/25,Color,Yellow,Yellow,urine
+Patient4,11/23/25,CHARACTER,Clear,Clear,Clear,,urine
+Patient4,11/23/25,Specific Gravity,1.027,1.003-1.030,,,urine
+Patient4,11/23/25,pH (Urine),5.5,5.0-8.0,,,urine
+Patient4,11/23/25,Protein (Urine),Negative,Negative,,,urine
+Patient4,11/23/25,Glucose (Urine),Negative,Negative,,,urine
+Patient4,11/23/25,Ketone,Negative,Negative,,,urine
+Patient4,11/23/25,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient4,11/23/25,Blood (Urine),Negative,Negative,,,urine
+Patient4,11/23/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient4,11/23/25,Nitrite,Negative,Negative,,,urine
+Patient4,11/23/25,Leukocyte Esterase,Trace,Negative,,,urine
+Patient4,11/23/25,Crystals,None,None,,,urine
+Patient4,11/23/25,CRYSTAL,None,None,,urine
+Patient4,11/23/25,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient4,11/23/25,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient4,11/23/25,Epithelial Cells,None,None,,,urine
+Patient4,11/23/25,Hyaline Casts,0,0-4,,,urine
+Patient4,11/23/25,CAST, RBC, URINE,0,0-1,urine
+Patient4,11/23/25,Granular Casts,0,0-1,,,urine
+Patient4,11/23/25,Bacteria (Urine),None,None,,,urine
+
+,,,,,,,
+
+Patient5,11/07/24,Total Protein (Blood),6.8,5.9-8.4,,,cbc
+Patient5,11/07/24,Albumin,4.7,2.8-5.4,,,lipoproteins
+Patient5,11/07/24,Globulin,2.1,1.7-3.7,,,lipoproteins
+Patient5,11/07/24,Albumin/Globulin Ratio,2.2,1.1-2.9,,,lipoproteins
+Patient5,11/07/24,Glucose (Blood),84,70-99,,,sugar
+Patient5,11/07/24,Sodium,137,135-147,,,vitamins
+Patient5,11/07/24,Potassium,4.2,3.5-5.5,,,vitamins
+Patient5,11/07/24,Chloride,99,96-108,,,vitamins
+Patient5,11/07/24,Carbon Dioxide,23,19-29,,,urine
+Patient5,11/07/24,Blood Urea Nitrogen (BUN),14,6-20,,,urine
+Patient5,11/07/24,Creatinine,0.44,0.44-0.87,,,kidney
+Patient5,11/07/24,BUN/Creatinine Ratio,31.8,10.0-28.0,,,kidney
+Patient5,11/07/24,Calcium,9.4,8.6-10.4,,,vitamins
+
+Patient5,11/07/24,Bilirubin,0.3,<1,2,,kidney
+Patient5,11/07/24,Bilirubin Direct (Bilirubin Conjugated),0.3,<0.4,,,kidney
+Patient5,11/07/24,Alkaline Phosphatase (ALP),330,<330,,,liver
+Patient5,11/07/24,AST,36,<40,,,liver
+Patient5,11/07/24,ALT,16,<41,,,liver
+Patient5,11/07/24,Total Cholesterol,130,<170,,,Cholesterol
+Patient5,11/07/24,Triglyceride,51,<90,,,Cholesterol
+Patient5,11/07/24,High Density Lipoprotein (HDL),58,>60,,,Cholesterol
+Patient5,11/07/24,HDL as % of Cholesterol,45,>14,,,Cholesterol
+Patient5,11/07/24,Cholesterol/HDL Ratio,2.2,<5.8,,,Cholesterol
+Patient5,11/07/24,LDL/HDL Ratio,1.07,<3.56,,,Cholesterol
+Patient5,11/07/24,Non-HDL Cholesterol,72,<130,,,Cholesterol
+Patient5,11/07/24,Low Density Lipoprotein (LDL),61,<110,,,Cholesterol
+Patient5,11/07/24,Very Low Density Lipoprotein (VLDL),10,07-32,,,Cholesterol
+Patient5,11/07/24,Trig/HDL Ratio,1.20,<1.66,,,Cholesterol
+Patient5,11/07/24,White Blood Cell Count (WBC Count),6.89,3.88-11.66,,,wbc
+Patient5,11/07/24,Red Blood Cell Count (RBC Count),5.12,3.90-5.27,,,rbc
+Patient5,11/07/24,Hemoglobin (Hgb),12.6,10.6-14.6,,,gb
+Patient5,11/07/24,Hematocrit (Hct),40.9,33.3-42.5,,,gb
+Patient5,11/07/24,MCV,79.9,73.1-93.2,,,mean volume
+Patient5,11/07/24,MCH,24.6,23.8-31.3,,,mean volume
+Patient5,11/07/24,MCHC,30.8,31.3-34.9,,,mean volume
+Patient5,11/07/24,RDW,13.6,12.4-15.5,,,rbc
+Patient5,11/07/24,POLYS,40.3,33.0-74.0,,,bone marrow
+Patient5,11/07/24,POLYS, ABS. COUNT,2.77,1.44-8.66,,bone marrow
+Patient5,11/07/24,Lymphocytes,46.0,16.4-54.6,,,particles
+Patient5,11/07/24,Absolute Lymphocytes,3.17,1.20-3.97,,,particles
+Patient5,11/07/24,Monocytes,6.1,4.2-11.6,,,particles
+Patient5,11/07/24,Absolute Monocytes,0.42,0.24-0.93,,,particles
+Patient5,11/07/24,Eosinophils,6.8,0.3-6.2,,,particles
+Patient5,11/07/24,Absolute Eosinophils,0.47,0.01-0.70,,,particles
+Patient5,11/07/24,Basophils,0.7,0.1-0.9,,,particles
+Patient5,11/07/24,Absolute Basophils,0.05,0.01-0.08,,,particles
+Patient5,11/07/24,Immature Granulocyte Automated,0.1,0.0-0.3,,,others
+Patient5,11/07/24,IG ( ABS. COUNT),0.01,0.00-0.03,,,others
+Patient5,11/07/24,Platelet Count,265,182-415,,,platelets
+Patient5,11/07/24,Mean Platelet Volume,9.2,8.5-11.8,,,platelets
+
+Patient5,11/07/24,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient5,11/07/24,Vitamin D 25-Hydroxy,26,32.0-100.0,,,vitamins
+Patient5,11/07/24,Color,Yellow,Yellow,urine
+Patient5,11/07/24,CHARACTER,Clear,Clear,Clear,,urine
+Patient5,11/07/24,Specific Gravity,1.017,1.003-1.030,,,urine
+Patient5,11/07/24,pH (Urine),7.0,5.0-8.0,,,urine
+Patient5,11/07/24,Protein (Urine),Negative,Negative,,,urine
+Patient5,11/07/24,Glucose (Urine),Negative,Negative,,,urine
+Patient5,11/07/24,Ketone,Negative,Negative,,,urine
+Patient5,11/07/24,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient5,11/07/24,Blood (Urine),Negative,Negative,,,urine
+Patient5,11/07/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient5,11/07/24,Nitrite,Negative,Negative,,,urine
+Patient5,11/07/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient5,11/07/24,Crystals,None,None,,,urine
+Patient5,11/07/24,CRYSTAL AMOUNT,None,None,,urine
+Patient5,11/07/24,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient5,11/07/24,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient5,11/07/24,Epithelial Cells,None,None,,,urine
+Patient5,11/07/24,Hyaline Casts,0,0-4,,,urine
+Patient5,11/07/24,CAST, RBC, URINE,0,0-1,urine
+Patient5,11/07/24,Granular Casts,0,0-1,,,urine
+Patient5,11/07/24,Bacteria (Urine),None,None,,,urine
+,,,,,,,
+Patient5,11/23/25,Total Protein (Blood),6.5,5.9-8.4,,,cbc
+Patient5,11/23/25,Albumin,4.5,2.8-5.4,,,lipoproteins
+Patient5,11/23/25,Globulin,2.0,1.7-3.7,,,lipoproteins
+Patient5,11/23/25,Albumin/Globulin Ratio,2.3,1.1-2.9,,,lipoproteins
+Patient5,11/23/25,Glucose (Blood),93,70-99,,,sugar
+Patient5,11/23/25,Sodium,140,135-147,,,vitamins
+Patient5,11/23/25,Potassium,4.4,3.5-5.5,,,vitamins
+Patient5,11/23/25,Chloride,104,96-108,,,vitamins
+Patient5,11/23/25,Carbon Dioxide,18,19-29,,,urine
+Patient5,11/23/25,Blood Urea Nitrogen (BUN),16,6-20,,,urine
+Patient5,11/23/25,Creatinine,0.46,0.44-0.87,,,kidney
+Patient5,11/23/25,BUN/Creatinine Ratio,34.8,10.0-28.0,,,kidney
+Patient5,11/23/25,Calcium,9.9,8.6-10.4,,,vitamins
+
+Patient5,11/23/25,Bilirubin,0.3,<1,2,,kidney
+Patient5,11/23/25,Bilirubin Direct (Bilirubin Conjugated),0.3,<0.4,,,kidney
+Patient5,11/23/25,Alkaline Phosphatase (ALP),329,<330,,,liver
+Patient5,11/23/25,AST,33,<40,,,liver
+Patient5,11/23/25,ALT,15,<41,,,liver
+Patient5,11/23/25,Total Cholesterol,140,<170,,,Cholesterol
+Patient5,11/23/25,Triglyceride,73,<90,,,Cholesterol
+Patient5,11/23/25,High Density Lipoprotein (HDL),61,>60,,,Cholesterol
+Patient5,11/23/25,HDL as % of Cholesterol,44,>14,,,Cholesterol
+Patient5,11/23/25,Cholesterol/HDL Ratio,2.3,<5.8,,,Cholesterol
+Patient5,11/23/25,LDL/HDL Ratio,1.05,<3.56,,,Cholesterol
+Patient5,11/23/25,Non-HDL Cholesterol,79,<130,,,Cholesterol
+Patient5,11/23/25,Low Density Lipoprotein (LDL),64,<110,,,Cholesterol
+Patient5,11/23/25,Very Low Density Lipoprotein (VLDL),15,07-32,,,Cholesterol
+Patient5,11/23/25,Trig/HDL Ratio,1.20,<1.66,,,Cholesterol
+Patient5,11/23/25,White Blood Cell Count (WBC Count),4.99,3.88-11.66,,,wbc
+Patient5,11/23/25,Red Blood Cell Count (RBC Count),4.82,3.90-5.27,,,rbc
+Patient5,11/23/25,Hemoglobin (Hgb),12.3,10.6-14.6,,,gb
+Patient5,11/23/25,Hematocrit (Hct),38.0,33.3-42.5,,,gb
+Patient5,11/23/25,MCV,78.8,73.1-93.2,,,mean volume
+Patient5,11/23/25,MCH,25.5,23.8-31.3,,,mean volume
+Patient5,11/23/25,MCHC,32.4,31.3-34.9,,,mean volume
+Patient5,11/23/25,RDW,12.8,12.4-15.5,,,rbc
+Patient5,11/23/25,POLYS,43.1,33.0-74.0,,,bone marrow
+Patient5,11/23/25,POLYS, ABS. COUNT,2.15,1.44-8.66,,bone marrow
+Patient5,11/23/25,Lymphocytes,43.7,16.4-54.6,,,particles
+Patient5,11/23/25,Absolute Lymphocytes,2.18,1.20-3.97,,,particles
+Patient5,11/23/25,Monocytes,9.6,4.2-11.6,,,particles
+Patient5,11/23/25,Absolute Monocytes,0.48,0.24-0.93,,,particles
+Patient5,11/23/25,Eosinophils,2.2,0.3-6.2,,,particles
+Patient5,11/23/25,Absolute Eosinophils,0.11,0.01-0.70,,,particles
+Patient5,11/23/25,Basophils,1.2,0.1-0.9,,,particles
+Patient5,11/23/25,Absolute Basophils,0.06,0.01-0.08,,,particles
+Patient5,11/23/25,Immature Granulocyte Automated,0.2,0.0-0.3,,,others
+Patient5,11/23/25,IG ( ABS. COUNT),0.01,0.00-0.03,,,others
+Patient5,11/23/25,Platelet Count,243,182-415,,,platelets
+Patient5,11/23/25,Mean Platelet Volume,10.2,8.5-11.8,,,platelets
+Patient5,11/23/25,Hemoglobin A1C,5.6,<5.7,,,sugar
+Patient5,11/23/25,Vitamin D 25-Hydroxy,26,32.0-100.0,,,vitamins
+Patient5,11/23/25,Color,Yellow,Yellow,urine
+Patient5,11/23/25,CHARACTER,Clear,Clear,Clear,,urine
+Patient5,11/23/25,Specific Gravity,1.022,1.003-1.030,,,urine
+Patient5,11/23/25,pH (Urine),6.0,5.0-8.0,,,urine
+Patient5,11/23/25,Protein (Urine),Negative,Negative,,,urine
+Patient5,11/23/25,Glucose (Urine),Negative,Negative,,,urine
+Patient5,11/23/25,Ketone,Negative,Negative,,,urine
+Patient5,11/23/25,Urobilinogen,0.2,0.2-1.0,,,urine
+Patient5,11/23/25,Blood (Urine),Negative,Negative,,,urine
+Patient5,11/23/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient5,11/23/25,Nitrite,Negative,Negative,,,urine
+Patient5,11/23/25,Leukocyte Esterase,Negative,Negative,,,urine
+Patient5,11/23/25,Crystals,None,None,,,urine
+Patient5,11/23/25,CRYSTAL AMOUNT,None,None,,urine
+Patient5,11/23/25,White Blood Cells (Urine),0-5,0-5,,,urine
+Patient5,11/23/25,Red Blood Cells (Urine),0-2,0-2,,,urine
+Patient5,11/23/25,Epithelial Cells,None,None,,,urine
+Patient5,11/23/25,Hyaline Casts,0,0-4,,,urine
+Patient5,11/23/25,CAST, RBC, URINE,0,0-1,urine
+Patient5,11/23/25,Granular Casts,0,0-1,,,urine
+Patient5,11/23/25,Bacteria (Urine),None,None,,,urine
