@@ -55,54 +55,54 @@ Patient1,11/3/18,Hematocrit (Hct),46.6,34.6-49.6,,,gb
 Patient1,12/27/17,Hematocrit (Hct),46.1,34.6-49.6,,,gb
 ,,,,,,,
 ,,,,,,,
-Patient1,5/30/25,Mean Corpuscular Volume (MCV),81,78.0-98.0,,,mean volume
-Patient1,12/31/24,Mean Corpuscular Volume (MCV),81.1,78.0-98.0,,,mean volume
-Patient1,9/5/24,Mean Corpuscular Volume (MCV),80.2,78.0-98.0,,,mean volume
-Patient1,4/19/24,Mean Corpuscular Volume (MCV),-,78.0-98.0,,,mean volume
-Patient1,11/20/23,Mean Corpuscular Volume (MCV),80.8,78.0-98.0,,,mean volume
-Patient1,11/16/22,Mean Corpuscular Volume (MCV),81.1,78.0-98.0,,,mean volume
-Patient1,4/6/21,Mean Corpuscular Volume (MCV),-,78.0-98.0,,,mean volume
-Patient1,11/2/20,Mean Corpuscular Volume (MCV),79.6,78.0-98.0,,,mean volume
-Patient1,10/5/19,Mean Corpuscular Volume (MCV),79.6,78.0-98.0,,,mean volume
-Patient1,11/3/18,Mean Corpuscular Volume (MCV),78.8,78.0-98.0,,,mean volume
-Patient1,12/27/17,Mean Corpuscular Volume (MCV),79.1,78.0-98.0,,,mean volume
-Patient1, 2025-09-15,Mean Corpuscular Volume (MCV),83,78.0-98.0,,,mean volume
-Patient1,5/30/25,Mean Corpuscular Hemoglobin (MCH),26.1,25.8-33.1,,,mean volume
-Patient1,12/31/24,Mean Corpuscular Hemoglobin (MCH),26,25.8-33.1,,,mean volume
-Patient1,9/5/24,Mean Corpuscular Hemoglobin (MCH),25.5,25.8-33.1,,,mean volume
-Patient1,4/19/24,Mean Corpuscular Hemoglobin (MCH),-,25.8-33.1,,,mean volume
-Patient1,11/20/23,Mean Corpuscular Hemoglobin (MCH),26.9,25.8-33.1,,,mean volume
-Patient1,11/16/22,Mean Corpuscular Hemoglobin (MCH),27,25.8-33.1,,,mean volume
-Patient1,4/6/21,Mean Corpuscular Hemoglobin (MCH),-,25.8-33.1,,,mean volume
-Patient1,11/2/20,Mean Corpuscular Hemoglobin (MCH),26.5,25.8-33.1,,,mean volume
-Patient1,10/5/19,Mean Corpuscular Hemoglobin (MCH),25.9,25.8-33.1,,,mean volume
-Patient1,11/3/18,Mean Corpuscular Hemoglobin (MCH),27.2,25.8-33.1,,,mean volume
-Patient1,12/27/17,Mean Corpuscular Hemoglobin (MCH),26.6,25.8-33.1,,,mean volume
-Patient1, 2025-09-15,Mean Corpuscular Hemoglobin (MCH),26.7,25.8-33.1,,,mean volume
-Patient1,5/30/25,Mean Corpuscular Hemoglobin Concentration (MCHC),32.2,31.7-35.3,,,mean volume
-Patient1,12/31/24,Mean Corpuscular Hemoglobin Concentration (MCHC),32.1,31.7-35.3,,,mean volume
-Patient1,9/5/24,Mean Corpuscular Hemoglobin Concentration (MCHC),31.8,31.7-35.3,,,mean volume
-Patient1,4/19/24,Mean Corpuscular Hemoglobin Concentration (MCHC),-,31.7-35.3,,,mean volume
-Patient1,11/20/23,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,,mean volume
-Patient1,11/16/22,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,,mean volume
-Patient1,4/6/21,Mean Corpuscular Hemoglobin Concentration (MCHC),-,31.7-35.3,,,mean volume
-Patient1,11/2/20,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3,31.7-35.3,,,mean volume
-Patient1,10/5/19,Mean Corpuscular Hemoglobin Concentration (MCHC),32.5,31.7-35.3,,,mean volume
-Patient1,11/3/18,Mean Corpuscular Hemoglobin Concentration (MCHC),34.5,31.7-35.3,,,mean volume
-Patient1,12/27/17,Mean Corpuscular Hemoglobin Concentration (MCHC),33.6,31.7-35.3,,,mean volume
-Patient1, 2025-09-15,Mean Corpuscular Hemoglobin Concentration (MCHC),32.1,31.7-35.3,,,mean volume
-Patient1,5/30/25,Red Blood Cell Distribution Width (RDW),13.5,12.2-15.3,,,rbc
-Patient1,12/31/24,Red Blood Cell Distribution Width (RDW),13,12.2-15.3,,,rbc
-Patient1,9/5/24,Red Blood Cell Distribution Width (RDW),13,12.2-15.3,,,rbc
-Patient1,4/19/24,Red Blood Cell Distribution Width (RDW),-,12.2-15.3,,,rbc
-Patient1,11/20/23,Red Blood Cell Distribution Width (RDW),13.4,12.2-15.3,,,rbc
-Patient1,11/16/22,Red Blood Cell Distribution Width (RDW),13.4,12.2-15.3,,,rbc
-Patient1,4/6/21,Red Blood Cell Distribution Width (RDW),-,12.2-15.3,,,rbc
-Patient1,11/2/20,Red Blood Cell Distribution Width (RDW),12.9,12.2-15.3,,,rbc
-Patient1,10/5/19,Red Blood Cell Distribution Width (RDW),13.6,12.2-15.3,,,rbc
-Patient1,11/3/18,Red Blood Cell Distribution Width (RDW),13.8,12.2-15.3,,,rbc
-Patient1,12/27/17,Red Blood Cell Distribution Width (RDW),14.1,12.2-15.3,,,rbc
-Patient1, 2025-09-15,Red Blood Cell Distribution Width (RDW),13.5,12.2-15.3,,,rbc
+Patient1,5/30/25,MCV,81,78.0-98.0,,,mean volume
+Patient1,12/31/24,MCV,81.1,78.0-98.0,,,mean volume
+Patient1,9/5/24,MCV,80.2,78.0-98.0,,,mean volume
+Patient1,4/19/24,MCV,-,78.0-98.0,,,mean volume
+Patient1,11/20/23,MCV,80.8,78.0-98.0,,,mean volume
+Patient1,11/16/22,MCV,81.1,78.0-98.0,,,mean volume
+Patient1,4/6/21,MCV,-,78.0-98.0,,,mean volume
+Patient1,11/2/20,MCV,79.6,78.0-98.0,,,mean volume
+Patient1,10/5/19,MCV,79.6,78.0-98.0,,,mean volume
+Patient1,11/3/18,MCV,78.8,78.0-98.0,,,mean volume
+Patient1,12/27/17,MCV,79.1,78.0-98.0,,,mean volume
+Patient1, 2025-09-15,MCV,83,78.0-98.0,,,mean volume
+Patient1,5/30/25,MCH,26.1,25.8-33.1,,,mean volume
+Patient1,12/31/24,MCH,26,25.8-33.1,,,mean volume
+Patient1,9/5/24,MCH,25.5,25.8-33.1,,,mean volume
+Patient1,4/19/24,MCH,-,25.8-33.1,,,mean volume
+Patient1,11/20/23,MCH,26.9,25.8-33.1,,,mean volume
+Patient1,11/16/22,MCH,27,25.8-33.1,,,mean volume
+Patient1,4/6/21,MCH,-,25.8-33.1,,,mean volume
+Patient1,11/2/20,MCH,26.5,25.8-33.1,,,mean volume
+Patient1,10/5/19,MCH,25.9,25.8-33.1,,,mean volume
+Patient1,11/3/18,MCH,27.2,25.8-33.1,,,mean volume
+Patient1,12/27/17,MCH,26.6,25.8-33.1,,,mean volume
+Patient1, 2025-09-15,MCH,26.7,25.8-33.1,,,mean volume
+Patient1,5/30/25,MCHC,32.2,31.7-35.3,,,mean volume
+Patient1,12/31/24,MCHC,32.1,31.7-35.3,,,mean volume
+Patient1,9/5/24,MCHC,31.8,31.7-35.3,,,mean volume
+Patient1,4/19/24,MCHC,-,31.7-35.3,,,mean volume
+Patient1,11/20/23,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,11/16/22,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,4/6/21,MCHC,-,31.7-35.3,,,mean volume
+Patient1,11/2/20,MCHC,33.3,31.7-35.3,,,mean volume
+Patient1,10/5/19,MCHC,32.5,31.7-35.3,,,mean volume
+Patient1,11/3/18,MCHC,34.5,31.7-35.3,,,mean volume
+Patient1,12/27/17,MCHC,33.6,31.7-35.3,,,mean volume
+Patient1, 2025-09-15,MCHC,32.1,31.7-35.3,,,mean volume
+Patient1,5/30/25,RDW,13.5,12.2-15.3,,,rbc
+Patient1,12/31/24,RDW,13,12.2-15.3,,,rbc
+Patient1,9/5/24,RDW,13,12.2-15.3,,,rbc
+Patient1,4/19/24,RDW,-,12.2-15.3,,,rbc
+Patient1,11/20/23,RDW,13.4,12.2-15.3,,,rbc
+Patient1,11/16/22,RDW,13.4,12.2-15.3,,,rbc
+Patient1,4/6/21,RDW,-,12.2-15.3,,,rbc
+Patient1,11/2/20,RDW,12.9,12.2-15.3,,,rbc
+Patient1,10/5/19,RDW,13.6,12.2-15.3,,,rbc
+Patient1,11/3/18,RDW,13.8,12.2-15.3,,,rbc
+Patient1,12/27/17,RDW,14.1,12.2-15.3,,,rbc
+Patient1, 2025-09-15,RDW,13.5,12.2-15.3,,,rbc
 Patient1,5/30/25,POLYS,51.4,34.9-75.3,,,bone marrow
 Patient1,12/31/24,POLYS,52.1,34.9-75.3,,,bone marrow
 Patient1,9/5/24,POLYS,52.4,34.9-75.3,,,bone marrow
@@ -114,17 +114,17 @@ Patient1,11/2/20,POLYS,55.3,34.9-75.3,,,bone marrow
 Patient1,10/5/19,POLYS,56.9,34.9-75.3,,,bone marrow
 Patient1,11/3/18,POLYS,53.6,34.9-75.3,,,bone marrow
 Patient1,12/27/17,POLYS,54,34.9-75.3,,,bone marrow
-Patient1,5/30/25,POLYS ( ABS. COUNT),3.35,1.30-7.00,,,bone marrow
-Patient1,12/31/24,POLYS ( ABS. COUNT),3.2,1.30-7.00,,,bone marrow
-Patient1,9/5/24,POLYS ( ABS. COUNT),2.86,1.30-7.00,,,bone marrow
-Patient1,4/19/24,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,11/20/23,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,11/16/22,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,4/6/21,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,11/2/20,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,10/5/19,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,11/3/18,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
-Patient1,12/27/17,POLYS ( ABS. COUNT),-,1.30-7.00,,,bone marrow
+Patient1,5/30/25,POLYS ABS,3.35,1.30-7.00,,,bone marrow
+Patient1,12/31/24,POLYS ABS,3.2,1.30-7.00,,,bone marrow
+Patient1,9/5/24,POLYS ABS,2.86,1.30-7.00,,,bone marrow
+Patient1,4/19/24,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/20/23,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/16/22,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,4/6/21,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/2/20,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,10/5/19,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,11/3/18,POLYS ABS,-,1.30-7.00,,,bone marrow
+Patient1,12/27/17,POLYS ABS,-,1.30-7.00,,,bone marrow
 Patient1,5/30/25,Lymphocytes,34,14.0-51.8,,,particles
 Patient1,12/31/24,Lymphocytes,31.9,14.0-51.8,,,particles
 Patient1,9/5/24,Lymphocytes,32.6,14.0-51.8,,,particles
@@ -693,17 +693,17 @@ Patient1,11/2/20,Trig/HDL Ratio,-,<2.76,,,Cholesterol
 Patient1,10/5/19,Trig/HDL Ratio,-,<2.76,,,Cholesterol
 Patient1,11/3/18,Trig/HDL Ratio,-,<2.76,,,Cholesterol
 Patient1,12/27/17,Trig/HDL Ratio,-,<2.76,,,Cholesterol
-Patient1,5/30/25,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,12/31/24,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,9/5/24,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,4/19/24,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,11/20/23,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,11/16/22,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,4/6/21,Thyroid-stimulating Hormone (TSH),-,,,,thyroid
-Patient1,11/2/20,Thyroid-stimulating Hormone (TSH),1.51,,,,thyroid
-Patient1,10/5/19,Thyroid-stimulating Hormone (TSH),1.66,,,,thyroid
-Patient1,11/3/18,Thyroid-stimulating Hormone (TSH),1.67,,,,thyroid
-Patient1,12/27/17,Thyroid-stimulating Hormone (TSH),2.01,,,,thyroid
+Patient1,5/30/25,TSH,-,,,,thyroid
+Patient1,12/31/24,TSH,-,,,,thyroid
+Patient1,9/5/24,TSH,-,,,,thyroid
+Patient1,4/19/24,TSH,-,,,,thyroid
+Patient1,11/20/23,TSH,-,,,,thyroid
+Patient1,11/16/22,TSH,-,,,,thyroid
+Patient1,4/6/21,TSH,-,,,,thyroid
+Patient1,11/2/20,TSH,1.51,,,,thyroid
+Patient1,10/5/19,TSH,1.66,,,,thyroid
+Patient1,11/3/18,TSH,1.67,,,,thyroid
+Patient1,12/27/17,TSH,2.01,,,,thyroid
 Patient1,5/30/25,Vitamin B12,-,232-1245,,,vitamins
 Patient1,12/31/24,Vitamin B12,829,232-1245,,,vitamins
 Patient1,9/5/24,Vitamin B12,,232-1245,,,vitamins
@@ -726,17 +726,17 @@ Patient1,11/2/20,Vitamin D 25-Hydroxy,16.5,32.0-100.0,,,vitamins
 Patient1,10/5/19,Vitamin D 25-Hydroxy,14,32.0-100.0,,,vitamins
 Patient1,11/3/18,Vitamin D 25-Hydroxy,9.8,32.0-100.0,,,vitamins
 Patient1,12/27/17,Vitamin D 25-Hydroxy,11.2,32.0-100.0,,,vitamins
-Patient1,5/30/25,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,12/31/24,Thyroid-stimulating Hormone (TSH),1.88,0.270-4.200,,,thyroid
-Patient1,9/5/24,Thyroid-stimulating Hormone (TSH),1.68,0.270-4.200,,,thyroid
-Patient1,4/19/24,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,11/20/23,Thyroid-stimulating Hormone (TSH),1.32,0.270-4.200,,,thyroid
-Patient1,11/16/22,Thyroid-stimulating Hormone (TSH),2.39,0.270-4.200,,,thyroid
-Patient1,4/6/21,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,11/2/20,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,10/5/19,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,11/3/18,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
-Patient1,12/27/17,Thyroid-stimulating Hormone (TSH),-,0.270-4.200,,,thyroid
+Patient1,5/30/25,TSH,-,0.270-4.200,,,thyroid
+Patient1,12/31/24,TSH,1.88,0.270-4.200,,,thyroid
+Patient1,9/5/24,TSH,1.68,0.270-4.200,,,thyroid
+Patient1,4/19/24,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/20/23,TSH,1.32,0.270-4.200,,,thyroid
+Patient1,11/16/22,TSH,2.39,0.270-4.200,,,thyroid
+Patient1,4/6/21,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/2/20,TSH,-,0.270-4.200,,,thyroid
+Patient1,10/5/19,TSH,-,0.270-4.200,,,thyroid
+Patient1,11/3/18,TSH,-,0.270-4.200,,,thyroid
+Patient1,12/27/17,TSH,-,0.270-4.200,,,thyroid
 Patient1,5/30/25,HAPTOGLOBIN,180,30-200,,,gb
 Patient1,12/31/24,HAPTOGLOBIN,-,30-200,,,gb
 Patient1,9/5/24,HAPTOGLOBIN,-,30-200,,,gb
@@ -858,39 +858,39 @@ Patient1,11/2/20,pH (Urine),-,5.0-8.0,,,urine
 Patient1,10/5/19,pH (Urine),-,5.0-8.0,,,urine
 Patient1,11/3/18,pH (Urine),-,5.0-8.0,,,urine
 Patient1,12/27/17,pH (Urine),-,5.0-8.0,,,urine
-Patient1,5/30/25,Protein (Urine),-,Negative,,,urine
-Patient1,12/31/24,Protein (Urine),-,Negative,,,urine
-Patient1,9/5/24,Protein (Urine),-,Negative,,,urine
-Patient1,4/19/24,Protein (Urine),-,Negative,,,urine
-Patient1,11/20/23,Protein (Urine),NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Protein (Urine),-,Negative,,,urine
-Patient1,4/6/21,Protein (Urine),-,Negative,,,urine
-Patient1,11/2/20,Protein (Urine),-,Negative,,,urine
-Patient1,10/5/19,Protein (Urine),-,Negative,,,urine
-Patient1,11/3/18,Protein (Urine),-,Negative,,,urine
-Patient1,12/27/17,Protein (Urine),-,Negative,,,urine
-Patient1,5/30/25,Glucose (Urine),-,Negative,,,urine
-Patient1,12/31/24,Glucose (Urine),-,Negative,,,urine
-Patient1,9/5/24,Glucose (Urine),-,Negative,,,urine
-Patient1,4/19/24,Glucose (Urine),-,Negative,,,urine
-Patient1,11/20/23,Glucose (Urine),NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Glucose (Urine),-,Negative,,,urine
-Patient1,4/6/21,Glucose (Urine),-,Negative,,,urine
-Patient1,11/2/20,Glucose (Urine),-,Negative,,,urine
-Patient1,10/5/19,Glucose (Urine),-,Negative,,,urine
-Patient1,11/3/18,Glucose (Urine),-,Negative,,,urine
-Patient1,12/27/17,Glucose (Urine),-,Negative,,,urine
-Patient1,5/30/25,Ketone,-,Negative,,,urine
-Patient1,12/31/24,Ketone,-,Negative,,,urine
-Patient1,9/5/24,Ketone,-,Negative,,,urine
-Patient1,4/19/24,Ketone,-,Negative,,,urine
-Patient1,11/20/23,Ketone,NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Ketone,-,Negative,,,urine
-Patient1,4/6/21,Ketone,-,Negative,,,urine
-Patient1,11/2/20,Ketone,-,Negative,,,urine
-Patient1,10/5/19,Ketone,-,Negative,,,urine
-Patient1,11/3/18,Ketone,-,Negative,,,urine
-Patient1,12/27/17,Ketone,-,Negative,,,urine
+Patient1,5/30/25,Protein (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Protein (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Protein (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Protein (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Protein (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Protein (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Glucose (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Glucose (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Glucose (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Glucose (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Glucose (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Glucose (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Ketone,Negative,Negative,,,urine
+Patient1,12/31/24,Ketone,Negative,Negative,,,urine
+Patient1,9/5/24,Ketone,Negative,Negative,,,urine
+Patient1,4/19/24,Ketone,Negative,Negative,,,urine
+Patient1,11/20/23,Ketone,Negative,Negative,,,urine
+Patient1,11/16/22,Ketone,Negative,Negative,,,urine
+Patient1,4/6/21,Ketone,Negative,Negative,,,urine
+Patient1,11/2/20,Ketone,Negative,Negative,,,urine
+Patient1,10/5/19,Ketone,Negative,Negative,,,urine
+Patient1,11/3/18,Ketone,Negative,Negative,,,urine
+Patient1,12/27/17,Ketone,Negative,Negative,,,urine
 Patient1,5/30/25,Urobilinogen,-,0.2-1.0,,,urine
 Patient1,12/31/24,Urobilinogen,-,0.2-1.0,,,urine
 Patient1,9/5/24,Urobilinogen,-,0.2-1.0,,,urine
@@ -902,50 +902,50 @@ Patient1,11/2/20,Urobilinogen,-,0.2-1.0,,,urine
 Patient1,10/5/19,Urobilinogen,-,0.2-1.0,,,urine
 Patient1,11/3/18,Urobilinogen,-,0.2-1.0,,,urine
 Patient1,12/27/17,Urobilinogen,-,0.2-1.0,,,urine
-Patient1,5/30/25,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,12/31/24,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,9/5/24,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,4/19/24,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,11/20/23,Bilirubin Indirect (Urine),NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,4/6/21,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,11/2/20,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,10/5/19,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,11/3/18,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,12/27/17,Bilirubin Indirect (Urine),-,Negative,,,urine
-Patient1,5/30/25,Blood (Urine),-,Negative,,,urine
-Patient1,12/31/24,Blood (Urine),-,Negative,,,urine
-Patient1,9/5/24,Blood (Urine),-,Negative,,,urine
-Patient1,4/19/24,Blood (Urine),-,Negative,,,urine
-Patient1,11/20/23,Blood (Urine),NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Blood (Urine),-,Negative,,,urine
-Patient1,4/6/21,Blood (Urine),-,Negative,,,urine
-Patient1,11/2/20,Blood (Urine),-,Negative,,,urine
-Patient1,10/5/19,Blood (Urine),-,Negative,,,urine
-Patient1,11/3/18,Blood (Urine),-,Negative,,,urine
-Patient1,12/27/17,Blood (Urine),-,Negative,,,urine
+Patient1,5/30/25,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Bilirubin Indirect (Urine),Negative,Negative,,,urine
+Patient1,5/30/25,Blood (Urine),Negative,Negative,,,urine
+Patient1,12/31/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,9/5/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,4/19/24,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/20/23,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/16/22,Blood (Urine),Negative,Negative,,,urine
+Patient1,4/6/21,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/2/20,Blood (Urine),Negative,Negative,,,urine
+Patient1,10/5/19,Blood (Urine),Negative,Negative,,,urine
+Patient1,11/3/18,Blood (Urine),Negative,Negative,,,urine
+Patient1,12/27/17,Blood (Urine),Negative,Negative,,,urine
 Patient1,5/30/25,Nitrite,-,,,,urine
 Patient1,12/31/24,Nitrite,-,,,,urine
 Patient1,9/5/24,Nitrite,-,,,,urine
 Patient1,4/19/24,Nitrite,-,,,,urine
-Patient1,11/20/23,Nitrite,NEGATIVE,,,,urine
+Patient1,11/20/23,Nitrite,Negative,,,,urine
 Patient1,11/16/22,Nitrite,-,,,,urine
 Patient1,4/6/21,Nitrite,-,,,,urine
 Patient1,11/2/20,Nitrite,-,,,,urine
 Patient1,10/5/19,Nitrite,-,,,,urine
 Patient1,11/3/18,Nitrite,-,,,,urine
 Patient1,12/27/17,Nitrite,-,,,,urine
-Patient1,5/30/25,Crystals,-,None,,,urine
-Patient1,12/31/24,Crystals,-,None,,,urine
-Patient1,9/5/24,Crystals,-,None,,,urine
-Patient1,4/19/24,Crystals,-,None,,,urine
-Patient1,11/20/23,Crystals,NONE,None,,,urine
-Patient1,11/16/22,Crystals,-,None,,,urine
-Patient1,4/6/21,Crystals,-,None,,,urine
-Patient1,11/2/20,Crystals,-,None,,,urine
-Patient1,10/5/19,Crystals,-,None,,,urine
-Patient1,11/3/18,Crystals,-,None,,,urine
-Patient1,12/27/17,Crystals,-,None,,,urine
+Patient1,5/30/25,Crystals,None,None,,,urine
+Patient1,12/31/24,Crystals,None,None,,,urine
+Patient1,9/5/24,Crystals,None,None,,,urine
+Patient1,4/19/24,Crystals,None,None,,,urine
+Patient1,11/20/23,Crystals,None,None,,,urine
+Patient1,11/16/22,Crystals,None,None,,,urine
+Patient1,4/6/21,Crystals,None,None,,,urine
+Patient1,11/2/20,Crystals,None,None,,,urine
+Patient1,10/5/19,Crystals,None,None,,,urine
+Patient1,11/3/18,Crystals,None,None,,,urine
+Patient1,12/27/17,Crystals,None,None,,,urine
 Patient1,5/30/25,White Blood Cells (Urine),-,0-4,,,urine
 Patient1,12/31/24,White Blood Cells (Urine),-,0-4,,,urine
 Patient1,9/5/24,White Blood Cells (Urine),-,0-4,,,urine
@@ -961,7 +961,7 @@ Patient1,5/30/25,Red Blood Cells (Urine),-,,,,urine
 Patient1,12/31/24,Red Blood Cells (Urine),-,,,,urine
 Patient1,9/5/24,Red Blood Cells (Urine),-,,,,urine
 Patient1,4/19/24,Red Blood Cells (Urine),-,,,,urine
-Patient1,11/20/23,Red Blood Cells (Urine),NONE SEEN,,,,urine
+Patient1,11/20/23,Red Blood Cells (Urine),None,None,,,urine
 Patient1,11/16/22,Red Blood Cells (Urine),-,,,,urine
 Patient1,4/6/21,Red Blood Cells (Urine),-,,,,urine
 Patient1,11/2/20,Red Blood Cells (Urine),-,,,,urine
@@ -972,7 +972,7 @@ Patient1,5/30/25,CAST, RBC, URINE,-,0-1,urine
 Patient1,12/31/24,CAST, RBC, URINE,-,0-1,urine
 Patient1,9/5/24,CAST, RBC, URINE,-,0-1,urine
 Patient1,4/19/24,CAST, RBC, URINE,-,0-1,urine
-Patient1,11/20/23,CAST, RBC, URINE,NONE SEEN,0-1,urine
+Patient1,11/20/23,CAST, RBC, URINE,0,0-1,urine
 Patient1,11/16/22,CAST, RBC, URINE,-,0-1,urine
 Patient1,4/6/21,CAST, RBC, URINE,-,0-1,urine
 Patient1,11/2/20,CAST, RBC, URINE,-,0-1,urine
@@ -990,83 +990,83 @@ Patient1,11/2/20,Hyaline Casts,-,0-4,,,urine
 Patient1,10/5/19,Hyaline Casts,-,0-4,,,urine
 Patient1,11/3/18,Hyaline Casts,-,0-4,,,urine
 Patient1,12/27/17,Hyaline Casts,-,0-4,,,urine
-Patient1,5/30/25,Epithelial Cells,-,None,,,urine
-Patient1,12/31/24,Epithelial Cells,-,None,,,urine
-Patient1,9/5/24,Epithelial Cells,-,None,,,urine
-Patient1,4/19/24,Epithelial Cells,-,None,,,urine
-Patient1,11/20/23,Epithelial Cells,NONE,None,,,urine
-Patient1,11/16/22,Epithelial Cells,-,None,,,urine
-Patient1,4/6/21,Epithelial Cells,-,None,,,urine
-Patient1,11/2/20,Epithelial Cells,-,None,,,urine
-Patient1,10/5/19,Epithelial Cells,-,None,,,urine
-Patient1,11/3/18,Epithelial Cells,-,None,,,urine
-Patient1,12/27/17,Epithelial Cells,-,None,,,urine
+Patient1,5/30/25,Epithelial Cells,None,None,,,urine
+Patient1,12/31/24,Epithelial Cells,None,None,,,urine
+Patient1,9/5/24,Epithelial Cells,None,None,,,urine
+Patient1,4/19/24,Epithelial Cells,None,None,,,urine
+Patient1,11/20/23,Epithelial Cells,None,None,,,urine
+Patient1,11/16/22,Epithelial Cells,None,None,,,urine
+Patient1,4/6/21,Epithelial Cells,None,None,,,urine
+Patient1,11/2/20,Epithelial Cells,None,None,,,urine
+Patient1,10/5/19,Epithelial Cells,None,None,,,urine
+Patient1,11/3/18,Epithelial Cells,None,None,,,urine
+Patient1,12/27/17,Epithelial Cells,None,None,,,urine
 Patient1,5/30/25,Granular Casts,-,0-1,,,urine
 Patient1,12/31/24,Granular Casts,-,0-1,,,urine
 Patient1,9/5/24,Granular Casts,-,0-1,,,urine
 Patient1,4/19/24,Granular Casts,-,0-1,,,urine
-Patient1,11/20/23,Granular Casts,NONE SEEN,0-1,,,urine
+Patient1,11/20/23,Granular Casts,0,0-1,,,urine
 Patient1,11/16/22,Granular Casts,-,0-1,,,urine
 Patient1,4/6/21,Granular Casts,-,0-1,,,urine
 Patient1,11/2/20,Granular Casts,-,0-1,,,urine
 Patient1,10/5/19,Granular Casts,-,0-1,,,urine
 Patient1,11/3/18,Granular Casts,-,0-1,,,urine
 Patient1,12/27/17,Granular Casts,-,0-1,,,urine
-Patient1,5/30/25,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,12/31/24,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,9/5/24,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,4/19/24,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,11/20/23,Bacteria (Urine),NONE,NONE-FEW,,,urine
-Patient1,11/16/22,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,4/6/21,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,11/2/20,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,10/5/19,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,11/3/18,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,12/27/17,Bacteria (Urine),-,NONE-FEW,,,urine
-Patient1,5/30/25,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,12/31/24,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,9/5/24,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,4/19/24,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,11/20/23,CRYSTAL, AMOUNT,NONE,None,,urine
-Patient1,11/16/22,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,4/6/21,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,11/2/20,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,10/5/19,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,11/3/18,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,12/27/17,CRYSTAL, AMOUNT,-,None,,urine
-Patient1,5/30/25,Leukocyte Esterase,-,Negative,,,urine
-Patient1,12/31/24,Leukocyte Esterase,-,Negative,,,urine
-Patient1,9/5/24,Leukocyte Esterase,-,Negative,,,urine
-Patient1,4/19/24,Leukocyte Esterase,-,Negative,,,urine
-Patient1,11/20/23,Leukocyte Esterase,NEGATIVE,Negative,,,urine
-Patient1,11/16/22,Leukocyte Esterase,-,Negative,,,urine
-Patient1,4/6/21,Leukocyte Esterase,-,Negative,,,urine
-Patient1,11/2/20,Leukocyte Esterase,-,Negative,,,urine
-Patient1,10/5/19,Leukocyte Esterase,-,Negative,,,urine
-Patient1,11/3/18,Leukocyte Esterase,-,Negative,,,urine
-Patient1,12/27/17,Leukocyte Esterase,-,Negative,,,urine
-Patient1,5/30/25,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,12/31/24,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,9/5/24,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,4/19/24,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,11/20/23,Color,YELLOW,"[Yellow, Strawm Amber]",,,urine
-Patient1,11/16/22,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,4/6/21,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,11/2/20,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,10/5/19,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,11/3/18,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,12/27/17,Color,-,"[Yellow, Strawm Amber]",,,urine
-Patient1,5/30/25,CHARACTER, URINE,-,Clear,,urine
-Patient1,12/31/24,CHARACTER, URINE,-,Clear,,urine
-Patient1,9/5/24,CHARACTER, URINE,-,Clear,,urine
-Patient1,4/19/24,CHARACTER, URINE,-,Clear,,urine
-Patient1,11/20/23,CHARACTER, URINE,CLEAR,Clear,,urine
-Patient1,11/16/22,CHARACTER, URINE,-,Clear,,urine
-Patient1,4/6/21,CHARACTER, URINE,-,Clear,,urine
-Patient1,11/2/20,CHARACTER, URINE,-,Clear,,urine
-Patient1,10/5/19,CHARACTER, URINE,-,Clear,,urine
-Patient1,11/3/18,CHARACTER, URINE,-,Clear,,urine
-Patient1,12/27/17,CHARACTER, URINE,-,Clear,,urine
+Patient1,5/30/25,Bacteria (Urine),None,None,,,urine
+Patient1,12/31/24,Bacteria (Urine),None,None,,,urine
+Patient1,9/5/24,Bacteria (Urine),None,None,,,urine
+Patient1,4/19/24,Bacteria (Urine),None,None,,,urine
+Patient1,11/20/23,Bacteria (Urine),None,None,,,urine
+Patient1,11/16/22,Bacteria (Urine),None,None,,,urine
+Patient1,4/6/21,Bacteria (Urine),None,None,,,urine
+Patient1,11/2/20,Bacteria (Urine),None,None,,,urine
+Patient1,10/5/19,Bacteria (Urine),None,None,,,urine
+Patient1,11/3/18,Bacteria (Urine),None,None,,,urine
+Patient1,12/27/17,Bacteria (Urine),None,None,,,urine
+Patient1,5/30/25,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,12/31/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,9/5/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,4/19/24,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/20/23,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/16/22,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,4/6/21,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/2/20,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,10/5/19,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,11/3/18,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,12/27/17,CRYSTAL, AMOUNT,None,None,,urine
+Patient1,5/30/25,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,12/31/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,9/5/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,4/19/24,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/20/23,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/16/22,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,4/6/21,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/2/20,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,10/5/19,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,11/3/18,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,12/27/17,Leukocyte Esterase,Negative,Negative,,,urine
+Patient1,5/30/25,Color,Yellow,"Yellow",,,urine
+Patient1,12/31/24,Color,Yellow,"Yellow",,,urine
+Patient1,9/5/24,Color,Yellow,"Yellow",,,urine
+Patient1,4/19/24,Color,Yellow,"Yellow",,,urine
+Patient1,11/20/23,Color,Yellow,"Yellow",,,urine
+Patient1,11/16/22,Color,Yellow,"Yellow",,,urine
+Patient1,4/6/21,Color,Yellow,"Yellow",,,urine
+Patient1,11/2/20,Color,Yellow,"Yellow",,,urine
+Patient1,10/5/19,Color,Yellow,"Yellow",,,urine
+Patient1,11/3/18,Color,Yellow,"Yellow",,,urine
+Patient1,12/27/17,Color,Yellow,"Yellow",,,urine
+Patient1,5/30/25,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,12/31/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,9/5/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,4/19/24,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/20/23,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/16/22,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,4/6/21,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/2/20,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,10/5/19,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,11/3/18,CHARACTER, URINE,Clear,Clear,,urine
+Patient1,12/27/17,CHARACTER, URINE,Clear,Clear,,urine
 Patient1,9/15/25,Creatinine,1.04,0.76-1.27,,,kidney
 Patient1,11/21/25,Total Protein (Blood),7.6,5.9-8.4,,,cbc
 Patient1,11/21/25,Albumin,4.9,3.5-5.2,,,lipoproteins
@@ -1101,10 +1101,10 @@ Patient1,11/21/25,White Blood Cell Count (WBC Count),5.82,3.66-10.60,,,wbc
 Patient1,11/21/25,Red Blood Cell Count (RBC Count),5.85,3.94-5.76,,,rbc
 Patient1,11/21/25,Hemoglobin (Hgb),15.2,12.0-16.9,,,gb
 Patient1,11/21/25,Hematocrit (Hct),47.2,34.6-49.6,,,gb
-Patient1,11/21/25,Mean Corpuscular Volume (MCV),80.7,78.0-98.0,,,mean volume
-Patient1,11/21/25,Mean Corpuscular Hemoglobin (MCH),26,25.8-33.1,,,mean volume
-Patient1,11/21/25,Mean Corpuscular Hemoglobin Concentration (MCHC),32.2,31.7-35.3,,,mean volume
-Patient1,11/21/25,Red Blood Cell Distribution Width (RDW),13.2,12.2-15.3,,,rbc
+Patient1,11/21/25,MCV,80.7,78.0-98.0,,,mean volume
+Patient1,11/21/25,MCH,26,25.8-33.1,,,mean volume
+Patient1,11/21/25,MCHC,32.2,31.7-35.3,,,mean volume
+Patient1,11/21/25,RDW,13.2,12.2-15.3,,,rbc
 Patient1,11/21/25,POLYS,51,34.9-75.3,,,bone marrow
 Patient1,11/21/25,POLYS, ABS. COUNT,2.97,1.30-7.00,,bone marrow
 Patient1,11/21/25,Lymphocytes,34.9,14.0-51.8,,,particles
@@ -1120,8 +1120,8 @@ Patient1,11/21/25,Immature Granulocyte Automated,0.2,0.0-1.0,,,others
 Patient1,11/21/25,IG, ABS. COUNT,0.01,,,others
 Patient1,11/21/25,Platelet Count,282,140-425,,,platelets
 Patient1,11/21/25,Mean Platelet Volume,10.2,8.6-12.1,,,platelets
-Patient1,11/21/25,Color,Yellow,[Yellow,Strawm,Amber],urine
-Patient1,11/21/25,CHARACTER,Clear,-,Clear,,urine
+Patient1,11/21/25,Color,Yellow,Yellow,urine
+Patient1,11/21/25,CHARACTER,Clear,Clear,Clear,,urine
 Patient1,11/21/25,Specific Gravity,-,1.026-1.030,,,urine
 Patient1,11/21/25,pH (Urine),5.5,5.0-8.0,,,urine
 Patient1,11/21/25,Protein (Urine),Trace,Negative,,,urine
@@ -1140,9 +1140,9 @@ Patient1,11/21/25,Epithelial Cells,None,None,,,urine
 Patient1,11/21/25,Hyaline Casts,0,0-4,,,urine
 Patient1,11/21/25,CAST, RBC, URINE,0,0-1,urine
 Patient1,11/21/25,Granular Casts,0,0-1,,,urine
-Patient1,11/21/25,Bacteria (Urine),0,NONE-FEW,,,urine
+Patient1,11/21/25,Bacteria (Urine),0,None,,,urine
 Patient1,11/21/25,Hemoglobin A1C,5.6,<5.7,,,sugar
-Patient1,11/21/25,Thyroid-stimulating Hormone (TSH),0.956,0.270-4.2,,,thyroid
+Patient1,11/21/25,TSH,0.956,0.270-4.2,,,thyroid
 Patient1,11/21/25,Vitamin B12,503,232-1245,,,vitamins
 Patient1,11/21/25,Vitamin D 25-Hydroxy,44.6,32.0-100.0,,,vitamins
 Patient1,11/21/25,Estimated Glomerular Filtration Rate,111,,,,cbc
@@ -1181,10 +1181,10 @@ Patient2,11/21/25,White Blood Cell Count (WBC Count),7.33,4.00-10.10,,,wbc
 Patient2,11/21/25,Red Blood Cell Count (RBC Count),4.34,3.58-5.19,,,rbc
 Patient2,11/21/25,Hemoglobin (Hgb),8.9,11.0-15.5,,,gb
 Patient2,11/21/25,Hematocrit (Hct),31.1,31.5-44.8,,,gb
-Patient2,11/21/25,Mean Corpuscular Volume (MCV),71.7,78.0-98.0,,,mean volume
-Patient2,11/21/25,Mean Corpuscular Hemoglobin (MCH),20.5,25.2-32.6,,,mean volume
-Patient2,11/21/25,Mean Corpuscular Hemoglobin Concentration (MCHC),28.6,31.0-34.7,,,mean volume
-Patient2,11/21/25,Red Blood Cell Distribution Width (RDW),15.5,12.2-15.3,,,rbc
+Patient2,11/21/25,MCV,71.7,78.0-98.0,,,mean volume
+Patient2,11/21/25,MCH,20.5,25.2-32.6,,,mean volume
+Patient2,11/21/25,MCHC,28.6,31.0-34.7,,,mean volume
+Patient2,11/21/25,RDW,15.5,12.2-15.3,,,rbc
 Patient2,11/21/25,POLYS,61.4,34.9-75.3,,,bone marrow
 Patient2,11/21/25,POLYS, ABS. COUNT,4.5,1.30-7.00,,bone marrow
 Patient2,11/21/25,Lymphocytes,25.9,14.0-51.8,,,particles
@@ -1201,7 +1201,7 @@ Patient2,11/21/25,IG ( ABS. COUNT),0.01,,,,others
 Patient2,11/21/25,Platelet Count,273,140-425,,,platelets
 Patient2,11/21/25,Mean Platelet Volume,12.5,8.6-12.1,,,platelets
 Patient2,11/21/25,Hemoglobin A1C,5.5,<5.7,,,sugar
-Patient2,11/21/25,Thyroid-stimulating Hormone (TSH),4.16,0.270-4.2,,,thyroid
+Patient2,11/21/25,TSH,4.16,0.270-4.2,,,thyroid
 Patient2,11/21/25,Ferritin,5,13-150,,,iron
 Patient2,11/21/25,CRP,<0.3,<0.5,,,others
 Patient2,11/21/25,ESR (SED-RATE),53,<31,,,others
@@ -1245,10 +1245,10 @@ Patient3,11/26/25,White Blood Cell Count (WBC Count),5.57,3.88-11.66,,,wbc
 Patient3,11/26/25,Red Blood Cell Count (RBC Count),4.86,3.90-5.27,,,rbc
 Patient3,11/26/25,Hemoglobin (Hgb),11.4,10.6-14.6,,,gb
 Patient3,11/26/25,Hematocrit (Hct),38.3,32.8-43.5,,,gb
-Patient3,11/26/25,Mean Corpuscular Volume (MCV),78.8,73.1-93.2,,,mean volume
-Patient3,11/26/25,Mean Corpuscular Hemoglobin (MCH),23.5,23.8-31.3,,,mean volume
-Patient3,11/26/25,Mean Corpuscular Hemoglobin Concentration (MCHC),29.8,31.3-34.9,,,mean volume
-Patient3,11/26/25,Red Blood Cell Distribution Width (RDW),14.5,12.4-15.5,,,rbc
+Patient3,11/26/25,MCV,78.8,73.1-93.2,,,mean volume
+Patient3,11/26/25,MCH,23.5,23.8-31.3,,,mean volume
+Patient3,11/26/25,MCHC,29.8,31.3-34.9,,,mean volume
+Patient3,11/26/25,RDW,14.5,12.4-15.5,,,rbc
 Patient3,11/26/25,POLYS,35.0,33.0-74.0,,,bone marrow
 Patient3,11/26/25,POLYS, ABS. COUNT,1.95,1.44-8.66,,bone marrow
 Patient3,11/26/25,Lymphocytes,51.2,16.4-54.6,,,particles
@@ -1265,8 +1265,8 @@ Patient3,11/26/25,Platelet Count,317,182-415,,,platelets
 Patient3,11/26/25,Mean Platelet Volume,10.9,8.5-11.8,,,platelets
 Patient3,11/26/25,Hemoglobin A1C,5.2,<5.7,,,sugar
 Patient3,11/26/25,Vitamin D 25-Hydroxy,19,32.0-100.0,,,vitamins
-Patient3,11/26/25,Color,Yellow,[Yellow,Strawm,Amber],urine
-Patient3,11/26/25,CHARACTER,Clear,-,Clear,,urine
+Patient3,11/26/25,Color,Yellow,Yellow,urine
+Patient3,11/26/25,CHARACTER,Clear,Clear,Clear,,urine
 Patient3,11/26/25,Specific Gravity,1.022,1.003-1.030,,,urine
 Patient3,11/26/25,pH (Urine),5.5,5.0-8.0,,,urine
 Patient3,11/26/25,Protein (Urine),Negative,Negative,,,urine
@@ -1285,4 +1285,5 @@ Patient3,11/26/25,Epithelial Cells,None,None,,,urine
 Patient3,11/26/25,Hyaline Casts,0,0-4,,,urine
 Patient3,11/26/25,CAST, RBC, URINE,0,0-1,urine
 Patient3,11/26/25,Granular Casts,0,0-1,,,urine
-Patient3,11/26/25,Bacteria (Urine),0,NONE-FEW,,,urine
+Patient3,11/26/25,Bacteria (Urine),0,None,,,urine
+
