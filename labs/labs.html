@@ -347,7 +347,7 @@ function getTestStatus(result, range) {
 
         if (operator && valueString) {
             // Handles > < cases
-            lessGreaterStatus(operator, result, valueString)
+            return lessGreaterStatus(operator, result, valueString)
         }
         
         // Check for alphabetic results like Negative, None, Yellow etc
@@ -400,7 +400,7 @@ function handleRadioClick(optionValue){
         return t.status === 'normal' && t.person_name === selectedPerson;
       } else {
         // Condition B: Allow 'normal', 'low', or 'high'
-        return (t.status === 'low' || t.status === 'high') && t.person_name === selectedPerson;
+        return t.status !== 'normal' && t.person_name === selectedPerson;
       }
     })
      )];
