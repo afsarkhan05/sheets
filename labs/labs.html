@@ -283,7 +283,7 @@ function addTest(e) {
         reference_range: document.getElementById('referenceRange').value,
         unit: document.getElementById('testUnit').value || '',
         notes: document.getElementById('testNotes').value || '',
-        status: getTestStatus(parseFloat(document.getElementById('testResult').value), document.getElementById('referenceRange').value)
+        status: getTestStatus(document.getElementById('testResult').value, document.getElementById('referenceRange').value)
     };
     testData.push(newTest);
     localStorage.setItem('bloodTestData', JSON.stringify(testData));
@@ -292,6 +292,34 @@ function addTest(e) {
     showAlert('Test result added successfully!', 'success');
     updateDashboard();
     updateTestSelector();
+}
+
+function lessGreaterStatus(operator, result, valueString){
+    // 2. Handle comparison operators (e.g., '> 50', '<= 10', '= 25')
+
+    const value = parseFloat(valueString.trim());
+    switch (operator) {
+        case '>':
+            if (result > value) return 'normal';
+            if (result < value) return 'low';
+            break;
+        case '<':
+            if (result < value) return 'normal';
+            if (result > value) return 'high';
+            break;
+        case '>=':
+            if (result >= value) return 'normal'; // Or 'high/normal', depending on logic
+            break;
+        case '<=':
+            if (result <= value) return 'normal'; // Or 'low/normal', depending on logic
+            break;
+        case '=':
+            if (result === value) return 'normal';
+            break;
+    }
+    // If the condition wasn't met for the specific operator case
+    return 'out of range'; 
+    
 }
 
 function getTestStatus(result, range) {
@@ -317,32 +345,22 @@ function getTestStatus(result, range) {
                 break; // Stop loop once an operator is found
             }
         }
-
         if (operator && valueString) {
-            const value = parseFloat(valueString.trim());
-            switch (operator) {
-                case '>':
-                    if (result > value) return 'normal';
-                    if (result < value) return 'low';
-                    break;
-                case '<':
-                    if (result < value) return 'normal';
-                    if (result > value) return 'high';
-                    break;
-                case '>=':
-                    if (result >= value) return 'normal'; // Or 'high/normal', depending on logic
-                    break;
-                case '<=':
-                    if (result <= value) return 'normal'; // Or 'low/normal', depending on logic
-                    break;
-                case '=':
-                    if (result === value) return 'normal';
-                    break;
-            }
-            // If the condition wasn't met for the specific operator case
-            return 'out of range'; 
+            // Handles > < cases
+            lessGreaterStatus(operator, result, valueString)
         }
-        
+
+        // Check for alphabetic results like Negative, None, Yellow etc
+        isAlphabetic = /^[A-Za-z]+$/.test(range)
+        console.log('Alphabetic: '+ isAlphabetic)
+        if(isAlphabetic){
+            if(result === range){
+                return 'normal'
+            }else{
+                return "abnormal"
+            }
+        }
+
         // 3. Handle simple value match (e.g., '50')
         const numericValue = parseFloat(rangeString.trim());
         if (!isNaN(numericValue) && isFinite(numericValue)) {
@@ -547,7 +565,7 @@ function handleFile(event) {
 function showCSVPreview() {
     if (csvPreviewData.length === 0) return;
     let html = '<table class="data-table"><thead><tr><th>Person Name</th><th>Date</th><th>Test</th><th>Result</th><th>Range</th></tr></thead><tbody>';
-    csvPreviewData.slice(0, 5).forEach(row => {
+    csvPreviewData.slice(0, csvPreviewData.length).forEach(row => {
         html += `<tr><th>${row.person_name}</th><td>${row.date}</td><td>${row.test_name}</td><td>${row.result}</td><td>${row.reference_range}</td></tr>`;
     });
     html += '</tbody></table>';
@@ -560,8 +578,8 @@ function confirmImport() {
     let count = 0;
     csvPreviewData.forEach(row => {
         if (row.date && row.test_name && row.result && row.reference_range) {
-            const result = parseFloat(row.result);
-            if (!isNaN(result)) {
+            const result = row.result;
+            //if (!isNaN(result)) {
                 testData.push({
                     id: Date.now() + count,
                     person_name: row.person_name,
@@ -574,7 +592,7 @@ function confirmImport() {
                     status: getTestStatus(result, row.reference_range)
                 });
                 count++;
-            }
+            //}
         }
     });
     localStorage.setItem('bloodTestData', JSON.stringify(testData));
