@@ -279,7 +279,7 @@ function addTest(e) {
         person_name: document.getElementById('testPersonName').value,
         date: document.getElementById('testDate').value,
         test_name: document.getElementById('testName').value,
-        result: parseFloat(document.getElementById('testResult').value),
+        result: document.getElementById('testResult').value,
         reference_range: document.getElementById('referenceRange').value,
         unit: document.getElementById('testUnit').value || '',
         notes: document.getElementById('testNotes').value || '',
@@ -319,9 +319,8 @@ function lessGreaterStatus(operator, result, valueString){
     }
     // If the condition wasn't met for the specific operator case
     return 'out of range'; 
-    
-}
 
+}
 function getTestStatus(result, range) {
     try {
         if (range.includes('-')) {
@@ -345,11 +344,12 @@ function getTestStatus(result, range) {
                 break; // Stop loop once an operator is found
             }
         }
+
         if (operator && valueString) {
             // Handles > < cases
             lessGreaterStatus(operator, result, valueString)
         }
-
+        
         // Check for alphabetic results like Negative, None, Yellow etc
         isAlphabetic = /^[A-Za-z]+$/.test(range)
         console.log('Alphabetic: '+ isAlphabetic)
@@ -360,7 +360,7 @@ function getTestStatus(result, range) {
                 return "abnormal"
             }
         }
-
+        
         // 3. Handle simple value match (e.g., '50')
         const numericValue = parseFloat(rangeString.trim());
         if (!isNaN(numericValue) && isFinite(numericValue)) {
@@ -565,7 +565,7 @@ function handleFile(event) {
 function showCSVPreview() {
     if (csvPreviewData.length === 0) return;
     let html = '<table class="data-table"><thead><tr><th>Person Name</th><th>Date</th><th>Test</th><th>Result</th><th>Range</th></tr></thead><tbody>';
-    csvPreviewData.slice(0, csvPreviewData.length).forEach(row => {
+    csvPreviewData.slice(0, 5).forEach(row => {
         html += `<tr><th>${row.person_name}</th><td>${row.date}</td><td>${row.test_name}</td><td>${row.result}</td><td>${row.reference_range}</td></tr>`;
     });
     html += '</tbody></table>';
@@ -592,7 +592,7 @@ function confirmImport() {
                     status: getTestStatus(result, row.reference_range)
                 });
                 count++;
-            //}
+           // }
         }
     });
     localStorage.setItem('bloodTestData', JSON.stringify(testData));
