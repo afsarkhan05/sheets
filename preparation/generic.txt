@@ -71,6 +71,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7403736683352838144?utm_sou
  1. API Gateway : 
  a. This can handle single point of contact for all api
  b. Redirecting, Common authorization like jwt verification, Common Logging, Rate Limiting, Throttle etc
+ c. Request/Response aggregation
  2. Saga, Circuit breaker, Service Discovery, Event Sourcing, CQRS are part of specific service one API gateway redirect to service
  Circuit Breaker: Resilience4j or Hystrix
  Event Sourcing: Kafka, Pub/Sub
