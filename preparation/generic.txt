@@ -1,0 +1,83 @@
+# This file is generic text and group it later when file is bigger in size.
+
+::::::JWT:::::
+1. Header (Alg type RSA256, HS256), 
+2. Payload (user info, roles, expire etc) and 
+3. Signature
+encoded_data = base64UrlEncode(header) + "." + base64UrlEncode(payload)
+signature = Sign(privateKey, encoded_data) OR
+signature = HMACSHA256(encoded_data, secret)
+
+Verification:
+1. By PublicKey (Asymetric Algo) --> Pass the jwt token to okta using public key path (RS256 (RSA Signature with SHA-256)
+2. By Secret (Symmetric Algo) --> Use secret to verify signature (HS256 (HMAC with SHA-256))
+
+application.yaml
+(Asymmetic RSA SHA 256  pub-private)
+spring.security.oauth2.resourceserver.issuer-uri: https://<your-okta-domain>/oauth2/default
+
+(symmetic HMAC SHA 256  secret-secret)
+spring.security.oauth2.resourceserver.jwt.secret-key: mySuperSecretKey12345 # Your shared secret
+OR 
+export SPRING_SECURITY_OAUTH2_RESOURCE_SERVER_JWT_SECRET-KEY=mySuperSecretKey12345
+
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests(authorize -> authorize
+                .antMatchers("/public/**").permitAll()
+                .anyRequest().authenticated()
+            )
+            .oauth2ResourceServer(oauth2 -> oauth2.jwt()); // Enable JWT validation
+        return http.build();
+    }
+}
+
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests(authorize -> authorize
+                .anyRequest().authenticated()
+            )
+            .oauth2ResourceServer(oauth2 -> oauth2
+                .jwt(jwt -> jwt
+                    .jwsKeySupplier(() -> "mySuperSecretKey12345" //or get from gcp secret manager)
+                )
+            );
+        return http.build();
+    }
+}
+
+::::::Design Pattern:::::
+https://www.linkedin.com/feed/update/urn:li:activity:7403736683352838144?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAElazwBoCzbHB1pVw5kEqBXXs5kP8jK5xA
+(Design pattern concise)
+🔹 API Gateway Pattern
+ 🔹 Database per Service
+ 🔹 Circuit Breaker
+ 🔹 Service Discovery
+ 🔹 Event Sourcing
+ 🔹 CQRS
+ 🔹 Saga
+ 🔹 Strangler Fig
+ 🔹 Bulkhead
+ 🔹 Sidecar
+
+ 1. API Gateway : 
+ a. This can handle single point of contact for all api
+ b. Redirecting, Common authorization like jwt verification, Common Logging, Rate Limiting, Throttle etc
+ 2. Saga, Circuit breaker, Service Discovery, Event Sourcing, CQRS are part of specific service one API gateway redirect to service
+ Circuit Breaker: Resilience4j or Hystrix
+ Event Sourcing: Kafka, Pub/Sub
+ CQRS: Agency, Campaign data in MySQl and read from couchbase by dataproc/storm topologies etc
+ Saga: Saga Orchetration by metadata service
+ Service Discovery: Eureka, Consul
+ Sidecar: Kubernetes pod with multi container (logging etc)
+
+ Akamai --> Load balancer --> Ingress Controller (nginx or gce) --> Ingress --> Service --> Pod
+ 
