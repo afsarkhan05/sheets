@@ -95,3 +95,12 @@ Decoupling,Isolation,Scalability,Flexibility
 7. Moved to Memory Store instead of Redis, Pub/Sub instead of Kafka
 8. Upgraded to jdk 17 and spring 3.x moved to OpenAPI 3.0 swagger UI
 9. Okta JWT Token instead of alpha zulu internal system
+
+
+:::::::::::: Layers :::::::::::::
+Application Layer -> Data (e.g., HTTP request/response) -> Not typically headers added by the protocol itself, but application may add metadata.
+Transport Layer -> TCP header (for TCP)/UDP header (for UDP) -> Contains source/destination port numbers, sequence numbers, error-checking info.
+Security Layer -> TLS/SSL handshake messages, and then encrypted data -> Establishes secure session,manages encryption keys& encrypts app data.
+Network Layer -> IP header -> Contains source/destination IP addresses, routing info.
+Data Link Layer -> Ethernet frame header, MAC addresses -> Used for local delivery, contains physical addressing, frame control info.
+Physical Layer -> Bits transmitted over physical medium -> Actual signals (electrical, optical, radio waves); no headers in the bits.
