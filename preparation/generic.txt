@@ -104,3 +104,32 @@ Security Layer -> TLS/SSL handshake messages, and then encrypted data -> Establi
 Network Layer -> IP header -> Contains source/destination IP addresses, routing info.
 Data Link Layer -> Ethernet frame header, MAC addresses -> Used for local delivery, contains physical addressing, frame control info.
 Physical Layer -> Bits transmitted over physical medium -> Actual signals (electrical, optical, radio waves); no headers in the bits.
+
+
+::::::::::: Security :::::::::::::::::
+Encryption
+Purpose: To convert plaintext into ciphertext to keep data secret.
+Reversibility: Reversible; data can be decrypted back to original.
+Use Case: Confidential data transmission, data protection.
+Types:
+Symmetric encryption (e.g., AES): same key for encryption and decryption.
+Asymmetric encryption (e.g., RSA): public key for encryption, private key for decryption.
+2. Hashing
+Purpose: To generate a fixed-length hash value (digest) from data, mainly for integrity verification.
+Reversibility: Irreversible; cannot recover original data from hash.
+Use Case: Password storage, data integrity checks.
+Common algorithms: MD5, SHA-1, SHA-256, SHA-3.
+
+3. Digital Signature
+Purpose: To verify the authenticity and integrity of a message or document.
+Reversibility: Not reversible; verification is done using public key.
+Process: Typically involves hashing the message, then encrypting the hash with a private key.
+Use Case: Authentication, non-repudiation.
+Example: Signing an email with your private key., JWT token
+
+4. Encoding
+Purpose: To transform data into a different format for safe transmission or storage.
+Reversibility: Reversible; data can be decoded back to original.
+Use Case: Data formatting (Base64 encoding for email, URL encoding).
+Difference: Not used for security, just for data representation.
+Common: Base64, Base62
