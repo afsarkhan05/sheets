@@ -133,3 +133,64 @@ Reversibility: Reversible; data can be decoded back to original.
 Use Case: Data formatting (Base64 encoding for email, URL encoding).
 Difference: Not used for security, just for data representation.
 Common: Base64, Base62
+
+::::::::::: Design :::::::::::::
+
+
+:::::::::: DB :::::::::
+ACID Properties (Atomicity - All or none, Consistency -> Type same & data , Isolation -> each transaction runs independently, Durable -> once commited stays in db)
+
+Partition (Same DB server , partition data by column like date/user, like vertical scaling)
+Sharding (Multi server, partition one servers like horizontal scaling)
+Replication (copy the data on another server as redundancy)
+Cluster (sharding + replication together on multi server)
+
+::::::::: Python :::::::::
+module vs package (module just one python class where as package is __init__ with multi py files)
+PIP --> Python Installer Package - Way to install py package
+Interpreter, Compiler language, easy to learn, community support, 3rd party lib support, AI support, lightweight
+List[] & Set -> utable
+Tuple() (Immutable object)
+global (global variable
+_var (protected) 
+__var (private and not available outside of class
+
+
+
+::::::::: Java 8 :::::::::::
+Functional interface -> SAM -> with default/static function allowed
+default are public default and can be overrided but static can't be overrided and accessible by interface name
+runnable, callable etc
+
+stream 
+- terminal operation which returns something (count, foreach, collect)
+- intermediate operation returns stream (map, filter, limit, sorted)
+
+map vs flatMap 
+map -> tranform input of one type to output of another type (list stream to list etc)
+flatMap -> it flaten the streams into single stream (nested list of stream converted to single stream)
+
+Intermediate operation::
+generate -> will return infite steam
+distinct -> will return distinct collection using stream
+sorted -> sort the list
+groupBy -> group by the list
+limit -> 
+skip
+
+Optional -> This is to avoid nullPointer (get, isEmpty, isPresent, Optinal.ofNullable())
+
+some functional interfaces
+Consumer (accept input & returns nothing)
+Supplier (no input, return value)
+Predicate (return boolean)
+Function (input of one type, return another type)
+
+orElse -> will also call fallBack for no reason
+orElseGet -> Will skip the call of fallback processing (efficient}
+
+
+
+:::::: Spring ::::::::
+
+
