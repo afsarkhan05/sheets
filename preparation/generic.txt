@@ -193,4 +193,9 @@ orElseGet -> Will skip the call of fallback processing (efficient}
 
 :::::: Spring ::::::::
 
+IoC is a design principle where object creation and lifecycle are managed by a container instead of application code.
+Spring implements IoC primarily using Dependency Injection.
+DI can be constructor, setter, or field injection.
+Other IoC implementations include Dependency Lookup, Service Locator, Template Method, and Event-driven mechanisms.
+
 
