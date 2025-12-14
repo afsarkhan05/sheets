@@ -199,3 +199,51 @@ DI can be constructor, setter, or field injection.
 Other IoC implementations include Dependency Lookup, Service Locator, Template Method, and Event-driven mechanisms.
 
 
+Spring beans are singleton by default, but they are designed to be stateless.
+Each HTTP request is handled by a separate thread, and request data is stored in method parameters and local variables, not in bean fields.
+As long as we avoid mutable shared state inside singleton beans, multiple requests are handled safely.
+
+EntityManager is NOT shared
+	•	Spring injects a proxy
+	•	Actual EntityManager is:
+	•	per transaction
+	•	per request
+
+How does @Transactional work internally?
+
+Answer:
+	•	Implemented using AOP proxy
+	•	Proxy starts transaction before method
+	•	Commits/rollbacks after method
+
+Why is @Transactional ignored on private methods?
+
+Answer:
+Because Spring AOP:
+	•	Uses proxies
+	•	Only intercepts public methods
+
+How does Spring ensure EntityManager is thread-safe?
+
+Answer:
+	•	Injected EntityManager is a proxy
+	•	Actual EntityManager is:
+	•	bound to current transaction
+	•	stored in ThreadLocal
+
+✔ Safe for concurrent requests
+
+How does Spring Boot start step-by-step?
+
+Answer (High level):
+	1.	Load SpringApplication
+	2.	Create ApplicationContext
+	3.	Scan classes
+	4.	Create beans
+	5.	Inject dependencies
+	6.	Apply AOP proxies
+	7.	Start embedded server
+	8.	Accept requests
+
+
+
