@@ -41,3 +41,17 @@ git config --global user.email "1st_email"
 git init
 git commit -m "test commit"
 git push
+
+
+======= More Information =========
+#check remove url of repo
+git remote -v
+
+#set remote url to repo
+git remote set-url origin git@github.com:username/repo.git
+
+# Set user name of github account to come in commit
+git config --global user.name "1st_user"
+git config --global user.email "1st_email"
+
+
