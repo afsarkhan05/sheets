@@ -9,6 +9,7 @@
 -- self join - joining with itself
 -- cte vs temp table (temp table are stored somewhere for sometime)
 -- view vs table (view are better to expose your underling data with external team without providing exact column names or exposing all columns)
+-- partition vs sharding vs clustering ( partition means table data is group by some key, sharding means horizon data split, 
 
 create schema sql_test;
 
