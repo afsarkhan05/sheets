@@ -1,0 +1,8 @@
+HashMap due to collision use linkedlist to save same hash key/values --- O(1) for get/delete/add --> good for add/delete/get
+LinkedList - This keeps address of next value -- 0(1) for insert/delete but 0(n) for get as need to check all values - good for insert/delete but ok for read
+Garbage collection - Automatic once object/variable has no reference
+1 Method Memory - variable, class , method names plus all static variable name and value stored
+2 Stack Memory - All method level variables are stored
+3 Heap Memory - All Instance and instance variables are stored
+4 PC Register - Every thread has specific memory location 
+4 String pool
