@@ -10,6 +10,11 @@
 -- cte vs temp table (temp table are stored somewhere for sometime)
 -- view vs table (view are better to expose your underling data with external team without providing exact column names or exposing all columns)
 -- partition vs sharding vs clustering ( partition means table data is group by some key, sharding means horizon data split, 
+-- union vs union all ( union removes the duplicate while merging, union all merge all of them including duplicates)
+-- pk, fk, unique, 
+--PK: The main ID for a row, unique & non-null.
+--FK: A link to another table's PK, can have duplicates & nulls.
+--UK: A secondary unique identifier, allows one null. uniqueness for column not row (like email should be unique)
 
 create schema sql_test;
 
