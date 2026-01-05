@@ -3,6 +3,7 @@
 -- distinct, count, limit
 -- windows: row_number, rank, dense_rank
 -- avg, min, max, lag, lead
+-- cast, coalesce, string_agg
 -- cte vs sub query (common table expr is better clearer way if dealing with multi tables compare to sub query which will be complex)
 -- left join - gives everything from left and (on joined from right) right join vice version , full inner join is excact join
 -- full outer join is matching plus full from left and full from right table
