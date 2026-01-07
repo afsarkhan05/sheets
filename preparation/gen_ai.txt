@@ -1,0 +1,13 @@
+Hallucination (factualing incorrect info) and Biased - Can be corrected with Grounding (Latest data or internal file)
+Grounding can be achieved using RAG (Retrieval-Augmented Generation) 
+0, few shot prompting, role prompting, 
+token (basic unit like words)
+embedding - converting text to numeric numbers like vector and saving it into vector db - like qdrant
+fine-tuning - specialize the model with specific task data for specific task
+multi-model: Model which can work on text, image, video, doc etc
+temperature (hyper parameter): How creative model can be (lower number means specific and less creative)
+chain-of-thought: Model which can keep the prompt in memory for better response
+
+
+https://medium.com/@shuchaobi/glossary-of-llm-and-generative-ai-b3111da41da7
+
