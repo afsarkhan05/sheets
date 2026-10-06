@@ -1,0 +1,103 @@
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+public class ModernJavaShowcase {
+
+    // =========================================================================
+    // LESSON 5 & 4: Sealed Interfaces combined with Immutable Records
+    // =========================================================================
+    // We define a strict, bounded domain for tracking updates. 
+    // It can ONLY be a Pickup, Transit, or Delivery event. No other types can exist.
+    public sealed interface LogisticsEvent permits PickupEvent, TransitEvent, DeliveryEvent {
+        UUID trackingId(); // Shared structural method contract
+    }
+
+    public record PickupEvent(UUID trackingId, String location, String warehouseManager) implements LogisticsEvent {}
+    public record TransitEvent(UUID trackingId, String currentCity, double temperatureCelsius) implements LogisticsEvent {}
+    public record DeliveryEvent(UUID trackingId, String signedBy, boolean requiredSignature) implements LogisticsEvent {}
+
+    // Mocking an external service client for compilation completeness
+    private static class NotificationClient {
+        public void triggerAlert(String msg) { System.out.println("🚨 [ALERT] " + msg); }
+        public void updateDashboard(UUID id, String status) { System.out.println("📊 [DASHBOARD] ID: " + id + " -> " + status); }
+    }
+
+    // =========================================================================
+    // THE PROCESSOR SERVICE (Using everything together)
+    // =========================================================================
+    public void processIncomingWebhook(Object rawPayload) {
+        
+        // --- 1. LESSON 1: Local Variable Type Inference (`var`) ---
+        // Compiler infers this as an instance of NotificationClient automatically
+        var notifier = new NotificationClient();
+
+        // --- 2. LESSON 3: Pattern Matching with instanceof & Switch ---
+        // We dynamically unpack the unknown rawPayload object. 
+        // If it's a LogisticsEvent, we jump right into processing it.
+        if (rawPayload instanceof LogisticsEvent event) {
+            
+            System.out.println("Processing valid logistics tracking stream for ID: " + event.trackingId());
+
+            // --- 3. LESSON 3 & 5: Exhaustive Switch Expressions with Sealed Classes ---
+            // Because LogisticsEvent is sealed, the compiler ensures all 3 branches are covered.
+            // Notice we extract data natively using Record accessors (e.g., transit.currentCity()) 
+            // and apply conditional 'when' clauses!
+            String actionSummary = switch (event) {
+                case PickupEvent pickup -> 
+                    "Package picked up at warehouse managed by: " + pickup.warehouseManager();
+                
+                case TransitEvent transit when transit.temperatureCelsius() > 25.0 -> {
+                    // Using a block with 'yield' to return a string while triggering a side effect
+                    notifier.triggerAlert("Cold chain violation! Temp is " + transit.temperatureCelsius() + "°C");
+                    yield "CRITICAL: High temperature transit in " + transit.currentCity();
+                }
+                
+                case TransitEvent transit -> 
+                    "In transit smoothly through " + transit.currentCity();
+                
+                case DeliveryEvent delivery -> 
+                    "Delivered successfully. Signed by: " + delivery.signedBy();
+            };
+
+            notifier.updateDashboard(event.trackingId(), actionSummary);
+            
+        } else {
+            System.out.println("Unknown payload received. Skipping processing pipeline.");
+        }
+    }
+
+    // =========================================================================
+    // EXECUTION METHOD SHOWCASING TEXT BLOCKS
+    // =========================================================================
+    public static void main(String[] args) {
+        var showcase = new ModernJavaShowcase();
+        var trackingId = UUID.randomUUID();
+
+        // --- 4. LESSON 2: Text Blocks (Multi-line Strings) ---
+        // Beautiful formatting, clean inline quotes, completely valid JSON structure.
+        var simulationLogJson = """
+            {
+                "timestamp": "%s",
+                "environment": "PRODUCTION",
+                "eventSource": "LOGISTICS_WEBHOOK_V2"
+            }
+            """.formatted(LocalDateTime.now());
+
+        System.out.println("Initializing Application Context Simulation Log:\n" + simulationLogJson);
+
+        // Instantiating our Records natively
+        var freshPickup = new PickupEvent(trackingId, "New York Hub", "Alice Smith");
+        var hotTransit  = new TransitEvent(trackingId, "Phoenix Desert Route", 38.5);
+        var cleanDelivery = new DeliveryEvent(trackingId, "John Doe", true);
+
+        // Pushing our records down the processing pipeline
+        System.out.println("\n--- Simulating Payload 1 (Pickup) ---");
+        showcase.processIncomingWebhook(freshPickup);
+
+        System.out.println("\n--- Simulating Payload 2 (Overheating Transit) ---");
+        showcase.processIncomingWebhook(hotTransit);
+
+        System.out.println("\n--- Simulating Payload 3 (Final Delivery) ---");
+        showcase.processIncomingWebhook(cleanDelivery);
+    }
+}
