@@ -85,3 +85,7 @@ public record UserDto(Long id, String email, String role) {}
 • Standard implementations for equals(), hashCode(), and toString().
 • Public accessor methods that match the field names exactly (e.g., dto.email() instead of dto.getEmail())
 
+5. sealed classes - interface with sealed can mentioned what classes can implement it but they must be declared as final class
+6. list gets methods like getFirst, getLast, addFirst, addLast etc instead of calling get(0) or get(l.size()-1) etc
+7. virtual thread: 
+
