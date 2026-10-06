@@ -6,3 +6,82 @@ Garbage collection - Automatic once object/variable has no reference
 3 Heap Memory - All Instance and instance variables are stored
 4 PC Register - Every thread has specific memory location 
 4 String pool
+
+metaspace = static block and variables
+heap (gc) = all objects, instance variables
+stack = local variables, local object reference only, primitive
+string pool = specialized heap area for string pools object
+
+G1GC vs ZGC
+G1GC => split heap into small pieces and find which one is full to act for cleaning
+ZGC => concurrently work so highly fast, scalable
+
+SOLID
+Single Responsibility Principle (SRP)
+Open/Closed Principle (OCP)
+Liskov Substitution Principle (LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP)
+
+Thread::
+
+Task = Runnable, Callable (Return)
+Executor = ExecutorService (normalServiceWorker, maxWorker, QueuedSize, rejectionType)
+OR create thread for task
+Virtual Thread with synchronized kills the purpose of virtual thread as it pushes on OS/Platform thread
+Virtual Thread => managed by jvm run on os thread, but jvm do mount/unmount 
+- jvm move data from virtual thread to heap and free up os thread for another virtual thread
+-- virtual thread is also called carrier thread
+
+
+• Predicate<T> ➡️ Takes an input, returns a boolean (used in .filter()).
+• Function<T, R> ➡️ Takes an input, transforms it, and returns an output (used in .map()).
+• Consumer<T> ➡️ Takes an input, performs an action, returns nothing (used in .forEach()).
+
+CORS: (Cross-Origin Resource Sharing)
+The backend grants permission by returning specific HTTP response headers—most notably Access-Control-Allow-Origin, Access-Control-Allow-Methods, and Access-Control-Allow-Headers—that the browser checks before allowing the UI to read the server response
+
+The Browser's Question (The OPTIONS Preflight) - Which tells what browsers wants to do and if it's allowed or not
+
+so CORS filter should be before JWT filter otherwise OPTIONS request will give 401 as JWT token not available
+
+
+1. var (java 9) = for local variables only
+2. text block (java 15) = like python type """ My String """
+
+ @Query(value = """
+           SELECT u.*, p.profile_picture_url 
+           FROM users u
+           LEFT JOIN profiles p ON u.id = p.user_id
+           WHERE u.status = 'ACTIVE' 
+             AND u.last_login > :cutoffDate
+           """, nativeQuery = true)
+    List<User> findActiveUsersWithProfiles(LocalDateTime cutoffDate);
+
+3. switch (java 14, 17)= 
+
+int priority = switch (status) {
+    case PLACED    -> 3;
+    case SHIPPED   -> 2;
+    case DELIVERED -> 1;
+    default        -> 5;
+};
+
+String result = switch (response) {
+    case String s                     -> "It's a string of length: " + s.length();
+    case Integer i when i > 100       -> "High integer value: " + i;
+    case Integer i                    -> "Standard integer value: " + i;
+    case Map<?, ?> map                -> "It's a payload map with entries: " + map.size();
+    case null                         -> "Received a null response!";
+    default                           -> "Unknown payload type";
+};
+
+4. record (java 16 - immutable object):
+// A single line replaces everything above!
+public record UserDto(Long id, String email, String role) {}
+
+• Private final fields for each component.
+• A public constructor containing all arguments.
+• Standard implementations for equals(), hashCode(), and toString().
+• Public accessor methods that match the field names exactly (e.g., dto.email() instead of dto.getEmail())
+
