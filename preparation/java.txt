@@ -88,4 +88,4 @@ public record UserDto(Long id, String email, String role) {}
 5. sealed classes - interface with sealed can mentioned what classes can implement it but they must be declared as final class
 6. list gets methods like getFirst, getLast, addFirst, addLast etc instead of calling get(0) or get(l.size()-1) etc
 7. virtual thread: 
-
+8. Threadlocal is like a global memory for thread which is on heap, stack memory vanishes as soon as thread leaves method, again stack created on entering in new method but threadlocal variable will be available in new method too for this thread.
