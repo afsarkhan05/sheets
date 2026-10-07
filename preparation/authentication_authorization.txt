@@ -1,0 +1,24 @@
+Multiple ways of authentication:
+
+1. Simple user and password - less secure - not used
+2. APIkey - pass apikey to get access - less secure if someone got your apikey
+3. Bearer token to get JWT token
+4. Access token and refresh token based on user/pass
+5. Single Sign On (SSO)
+6. SAML (Security Assertion Markup Lang) - now old - connect to LDAP using XML req/response
+7. token based on OIDC (Open ID Connect) - new and powerful - ask to verify against Identity Provider (IdP) like google, ldap, AD etc
+
+Authorization:
+Below are top authorization model usin JWT mechanism:
+
+RBAC (Role Based Authorization Control) or ACL (Access Control List)
+OAuth2 -> When one service access another on behalf of user (like xyz.com based on gmail)
+JWT -> Json Web Token has 3 part -> header.payload.signed (where signed using private key on header+payload) and both header,payload are base64 for quick view.
+
+Rate limit or Circuit breaker:
+Rate Limiting, COrs, sql Injection
+CSRF - Cross Site Request Forgery (beside token banking site checks 
+if CSRF token they have on their side for session id matching if someone stole user token as man in the middle attack)
+
+DDoS (Distributed denial of service)
+WAF (Web access Firewall)
