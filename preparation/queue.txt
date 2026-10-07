@@ -8,3 +8,5 @@ RabbitMQ
 
 Message with routing key --> Exchange as binding (between routing key to queue) --> exchange send to as many matching queue based on routing key
 --> message is consumed by consumer from specific queue, marked acked to get deleted from specific queue
+
+RabbitMQ shines when you need complex routing, fine-grained control over message states, and immediate cleanup once a task is done
