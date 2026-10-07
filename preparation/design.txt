@@ -1,0 +1,54 @@
+Always ask these 5 questions
+  1. How many users? growing how fast?
+  2. Read heavy or write heavy?
+  3. What can you never lose?
+  4. How much latency we can afford?
+  5. What does it cost?
+
+  Scalability, Latency
+
+30 Top design:
+
+
+Networking & Core Infrastructure
+
+1. Client-Server Architecture (0:32)
+2. IP Addresses (1:16)
+3. Domain Name System (DNS) (1:39)
+4. Proxy (2:08)
+5. Reverse Proxy (2:08)
+6. Latency (2:54)
+7. HTTP / HTTPS (3:13)
+
+APIs & Data Transport
+
+8. Application Programming Interfaces (APIs) (4:07)
+9. REST API (4:41)
+10. GraphQL (4:41)
+
+Data Management & Scaling
+
+11. Databases (6:34)
+12. SQL Databases (6:55)
+13. NoSQL Databases (6:55)
+14. Vertical Scaling (Scaling Up) (7:49)
+15. Horizontal Scaling (Scaling Out) (8:26)
+16. Load Balancer (8:46)
+17. Load Balancing Algorithms (e.g., Round Robin, Least Connections, IP Hashing) (9:05)
+18. Database Indexing (9:29)
+19. Database Replication (10:19)
+20. Sharding (Horizontal Partitioning) (11:21)
+21. Vertical Partitioning (11:54)
+22. Caching (12:39)
+23. Cache-Aside Pattern (12:44)
+24. Time to Live (TTL) (13:13)
+25. Denormalization (13:33)
+
+Distributed Systems & Services
+
+26. CAP Theorem (14:12)
+27. Blob Storage (14:45)
+28. Content Delivery Network (CDN) (15:37)
+29. WebSockets (16:37)
+30. WebHooks
+Consistent Hashing, Circuit Breakers, Saga Pattern, CQRS, Event Sourcing
