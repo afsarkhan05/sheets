@@ -1,0 +1,10 @@
+RabbitMQ
+1. The Message: Consists of a Message Body (payload) and a Routing Key (metadata envelope).
+2. The Exchange: Receives the message, looks at the routing key, and evaluates it against all active Bindings.
+3. The Duplication: If the routing key matches multiple bindings, the exchange duplicates the message and delivers a unique copy to every single matching queue.
+4. The Queue: Holds its own copy of the message in a FIFO (First-In, First-Out) pipeline.
+5. The Consumer: Connects to a specific queue name and pulls messages from the front of that line.
+6. The Acknowledgment (ack): Once the consumer successfully processes the message and sends an ack, RabbitMQ permanently removes it from that specific queue.
+
+Message with routing key --> Exchange as binding (between routing key to queue) --> exchange send to as many matching queue based on routing key
+--> message is consumed by consumer from specific queue, marked acked to get deleted from specific queue
