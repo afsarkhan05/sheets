@@ -100,3 +100,13 @@ Streams are more for maintainability and readability than speed or memory.
 filter, map, collect(Collectors.toList()), distinct(), sorted() (Always prefer filter before sort), groupBy
 
 
+basically abstract classes can be used to keep instance state but same is not possible with interfaces as it's more of a stateless. Abstract class used by multiple class can have common instance variable who data can be shared across if needed
+
+abstract class can have stateful variable (public string) which will be shared by all sub classes 
+interfaces are stateless and can't share any variable (private static final so immutable)
+
+default methods flow till leaf classes and called using class instance
+static methods don't flow like default but available in sub classes using interface
+
+so default are like regular method of class - called by instance 
+but static is like static method on class level - called using interface
