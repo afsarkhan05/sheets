@@ -95,3 +95,8 @@ Stream (Conveyer Belt Example)
 2. Memory: Original data is never mutated; new collections are allocated at the end.
 3. map vs flatMap: map is 1-to-1 transformation; flatMap is 1-to-many (flattens a stream of streams).
 4. Primitives: Use IntStream or LongStream to avoid the heap overhead of number boxing.
+Streams are more for maintainability and readability than speed or memory.
+
+filter, map, collect(Collectors.toList()), distinct(), sorted() (Always prefer filter before sort), groupBy
+
+
