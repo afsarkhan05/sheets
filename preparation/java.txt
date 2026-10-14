@@ -110,3 +110,5 @@ static methods don't flow like default but available in sub classes using interf
 
 so default are like regular method of class - called by instance 
 but static is like static method on class level - called using interface
+
+functional interface - requirement - SAM - Single Abstract method but it can have many default/static methods
