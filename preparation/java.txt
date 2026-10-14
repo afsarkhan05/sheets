@@ -112,3 +112,15 @@ so default are like regular method of class - called by instance
 but static is like static method on class level - called using interface
 
 functional interface - requirement - SAM - Single Abstract method but it can have many default/static methods
+
+
+overriding vs overloading
+different class vs same class
+dynamic polymorphism (runtime decided which one to call) vs static polymorphism (compiler knows which method to call based on param, type etc)
+
+overriding relies on checking the actual object on the heap at runtime
+
+public void calculate(int x) { ... }
+public int calculate(int x) { ... } // ❌ COMPILER ERROR! Duplicate method signature.
+
+overloading - if only changing return type, it will fail, must change the parameter or parameter type
