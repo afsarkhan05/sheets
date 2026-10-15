@@ -35,3 +35,7 @@ The Copy-On-Write Mechanic: The collection treats its internal array as complete
 Top Marker Interface:
 Serializable, Cloneable
 The clone() method does NOT come from the Cloneable interface. It comes from the java.lang.Object base class
+
+functional interface:
+Runnable, Callable
+Predicate, Function, Consumer etc
