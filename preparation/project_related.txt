@@ -1,0 +1,2 @@
+"Initially, we handled dual-writes within the API service layer. However, we recognized this created a distributed transaction problem and tightly coupled our UI write paths to Couchbase availability. 
+To fix this, we evolved the architecture toward an asynchronous, event-driven pattern."
