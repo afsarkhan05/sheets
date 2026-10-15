@@ -31,3 +31,7 @@ The Copy-On-Write Mechanic: The collection treats its internal array as complete
 "If I have a volatile int counter = 0; and multiple threads call counter++, is it thread-safe?"
 - NO, volatile only guarantees visibility (reading the latest value). It does not guarantee atomicity (protecting a multi-step operation)
 - The Fix: For calculations, you must use synchronized blocks or atomic classes like AtomicInteger
+
+Top Marker Interface:
+Serializable, Cloneable
+The clone() method does NOT come from the Cloneable interface. It comes from the java.lang.Object base class
