@@ -8,3 +8,22 @@ Everything in java is either Array or HashMap
 • Need instant unique lookups? Use HashMap / HashSet.
 • Need data permanently sorted in memory? Use TreeMap.
 • Need to process items by urgency score/rank? Use PriorityQueue
+
+use -> Deque<String> stack = new ArrayDeque<>();
+instead of Stack as pop/push/peek methods are synchronized as Stack is build on the top of Vector so performance hit.
+
+ConcurrentHashMap -> global thread safe map.
+Modern ConcurrentHashMap uses Lock Striping via fine-grained Java synchronized blocks and low-level Compare-And-Swap (CAS) CPU instructions.
+HashMap - lock the whole object, slow performance, here only specific bucket (low level) is locked so faster 
+
+CopyOnWriteArrayList -> inside this collection, the raw array is marked as volatile. This ensures that any change made to the array reference is instantly visible to all other CPU cores.
+
+The Copy-On-Write Mechanic: The collection treats its internal array as completely immutable. When a thread wants to modify the list (e.g., list.add("New Config")), Java leaves the existing array completely untouched for reading threads. Instead, it allocates a brand-new copy of the array on the heap, makes the modification there, and then flits the master pointer to point to the new array.
+
+1. Single thread or standard request scope? Use ArrayList or HashMap.
+2. Shared global data structure with constant writes/reads? Use ConcurrentHashMap.
+3. Global list that is updated once a day but read millions of times? Use CopyOnWriteArrayList.
+4. Piping jobs between distinct thread groups? Use a BlockingQueue
+
+• transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization Skip).
+• volatile belongs to the world of Concurrency (multi-threading, CPU caches, and memory visibility)
