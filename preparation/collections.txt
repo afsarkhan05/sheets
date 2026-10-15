@@ -27,3 +27,7 @@ The Copy-On-Write Mechanic: The collection treats its internal array as complete
 
 • transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization Skip).
 • volatile belongs to the world of Concurrency (multi-threading, CPU caches, and memory visibility)
+
+"If I have a volatile int counter = 0; and multiple threads call counter++, is it thread-safe?"
+- NO, volatile only guarantees visibility (reading the latest value). It does not guarantee atomicity (protecting a multi-step operation)
+- The Fix: For calculations, you must use synchronized blocks or atomic classes like AtomicInteger
