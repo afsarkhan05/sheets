@@ -1,0 +1,28 @@
+1. The Producer sends a message: The data travels through the CPU registers/caches into the RAM (System Page Cache).
+2. Immediate Acknowledgment: Kafka does not wait for the data to hit the HDD/SSD. 
+  As soon as the data is safely written to the OS Page Cache in RAM, 
+  Kafka considers it "written" and tells the producer it's done. This makes producing incredibly fast.
+3. Flushing to Disk (HDD/SSD): The operating system periodically (or when Kafka requests it) background-flushes 
+  this Page Cache memory down into actual log files on the HDD/SSD.
+4. Fast Consumption: If a consumer is reading messages immediately after they are produced, 
+  Kafka reads them straight out of the RAM Page Cache. It doesn't even touch the HDD/SSD!
+
+-- If data in Page Cache if broker is gone - chance of loosing data even after ack to producer
+-- Idempotent (enable.idempotent=true) at producer (producer_id & sequence_id on each message)
+-- inSync.replicas, replication - fault tolerance
+-- Consumer - idempotency, acked
+-- Consumer Group - when consumer join - talk with group co-ordinator who decide consumer as leader
+-- co-ordinator gives info like partitions, consumers, leader decide which consumer will get what partition
+-- rebalance - (consumer join or remove) - request from co-ordinator to leader for rebalance
+(1: halt all consumer 2: only halt and rebalance affected consumer)
+-- co-ordinator checks heart beat (to find consumer join or remove)
+
+:::ZERO Copy:::
+1. Copy 1: CPU reads data from HDD/SSD into the OS Page Cache (Kernel Space).
+2. Copy 2: Data is copied from the OS Page Cache into the Application/Kafka memory buffer (User Space).
+3. Copy 3: Kafka pushes the data back down into the Socket Buffer (Kernel Space).
+4. Copy 4: Data is copied from the Socket Buffer to the Network Interface Card (NIC/Hardware) to be sent out.
+
+Kafka says: "I don't need to modify this message. I am just passing it along. Why bring it into my user-space memory at all?"
+Kafka invokes a specific Linux system call called sendfile (or transferTo in Java NIO). 
+This tells the OS to bypass Kafka's software layer completely:
