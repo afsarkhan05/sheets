@@ -26,3 +26,5 @@
 Kafka says: "I don't need to modify this message. I am just passing it along. Why bring it into my user-space memory at all?"
 Kafka invokes a specific Linux system call called sendfile (or transferTo in Java NIO). 
 This tells the OS to bypass Kafka's software layer completely:
+
+SSD/HDD -> RAM -> Page Cache (Which is part of RAM) -> CPU Cache L1/L2/L3 -> Registers
