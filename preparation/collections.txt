@@ -1,0 +1,10 @@
+Everything in java is either Array or HashMap
+- HashSet -> internally use hashmap
+- ArrayList / Vector -> Array (Contigious memory block)
+- LinkedList -> Objects are scattered on heap so locating them takes time by cpu so slow
+- TreeMap / TreeSet -> Use Red-Black Tree
+
+• Need fast sequential reading or random access? Use ArrayList.
+• Need instant unique lookups? Use HashMap / HashSet.
+• Need data permanently sorted in memory? Use TreeMap.
+• Need to process items by urgency score/rank? Use PriorityQueue
