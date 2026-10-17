@@ -118,3 +118,7 @@ Instead of manually running commands after a server is already dead, senior arch
 ENV JAVA_TOOL_OPTIONS="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/crash_dump.hprof"
 
 Datadog's Continuous Profiler continuously takes tiny, 1% overhead thread snapshots behind the scenes (datadob and new relic both are javaagent)
+
+When you create a corporate account with Datadog or New Relic, you are generated a unique, high-security cryptographic string called an API Key or License Key
+
+in k8s deployment.xml we pass api (data dog or new relic) using k8s secret which will be used by agent attached to container to send telemetry data on their cloud which can be viewed from browser with account attached to that api key.
