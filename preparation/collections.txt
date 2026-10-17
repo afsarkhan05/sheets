@@ -56,3 +56,7 @@ whereas, callable future will give you a heap pointer of object which will be a 
 Instead of forcing the main thread to stand there and wait with .get(), CompletableFuture allows you to attach a callback function (a Functional Interface worker!) directly onto the heap container
 
 You tell the JVM: "Hey, Main Thread is moving on to do other things. Background Thread, the split-second you finish creating that object on the heap, automatically pass it to this next worker to handle it. Do not bother the main thread!"
+
+G1GC (Garbage First - Then delete)
+1. Concurrent Marking (Live Background): While your Spring Boot code is handling API requests, G1GC background threads are quietly marking which objects are alive across the regions. (Zero pause time here!)
+2. Evacuation (The Micro-Pause): When it's time to reclaim space, G1GC halts your application threads for a split second. It grabs the few surviving objects from the target garbage regions, copies them cleanly into a brand-new, empty region, and completely wipes the old regions clean in one massive stroke.
