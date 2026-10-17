@@ -72,3 +72,14 @@ On a 64-bit modern computer server, a standard memory pointer address only needs
 ZGC steals 4 of those empty bits inside every object reference pointer and uses them as physical color flags (e.g., Marked0, Marked1, Remapped).
 
 Live - S1 - S2 (Survivor) - Long /Old
+
+
+
+Feature	                                            G1GC	                                                ZGC
+Cleaning Style	         Pauses the application to copy                               Copies objects concurrently while your 
+                        objects to fresh regions.	                                    application threads are running.
+How it protects data?	  Freezes the clock (Stop-The-World).	                          Uses Colored Pointers and Load Barriers 
+                                                                                      to self-heal references on the fly.
+Pause Time?	            Low (10ms to 200ms depending on heap size).	                  Ultra-Low (< 1ms) regardless of whether your 
+                                                                                      heap is 10GB or 16 Terabytes!
+
