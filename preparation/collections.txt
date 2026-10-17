@@ -60,3 +60,15 @@ You tell the JVM: "Hey, Main Thread is moving on to do other things. Background 
 G1GC (Garbage First - Then delete)
 1. Concurrent Marking (Live Background): While your Spring Boot code is handling API requests, G1GC background threads are quietly marking which objects are alive across the regions. (Zero pause time here!)
 2. Evacuation (The Micro-Pause): When it's time to reclaim space, G1GC halts your application threads for a split second. It grabs the few surviving objects from the target garbage regions, copies them cleanly into a brand-new, empty region, and completely wipes the old regions clean in one massive stroke.
+
+Just like G1GC, ZGC chops the total heap memory into small blocks [home-services-diy]. But instead of "Regions," ZGC calls them Pages.
+• G1GC Regions are all the exact same size.
+• ZGC Pages dynamically scale into three different sizes depending on how big your objects are: Small Pages (2MB for small objects), Medium Pages (32MB), and Large Pages (variable size, dynamically allocated to fit one single massive object).
+
+
+In G1GC, when the collector moves a living object to a new room, it has to freeze the application (Stop-The-World) to rewrite all the memory addresses pointing to that object. If it didn't freeze the code, a worker thread might look at an old pointer address and try to read an object that isn't there anymore.
+ZGC solves this by inventing Colored Pointers.
+On a 64-bit modern computer server, a standard memory pointer address only needs about 42 to 44 bits to physically locate any spot in RAM. The rest of the bits are usually wasted zeroes.
+ZGC steals 4 of those empty bits inside every object reference pointer and uses them as physical color flags (e.g., Marked0, Marked1, Remapped).
+
+
