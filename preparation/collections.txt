@@ -98,5 +98,11 @@ Because ZGC relocates and sweeps memory pages concurrently while application thr
 If your application has a high object allocation rate, ZGC needs a massive temporary memory buffer on the heap to absorb those incoming objects while its background threads complete a cleaning cycle. If the heap is too small and the application fills memory faster than ZGC can clean it, the JVM will experience an Allocation Stall—freezing your application threads entirely until the collector catches up.
 G1GC avoids this high headroom requirement because it pauses the application clock entirely during major collection phases, meaning no new garbage is being created while it executes a sweep."
 
+When a production server spikes to 100% CPU, freezes completely, or runs out of memory, senior engineers don't guess. They use Thread Dumps, Heap Dumps, and Profilers to look directly at the living JVM engine.
+
 • Old Java: High Latency + Memory Bloat because every thread interaction forces a context switch into Kernel Space, backed by rigid 1MB Native Stacks.
 • Modern Java: High Throughput + High Efficiency because thread interactions are managed entirely in User Space as elastic, dynamic Heap Objects, keeping the physical Carrier Threads running at 100% capacity.
+
+
+find process id then thread id then thread dump using profiler then convert thread id to hex and find that hex in thread dump to figure out what's happening
+also heap dump will give you each object on heap and how much memory it's consuming
