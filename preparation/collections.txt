@@ -91,3 +91,5 @@ A. Metaspace (The Blueprint Library)
 When you load a class file, a compiled record, or an interface layout into your Spring Boot app, the code blueprints don't go to the Heap. They are saved in the Metaspace.
 • What lives here: Class definitions, method bytecode instructions, the constant pool, and static variables.
 
+• Old Java: High Latency + Memory Bloat because every thread interaction forces a context switch into Kernel Space, backed by rigid 1MB Native Stacks.
+• Modern Java: High Throughput + High Efficiency because thread interactions are managed entirely in User Space as elastic, dynamic Heap Objects, keeping the physical Carrier Threads running at 100% capacity.
