@@ -71,4 +71,4 @@ ZGC solves this by inventing Colored Pointers.
 On a 64-bit modern computer server, a standard memory pointer address only needs about 42 to 44 bits to physically locate any spot in RAM. The rest of the bits are usually wasted zeroes.
 ZGC steals 4 of those empty bits inside every object reference pointer and uses them as physical color flags (e.g., Marked0, Marked1, Remapped).
 
-
+Live - S1 - S2 (Survivor) - Long /Old
