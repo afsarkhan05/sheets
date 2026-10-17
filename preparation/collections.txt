@@ -91,5 +91,12 @@ A. Metaspace (The Blueprint Library)
 When you load a class file, a compiled record, or an interface layout into your Spring Boot app, the code blueprints don't go to the Heap. They are saved in the Metaspace.
 • What lives here: Class definitions, method bytecode instructions, the constant pool, and static variables.
 
+
+"ZGC requires more memory headroom because it suffers from a phenomenon known as Allocation Stall Space Overhead.
+Because ZGC relocates and sweeps memory pages concurrently while application threads are actively running, your Spring Boot code is continuously creating new objects on the heap at the exact same time the garbage collector is trying to free up space.
+
+If your application has a high object allocation rate, ZGC needs a massive temporary memory buffer on the heap to absorb those incoming objects while its background threads complete a cleaning cycle. If the heap is too small and the application fills memory faster than ZGC can clean it, the JVM will experience an Allocation Stall—freezing your application threads entirely until the collector catches up.
+G1GC avoids this high headroom requirement because it pauses the application clock entirely during major collection phases, meaning no new garbage is being created while it executes a sweep."
+
 • Old Java: High Latency + Memory Bloat because every thread interaction forces a context switch into Kernel Space, backed by rigid 1MB Native Stacks.
 • Modern Java: High Throughput + High Efficiency because thread interactions are managed entirely in User Space as elastic, dynamic Heap Objects, keeping the physical Carrier Threads running at 100% capacity.
