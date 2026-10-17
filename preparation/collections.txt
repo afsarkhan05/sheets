@@ -106,3 +106,15 @@ When a production server spikes to 100% CPU, freezes completely, or runs out of 
 
 find process id then thread id then thread dump using profiler then convert thread id to hex and find that hex in thread dump to figure out what's happening
 also heap dump will give you each object on heap and how much memory it's consuming
+
+new relic jar is added as javaagent while running "java" command for spring boot container
+
+• Bytecode Instrumentation: When the JVM boots up and loads your Spring Boot class blueprints into the Metaspace, the New Relic Agent intercepts them. It uses a low-level technique called bytecode manipulation to inject tiny tracking timers around your @RestController methods, database calls, and thread execution paths.
+• The Data Pipeline: Every few seconds, the agent aggregates these metrics and ships them asynchronously over HTTPS out of your Kubernetes cluster to New Relic's cloud servers.
+
+Instead of manually running commands after a server is already dead, senior architects configure the JVM inside the Dockerfile to automatically trigger a heap dump the exact millisecond it runs out of memory before the pod gets killed by Kubernetes:
+
+# Inside your Dockerfile or K8s deployment env configurations
+ENV JAVA_TOOL_OPTIONS="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/crash_dump.hprof"
+
+Datadog's Continuous Profiler continuously takes tiny, 1% overhead thread snapshots behind the scenes (datadob and new relic both are javaagent)
