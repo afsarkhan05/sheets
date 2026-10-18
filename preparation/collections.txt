@@ -25,7 +25,7 @@ The Copy-On-Write Mechanic: The collection treats its internal array as complete
 3. Global list that is updated once a day but read millions of times? Use CopyOnWriteArrayList.
 4. Piping jobs between distinct thread groups? Use a BlockingQueue
 
-• transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization Skip).
+• transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization(marker interface) Skip) 
 • volatile belongs to the world of Concurrency (multi-threading, CPU caches, and memory visibility)
 
 "If I have a volatile int counter = 0; and multiple threads call counter++, is it thread-safe?"
@@ -70,6 +70,10 @@ In G1GC, when the collector moves a living object to a new room, it has to freez
 ZGC solves this by inventing Colored Pointers.
 On a 64-bit modern computer server, a standard memory pointer address only needs about 42 to 44 bits to physically locate any spot in RAM. The rest of the bits are usually wasted zeroes.
 ZGC steals 4 of those empty bits inside every object reference pointer and uses them as physical color flags (e.g., Marked0, Marked1, Remapped).
+
+G1GC for low memory because, it stop the watch so no new object get created during that time of clean up. But if we use ZGC on low memory size which 
+continuously do cleaning without stop-watch means during cleaning if more objects are getting created then destroyed we will end of OOM error.
+
 
 Live - S1 - S2 (Survivor) - Long /Old
 
@@ -117,8 +121,20 @@ Instead of manually running commands after a server is already dead, senior arch
 # Inside your Dockerfile or K8s deployment env configurations
 ENV JAVA_TOOL_OPTIONS="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/crash_dump.hprof"
 
-Datadog's Continuous Profiler continuously takes tiny, 1% overhead thread snapshots behind the scenes (datadob and new relic both are javaagent)
+Datadog's Continuous Profiler continuously takes tiny, 1% overhead thread snapshots behind the scenes (datadog and new relic both are javaagent)
 
 When you create a corporate account with Datadog or New Relic, you are generated a unique, high-security cryptographic string called an API Key or License Key
 
 in k8s deployment.xml we pass api (data dog or new relic) using k8s secret which will be used by agent attached to container to send telemetry data on their cloud which can be viewed from browser with account attached to that api key.
+
+
+
+       java.lang.Throwable
+           /          \
+  java.lang.Error   java.lang.Exception
+                          /          \
+            (Checked Exceptions)   java.lang.RuntimeException
+                                         \
+                                    (Unchecked Exceptions)
+
+exceptions represent conditions an application should anticipate and catch, while errors represent fatal, unrecoverable system issues
