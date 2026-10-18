@@ -1,2 +1,7 @@
 Resilience4J with spring:
 Circuit Breaker, Retry, Rate Limiter, Time Limiter, and Bulkhead
+
+1. Singleton: One shared instance per container. Cannot hold state unique to an individual execution thread.
+2. Prototype: Fresh instance every request. If injected into a Singleton, it must use a ScopingProxyMode to function correctly.
+3. CGLIB Proxies: Spring creates a dynamic subclass of your bean at runtime to intercept method calls.
+4. Self-Invocation: Inter-method calls inside the same class completely bypass proxy boundaries, rendering annotations like @Transactional or @Async entirely useless.
