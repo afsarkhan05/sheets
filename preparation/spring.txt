@@ -5,3 +5,8 @@ Circuit Breaker, Retry, Rate Limiter, Time Limiter, and Bulkhead
 2. Prototype: Fresh instance every request. If injected into a Singleton, it must use a ScopingProxyMode to function correctly.
 3. CGLIB Proxies: Spring creates a dynamic subclass of your bean at runtime to intercept method calls.
 4. Self-Invocation: Inter-method calls inside the same class completely bypass proxy boundaries, rendering annotations like @Transactional or @Async entirely useless.
+
+2 ways to correctly use proxy
+1. either push the method into another bean so proxy works OR
+2.   @Lazy // 💡 Prevents a boot-time circular dependency crash
+    private OrderService selfProxy; 
