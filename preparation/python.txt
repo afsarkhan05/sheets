@@ -1,0 +1,212 @@
+import pandas as pd
+import copy
+import numpy as np
+
+data = ['abc', 'xyz','pqr']
+
+a = pd.DataFrame(data)
+print(a)
+
+
+em = {'employee_id':[2,4,6,9], 'names':["afsar", "nitin", "E2", "E3"],'department':["a","b","c","d"], "amount":[90,20,30,40]}
+
+a = pd.DataFrame(em)
+print(a)
+
+ma = ("afsar","Khan",2884)
+
+ma = pd.DataFrame(ma)
+print(ma)
+
+d = [{"user":"Afsar", "amount": 100}, {"user":"Zubiya", "amount": 300}]
+#a = pd.DataFrame(d)
+total = 0
+for row in d:
+    print(f'{row['user']} and Amount: {row['amount']}')
+    total = total + row['amount']
+print(total)
+
+
+a = [1, 2]
+b = [1, 2]
+
+print(a == b)    # True
+print(a is b)
+
+
+shallow_copy = copy.copy(a)
+d_copy = copy.deepcopy(a)
+
+
+
+a = [1, 2, 3]
+b = a
+c = a.copy()
+
+b.append(4)
+c.append(5)
+
+print(a)
+print(b)
+print(c)
+print(a is c)
+print(a is b)
+
+#[1,2,3] list
+#('A',2,5) tuple
+#{'A','B','C'} set
+#{ "John": 90, "Mary": 95, "Bob": 85 } dict
+
+#x = set() empty set but non-empty set {1, 2, 3}
+#x = {} empty dict
+
+names = ["John", "Mary", "Bob"]
+for i, name in enumerate(names):
+    print(i, name)
+
+
+employees = [
+    {"id": 101, "name": "John"},
+    {"id": 102, "name": "Mary"},
+    {"id": 103, "name": "Bob"}
+]
+
+for employee in employees:
+    if employee["id"] == 103:
+        print(employee)
+
+employees = {
+    101: {"name": "John"},
+    102: {"name": "Mary"},
+    103: {"name": "Bob"}
+}
+
+
+print(employees[103])
+
+
+def get_employee() -> tuple[str, int]:
+    return "John", 100000
+
+def get_scores() -> dict[str, int]:
+    return { "John": 90,"Mary": 95}
+
+def get_names() -> list[str]:
+    return ["John", "Mary", "Bob"]
+
+# *args - n number of arguments
+# **kwargs - n number of named arguments like name=a, age=90
+# kwargs - is a dictionary
+def add_all(*numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+def print_user(**kwargs):
+    print(kwargs)
+
+print_user(name="John",age=40,city="New York")
+
+# *args =tuple
+# **kwargs = dictionary
+
+if __name__ == "__main__":
+    print(add_all(1,2,3))
+
+
+# Why do we use if __name__ == "__main__":?
+# "It allows a Python file to behave differently when executed directly versus imported as a module.
+# The code inside the block runs only when the file is the entry-point script."
+
+
+
+df = pd.DataFrame({
+    'units_sold': [100, 150, 200],
+    'unit_price': [10.0, 12.5, 15.0],
+    'total_cost': [600, 800, 1200]
+})
+
+# Vectorized formula calculations
+df['total_revenue'] = df['units_sold'] * df['unit_price']
+df['profit_margin'] = (df['total_revenue'] - df['total_cost']) / df['total_revenue']
+
+print(df)
+
+
+a = [[1, 2], [3, 4]]
+b = a.copy()
+#b = copy.deepcopy(a)
+b[0].append(99)
+print(a)
+
+
+RAW_SOURCE = [
+    {"trade_id": i, "symbol": "VOO", "shares": 100, "price": 500.0}
+    for i in range(1, 11)
+]
+
+print(type(RAW_SOURCE[0]))
+
+#steeaming using generator
+#generator gives lazy loading of data using yield
+#pandas has in-build feature to load data files in chunks internally using yield only
+#db instead of full data in memory - use cursor and buffering to avoid full network traffic, memory etc
+
+#stream data to avoid memory over utilization
+# streaming generator to stream data as an when needed
+
+# Memory optimization on large file where streaming not possible due to calculation req
+# dtypes - change if ids can fit as int32, int16 from default int64 in pandas
+# try to partition the file (1gb instead of 20 gb) as parquet which is binary
+# parquet file partition can also help read specific column - reduce network traffic, memory etc
+# structure files like (e.g., date=2026-09/). If your calculation only cares about a specific month
+# chunking + parallelism - use distributed parallalism for large data like pyspark or dask
+
+#stream generator not possible - other option
+# downsize integer/float to smallest safest like int64 to int32 etc
+# partition - parquet - binary - partition pruning by selective column - folder by dates
+# Dask/PySpark
+
+#data = (x * 2 for x in range(10_000_000)) (lazy generator loading)
+#data = tuple(x * 2 for x in range(10_000_000)) (tuple creation)
+
+#[...]       → list comprehension → eager
+#(...)       → generator expression → lazy
+#tuple(...)  → materializes tuple → eager
+
+#A NumPy array takes up one single, contiguous block of memory in your computer’s RAM
+#prices = np.array([100, 200, 300], dtype=np.int32))
+#prices * 1.05
+
+
+df = pd.DataFrame({ 'name': ['Afsar', 'Zubia', 'Afsar', 'Sharfana'],
+                    'book':[2,5,1,6],
+                    'lang':['eng','eng','urdu','arabic']})
+
+a = df.groupby(['name','lang'])['book'].sum()
+print(a)
+
+
+positions = pd.DataFrame({
+    "instrument_id": [101, 102, 103, 104],
+    "quantity": [100, 200, 300, 400]
+})
+
+prices = pd.DataFrame({
+    "instrument_id": [101, 102, 103, 105],
+    "price": [50, 80, 120, np.nan]
+})
+
+
+p = positions.merge(prices, on='instrument_id', how='inner')
+print(p)
+
+print(prices['price'].isna())
+
+p=prices.fillna(999) #p=prices.fillna({"price",999})
+print(prices)
+print(p)
+
+# Gives a summary count of missing values for every single column
+#print(df.isna().sum())
