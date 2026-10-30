@@ -152,3 +152,8 @@ If queue is full AND at maxPoolSize → invoke the RejectedExecutionHandler.
 Q: "Why did PermGen get replaced with Metaspace in Java 8?"
 
 PermGen had a fixed max size (-XX:MaxPermSize), causing frequent OutOfMemoryError: PermGen space in apps with heavy classloading (e.g., app servers redeploying WARs repeatedly, or frameworks generating many dynamic proxy classes). Metaspace uses native (off-heap) memory, growing dynamically by default — removes that artificial ceiling, though you can still cap it with -XX:MaxMetaspaceSize to avoid native memory exhaustion.
+
+
+Q: "Why can two different instances of the 'same' class (same fully-qualified name) coexist in one JVM?"
+
+A class's runtime identity in the JVM is actually (fully-qualified name, ClassLoader instance) — the same class loaded by two different class loaders is treated as two distinct types, and you'll get ClassCastException: X cannot be cast to X (same name, different loader) — a classic interview "trick question" that trips people up, and a real issue in app-server/plugin architectures (OSGi, Tomcat's per-webapp loaders).
