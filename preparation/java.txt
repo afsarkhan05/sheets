@@ -16,6 +16,18 @@ G1GC vs ZGC
 G1GC => split heap into small pieces and find which one is full to act for cleaning
 ZGC => concurrently work so highly fast, scalable
 
+Heap:
+ ├── Young Generation
+ │    ├── Eden space       (new objects allocated here)
+ │    ├── Survivor S0
+ │    └── Survivor S1
+ └── Old Generation (Tenured) — long-lived objects promoted here after surviving N minor GCs
+
+Metaspace (off-heap, replaced PermGen since Java 8) — class metadata
+Stack (per-thread) — local vars, method frames
+Native/off-heap — direct ByteBuffers, JNI
+
+
 SOLID
 Single Responsibility Principle (SRP)
 Open/Closed Principle (OCP)
