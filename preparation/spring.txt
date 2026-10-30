@@ -136,3 +136,165 @@ The target method body silently never executes — no exception, no obvious erro
 Q: "Multiple aspects on the same join point — how is ordering controlled?"
 
 @Order annotation (lower value = higher precedence, runs first on the way "in" for @Before-style, last on the way "out"). Important for layering concerns correctly (e.g., security check must run before logging/transaction advice in most designs).
+
+
+
+PART D: Spring Boot Auto-Configuration — the "magic" explained
+How @SpringBootApplication actually works
+It's a meta-annotation bundling:
+
+java
+
+
+@SpringBootConfiguration  // = @Configuration
+@EnableAutoConfiguration  // the real magic
+@ComponentScan            // scans current package + sub-packages
+@EnableAutoConfiguration mechanics:
+
+Spring Boot scans META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports (older versions: spring.factories) on the classpath of every JAR dependency.
+Loads a huge list of @Configuration classes (e.g., DataSourceAutoConfiguration, KafkaAutoConfiguration, RedisAutoConfiguration).
+Each auto-config class is guarded by conditional annotations:
+@ConditionalOnClass — only activate if a specific class is on the classpath (e.g., only configure Kafka beans if KafkaTemplate.class exists).
+@ConditionalOnMissingBean — only activate if the user hasn't already defined their own bean of that type (lets you override any auto-config simply by defining your own @Bean).
+@ConditionalOnProperty — only activate based on a property value (e.g., spring.kafka.enabled=true).
+@ConditionalOnWebApplication / @ConditionalOnBean etc.
+Q: "You added a dependency but your custom @Bean isn't being picked up / is being overridden. What's happening?"
+
+Likely an ordering issue — your own @Configuration class might be processed after the auto-configuration due to @AutoConfigureAfter/@AutoConfigureBefore ordering, or you're missing @ConditionalOnMissingBean understanding (the auto-config bean might be defined with a different bean name, so both coexist, causing ambiguity — NoUniqueBeanDefinitionException). Debug via --debug flag or actuator's /actuator/conditions endpoint, which shows exactly which auto-configs were applied/excluded and why.
+
+application.properties/yml — property resolution order (ask this to show config mastery)
+Highest to lowest precedence (partial, most relevant ones):
+
+Command-line arguments (--server.port=8081)
+SPRING_APPLICATION_JSON env var
+JNDI attributes
+Java System properties (-Dserver.port=8081)
+OS environment variables
+application-{profile}.yml (profile-specific, outside jar)
+application.yml (outside jar)
+application-{profile}.yml (profile-specific, inside jar)
+application.yml (inside jar, packaged)
+@PropertySource annotations
+Default properties
+Profiles:
+
+java
+
+@Profile("prod")
+@Bean
+public DataSource prodDataSource() { ... }
+yaml
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+PART E: Spring Boot Actuator & Production-Readiness
+Key endpoints:
+
+/actuator/health — liveness/readiness (composable HealthIndicators — DB, Kafka, disk space, custom checks).
+/actuator/metrics — integrates with Micrometer → exports to Prometheus/Datadog/CloudWatch.
+/actuator/env — resolved property sources (great for debugging config precedence issues above).
+/actuator/beans — full bean graph.
+/actuator/threaddump / /actuator/heapdump — live diagnostics without SSH-ing in with jstack/jmap.
+Q: "Difference between liveness and readiness probes, and why does it matter for Kubernetes?"
+
+Liveness = "is the app in a broken, unrecoverable state and should be killed/restarted?" (e.g., deadlock). Readiness = "can the app currently serve traffic?" (e.g., temporarily can't reach DB during a connection pool reset, but the process is fine — don't restart, just stop routing traffic). Conflating them causes crash loops: if you mark "DB unreachable" as a liveness failure, Kubernetes keeps killing/restarting a perfectly healthy pod while the DB is just temporarily down, worsening the outage rather than letting it recover gracefully.
+
+java
+
+@Component
+public class DownstreamHealthIndicator implements HealthIndicator {
+    public Health health() {
+        return isDownstreamUp() ? Health.up().build() 
+                                 : Health.down().withDetail("reason", "timeout").build();
+    }
+}
+PART F: Exception Handling & Validation
+java
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(ResourceNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleNotFound(ResourceNotFoundException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(new ErrorResponse(ex.getMessage()));
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>> handleValidation(MethodArgumentNotValidException ex) {
+        Map<String, String> errors = ex.getBindingResult().getFieldErrors().stream()
+            .collect(Collectors.toMap(FieldError::getField, FieldError::getDefaultMessage));
+        return ResponseEntity.badRequest().body(errors);
+    }
+}
+java
+
+
+public record CreateUserRequest(
+    @NotBlank @Size(max = 50) String name,
+    @Email String email,
+    @Min(18) int age
+) {}
+
+@PostMapping("/users")
+public ResponseEntity<User> create(@Valid @RequestBody CreateUserRequest req) { ... }
+Q: "@Valid vs @Validated — what's the real difference?"
+
+@Valid is standard Bean Validation (JSR-380), triggers validation, works for nested object graphs. @Validated is a Spring-specific variant that adds group-based validation support (@Validated(CreateGroup.class)) and — critically — is what enables method-level validation on non-controller beans (e.g., validating @Service method parameters via AOP, since @Valid alone on a plain @Service method parameter does nothing without @Validated at the class level to trigger the validation proxy).
+
+PART G: Spring Boot Startup — What Actually Happens
+SpringApplication.run() creates a ConfigurableApplicationContext (type depends on classpath: AnnotationConfigServletWebServerApplicationContext for a servlet web app, reactive variant for WebFlux, plain for non-web).
+Prepares the Environment (profiles, property sources resolved).
+Runs ApplicationContextInitializers.
+Loads bean definitions (component scan + auto-configuration conditional evaluation).
+Instantiates and wires all singleton, non-lazy beans (this is where most startup time goes — DB connection pool init, Kafka consumer group join, etc.).
+Starts embedded servlet container (Tomcat/Jetty/Undertow) last (so it only starts accepting traffic once the context is mostly ready) — though note readiness vs this nuance is a known complexity in rolling deployments.
+Runs CommandLineRunner/ApplicationRunner beans.
+Publishes ApplicationReadyEvent.
+Q: "How would you speed up a slow-starting Spring Boot app (e.g., for faster Kubernetes rollouts / local dev loops)?"
+
+Lazy initialization (spring.main.lazy-initialization=true) — beans created on first use, not eagerly at startup (tradeoff: shifts cost to first request, hides startup errors until later).
+Reduce component-scan scope / unnecessary auto-configurations (@SpringBootApplication(exclude = {...})).
+Use Spring Boot's build-time AOT processing + GraalVM native image (Spring Boot 3+) — compiles ahead-of-time, near-instant startup (ms instead of seconds), ideal for serverless/Cloud Run-style scale-to-zero workloads — very relevant talking point if GCP Cloud Run comes up.
+Profile with --debug or spring.boot.admin startup-time breakdown / ApplicationStartup API to find the slowest beans.
+PART H: @Transactional Deep Dive (bridges into next topic — JPA/Hibernate)
+Propagation types (classic matrix question):
+
+PROPAGATION
+BEHAVIOR
+REQUIRED (default)
+Join existing transaction, or create new if none exists
+REQUIRES_NEW
+Always suspend current tx (if any) and start a brand new independent one
+NESTED
+Creates a savepoint within the existing tx — rollback only unwinds to the savepoint
+SUPPORTS
+Join if exists, else run non-transactionally
+MANDATORY
+Must run within an existing tx, else throws exception
+NEVER / NOT_SUPPORTED
+Must NOT run in a tx / suspends any existing tx
+
+
+Q: "When would you use REQUIRES_NEW? Give a real scenario."
+
+Audit logging: you want the audit record to be committed even if the main business transaction rolls back (e.g., logging a failed payment attempt). Since REQUIRES_NEW suspends the outer transaction and commits independently, the audit log survives regardless of the outer transaction's fate.
+
+Q: "Default rollback behavior — what triggers automatic rollback, and the classic gotcha?"
+
+By default, Spring only rolls back on unchecked exceptions (RuntimeException/Error), not checked exceptions! If you throw a checked Exception inside a @Transactional method, the transaction commits anyway unless you explicitly configure @Transactional(rollbackFor = Exception.class). This trips up a huge number of developers who assume "any exception rolls back."
+
+Isolation levels (tie directly into next topic on Hibernate/DB):
+READ_UNCOMMITTED → READ_COMMITTED (most DB defaults, e.g. Postgres) → REPEATABLE_READ (MySQL InnoDB default) → SERIALIZABLE.
+
+🎯 Quick-Fire Quiz — Topic 3
+Why does field injection make unit testing harder, concretely (what has to change in your test code)?
+You inject a prototype-scoped bean into a singleton bean via plain @Autowired — what's wrong, and name 2 fixes.
+Explain exactly why this.someTransactionalMethod() called from within the same class silently skips the transaction.
+CGLIB vs JDK dynamic proxy — what 2 structural requirements does CGLIB impose on your class/methods?
+A checked exception is thrown inside a @Transactional method with default settings — does it roll back? Why/why not?
+What's the practical production difference between a failing liveness probe and a failing readiness probe on Kubernetes?
+How does @ConditionalOnMissingBean let you override Spring Boot's auto-configured beans without any XML or exclude annotations?
+Why would REQUIRES_NEW be the right propagation choice for writing an audit log entry, specifically?
