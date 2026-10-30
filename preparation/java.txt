@@ -147,3 +147,8 @@ If activeThreads < corePoolSize → create new thread (even if idle threads exis
 Else, try to queue the task.
 If the queue is full AND activeThreads < maxPoolSize → create a new thread beyond core size.
 If queue is full AND at maxPoolSize → invoke the RejectedExecutionHandler.
+
+
+Q: "Why did PermGen get replaced with Metaspace in Java 8?"
+
+PermGen had a fixed max size (-XX:MaxPermSize), causing frequent OutOfMemoryError: PermGen space in apps with heavy classloading (e.g., app servers redeploying WARs repeatedly, or frameworks generating many dynamic proxy classes). Metaspace uses native (off-heap) memory, growing dynamically by default — removes that artificial ceiling, though you can still cap it with -XX:MaxMetaspaceSize to avoid native memory exhaustion.
