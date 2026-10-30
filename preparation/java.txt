@@ -124,3 +124,14 @@ public void calculate(int x) { ... }
 public int calculate(int x) { ... } // ❌ COMPILER ERROR! Duplicate method signature.
 
 overloading - if only changing return type, it will fail, must change the parameter or parameter type
+
+new ThreadPoolExecutor(
+    corePoolSize, maxPoolSize, keepAliveTime, TimeUnit.SECONDS,
+    new ArrayBlockingQueue<>(boundedCapacity),     // bounded queue
+    new ThreadPoolExecutor.CallerRunsPolicy()        // explicit rejection policy
+);
+
+If activeThreads < corePoolSize → create new thread (even if idle threads exist).
+Else, try to queue the task.
+If the queue is full AND activeThreads < maxPoolSize → create a new thread beyond core size.
+If queue is full AND at maxPoolSize → invoke the RejectedExecutionHandler.
