@@ -10,3 +10,129 @@ Circuit Breaker, Retry, Rate Limiter, Time Limiter, and Bulkhead
 1. either push the method into another bean so proxy works OR
 2.   @Lazy // 💡 Prevents a boot-time circular dependency crash
     private OrderService selfProxy; 
+
+
+Q: "Why do senior engineers insist on constructor injection over field injection?"
+
+Immutability — fields can be final, guaranteeing they're set once and never reassigned.
+Fail-fast — missing dependency fails at object construction time (compile-time if you forget to pass arg, or immediate startup failure), vs field injection which creates a half-built object that fails later/mysteriously (e.g., NullPointerException at first use, not at startup).
+Testability — you can new OrderService(mockPaymentClient, mockRepo) in a plain unit test with no Spring context needed at all. Field injection requires reflection hacks (ReflectionTestUtils) or a full Spring context in tests.
+Reveals design smells — a constructor with 8 parameters screams "this class violates Single Responsibility Principle"; field injection hides this because there's no visual pile-up.
+Prevents circular dependency issues from being silently "resolved" — constructor injection fails fast on circular deps; field/setter injection can mask them via early bean exposure (see below).
+3. Bean Scopes
+SCOPE
+BEHAVIOR
+singleton (default)
+One instance per Spring container
+prototype
+New instance every time it's requested/injected
+request
+One instance per HTTP request (web-aware context)
+session
+One instance per HTTP session
+application
+One instance per ServletContext
+websocket
+One instance per WebSocket session
+
+
+Q: "Classic gotcha — injecting a prototype bean into a singleton bean. What goes wrong?"
+
+The singleton is created once, so its prototype dependency is also injected once at that time — you get the same prototype instance forever, defeating the purpose. Fix options:
+
+Lookup method injection (@Lookup) — Spring overrides an abstract method via CGLIB to fetch a fresh prototype bean each call.
+Inject an ObjectProvider<T>/ObjectFactory<T> and call .getObject() each time you need a fresh instance.
+Inject the ApplicationContext itself and call getBean() (less clean, more coupling).
+java
+
+@Component
+public abstract class SingletonService {
+    public void process() {
+        PrototypeBean bean = createPrototypeBean(); // fresh instance each call
+        bean.doWork();
+    }
+    @Lookup
+    protected abstract PrototypeBean createPrototypeBean();
+}
+PART B: Bean Lifecycle — a must-know diagram for seniors
+
+1. Bean definition loaded (from @Component scan, @Bean methods, XML)
+2. Instantiation (constructor called)
+3. Populate properties (dependency injection - setter/field)
+4. Aware interfaces invoked (BeanNameAware, BeanFactoryAware, ApplicationContextAware...)
+5. BeanPostProcessor.postProcessBeforeInitialization()  <-- @Autowired, @Value processing happens here (AutowiredAnnotationBeanPostProcessor)
+6. @PostConstruct / InitializingBean.afterPropertiesSet()
+7. Custom init-method (if specified)
+8. BeanPostProcessor.postProcessAfterInitialization()  <-- AOP proxies created HERE (e.g., for @Transactional, @Async, @Cacheable)
+9. Bean is ready and in use
+10. (On shutdown) @PreDestroy / DisposableBean.destroy() / custom destroy-method
+Q: "Where exactly does Spring create a proxy for @Transactional, and why does that location matter?"
+
+In postProcessAfterInitialization — after the actual target bean has been fully constructed and initialized. This means the object your application code actually gets injected (from @Autowired) is a proxy wrapping the real bean, not the real bean itself. This is foundational for understanding the self-invocation problem (below).
+
+The infamous "self-invocation breaks @Transactional/@Async/@Cacheable" gotcha
+java
+
+@Service
+public class OrderService {
+    public void placeOrder(Order order) {
+        this.saveOrder(order); // calling "this.saveOrder" bypasses the proxy entirely!
+    }
+
+    @Transactional
+    public void saveOrder(Order order) { /* ... */ }
+}
+Q: "Why doesn't @Transactional apply here?"
+
+Spring AOP (default: proxy-based, not compile-time weaving) only intercepts calls that go through the proxy object — i.e., calls arriving from outside the bean. A call via this.method() from inside the same object calls the method directly on the raw target, completely bypassing the proxy, so the transactional advice never triggers. This is one of THE most common real production bugs with Spring, and a favorite interview question.
+Fixes:
+
+Move the @Transactional method to a separate bean/service and inject that.
+Self-inject via @Autowired a reference to itself (get the proxy back) — works but is a code smell.
+Use AopContext.currentProxy() after enabling exposeProxy=true — ((OrderService) AopContext.currentProxy()).saveOrder(order).
+JDK Dynamic Proxy vs CGLIB — when does Spring pick which?
+If the bean implements at least one interface → JDK dynamic proxy (implements the same interfaces, java.lang.reflect.Proxy).
+If the bean has no interface (concrete class only) → CGLIB proxy (subclasses the target class at runtime via bytecode generation).
+Spring Boot 2+ defaults to always using CGLIB (spring.aop.proxy-target-class=true by default) for consistency, even when interfaces exist.
+Q: "Why would CGLIB proxying fail, and what's the fix?"
+
+CGLIB works by subclassing — so:
+
+The target class cannot be final (can't subclass a final class).
+The method being proxied cannot be private or final (can't override it).
+The class needs a default/accessible constructor (CGLIB historically needed this; modern versions with objenesis can bypass it, but it's still best practice).
+PART C: AOP (Aspect-Oriented Programming)
+java
+
+
+@Aspect
+@Component
+public class LoggingAspect {
+
+    @Pointcut("execution(* com.example.service.*.*(..))")
+    public void serviceLayer() {}
+
+    @Before("serviceLayer()")
+    public void logBefore(JoinPoint jp) {
+        log.info("Entering: {}", jp.getSignature());
+    }
+
+    @Around("@annotation(com.example.Timed)")
+    public Object logExecutionTime(ProceedingJoinPoint pjp) throws Throwable {
+        long start = System.nanoTime();
+        try {
+            return pjp.proceed(); // must call this, or the target method NEVER executes!
+        } finally {
+            log.info("{} took {}ms", pjp.getSignature(), (System.nanoTime()-start)/1_000_000);
+        }
+    }
+}
+Advice types: @Before, @AfterReturning, @AfterThrowing, @After (finally-like), @Around (most powerful — full control, can short-circuit, modify return value, swallow exceptions).
+
+Q: "What's the danger of forgetting pjp.proceed() in an @Around advice?"
+
+The target method body silently never executes — no exception, no obvious error, just missing behavior. Classic debugging nightmare — always a good "describe a bug you've hit" interview story if you have one.
+
+Q: "Multiple aspects on the same join point — how is ordering controlled?"
+
+@Order annotation (lower value = higher precedence, runs first on the way "in" for @Before-style, last on the way "out"). Important for layering concerns correctly (e.g., security check must run before logging/transaction advice in most designs).
