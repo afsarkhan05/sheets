@@ -128,6 +128,10 @@ When a production server spikes to 100% CPU, freezes completely, or runs out of 
 • Old Java: High Latency + Memory Bloat because every thread interaction forces a context switch into Kernel Space, backed by rigid 1MB Native Stacks.
 • Modern Java: High Throughput + High Efficiency because thread interactions are managed entirely in User Space as elastic, dynamic Heap Objects, keeping the physical Carrier Threads running at 100% capacity.
 
+• Metaspace (PermGen) = The Container Image: Just like a Docker/K8s image, Metaspace holds the immutable blueprint. It contains the compiled bytecode, class structures, method definitions, and the instructions on how an object should behave. It is read-only during normal execution; you don't "run" code inside the image itself.
+
+• Heap Objects = The Running Pods/Containers: When K8s spins up 5 replicas of a pod from a single image, it allocates memory, CPU, and a distinct lifecycle to each container. Similarly, when you call new MyClass(), the JVM uses the Metaspace "image" to stamp out a living, breathing object instance on the Heap. You can have thousands of unique object instances (containers) all sharing and referencing a single class definition (image).
+
 
 find process id then thread id then thread dump using profiler then convert thread id to hex and find that hex in thread dump to figure out what's happening
 also heap dump will give you each object on heap and how much memory it's consuming
