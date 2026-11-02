@@ -165,3 +165,8 @@ in k8s deployment.xml we pass api (data dog or new relic) using k8s secret which
                                     (Unchecked Exceptions)
 
 exceptions represent conditions an application should anticipate and catch, while errors represent fatal, unrecoverable system issues
+
+
+stackoverflow - when method keep calling itself, creating frames over frame and consume all the memory
+oom - when there is no more heap memory left on heap to create more object
+permgen - when metaspace memory is full due to loading classes more than memory available
