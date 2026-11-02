@@ -87,6 +87,19 @@ How it protects data?	  Freezes the clock (Stop-The-World).	                    
 Pause Time?	            Low (10ms to 200ms depending on heap size).	                  Ultra-Low (< 1ms) regardless of whether your 
                                                                                       heap is 10GB or 16 Terabytes!
 
+When ZGC decides to compact a page (region) to free up memory, it copies live objects to a new page.
+• Because the object moves to a completely new physical memory address, the old reference pointer must change.
+• To prevent application threads from breaking, ZGC leaves behind a forwarding table mapping the old address to the new address.
+
+
+"Self-Healing" via Load Barriers
+
+Instead of pausing the entire application to update every single pointer in memory at once, ZGC updates them on the fly (concurrently) using a Load Barrier.
+When your application code tries to read a reference from memory:
+1. The Check: The load barrier checks the "color" bits of the pointer. If the bits show the pointer is already Remapped, it reads it instantly with zero overhead.
+2. The Catch: If the bits indicate a relocation is happening, the barrier checks the forwarding table.
+3. The Fix: If the object has been moved, the load barrier dynamically updates (heals) the reference pointer in place to point to the new address and changes its color to Remapped.
+
 
 While everything you create with the new keyword lands on the Java Heap, there is a massive chunk of your server's RAM used by Java that sits completely outside the Heap. This is called Off-Heap Memory.
 
