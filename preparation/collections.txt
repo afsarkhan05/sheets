@@ -104,6 +104,11 @@ When your application code tries to read a reference from memory:
 • The reference mapping (Forwarding Table): Deleted at the start of the next GC cycle, once ZGC guarantees every pointer has been updated.
 
 
+• G1GC (The Batch Processor): G1GC tries to be smart about when it pauses your application. It acts like a city cleanup crew that monitors garbage bins (regions) and waits until they are full. When it's time to empty them, it temporarily blocks the street (stops the clock), quickly throws the good stuff into new bins (Eden, Survivor S1/S2, Old), and deletes the garbage before letting traffic move again.
+• ZGC (The Continuous Flow): ZGC assumes that stopping traffic is unacceptable. It acts like a cleanup crew that works alongside active traffic. It moves objects to new pages on the fly. If a car (your app thread) happens to run into an old address, the car itself instantly updates its own map (self-healing via the load barrier) without dropping its speed.
+
+zgc and g1gc is zgc continuously and concurrently working and keep moving object to other pages and delete unused object to free space without stoping the clock or app. Similarly g1gc working in 2 ways, first working on region and finding and classify object as live, s1,s2, or long and keep region metadata and when it needs GC process to run due to low memory etc it will find the top regions from metadata which can be cleaned up and stop the clock and freeze the app and delete those object and move object and fix their new pointer ref?
+
 While everything you create with the new keyword lands on the Java Heap, there is a massive chunk of your server's RAM used by Java that sits completely outside the Heap. This is called Off-Heap Memory.
 
 A. Metaspace (The Blueprint Library)
