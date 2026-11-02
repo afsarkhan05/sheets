@@ -132,6 +132,8 @@ When a production server spikes to 100% CPU, freezes completely, or runs out of 
 
 • Heap Objects = The Running Pods/Containers: When K8s spins up 5 replicas of a pod from a single image, it allocates memory, CPU, and a distinct lifecycle to each container. Similarly, when you call new MyClass(), the JVM uses the Metaspace "image" to stamp out a living, breathing object instance on the Heap. You can have thousands of unique object instances (containers) all sharing and referencing a single class definition (image).
 
+JMM consists of Metaspace (class, bytecode, blueprint as metadata) , Heap (All types of object, static variable, string pool etc), Stack (all local method frames, local primitive variable, local object (but only ref pointer of heap))
+
 
 find process id then thread id then thread dump using profiler then convert thread id to hex and find that hex in thread dump to figure out what's happening
 also heap dump will give you each object on heap and how much memory it's consuming
