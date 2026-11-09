@@ -280,6 +280,8 @@ payment-service
   ├── reads traceparent header
   └── creates another child span
 
+Datadog and New Relic generally export telemetry through secure network connections, commonly HTTPS or gRPC. OpenTelemetry commonly uses OTLP over HTTP or gRPC. The trace ID is propagated separately through HTTP headers, gRPC metadata, or message headers between services. Prometheus usually collects metrics by making HTTP requests to the Actuator endpoint.
+
 java
 
 @Component
