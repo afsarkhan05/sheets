@@ -261,6 +261,22 @@ Spring Boot commonly uses Micrometer for application metrics. Prometheus can scr
 
 We can use Datadog or New Relic as an integrated observability platform, where the Java APM agent collects application traces and JVM data, while the Kubernetes agent collects node, pod, container, and log data. Alternatively, we can build an open-source stack using Prometheus and Grafana for metrics, Loki or Elasticsearch for logs, and OpenTelemetry with Tempo or Jaeger for traces. Both approaches can provide metrics, logs, traces, dashboards, and alerts, but Datadog/New Relic provide more functionality out of the box, while the Prometheus/Grafana approach requires more components and operational effort.
 
+Important Flow
+
+api-gateway
+  ├── creates span
+  ├── adds traceparent header
+  └── calls order-service
+
+order-service
+  ├── reads traceparent header
+  ├── continues same trace
+  ├── creates its own child span
+  └── calls payment-service
+
+payment-service
+  ├── reads traceparent header
+  └── creates another child span
 
 java
 
