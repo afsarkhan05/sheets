@@ -95,6 +95,28 @@ Micrometer is the metrics library, and it ships the registries (Datadog, Prometh
 No real registry on the classpath: Boot falls back to an in-memory SimpleMeterRegistry, and /actuator/metrics reads that.
 Datadog (or other) registry added: Boot uses that registry instead of the in-memory fallback. /actuator/metrics still works, reading from the same registries.
 
+ basically for trace, logs we need to add APM javaagent for datadog which will take care of them and datadog registry will only send metrics collected by micrometer, so how trace, logs, sql works?
+
+The one correction is that the Java agent jar doesn’t talk to Datadog’s cloud on its own. Traces and logs normally go through a Datadog Agent (a separate process or container) that forwards them.
+
+Your Spring app
+  ├─ Micrometer Datadog registry ──HTTPS──────────────► Datadog cloud   (metrics, direct, no agent)
+  └─ dd-java-agent.jar (inside JVM)
+        spans ──► Datadog Agent (localhost:8126) ──────► Datadog cloud   (traces)
+        log files ◄── tailed by Datadog Agent ─────────► Datadog cloud   (logs)
+
+Traces and SQL
+
+You start the JVM with -javaagent:dd-java-agent.jar. At startup it rewrites library code (bytecode instrumentation) for servlets, JDBC, Redis clients, HTTP clients and more. You don’t change your own code.
+Each incoming request becomes a trace. Inside it, every instrumented call (a SQL query, a Redis command, an Ollama call) becomes a span with timing.
+SQL appears as JDBC spans carrying the query text (parameters obfuscated by default) and duration. That’s how you find slow queries.
+The agent sends the spans to the Datadog Agent on port 8126, which forwards them.
+
+Logs have two separate parts:
+
+Correlation: with -Ddd.logs.injection=true, the Java agent adds the trace and span IDs to your log context (MDC). Include them in your Logback pattern, and Datadog can link a log line to its trace.
+Shipping: the Java agent doesn’t send logs itself. The Datadog Agent tails your log file (the one your logback-spring.xml writes) with log collection turned on, or you use a Logback appender that posts to Datadog’s log intake.
+
 Bottom Line:
 
 so be it prothemeus or datadog or new relic or actuator all are giving same metric collected by micrometer but these apps possesse different ways to work on that data like graphs, alerts, monitoring etc, some are free and some paid
