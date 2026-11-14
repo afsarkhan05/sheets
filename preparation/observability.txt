@@ -95,4 +95,6 @@ Micrometer is the metrics library, and it ships the registries (Datadog, Prometh
 No real registry on the classpath: Boot falls back to an in-memory SimpleMeterRegistry, and /actuator/metrics reads that.
 Datadog (or other) registry added: Boot uses that registry instead of the in-memory fallback. /actuator/metrics still works, reading from the same registries.
 
+Bottom Line:
 
+so be it prothemeus or datadog or new relic or actuator all are giving same metric collected by micrometer but these apps possesse different ways to work on that data like graphs, alerts, monitoring etc, some are free and some paid
