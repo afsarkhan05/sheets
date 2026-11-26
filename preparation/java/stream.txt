@@ -1,0 +1,28 @@
+::::::::::::::::::::::::: stream ::::::::::::::::::::::::::::::::::
+
+Stream (Conveyer Belt Example)
+1. Pipeline: Source ➡️ Intermediate (Lazy) ➡️ Terminal (Eager).
+2. Memory: Original data is never mutated; new collections are allocated at the end.
+3. map vs flatMap: map is 1-to-1 transformation; flatMap is 1-to-many (flattens a stream of streams).
+4. Primitives: Use IntStream or LongStream to avoid the heap overhead of number boxing.
+Streams are more for maintainability and readability than speed or memory.
+
+filter, map, collect(Collectors.toList()), distinct(), sorted() (Always prefer filter before sort), groupBy
+
+
+- terminal operation which returns something (count, foreach, collect)
+- intermediate operation returns stream (map, filter, limit, sorted)
+
+map vs flatMap
+map -> tranform input of one type to output of another type (list stream to list etc)
+flatMap -> it flaten the streams into single stream (nested list of stream converted to single stream)
+
+Intermediate operation::
+generate -> will return infite steam
+distinct -> will return distinct collection using stream
+sorted -> sort the list
+groupBy -> group by the list
+limit ->
+skip
+
+Optional -> This is to avoid nullPointer (get, isEmpty, isPresent, Optinal.ofNullable())

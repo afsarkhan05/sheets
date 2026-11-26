@@ -28,3 +28,8 @@ Kafka invokes a specific Linux system call called sendfile (or transferTo in Jav
 This tells the OS to bypass Kafka's software layer completely:
 
 SSD/HDD -> RAM -> Page Cache (Which is part of RAM) -> CPU Cache L1/L2/L3 -> Registers
+
+Topics creates:  kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic truckevent  kafka-topics.sh --list --zookeeper localhost:2181
+
+bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic my_topic  --from-beginning
+bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic my_topic   bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic

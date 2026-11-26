@@ -1,61 +1,40 @@
-Everything in java is either Array or HashMap
-- HashSet -> internally use hashmap
-- ArrayList / Vector -> Array (Contigious memory block)
-- LinkedList -> Objects are scattered on heap so locating them takes time by cpu so slow
-- TreeMap / TreeSet -> Use Red-Black Tree
+Garbage collection - Automatic once object/variable has no reference
+1 Method Memory - variable, class , method names plus all static variable name and value stored
+2 Stack Memory - All method level variables are stored
+3 Heap Memory - All Instance and instance variables are stored
+4 PC Register - Every thread has specific memory location
+4 String pool
 
-• Need fast sequential reading or random access? Use ArrayList.
-• Need instant unique lookups? Use HashMap / HashSet.
-• Need data permanently sorted in memory? Use TreeMap.
-• Need to process items by urgency score/rank? Use PriorityQueue
+metaspace = static block and variables
+heap (gc) = all objects, instance variables
+stack = local variables, local object reference only, primitive
+string pool = specialized heap area for string pools object
 
-use -> Deque<String> stack = new ArrayDeque<>();
-instead of Stack as pop/push/peek methods are synchronized as Stack is build on the top of Vector so performance hit.
+G1GC vs ZGC
+G1GC => split heap into small pieces and find which one is full to act for cleaning
+ZGC => concurrently work so highly fast, scalable
 
-ConcurrentHashMap -> global thread safe map.
-Modern ConcurrentHashMap uses Lock Striping via fine-grained Java synchronized blocks and low-level Compare-And-Swap (CAS) CPU instructions.
-HashMap - lock the whole object, slow performance, here only specific bucket (low level) is locked so faster 
+Heap:
+ ├── Young Generation
+ │    ├── Eden space       (new objects allocated here)
+ │    ├── Survivor S0
+ │    └── Survivor S1
+ └── Old Generation (Tenured) — long-lived objects promoted here after surviving N minor GCs
 
-CopyOnWriteArrayList -> inside this collection, the raw array is marked as volatile. This ensures that any change made to the array reference is instantly visible to all other CPU cores.
+Metaspace (off-heap, replaced PermGen since Java 8) — class metadata
+Stack (per-thread) — local vars, method frames
+Native/off-heap — direct ByteBuffers, JNI
 
-The Copy-On-Write Mechanic: The collection treats its internal array as completely immutable. When a thread wants to modify the list (e.g., list.add("New Config")), Java leaves the existing array completely untouched for reading threads. Instead, it allocates a brand-new copy of the array on the heap, makes the modification there, and then flits the master pointer to point to the new array.
 
-1. Single thread or standard request scope? Use ArrayList or HashMap.
-2. Shared global data structure with constant writes/reads? Use ConcurrentHashMap.
-3. Global list that is updated once a day but read millions of times? Use CopyOnWriteArrayList.
-4. Piping jobs between distinct thread groups? Use a BlockingQueue
+Q: "Why did PermGen get replaced with Metaspace in Java 8?"
+PermGen had a fixed max size (-XX:MaxPermSize), causing frequent OutOfMemoryError: PermGen space in apps with heavy classloading (e.g., app servers redeploying WARs repeatedly, or frameworks generating many dynamic proxy classes). Metaspace uses native (off-heap) memory, growing dynamically by default — removes that artificial ceiling, though you can still cap it with -XX:MaxMetaspaceSize to avoid native memory exhaustion.
 
-• transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization(marker interface) Skip) 
+Q: "Why can two different instances of the 'same' class (same fully-qualified name) coexist in one JVM?"
+A class's runtime identity in the JVM is actually (fully-qualified name, ClassLoader instance) — the same class loaded by two different class loaders is treated as two distinct types, and you'll get ClassCastException: X cannot be cast to X (same name, different loader) — a classic interview "trick question" that trips people up, and a real issue in app-server/plugin architectures (OSGi, Tomcat's per-webapp loaders).
+
+• transient belongs to the world of Serialization (saving objects to disk or sending them over a network - The Serialization(marker interface) Skip)
 • volatile belongs to the world of Concurrency (multi-threading, CPU caches, and memory visibility)
 
-"If I have a volatile int counter = 0; and multiple threads call counter++, is it thread-safe?"
-- NO, volatile only guarantees visibility (reading the latest value). It does not guarantee atomicity (protecting a multi-step operation)
-- The Fix: For calculations, you must use synchronized blocks or atomic classes like AtomicInteger
-
-Top Marker Interface:
-Serializable, Cloneable
-The clone() method does NOT come from the Cloneable interface. It comes from the java.lang.Object base class
-
-functional interface:
-Runnable, Callable
-Predicate, Function, Consumer etc
-
-Think of a Future like a claim ticket at a coat check:
-1. You hand your Callable worker to a thread pool.
-2. The pool immediately hands you back a Future object on the heap (your claim ticket).
-3. The background thread goes off to do the math.
-4. Meanwhile, your main thread can continue running other code.
-5. When your main thread finally needs the data, it calls future.get(). If the background thread is finished, it pulls the calculated object off the heap and hands it to you. If it's still working, your main thread politely pauses and waits until the data is born.
-
-Thread.join() is an explicit command that tells the currently executing thread (usually your Main Thread) to freeze and wait until a specific background thread finishes its work completely.
-
-so basically thread.join will wait for child thread to finish and freezes the main thread and won't move until other threads finished.
-
-whereas, callable future will give you a heap pointer of object which will be a result of child thread once finishes, when you call future.get jvm actually trying to give you data available on heap under that pointer object?
-
-Instead of forcing the main thread to stand there and wait with .get(), CompletableFuture allows you to attach a callback function (a Functional Interface worker!) directly onto the heap container
-
-You tell the JVM: "Hey, Main Thread is moving on to do other things. Background Thread, the split-second you finish creating that object on the heap, automatically pass it to this next worker to handle it. Do not bother the main thread!"
 
 G1GC (Garbage First - Then delete)
 1. Concurrent Marking (Live Background): While your Spring Boot code is handling API requests, G1GC background threads are quietly marking which objects are alive across the regions. (Zero pause time here!)
@@ -71,7 +50,7 @@ ZGC solves this by inventing Colored Pointers.
 On a 64-bit modern computer server, a standard memory pointer address only needs about 42 to 44 bits to physically locate any spot in RAM. The rest of the bits are usually wasted zeroes.
 ZGC steals 4 of those empty bits inside every object reference pointer and uses them as physical color flags (e.g., Marked0, Marked1, Remapped).
 
-G1GC for low memory because, it stop the watch so no new object get created during that time of clean up. But if we use ZGC on low memory size which 
+G1GC for low memory because, it stop the watch so no new object get created during that time of clean up. But if we use ZGC on low memory size which
 continuously do cleaning without stop-watch means during cleaning if more objects are getting created then destroyed we will end of OOM error.
 
 
@@ -80,11 +59,11 @@ Live - S1 - S2 (Survivor) - Long /Old
 
 
 Feature	                                            G1GC	                                                ZGC
-Cleaning Style	         Pauses the application to copy                               Copies objects concurrently while your 
+Cleaning Style	         Pauses the application to copy                               Copies objects concurrently while your
                         objects to fresh regions.	                                    application threads are running.
-How it protects data?	  Freezes the clock (Stop-The-World).	                          Uses Colored Pointers and Load Barriers 
+How it protects data?	  Freezes the clock (Stop-The-World).	                          Uses Colored Pointers and Load Barriers
                                                                                       to self-heal references on the fly.
-Pause Time?	            Low (10ms to 200ms depending on heap size).	                  Ultra-Low (< 1ms) regardless of whether your 
+Pause Time?	            Low (10ms to 200ms depending on heap size).	                  Ultra-Low (< 1ms) regardless of whether your
                                                                                       heap is 10GB or 16 Terabytes!
 
 When ZGC decides to compact a page (region) to free up memory, it copies live objects to a new page.
@@ -154,19 +133,3 @@ When you create a corporate account with Datadog or New Relic, you are generated
 
 in k8s deployment.xml we pass api (data dog or new relic) using k8s secret which will be used by agent attached to container to send telemetry data on their cloud which can be viewed from browser with account attached to that api key.
 
-
-
-       java.lang.Throwable
-           /          \
-  java.lang.Error   java.lang.Exception
-                          /          \
-            (Checked Exceptions)   java.lang.RuntimeException
-                                         \
-                                    (Unchecked Exceptions)
-
-exceptions represent conditions an application should anticipate and catch, while errors represent fatal, unrecoverable system issues
-
-
-stackoverflow - when method keep calling itself, creating frames over frame and consume all the memory
-oom - when there is no more heap memory left on heap to create more object
-permgen - when metaspace memory is full due to loading classes more than memory available

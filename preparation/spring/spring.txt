@@ -1,3 +1,5 @@
+::::::::::::::::::::::::: Resilience4J ::::::::::::::::::::::::::::::::
+
 Resilience4J with spring:
 Circuit Breaker, Retry, Rate Limiter, Time Limiter, and Bulkhead
 
@@ -19,21 +21,13 @@ Fail-fast — missing dependency fails at object construction time (compile-time
 Testability — you can new OrderService(mockPaymentClient, mockRepo) in a plain unit test with no Spring context needed at all. Field injection requires reflection hacks (ReflectionTestUtils) or a full Spring context in tests.
 Reveals design smells — a constructor with 8 parameters screams "this class violates Single Responsibility Principle"; field injection hides this because there's no visual pile-up.
 Prevents circular dependency issues from being silently "resolved" — constructor injection fails fast on circular deps; field/setter injection can mask them via early bean exposure (see below).
-3. Bean Scopes
-SCOPE
-BEHAVIOR
-singleton (default)
-One instance per Spring container
-prototype
-New instance every time it's requested/injected
-request
-One instance per HTTP request (web-aware context)
-session
-One instance per HTTP session
-application
-One instance per ServletContext
-websocket
-One instance per WebSocket session
+3. Bean Scopes              SCOPE BEHAVIOR
+singleton (default)         One instance per Spring container
+prototype                   New instance every time it's requested/injected
+request                     One instance per HTTP request (web-aware context)
+session                     One instance per HTTP session
+application                 One instance per ServletContext
+websocket                   One instance per WebSocket session
 
 
 Q: "Classic gotcha — injecting a prototype bean into a singleton bean. What goes wrong?"
@@ -255,21 +249,13 @@ Profile with --debug or spring.boot.admin startup-time breakdown / ApplicationSt
 PART H: @Transactional Deep Dive (bridges into next topic — JPA/Hibernate)
 Propagation types (classic matrix question):
 
-PROPAGATION
-BEHAVIOR
-REQUIRED (default)
-Join existing transaction, or create new if none exists
-REQUIRES_NEW
-Always suspend current tx (if any) and start a brand new independent one
-NESTED
-Creates a savepoint within the existing tx — rollback only unwinds to the savepoint
-SUPPORTS
-Join if exists, else run non-transactionally
-MANDATORY
-Must run within an existing tx, else throws exception
-NEVER / NOT_SUPPORTED
-Must NOT run in a tx / suspends any existing tx
-
+PROPAGATION             BEHAVIOR
+REQUIRED (default)      Join existing transaction, or create new if none exists
+REQUIRES_NEW            Always suspend current tx (if any) and start a brand new independent one
+NESTED                  Creates a savepoint within the existing tx — rollback only unwinds to the savepoint
+SUPPORTS                Join if exists, else run non-transactionally
+MANDATORY               Must run within an existing tx, else throws exception
+NEVER / NOT_SUPPORTED   Must NOT run in a tx / suspends any existing tx
 
 Q: "When would you use REQUIRES_NEW? Give a real scenario."
 

@@ -114,4 +114,4 @@ systemctl --user start docker-desktop  (Start docker desktop)
 
 systemctl --user stop docker-desktop (stop service)
 
-
+kubectl create secret docker-registry my_secret --docker-server='https://index.docker.io/v1/' --docker-username=my_username --docker-password='my_pas' --namespace=my_ns

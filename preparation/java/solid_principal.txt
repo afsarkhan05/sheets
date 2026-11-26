@@ -1,3 +1,12 @@
+SOLID
+Single Responsibility Principle (SRP)
+Open/Closed Principle (OCP)
+Liskov Substitution Principle (LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP)
+
+=============================== BEST Practices ================================
+
 Best Practices:
 1. Code Readability: easier/concise code
 2. Consistent Formatting: ide formatting and code formating
@@ -19,4 +28,3 @@ Best Practices:
 18. Version Control: Use version control systems (e.g., Git) for managing your codebase. Follow branching and merging best practices.
 19. Keep Dependencies Updated: Regularly update dependencies to benefit from bug fixes, new features, and security patches.
 20. Continuous Integration: with CI/CD pipeline
-
