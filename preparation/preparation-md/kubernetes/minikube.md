@@ -1,0 +1,24 @@
+# Minikube
+
+```bash
+minikube start
+
+minikube dashboard
+
+minikube pause
+
+minikube unpause
+
+minikube stop
+
+minikube service hello-minikube
+```
+
+use local image for minikube (start minikube)
+
+1. `eval $(minikube docker-env)`
+2. create local image in same docker daemon thread
+
+Add ingress controller
+
+1. `minikube addons enable ingress`

@@ -1,0 +1,4 @@
+# Hashmap
+
+HashMap due to collision use linkedlist to save same hash key/values --- O(1) for get/delete/add --> good for add/delete/get  
+LinkedList - This keeps address of next value -- 0(1) for insert/delete but 0(n) for get as need to check all values - good for insert/delete but ok for read

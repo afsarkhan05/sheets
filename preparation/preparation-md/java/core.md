@@ -1,0 +1,32 @@
+# Core
+
+overriding vs overloading  
+different class vs same class  
+dynamic polymorphism (runtime decided which one to call) vs static polymorphism (compiler knows which method to call based on param, type etc)
+
+overriding relies on checking the actual object on the heap at runtime
+
+```java
+public void calculate(int x) { ... }
+public int calculate(int x) { ... } // ❌ COMPILER ERROR! Duplicate method signature.
+```
+
+overloading - if only changing return type, it will fail, must change the parameter or parameter type
+
+### Exception vs Error
+
+```text
+     java.lang.Throwable
+         /          \
+java.lang.Error   java.lang.Exception
+                        /          \
+          (Checked Exceptions)   java.lang.RuntimeException
+                                       \
+                                  (Unchecked Exceptions)
+```
+
+exceptions represent conditions an application should anticipate and catch, while errors represent fatal, unrecoverable system issues
+
+stackoverflow - when method keep calling itself, creating frames over frame and consume all the memory  
+oom - when there is no more heap memory left on heap to create more object  
+permgen - when metaspace memory is full due to loading classes more than memory available

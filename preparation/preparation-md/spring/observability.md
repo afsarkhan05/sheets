@@ -1,0 +1,158 @@
+# Observability
+
+/actuator/health — liveness/readiness (composable HealthIndicators — DB, Kafka, disk space, custom checks).  
+/actuator/metrics — integrates with Micrometer → exports to Prometheus/Datadog/CloudWatch.  
+/actuator/env — resolved property sources (great for debugging config precedence issues above).  
+/actuator/beans — full bean graph.  
+/actuator/threaddump / /actuator/heapdump — live diagnostics without SSH-ing in with jstack/jmap.  
+**Q:** "Difference between liveness and readiness probes, and why does it matter for Kubernetes?"
+
+Liveness = "is the app in a broken, unrecoverable state and should be killed/restarted?" (e.g., deadlock). Readiness = "can the app currently serve traffic?" (e.g., temporarily can't reach DB during a connection pool reset, but the process is fine — don't restart, just stop routing traffic). Conflating them causes crash loops: if you mark "DB unreachable" as a liveness failure, Kubernetes keeps killing/restarting a perfectly healthy pod while the DB is just temporarily down, worsening the outage rather than letting it recover gracefully.
+
+Spring Boot application
+
+```text
+│
+├── Micrometer
+│    └── application/JVM metrics
+│
+├── Actuator
+│    ├── /actuator/health
+│    ├── /actuator/metrics
+│    └── /actuator/prometheus
+│
+├── Java APM agent
+│    └── traces, HTTP, SQL, JVM, exceptions
+│
+└── stdout/stderr
+     └── application logs
+```
+
+Spring Boot application
+
+```text
+│
+├── Java APM agent
+│     ├── HTTP latency
+│     ├── distributed traces
+│     ├── SQL calls
+│     ├── JVM/GC metrics
+│     └── application errors
+│
+├── stdout/stderr
+│     └── Kubernetes DaemonSet collects logs
+│
+└── Kubernetes
+      └── DaemonSet collects node/pod/container metrics
+```
+
+- ↓
+- Datadog/New Relic cloud
+    - ↓
+    - Vendor UI
+
+### Prometheus
+
+- scrapes /actuator/prometheus
+- stores metrics
+
+### Datadog/New Relic Java agent
+
+- directly instruments the application
+- captures traces and runtime telemetry
+
+### Datadog/New Relic Kubernetes DaemonSet
+
+- collects node/pod/container metrics and logs
+
+### Datadog/New Relic platform
+
+- stores, correlates, queries, and visualizes the data
+
+Spring Boot commonly generates metrics through Micrometer and exposes them through Actuator. Prometheus can scrape the Prometheus-formatted Actuator endpoint. Datadog/New Relic can either directly instrument the application with their Java agent, scrape the Actuator endpoint, or use OpenTelemetry/Micrometer integrations. Their Kubernetes agents independently collect infrastructure data and container logs.
+
+Spring Boot commonly uses Micrometer to generate application and JVM metrics. Actuator exposes health and metrics endpoints, but Actuator does not by itself send all observability data to a vendor. Datadog and New Relic can use Java APM agents to automatically instrument Spring Boot applications and collect request latency, traces, database calls, JVM data, and errors. In Kubernetes, a vendor DaemonSet commonly collects node, pod, container metrics, Kubernetes events, and stdout/stderr logs. These agents/exporters authenticate and send telemetry to the vendor cloud. Datadog and New Relic can also receive OpenTelemetry data, but OpenTelemetry is optional. Prometheus usually scrapes metrics exposed by Micrometer through /actuator/prometheus; Grafana can visualize those metrics. Prometheus/Grafana alone primarily cover metrics, so separate log and tracing systems are needed for a complete observability solution.
+
+Spring Boot commonly uses Micrometer for application metrics. Prometheus can scrape those metrics. Datadog and New Relic can collect them through their agents, registries, Prometheus integrations, or OpenTelemetry. Distributed traces are typically collected through a vendor APM agent or the OpenTelemetry Java agent. Kubernetes DaemonSets collect infrastructure metrics and container logs independently of Micrometer.
+
+We can use Datadog or New Relic as an integrated observability platform, where the Java APM agent collects application traces and JVM data, while the Kubernetes agent collects node, pod, container, and log data. Alternatively, we can build an open-source stack using Prometheus and Grafana for metrics, Loki or Elasticsearch for logs, and OpenTelemetry with Tempo or Jaeger for traces. Both approaches can provide metrics, logs, traces, dashboards, and alerts, but Datadog/New Relic provide more functionality out of the box, while the Prometheus/Grafana approach requires more components and operational effort.
+
+With a Datadog or New Relic Java agent, you normally do not need another tracing JAR or manual trace code. The agent creates trace IDs, propagates them through HTTP or messaging headers, creates spans in each instrumented service, and sends those spans to the vendor backend. The vendor backend groups spans with the same trace ID to display the complete request path. An additional OpenTelemetry agent or tracing dependencies are needed only if you choose an OpenTelemetry/Micrometer-based implementation instead of the vendor Java agent.
+
+Important Flow
+
+api-gateway
+
+```text
+├── creates span
+├── adds traceparent header
+└── calls order-service
+```
+
+order-service
+
+```text
+├── reads traceparent header
+├── continues same trace
+├── creates its own child span
+└── calls payment-service
+```
+
+payment-service
+
+```text
+├── reads traceparent header
+└── creates another child span
+```
+
+Datadog and New Relic generally export telemetry through secure network connections, commonly HTTPS or gRPC. OpenTelemetry commonly uses OTLP over HTTP or gRPC. The trace ID is propagated separately through HTTP headers, gRPC metadata, or message headers between services. Prometheus usually collects metrics by making HTTP requests to the Actuator endpoint.
+
+The Maven dependency and the API key are enough, with no agent jar and no separate process. The Datadog registry runs inside your app and pushes to Datadog over HTTPS.
+
+Micrometer is the metrics library, and it ships the registries (Datadog, Prometheus, New Relic, StatsD, and so on). Actuator is Spring Boot’s integration layer. It auto-configures Micrometer, adds instrumentation (JVM, HTTP and so on), and offers the /actuator/metrics endpoint, which reads whatever registries exist. Nothing is “local registry for actuator” and “Datadog registry for cloud” as two parallel things:
+
+No real registry on the classpath: Boot falls back to an in-memory SimpleMeterRegistry, and /actuator/metrics reads that.  
+Datadog (or other) registry added: Boot uses that registry instead of the in-memory fallback. /actuator/metrics still works, reading from the same registries.
+
+basically for trace, logs we need to add APM javaagent for datadog which will take care of them and datadog registry will only send metrics collected by micrometer, so how trace, logs, sql works?
+
+The one correction is that the Java agent jar doesn’t talk to Datadog’s cloud on its own. Traces and logs normally go through a Datadog Agent (a separate process or container) that forwards them.
+
+Your Spring app
+
+```text
+├─ Micrometer Datadog registry ──HTTPS──────────────► Datadog cloud   (metrics, direct, no agent)
+└─ dd-java-agent.jar (inside JVM)
+      spans ──► Datadog Agent (localhost:8126) ──────► Datadog cloud   (traces)
+      log files ◄── tailed by Datadog Agent ─────────► Datadog cloud   (logs)
+```
+
+Traces and SQL
+
+You start the JVM with -javaagent:dd-java-agent.jar. At startup it rewrites library code (bytecode instrumentation) for servlets, JDBC, Redis clients, HTTP clients and more. You don’t change your own code.  
+Each incoming request becomes a trace. Inside it, every instrumented call (a SQL query, a Redis command, an Ollama call) becomes a span with timing.  
+SQL appears as JDBC spans carrying the query text (parameters obfuscated by default) and duration. That’s how you find slow queries.  
+The agent sends the spans to the Datadog Agent on port 8126, which forwards them.
+
+### Logs have two separate parts
+
+**Correlation:** with -Ddd.logs.injection=true, the Java agent adds the trace and span IDs to your log context (MDC). Include them in your Logback pattern, and Datadog can link a log line to its trace.  
+**Shipping:** the Java agent doesn’t send logs itself. The Datadog Agent tails your log file (the one your logback-spring.xml writes) with log collection turned on, or you use a Logback appender that posts to Datadog’s log intake.
+
+### Bottom Line
+
+so be it prothemeus or datadog or new relic or actuator all are giving same metric collected by micrometer but these apps possesse different ways to work on that data like graphs, alerts, monitoring etc, some are free and some paid
+
+Micrometer and OpenTelemetry (OTel) overlap on metrics but come from different places, and tracing is a separate piece.
+
+Where OpenTelemetry fits
+
+OpenTelemetry is a vendor-neutral standard for all three kinds of telemetry:
+
+**Metrics:** numbers over time.  
+**Traces:** the path of one request through your code and services.  
+**Logs:** log events.
+
+It defines the data model, APIs and SDKs, and a wire protocol called OTLP for sending data. Datadog, New Relic, Grafana, and others can ingest OTLP, so OTel is another way to stay vendor-neutral.
+
+Micrometer vs OTel for metrics: both are facades that record metrics. Micrometer is the JVM and Spring-native one, and what Actuator uses. OTel works across many languages. In Spring you can mix them: Micrometer collects, and an OTLP registry (or the OTel SDK) exports the metrics via OTLP. You don’t need both for metrics, so Micrometer is fine unless you want everything on OTel.

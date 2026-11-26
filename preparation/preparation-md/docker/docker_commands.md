@@ -1,0 +1,138 @@
+# Docker Commands
+
+```bash
+sudo service docker start
+```
+
+/etc/default/docker ( file for repository)
+
+```bash
+docker run -d -p 8080 -h amb0.mycorp.kom --name ambari-singlenode sequenceiq/ambari:1.6.0 --tag ambari-server=true
+docker run -e BLUEPRINT=single-node-hdfs-yarn --link ambari-singlenode:ambariserver -t --rm --entrypoint /bin/sh sequenceiq/ambari:1.6.0 -c /tmp/install-cluster.sh
+
+sudo vi /etc/hosts
+
+docker@us:~$ cat /etc/hosts
+127.0.0.1 us localhost localhost.local
+#add repo
+```
+
+### Dockers
+
+```bash
+sudo docker ps -a (all running and non running containers)
+docker ps (only running container)
+docker stop {id or name} (stop container)
+docker rm {id or name} (remove container)
+sudo docker images
+sudo docker rmi hello-world (remove image)
+sudo docker stop container_id (stop container)
+sudo docker rm container_id (remove container)
+sudo docker port E3fefe 8080 (get host port on E3fefe docker container)
+
+docker image tag image_name new_image_name:new_tag
+
+docker run -e var:var_value -v host_path:container_path -p host_port: container_port --name container_name -d (to run in background) {image_name}
+```
+
+### example
+
+```bash
+docker run -v /opt/data:/var/lib/mysql -d -p 3306:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 mysql
+```
+
+### execute mysql query in container
+
+```bash
+docker exec mysql-db mysql -pdb_pass123 -e 'use foo; select * from myTable
+```
+
+### Docker own registry
+
+```bash
+docker run --name my-registry -p 5000:5000 --restart always registry:2
+docker image tag nginx:latest localhost:5000/nginx:latest
+docker push localhost:5000/nginx:latest
+curl -X GET localhost:5000/v2/_catalog
+docker pull localhost:5000/nginx
+```
+
+### Docker Network
+
+```bash
+docker network ls
+docker network inspect e5e1b7a28451
+docker inspect {container_id or name}
+docker run --name alpine-2 --network none alpine
+
+docker network create -d bridge --gateway 182.18.0.1 --subnet 182.18.0.1/24 wp-mysql-network
+
+docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 --network wp-mysql-network -d mysql:5.6
+
+
+docker rm docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+
+docker run -it -v /my_folder/ -e GOOGLE_APPLICATION_CREDENTIALS=/my_folder/my_key.json  my_repo/my_image:tag
+
+
+docker exec -it bba005ceeaa4 /bin/bash
+
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker run -it -e "LOG_DIR=/home/logs/" my_repo/my_image:my_tag
+```
+
+## pass file and environment variables to docker containers
+
+```bash
+docker run -it --entrypoint /bin/sh -v /my_folder:/my_folder  --env GOOGLE_APPLICATION_CREDENTIALS=/my_folder/my_key.json {image_name}
+```
+
+============================== ============================== ==============================
+
+```bash
+docker image build -t my_repo/my_image:my_tag  ./
+
+docker run -it -p 9092:9092 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker run -it --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
+```
+
+```bash
+docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+docker run -it -p 9090:9090 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
+
+
+docker run -it -p 9093:9093 --entrypoint /bin/sh my_repo/my_image:my_tag -s
+
+java -jar -DSPRING.DATASOURCE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.LIQUIBASE.URL='jdbc:mariadb://host.docker.internal:3306/db_name' -DSPRING.CLOUD.CONFIG.URI='http://host/configuration' my_jar.jar
+
+kubectl -n name_space -it my_repo/my_image:my_tag -- /bin/sh
+
+docker rm docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+```
+
+podman machine init -v $home:$home  
+podman machine start  
+podman machine ssh  
+podman machine stop
+
+## DOCKER DESKTOP
+
+```bash
+systemctl --user start docker-desktop  (Start docker desktop)
+
+systemctl --user stop docker-desktop (stop service)
+
+kubectl create secret docker-registry my_secret --docker-server='https://index.docker.io/v1/' --docker-username=my_username --docker-password='my_pas' --namespace=my_ns
+```
