@@ -87,4 +87,4 @@ Study and interview-prep notes, grouped by topic.
 
 ## Database
 
-- [Database](database/example.sql)
+- [Database](database/sql.md)

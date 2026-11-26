@@ -1,24 +1,25 @@
--- big six
--- select from where group by having order by
--- distinct, count, limit
--- windows: row_number, rank, dense_rank
--- avg, min, max, lag, lead
--- cast, coalesce, string_agg
--- cte vs sub query (common table expr is better clearer way if dealing with multi tables compare to sub query which will be complex)
--- left join - gives everything from left and (on joined from right) right join vice version , full inner join is excact join
--- full outer join is matching plus full from left and full from right table
--- self join - joining with itself
--- cte vs temp table (temp table are stored somewhere for sometime)
--- view vs table (view are better to expose your underling data with external team without providing exact column names or exposing all columns)
--- partition vs sharding vs clustering ( partition means table data is group by some key, sharding means horizon data split, 
--- union vs union all ( union removes the duplicate while merging, union all merge all of them including duplicates)
--- pk, fk, unique, 
---PK: The main ID for a row, unique & non-null.
---FK: A link to another table's PK, can have duplicates & nulls.
---UK: A secondary unique identifier, allows one null. uniqueness for column not row (like email should be unique)
+# SQL
 
+- big six select from where group by having order by
+- distinct, count, limit
+- windows: row_number, rank, dense_rank
+- avg, min, max, lag, lead
+- cast, coalesce, string_agg
+- cte vs sub query (common table expr is better clearer way if dealing with multi tables compare to sub query which will be complex)
+- left join - gives everything from left and (on joined from right) right join vice version , full inner join is excact join
+- full outer join is matching plus full from left and full from right table
+- self join - joining with itself
+- cte vs temp table (temp table are stored somewhere for sometime)
+- view vs table (view are better to expose your underling data with external team without providing exact column names or exposing all columns)
+- partition vs sharding vs clustering ( partition means table data is group by some key, sharding means horizon data split,
+- union vs union all ( union removes the duplicate while merging, union all merge all of them including duplicates)
+- pk, fk, unique,
+- PK: The main ID for a row, unique & non-null.
+- FK: A link to another table's PK, can have duplicates & nulls.
+- UK: A secondary unique identifier, allows one null. uniqueness for column not row (like email should be unique)
+
+```roomsql
 create schema sql_test;
-
 
 CREATE TABLE baby_names (
     Gender VARCHAR(10),
@@ -37,8 +38,9 @@ INSERT INTO baby_names (Gender, Name, Total) VALUES
 ('Boy', 'Noah', 120),
 ('Girl', 'Olivia', 100),
 ('Girl', 'Sophia', 88);
+```
 
-
+```roomsql
 -- 1 order by table 
 select * from baby_names bn order by total desc;
 
@@ -46,8 +48,9 @@ select * from baby_names bn order by total desc;
 select Gender , Name, Total,
 	row_number() over(order by Total desc) as Popularity
 from baby_names bn ;
+```
 
-
+```roomsql
 -- 3 add popularity column with rank, row_number and rank_dense
 select Gender , Name, Total,
 	row_number() over(order by Total desc) as Popularity,
@@ -59,7 +62,10 @@ from baby_names bn ;
 select Gender , Name, Total,
 	row_number() over(partition by Gender order by Total desc) as Popularity
 from baby_names bn ;
+```
 
+
+```roomsql
 -- 5 top 3 popular name within each gender
 select * from 
 (
@@ -68,8 +74,9 @@ select Gender , Name, Total,
 from baby_names bn 
 ) pop
 where pop.Popularity <=3;
+```
 
-
+```roomsql
 with pop as (
 select Gender , Name, Total,
 	row_number() over(partition by Gender order by Total desc) as Popularity
@@ -77,7 +84,4 @@ from baby_names bn
 ) 
 select * from pop
 where pop.Popularity <=3;
-
-
-
-
+```
